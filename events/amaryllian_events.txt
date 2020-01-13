@@ -1,0 +1,258 @@
+namespace = amaryllian
+### Prepare starting habitat
+
+planet_event = {
+	id = amaryllian.0
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+	has_planet_flag = amaryllian_habitat
+	}
+	immediate = {
+		save_event_target_as = amaryllian_habitat_target
+		clear_blockers = yes
+		clear_deposits = yes
+		planet_event = {
+			id = amaryllian.1
+			days = 1
+			random = 0
+		}
+	}
+}
+
+planet_event = {
+	id = amaryllian.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+	has_planet_flag = amaryllian_habitat
+	}
+	immediate = {
+		change_pc = pc_habitat
+		set_planet_entity = { entity = "orbital_habitat_entity" graphical_culture = fromfrom }
+		planet_event = {
+			id = amaryllian.2
+			days = 1
+			random = 0
+		}
+	}
+}
+
+planet_event = {
+	id = amaryllian.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = amaryllian_habitat
+	}
+
+	immediate = {
+	
+	if = {
+		limit = { owner = { is_regular_empire = yes is_lithoid_empire = no} }	
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_commercial
+			add_district = district_hab_commercial
+			add_district = district_hab_cultural
+			add_building = building_hydroponics_farm
+			add_building = building_hydroponics_farm
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}
+			
+	else_if = {
+		limit = { owner = { is_lithoid_empire = yes } 
+				any_owned_pop = { is_lithoid = no is_organic_species = yes } }
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_commercial
+			add_district = district_hab_commercial
+			add_district = district_hab_cultural
+			add_building = building_hydroponics_farm
+			add_building = building_hydroponics_farm
+			add_building = building_mineral_purification_plant
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}
+
+	else_if = {
+		limit = { owner = { is_lithoid_empire = yes is_hive_empire = no } }
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_commercial
+			add_district = district_hab_commercial
+			add_district = district_hab_cultural
+			add_building = building_mineral_purification_plant		
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}
+			
+	else_if = {
+		limit = { owner = { is_lithoid_empire = yes is_hive_empire = yes } }
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_hive_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_building = building_hive_node
+			add_building = building_mineral_purification_plant			
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}
+
+	else_if = { 
+		limit = { owner = { has_authority = auth_machine_intelligence }
+				any_owned_pop = { is_lithoid = no is_organic_species = yes } }
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_machine_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_building = building_hydroponics_farm
+			add_building = building_hydroponics_farm
+			add_building = building_drone_storage
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}				
+			
+	else_if = {
+		limit = { owner = { is_machine_empire = yes } }
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_machine_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_building = building_uplink_node	
+			add_building = building_drone_storage			
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}
+			
+	else_if = {
+		limit = { owner = { is_hive_empire = yes is_lithoid_empire = no } }
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_hive_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_building = building_hydroponics_farm
+			add_building = building_hydroponics_farm
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}
+
+	else = {
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_science
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_building = building_hydroponics_farm
+			add_building = building_hydroponics_farm
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+		}
+	}
+}
+
+### Give starting tech to Amaryllian system starters
+country_event = {
+	id = amaryllian.3
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		every_country = {
+			limit = {
+				any_owned_planet = {
+					is_homeworld = yes
+					is_capital = yes
+					has_planet_flag = amaryllian_habitat }
+				any_owned_pop = { is_lithoid = no is_organic_species = yes }
+			}
+		give_technology = {
+			message = no
+			tech = tech_hydroponics
+		}
+	}
+		every_country = {
+			limit = {
+				any_owned_planet = {
+					is_homeworld = yes
+					is_capital = yes
+					has_planet_flag = amaryllian_habitat }
+				is_lithoid_empire = yes
+			}
+		give_technology = {
+			message = no
+			tech = tech_mineral_purification_1
+		}
+	}
+		every_country = {
+			limit = {
+				any_owned_planet = {
+					is_homeworld = yes
+					is_capital = yes
+					has_planet_flag = amaryllian_habitat }
+			}
+		give_technology = {
+			message = no
+			tech = tech_habitat_1
+		}
+	}
+	}
+}

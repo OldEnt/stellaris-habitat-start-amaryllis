@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+
+humans_amaryllian:0 "Technocracy of Man"
+
+amaryllian_system_initializer_NAME:0 "Habitat start"
+amaryllian_system_initializer_DESC:0 "Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait one month for the game to set the habitat up.\n\nThe Technocracy of Man's starting solar system.\n\n$system_initializer_DESC$"
+
+amaryllian_d_hab_minerals_1:0 "Mineral Deposit"
+amaryllian_d_hab_minerals_1_desc:1 "This habitat is built near an exploitable mineral deposit."

@@ -1,0 +1,66 @@
+humans_amaryllian = {
+	name = "humans_amaryllian"
+	adjective = "PRESCRIPTED_adjective_humans1"
+	spawn_enabled = yes	# yes / no / always
+	ignore_portrait_duplication = yes
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans2"
+	species = {
+		class = "HUM"
+		portrait = "human"
+		name = "PRESCRIPTED_species_name_humans2"
+		plural = "PRESCRIPTED_species_plural_humans2"
+		adjective = "PRESCRIPTED_species_adjective_humans2"
+		name_list = "HUMAN2"
+		trait = "trait_natural_engineers"
+		trait = "trait_intelligent"
+		trait = "trait_rapid_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_weak"
+	}
+	room = "ethic_spaceship_room"
+	authority = "auth_oligarchic"
+	civics = {
+		"civic_technocracy"
+		"civic_efficient_bureaucracy"
+	}
+	government = "gov_science_directorate"
+	advisor_voice_type = "l_xenophobe"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_materialist"
+	flags = {
+		amaryllian_empire
+	}
+	ftl = wormhole
+	planet_name = "NAME_lotus"
+	planet_class = "pc_continental"
+	initializer = "amaryllian_system_initializer"
+	system_name = "NAME_vesta"
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "humanoid_01"
+	empire_flag = {
+		icon = {
+			category = "domination"
+			file = "domination_10.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "new_dawn.dds"
+		}
+		colors = {
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		name = "Emilija Pliateryte"
+		gender = female
+		portrait = "human_female_04"
+		texture = 0
+		hair = 30
+		clothes = 3
+		leader_class = ruler
+	}
+	spawn_as_fallen = no
+}
