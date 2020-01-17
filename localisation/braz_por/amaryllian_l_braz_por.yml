@@ -1,4 +1,4 @@
-﻿l_braz_por:
+﻿l_english:
 
 humans_amaryllian:0 "Technocracy of Man"
 
@@ -7,3 +7,9 @@ amaryllian_system_initializer_DESC:0 "Start on a developed research habitat with
 
 amaryllian_d_hab_minerals_1:0 "Mineral Deposit"
 amaryllian_d_hab_minerals_1_desc:1 "This habitat is built near an exploitable mineral deposit."
+
+amaryllian_d_hab_energy_1:0 "Habitat Solar Panels"
+amaryllian_d_hab_energy_1_desc:1 "This habitat is equipped with extensive solar panel array."
+
+amaryllian_d_hab_food_1:0 "Composting Plant"
+amaryllian_d_hab_food_1_desc:1 "This habitat can process biowaste efficiently turning it into a fertilizer... or food."

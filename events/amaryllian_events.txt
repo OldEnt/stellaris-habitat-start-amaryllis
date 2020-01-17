@@ -49,20 +49,22 @@ planet_event = {
 	immediate = {
 	
 	if = {
-		limit = { owner = { is_regular_empire = yes is_lithoid_empire = no} }	
+		limit = { owner = { is_regular_empire = yes is_lithoid_empire = no is_machine_empire = no} }	
 			clear_blockers = yes
 			clear_deposits = yes
 			remove_building = building_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
 			add_district = district_hab_housing
+			add_district = district_hab_housing
 			add_district = district_hab_science
-			add_district = district_hab_commercial
 			add_district = district_hab_commercial
 			add_district = district_hab_cultural
 			add_building = building_hydroponics_farm
 			add_building = building_hydroponics_farm
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
+			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
 			break = yes
 			}
@@ -85,6 +87,7 @@ planet_event = {
 			add_building = building_hydroponics_farm
 			add_building = building_mineral_purification_plant
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1			
 			add_deposit = d_hab_alloy_5
 			break = yes
 			}
@@ -104,6 +107,7 @@ planet_event = {
 			add_district = district_hab_cultural
 			add_building = building_mineral_purification_plant		
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
 			break = yes
 			}
@@ -124,13 +128,15 @@ planet_event = {
 			add_building = building_hive_node
 			add_building = building_mineral_purification_plant			
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
 			break = yes
 			}
 
 	else_if = { 
 		limit = { owner = { has_authority = auth_machine_intelligence }
-				any_owned_pop = { is_lithoid = no is_organic_species = yes } }
+				any_owned_pop = { is_lithoid = no is_organic_species = yes }
+				}
 			clear_blockers = yes
 			clear_deposits = yes
 			remove_building = building_machine_capital
@@ -144,11 +150,35 @@ planet_event = {
 			add_district = district_hab_energy
 			add_building = building_hydroponics_farm
 			add_building = building_hydroponics_farm
-			add_building = building_drone_storage
+			add_building = building_maintenance_depot
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
 			break = yes
-			}				
+			}
+
+	else_if = { 
+		limit = { owner = { has_authority = auth_machine_intelligence }
+				any_owned_pop = { is_lithoid = yes is_organic_species = yes }
+				}
+			clear_blockers = yes
+			clear_deposits = yes
+			remove_building = building_machine_capital
+			add_building = building_hab_major_capital
+			remove_building = building_research_lab_1
+			add_district = district_hab_housing
+			add_district = district_hab_housing
+			add_district = district_hab_science
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_district = district_hab_energy
+			add_building = building_drone_storage
+			add_building = building_maintenance_depot
+			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
+			add_deposit = d_hab_alloy_5
+			break = yes
+			}
 			
 	else_if = {
 		limit = { owner = { is_machine_empire = yes } }
@@ -166,6 +196,7 @@ planet_event = {
 			add_building = building_uplink_node	
 			add_building = building_drone_storage			
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
 			break = yes
 			}
@@ -185,6 +216,8 @@ planet_event = {
 			add_building = building_hydroponics_farm
 			add_building = building_hydroponics_farm
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
+			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
 			break = yes
 			}
@@ -204,6 +237,8 @@ planet_event = {
 			add_building = building_hydroponics_farm
 			add_building = building_hydroponics_farm
 			add_deposit = amaryllian_d_hab_minerals_1
+			add_deposit = amaryllian_d_hab_energy_1
+			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
 			break = yes
 		}

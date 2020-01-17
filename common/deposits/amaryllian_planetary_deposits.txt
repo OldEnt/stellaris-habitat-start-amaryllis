@@ -1,5 +1,5 @@
 amaryllian_d_hab_minerals_1 = {
-	icon = "unused/d_space_walk"
+	icon = "amaryllian_minerals"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -10,12 +10,22 @@ amaryllian_d_hab_minerals_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_hive_empire = yes is_lithoid_empire = no}
 		}
 		modifier = {
 			job_mining_drone_add = 5
 		}
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes is_lithoid_empire = yes}
+		}
+		modifier = {
+			job_mining_drone_add = 8
+		}
+	}	
 
 	triggered_planet_modifier = {
 		potential = {
@@ -47,6 +57,109 @@ amaryllian_d_hab_minerals_1 = {
 		}
 		modifier = {
 			job_fe_acolyte_mine_add = 4
+		}
+	}
+
+	# weight 0: event added
+	drop_weight = {
+		weight = 0.1
+	}
+}
+
+amaryllian_d_hab_energy_1 = {
+	icon = "amaryllian_panels"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_technician_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_generator_add = 3
+		}
+	}
+
+	# weight 0: event added
+	drop_weight = {
+		weight = 0.1
+	}
+}
+
+amaryllian_d_hab_food_1 = {
+	icon = "amaryllian_hydroponic"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes is_lithoid_empire = no is_machine_empire = no is_fallen_empire_spiritualist = no}
+		}
+		modifier = {
+			job_farmer_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes is_lithoid_empire = no }
+		}
+		modifier = {
+			job_agri_drone_add = 2
+		}
+	}	
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 1
 		}
 	}
 
