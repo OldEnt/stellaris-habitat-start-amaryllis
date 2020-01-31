@@ -1,0 +1,178 @@
+amaryllian_habitat_captain = {	
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = buildings\old_production\building_engineering_facility_1
+	clothes_texture_index = 4
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_administrators
+		produces = {
+			unity = 3
+
+		}			
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = amaryllian_tech_housing_1 }
+		}
+		modifier = {
+			pop_housing_usage_mult = -0.1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = amaryllian_tech_army_1 }
+		}
+		modifier = {
+			army_defense_morale_mult = 0.1
+			army_defense_damage_mult = 0.1
+			army_defense_health_mult = 0.1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+		}
+		modifier = {
+			job_clerk_add = 5
+		}
+	}	
+
+	
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 2
+			exists = owner
+		}	
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no	
+			NOT = { has_trait = trait_mechanical }	
+		}		
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_trait = trait_robot_propaganda_machines
+				has_trait = trait_traditional
+			}		
+		}
+		modifier = {
+			factor = 0.75
+			has_trait = trait_quarrelsome
+		}
+		modifier = {
+			factor = 5
+			has_job = amaryllian_habitat_captain
+		}		
+		modifier = {
+			factor = 1.25
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.125
+			has_trait = trait_presapient_natural_intellectuals
+		}
+		modifier = {
+			factor = 1.125
+			has_trait = trait_robust
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}	
+	}
+}
+
+amaryllian_habitat_brain = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_machine_capital
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}	
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			unity = 3
+		}
+		upkeep = {
+			energy = 3
+		}
+	}	
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = amaryllian_tech_housing_gestalt_1 }
+		}
+		modifier = {
+			pop_housing_usage_mult = -0.1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = amaryllian_tech_army_gestalt_1 }
+		}
+		modifier = {
+			army_defense_damage_mult = 0.15
+			army_defense_health_mult = 0.15
+		}
+	}	
+	
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 2
+			exists = owner
+		}	
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}		
+	}
+}

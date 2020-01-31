@@ -21,7 +21,7 @@ humans_amaryllian = {
 	authority = "auth_oligarchic"
 	civics = {
 		"civic_technocracy"
-		"civic_efficient_bureaucracy"
+		"civic_amaryllian_habitat"
 	}
 	government = "gov_science_directorate"
 	advisor_voice_type = "l_xenophobe"

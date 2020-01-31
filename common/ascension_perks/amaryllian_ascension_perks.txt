@@ -1,0 +1,56 @@
+ap_amaryllian_voidchildren = {
+	potential = {
+		host_has_dlc = "Utopia"
+		has_civic = civic_amaryllian_habitat
+		NOT = {
+			has_ascension_perk = ap_amaryllian_voidchildren
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ap_voidborn"
+			has_ascension_perk = ap_voidborn
+		}
+	}
+
+	on_enabled = {
+		custom_tooltip = "ap_amaryllian_voidchildren_tooltip"
+		hidden_effect = {
+			every_planet_within_border = {
+				limit = {
+					is_planet_class = pc_habitat
+					NOT = { has_modifier = amaryllian_voidchildren_habitat_modifier }
+				}
+				add_modifier = {
+					modifier = amaryllian_voidchildren_habitat_modifier
+					days = -1
+				}
+			}
+		}		
+	}
+
+	modifier = {
+		megastructure_build_speed_mult = 0.15
+	}	
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_materialist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}		
+	}
+}

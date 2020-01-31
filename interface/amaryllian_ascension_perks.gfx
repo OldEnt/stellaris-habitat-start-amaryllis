@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_amaryllian_voidchildren"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_amaryllian_voidchildren.dds"
+		alwaystransparent = yes
+	}
+}

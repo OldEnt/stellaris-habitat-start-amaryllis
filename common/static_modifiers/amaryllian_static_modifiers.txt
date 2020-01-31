@@ -1,0 +1,163 @@
+amaryllian_voidchildren_habitat_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_amaryllian_voidchildren_habitat_modifier.dds"
+	icon_frame = 1
+	pop_housing_usage_mult = -0.25
+}
+
+amaryllian_habitat_captain_quarters = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = 1
+	job_amaryllian_habitat_captain_add = 1
+}
+
+amaryllian_decision_arcology_project_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+	planet_housing_add = 20
+	pop_growth_speed = 0.1
+	lith_pop_growth_speed = 0.1
+	pop_assembly_speed = 0.1
+	planet_jobs_produces_mult = 0.05
+}
+
+amaryllian_unity_0 = {
+	country_unity_produces_mult = -0.30
+}
+
+amaryllian_unity_1 = {
+	country_unity_produces_mult = 0.02
+}
+
+amaryllian_unity_2 = {
+	country_unity_produces_mult = 0.04
+}
+
+amaryllian_unity_3 = {
+	country_unity_produces_mult = 0.06
+}
+
+amaryllian_unity_4 = {
+	country_unity_produces_mult = 0.08
+}
+
+amaryllian_unity_5 = {
+	country_unity_produces_mult = 0.10
+}
+
+amaryllian_unity_6 = {
+	country_unity_produces_mult = 0.12
+}
+
+amaryllian_unity_7 = {
+	country_unity_produces_mult = 0.14
+}
+
+amaryllian_unity_8 = {
+	country_unity_produces_mult = 0.16
+}
+
+amaryllian_unity_9 = {
+	country_unity_produces_mult = 0.18
+}
+
+amaryllian_unity_10 = {
+	country_unity_produces_mult = 0.20
+}
+
+amaryllian_unity_11 = {
+	country_unity_produces_mult = 0.22
+}
+
+amaryllian_unity_12 = {
+	country_unity_produces_mult = 0.24
+}
+
+amaryllian_unity_13 = {
+	country_unity_produces_mult = 0.26
+}
+
+amaryllian_unity_14 = {
+	country_unity_produces_mult = 0.28
+}
+
+amaryllian_unity_15 = {
+	country_unity_produces_mult = 0.30
+}
+
+amaryllian_unity_16 = {
+	country_unity_produces_mult = 0.30
+}
+
+amaryllian_habitat_brain_quarters = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = 1
+	job_amaryllian_habitat_brain_add = 1
+}
+
+amaryllian_gestalt_unity_0 = {
+	country_unity_produces_mult = -0.30
+}
+
+amaryllian_gestalt_unity_1 = {
+	country_unity_produces_mult = 0.02
+}
+
+amaryllian_gestalt_unity_2 = {
+	country_unity_produces_mult = 0.04
+}
+
+amaryllian_gestalt_unity_3 = {
+	country_unity_produces_mult = 0.06
+}
+
+amaryllian_gestalt_unity_4 = {
+	country_unity_produces_mult = 0.08
+}
+
+amaryllian_gestalt_unity_5 = {
+	country_unity_produces_mult = 0.10
+}
+
+amaryllian_gestalt_unity_6 = {
+	country_unity_produces_mult = 0.12
+}
+
+amaryllian_gestalt_unity_7 = {
+	country_unity_produces_mult = 0.14
+}
+
+amaryllian_gestalt_unity_8 = {
+	country_unity_produces_mult = 0.16
+}
+
+amaryllian_gestalt_unity_9 = {
+	country_unity_produces_mult = 0.18
+}
+
+amaryllian_gestalt_unity_10 = {
+	country_unity_produces_mult = 0.20
+}
+
+amaryllian_gestalt_unity_11 = {
+	country_unity_produces_mult = 0.22
+}
+
+amaryllian_gestalt_unity_12 = {
+	country_unity_produces_mult = 0.24
+}
+
+amaryllian_gestalt_unity_13 = {
+	country_unity_produces_mult = 0.26
+}
+
+amaryllian_gestalt_unity_14 = {
+	country_unity_produces_mult = 0.28
+}
+
+amaryllian_gestalt_unity_15 = {
+	country_unity_produces_mult = 0.30
+}
+
+amaryllian_gestalt_unity_16 = {
+	country_unity_produces_mult = 0.30
+}

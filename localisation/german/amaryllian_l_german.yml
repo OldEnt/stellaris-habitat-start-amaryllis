@@ -13,3 +13,189 @@ amaryllian_d_hab_energy_1_desc:1 "This habitat is equipped with extensive solar 
 
 amaryllian_d_hab_food_1:0 "Composting Plant"
 amaryllian_d_hab_food_1_desc:1 "This habitat can process biowaste efficiently turning it into a fertilizer... or food."
+
+civic_amaryllian_habitat:0 "Children of the Void"
+civic_amaryllian_habitat_desc:0 "While others look for new homes, we forge them ourselves."
+civic_tooltip_amaryllian_habitat_world_effects:0 "Sets habitat habitability. Enables second stage of Voidborne ascension perk and grants access to unique technologies.\n\n§H$pc_habitat$s§! have £job_amaryllian_habitat_captain£ §YCaptains§! (or £job_amaryllian_habitat_brain£ §YBrain Synapses§!) who provide Empire £unity£ §Y$unity$§! output modifier which increases per §HHabitat§! owned.\n\nDoes not grant habitat start - you can opt for that in the empire creation menu."
+
+ap_amaryllian_voidchildren:0 "Elysian Isles"
+ap_amaryllian_voidchildren_desc:0 "We found our place amongst the stars and do not look back."
+ap_amaryllian_voidchildren_tooltip:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! usage on §H$pc_habitat$s§! owned by our Empire: §G-25%§!.\n\n§HUnlocks Decisions:§! §YIndustrial§!, §YFoundry§!, §YFarming§!, and §YFortress§! §HHabitat Projects§!. Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking specialised £district£ §Ydistricts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!. Machine empires can still build §YGenerator Districts§!."
+
+amaryllian_voidchildren_habitat_modifier:0 "$ap_amaryllian_voidchildren$: Perfect Home"
+amaryllian_voidchildren_habitat_modifier_desc:0 "Excellent design and proper exploitation of this $pc_habitat$ decreases £housing£ §Y$PLANET_HOUSING_TITLE$§! usage by §G-25%§!."
+
+job_amaryllian_habitat_captain:0 "Habitat Captain"
+job_amaryllian_habitat_captain_desc:0 "Empire £unity£ §Y$unity$§! output: §G+2%§!\n\nCaptain on the deck!"
+
+amaryllian_habitat_captain_quarters:0 "Habitat Captain Quarters"
+amaryllian_habitat_captain_quarters_desc:0 "Accommodation and offices for Habitat Captain."
+mod_job_amaryllian_habitat_captain_add:0 "Habitat Captain jobs"
+
+amaryllian_unity_0:0 "No Habitat Captains in service!"
+amaryllian_unity_0_desc:0 "Build and populate habitat to enable Habitat Captain job."
+
+amaryllian_unity_1:0 "Habitat Captains: 1"
+amaryllian_unity_1_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_2:0 "Habitat Captains: 2"
+amaryllian_unity_2_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_3:0 "Habitat Captains: 3"
+amaryllian_unity_3_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_4:0 "Habitat Captains: 4"
+amaryllian_unity_4_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_5:0 "Habitat Captains: 5"
+amaryllian_unity_5_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_6:0 "Habitat Captains: 6"
+amaryllian_unity_6_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_7:0 "Habitat Captains: 7"
+amaryllian_unity_7_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_8:0 "Habitat Captains: 8"
+amaryllian_unity_8_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_9:0 "Habitat Captains: 9"
+amaryllian_unity_9_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_10:0 "Habitat Captains: 10"
+amaryllian_unity_10_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_11:0 "Habitat Captains: 11"
+amaryllian_unity_11_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_12:0 "Habitat Captains: 12"
+amaryllian_unity_12_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_13:0 "Habitat Captains: 13"
+amaryllian_unity_13_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_14:0 "Habitat Captains: 14"
+amaryllian_unity_14_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_15:0 "Habitat Captains: 15"
+amaryllian_unity_15_desc:0 "Strong-willed individuals guide our people."
+
+amaryllian_unity_16:0 "Habitat Captains: 16 or more"
+amaryllian_unity_16_desc:0 "Strong-willed individuals guide our people."
+
+job_amaryllian_habitat_brain:0 "Habitat Brain Synapse"
+job_amaryllian_habitat_brain_desc:0 "Empire £unity£ §Y$unity$§! output: §G+2%§!\n\nHabitation system output nominal."
+
+amaryllian_habitat_brain_quarters:0 "Habitat Brain Complex"
+amaryllian_habitat_brain_quarters_desc:0 "Resources assigned to communications and Habitat maintenance."
+mod_job_amaryllian_habitat_brain_add:0 "Habitat Brain Synapse jobs"
+
+amaryllian_gestalt_unity_0:0 "No Habitat Brain Synapses present!"
+amaryllian_gestalt_unity_0_desc:0 "Build and populate habitat to enable Habitat Brain Synapse job."
+
+amaryllian_gestalt_unity_1:0 "Habitat Brain Synapses: 1"
+amaryllian_gestalt_unity_1_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_2:0 "Habitat Brain Synapses: 2"
+amaryllian_gestalt_unity_2_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_3:0 "Habitat Brain Synapses: 3"
+amaryllian_gestalt_unity_3_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_4:0 "Habitat Brain Synapses: 4"
+amaryllian_gestalt_unity_4_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_5:0 "Habitat Brain Synapses: 5"
+amaryllian_gestalt_unity_5_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_6:0 "Habitat Brain Synapses: 6"
+amaryllian_gestalt_unity_6_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_7:0 "Habitat Brain Synapses: 7"
+amaryllian_gestalt_unity_7_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_8:0 "Habitat Brain Synapses: 8"
+amaryllian_gestalt_unity_8_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_9:0 "Habitat Brain Synapses: 9"
+amaryllian_gestalt_unity_9_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_10:0 "Habitat Brain Synapses: 10"
+amaryllian_gestalt_unity_10_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_11:0 "Habitat Brain Synapses: 11"
+amaryllian_gestalt_unity_11_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_12:0 "Habitat Brain Synapses: 12"
+amaryllian_gestalt_unity_12_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_13:0 "Habitat Brain Synapses: 13"
+amaryllian_gestalt_unity_13_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_14:0 "Habitat Brain Synapses: 14"
+amaryllian_gestalt_unity_14_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_15:0 "Habitat Brain Synapses: 15"
+amaryllian_gestalt_unity_15_desc:0 "Connection with orbital complex established."
+
+amaryllian_gestalt_unity_16:0 "Habitat Brain Synapses: 16 or more"
+amaryllian_gestalt_unity_16_desc:0 "Connection with orbital complex established."
+
+amaryllian_tech_housing_1:0 "Habitat Captains: Administrative Prerogative"
+amaryllian_tech_housing_1_desc:0 "It is in the common interest to vest power to those who can utilise resources efficiently."
+amaryllian_tech_housing_1_effect:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! usage on §H$pc_habitat$s§! owned by our Empire: §G-10%§!"
+
+amaryllian_tech_housing_gestalt_1:0 "Habitat Brain Synapses: Efficiency Protocols"
+amaryllian_tech_housing_gestalt_1_desc:0 "Enhanced cognition funtions for correction of suboptimal space allocation."
+amaryllian_tech_housing_gestalt_1_effect:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! usage on §H$pc_habitat$s§! owned by our Empire: §G-10%§!"
+
+amaryllian_tech_army_1:0 "Habitat Captains: Militia Command"
+amaryllian_tech_army_1_desc:0 "It is sweet and fitting to die for the habitat."
+amaryllian_tech_army_1_effect:0 "Morale, health and damage of £defense_army£ §YDefense Armies§! on §H$pc_habitat$s§!: §G+10%§!"
+
+amaryllian_tech_army_gestalt_1:0 "Habitat Brain Synapses: Overcharge Protocols"
+amaryllian_tech_army_gestalt_1_desc:0 "Self-destruct equipment for inhibition of invading forces."
+amaryllian_tech_army_gestalt_1_effect:0 "Health and damage of £defense_army£ §YDefense Armies§! on §H$pc_habitat$s§!: §G+15%§!"
+
+amaryllian_district_arcology_civilian_industry:0 "Habitat Industrial District"
+amaryllian_district_arcology_civilian_industry_desc:0 "Developing the system-run industry is very important in increasing the production of consumer goods."
+amaryllian_district_arcology_civilian_industry_plural:0 "Habitat Industrial Districts"
+
+amaryllian_district_arcology_arms_industry:0 "Habitat Foundry District"
+amaryllian_district_arcology_arms_industry_desc:0 "This habitat is more than just a space station. In some ways, it is like a living creature. It hungers."
+amaryllian_district_arcology_arms_industry_plural:0 "Habitat Foundry Districts"
+
+amaryllian_district_arcology_farming_industry:0 "Habitat Farming District"
+amaryllian_district_arcology_farming_industry_desc:0 "Space arcology where we don't have to worry about disease, pests, or invasive species ravaging our crops."
+amaryllian_district_arcology_farming_industry_plural:0 "Habitat Farming Districts"
+
+amaryllian_district_arcology_fortress_industry:0 "Habitat Fortress District"
+amaryllian_district_arcology_fortress_industry_desc:0 "Any pop who can't field-strip his own lasgun by age ten was born on the wrong habitat."
+amaryllian_district_arcology_fortress_industry_plural:0 "Habitat Fortress Districts"
+
+amaryllian_decision_arcology_project_modifier:0 "Habitat Arcology"
+amaryllian_decision_arcology_project_modifier_desc:0 "This habitat has been expanded to accommodate for specialised production."
+
+amaryllian_decision_arms_arcology_project:0 "Foundry Habitat Project"
+amaryllian_decision_arms_arcology_project_desc:0 "This habitat is more than just a space station. In some ways, it is like a living creature. It hungers."
+amaryllian_decision_arms_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!"
+amaryllian_decision_arms_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Foundry Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!."
+amaryllian_decision_arms_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Foundry Districts§!."
+ 
+amaryllian_decision_civilian_arcology_project:0 "Industrial Habitat Project"
+amaryllian_decision_civilian_arcology_project_desc:0 "Developing the system-run industry is very important in increasing the production of consumer goods."
+amaryllian_decision_civilian_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!"
+amaryllian_decision_civilian_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Industrial Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!."
+amaryllian_decision_civilian_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Industrial Districts§!."
+
+amaryllian_decision_farming_arcology_project:0 "Farming Habitat Project"
+amaryllian_decision_farming_arcology_project_desc:0 "Space arcology where we don't have to worry about disease, pests, or invasive species ravaging our crops."
+amaryllian_decision_farming_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!"
+amaryllian_decision_farming_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Farming Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!."
+amaryllian_decision_farming_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Farming Districts§!."
+
+amaryllian_decision_fortress_arcology_project:0 "Fortress Habitat Project"
+amaryllian_decision_fortress_arcology_project_desc:0 "Any pop who can't field-strip his own lasgun by age ten was born on the wrong habitat."
+amaryllian_decision_fortress_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!"
+amaryllian_decision_fortress_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Fortress Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!."
+amaryllian_decision_fortress_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Fortress Districts§!."

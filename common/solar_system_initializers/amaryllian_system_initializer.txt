@@ -120,16 +120,16 @@ amaryllian_system_initializer = {
 		type = icy_asteroid_belt
 		radius = 170
 	}
-
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
-	}
-
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
-	}
+#	Disabled guaranteed habitable planets for balance. Uncomment to enable. Won't work if you pick civic_amaryllian_habitat civic - see amaryllian_civics.txt
+#	neighbor_system = {
+#		trigger = { num_guaranteed_colonies >= 2 }
+#		hyperlane_jumps = { min = 1 max = @jumps }
+#		initializer = "neighbor_t1"
+#	}
+#
+#	neighbor_system = {
+#		trigger = { num_guaranteed_colonies >= 1 }
+#		hyperlane_jumps = { min = 1 max = @jumps }
+#		initializer = "neighbor_t1_first_colony"
+#	}
 }

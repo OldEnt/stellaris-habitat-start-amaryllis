@@ -1,0 +1,15 @@
+on_yearly_pulse_country = {
+	events = {
+		amaryllian.7
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		amaryllian.7
+		amaryllian.61
+		amaryllian.62
+		amaryllian.63
+		amaryllian.64
+	}
+}
