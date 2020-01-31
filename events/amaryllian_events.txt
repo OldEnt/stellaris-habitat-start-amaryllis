@@ -479,6 +479,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		has_ascension_perk = ap_amaryllian_voidchildren
 		has_civic = civic_amaryllian_habitat
 	}
 	
