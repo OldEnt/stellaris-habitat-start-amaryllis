@@ -20,6 +20,76 @@ amaryllian_decision_arcology_project_modifier = {
 	planet_jobs_produces_mult = 0.05
 }
 
+amaryllian_void_campaign_1 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.50
+	megastructures_cost_mult = -0.50
+}
+
+amaryllian_void_campaign_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.45
+	megastructures_cost_mult = -0.45
+}
+
+amaryllian_void_campaign_3 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.40
+	megastructures_cost_mult = -0.40
+}
+
+amaryllian_void_campaign_4 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.35
+	megastructures_cost_mult = -0.35
+}
+
+amaryllian_void_campaign_5 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.30
+	megastructures_cost_mult = -0.30
+}
+
+amaryllian_void_campaign_6 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.25
+	megastructures_cost_mult = -0.25
+}
+
+amaryllian_void_campaign_7 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.20
+	megastructures_cost_mult = -0.20
+}
+
+amaryllian_void_campaign_8 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.15
+	megastructures_cost_mult = -0.15
+}
+
+amaryllian_void_campaign_9 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.10
+	megastructures_cost_mult = -0.10
+}
+
+amaryllian_void_campaign_10 = {
+	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
+	icon_frame = 1
+	megastructure_build_speed_mult = 0.05
+	megastructures_cost_mult = -0.05
+}
+
 amaryllian_unity_0 = {
 	country_unity_produces_mult = -0.30
 }
