@@ -1,4 +1,7 @@
 ﻿l_simp_chinese:
+amaryllian.11.name:0 "Void Campaign"
+amaryllian.11.desc:0 "Although the chance of a disaster to our home in a given year may be quite low, it adds up over time, and eventually becomes a near certainty. We must expand until it is too late."
+amaryllian.11.a:0 "We must construct additional habitats! Commence a 50-year plan."
 amaryllian.200.name:0 "§SIndustrial Habitat:§! [From.GetName] repurposed"
 amaryllian.200.desc:0 "Scant few years have passed since the start of this grand project, but it is already difficult to recall what the original design of this grand space station looked like. Miles upon miles of manufactories, docks, and storage facilities lie ready to be given a purpose."
 amaryllian.200.a:0 "$EXCELLENT$"

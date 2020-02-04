@@ -516,119 +516,119 @@ country_event = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 0 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_0 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_0 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 1 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_1 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_1 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 2 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_2 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_2 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 3 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_3 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_3 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 4 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_4 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_4 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 5 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_5 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_5 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 6 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_6 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_6 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 7 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_7 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_7 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 8 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_8 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_8 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 9 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_9 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_9 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 10 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_10 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_10 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 11 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_11 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_11 days = 360 }
 		}
 
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 12 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_12 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_12 days = 360 }
 		}
 
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 13 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_13 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_13 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 14 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_14 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_14 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 15 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_15 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_15 days = 360 }
 		}
 
 		else = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count > 15 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_16 days = 365 }
+		add_modifier = { modifier = amaryllian_gestalt_unity_16 days = 360 }
 		}
 			
 			
@@ -640,122 +640,206 @@ country_event = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 0 }
 			}
-		add_modifier = { modifier = amaryllian_unity_0 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_0 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 1 }
 			}
-		add_modifier = { modifier = amaryllian_unity_1 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_1 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 2 }
 			}
-		add_modifier = { modifier = amaryllian_unity_2 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_2 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 3 }
 			}
-		add_modifier = { modifier = amaryllian_unity_3 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_3 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 4 }
 			}
-		add_modifier = { modifier = amaryllian_unity_4 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_4 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 5 }
 			}
-		add_modifier = { modifier = amaryllian_unity_5 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_5 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 6 }
 			}
-		add_modifier = { modifier = amaryllian_unity_6 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_6 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 7 }
 			}
-		add_modifier = { modifier = amaryllian_unity_7 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_7 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 8 }
 			}
-		add_modifier = { modifier = amaryllian_unity_8 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_8 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 9 }
 			}
-		add_modifier = { modifier = amaryllian_unity_9 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_9 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 10 }
 			}
-		add_modifier = { modifier = amaryllian_unity_10 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_10 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 11 }
 			}
-		add_modifier = { modifier = amaryllian_unity_11 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_11 days = 360 }
 		}
 
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 12 }
 			}
-		add_modifier = { modifier = amaryllian_unity_12 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_12 days = 360 }
 		}
 
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 13 }
 			}
-		add_modifier = { modifier = amaryllian_unity_13 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_13 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 14 }
 			}
-		add_modifier = { modifier = amaryllian_unity_14 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_14 days = 360 }
 		}
 		
 		else_if = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 15 }
 			}
-		add_modifier = { modifier = amaryllian_unity_15 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_15 days = 360 }
 		}
 
 		else = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count > 15 }
 			}
-		add_modifier = { modifier = amaryllian_unity_16 days = 365 }
+		add_modifier = { modifier = amaryllian_unity_16 days = 360 }
 		}
 	}
 		
+	}
+}
+
+# Habitat cost and speed build bonus campaign
+country_event = {
+	id = amaryllian.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		NOT = { has_country_flag = amaryllian_void_campaign_finished }
+	}
+	
+	immediate = {
+		if = {
+		limit = { years_passed = 1 }
+		country_event = {
+			id = amaryllian.11
+			days = 31
+			random = 0
+		}
+		}
+		
+		else_if = {
+		limit = { years_passed = 6 }
+		add_modifier = { modifier = amaryllian_void_campaign_2 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 11 }
+		add_modifier = { modifier = amaryllian_void_campaign_3 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 16 }
+		add_modifier = { modifier = amaryllian_void_campaign_4 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 21 }
+		add_modifier = { modifier = amaryllian_void_campaign_5 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 26 }
+		add_modifier = { modifier = amaryllian_void_campaign_6 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 31 }
+		add_modifier = { modifier = amaryllian_void_campaign_7 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 36 }
+		add_modifier = { modifier = amaryllian_void_campaign_8 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 41 }
+		add_modifier = { modifier = amaryllian_void_campaign_9 days = 1800 } }
+		
+		else_if = {
+		limit = { years_passed = 46 }
+		add_modifier = { modifier = amaryllian_void_campaign_10 days = 1800 } }
+
+		else_if = {
+		limit = { years_passed > 50 }
+		set_country_flag = amaryllian_void_campaign_finished }
+
+		else = { break = yes }
+		}
+	}
+
+country_event = {
+	id = amaryllian.11
+	title = amaryllian.11.name
+	desc = amaryllian.11.desc
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_construction_03
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = amaryllian.11.a
+		add_modifier = { modifier = amaryllian_void_campaign_1 days = 1800 }
 	}
 }
 
