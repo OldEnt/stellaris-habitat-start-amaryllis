@@ -2,13 +2,13 @@ amaryllian_decision_arms_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_arms_arcology_project
 
-	enactment_time = 2700
+	enactment_time = 1800
 	resources = {
 		category = decisions
 		cost = {
-			influence = 200
-			minerals = 15000
-			alloys = 1500
+			influence = 100
+			minerals = 10000
+			alloys = 500
 		}
 	}
 
@@ -72,13 +72,13 @@ amaryllian_decision_civilian_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_civilian_arcology_project
 
-	enactment_time = 2700
+	enactment_time = 1800
 	resources = {
 		category = decisions
 		cost = {
-			influence = 200
-			minerals = 15000
-			alloys = 1500
+			influence = 100
+			minerals = 10000
+			alloys = 500
 		}
 	}
 
@@ -147,13 +147,13 @@ amaryllian_decision_farming_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_farming_arcology_project
 
-	enactment_time = 2700
+	enactment_time = 1800
 	resources = {
 		category = decisions
 		cost = {
-			influence = 200
-			minerals = 15000
-			alloys = 1500
+			influence = 100
+			minerals = 10000
+			alloys = 500
 		}
 	}
 
@@ -218,13 +218,13 @@ amaryllian_decision_fortress_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_fortress_arcology_project
 
-	enactment_time = 2700
+	enactment_time = 1800
 	resources = {
 		category = decisions
 		cost = {
-			influence = 200
-			minerals = 15000
-			alloys = 1500
+			influence = 100
+			minerals = 10000
+			alloys = 500
 		}
 	}
 
