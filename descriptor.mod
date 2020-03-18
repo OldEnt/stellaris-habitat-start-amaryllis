@@ -7,7 +7,7 @@ tags={
 	"Galaxy Generation"
 	"Fixes"
 }
-name="OE's Habitat start [2.5+]"
+name="Void Dwellers Expanded (OE's Habitat start) [2.6+]"
 picture="thumbnail.png"
-supported_version="2.5.*"
+supported_version="2.6.*"
 remote_file_id="1961367151"
