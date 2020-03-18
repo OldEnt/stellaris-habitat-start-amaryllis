@@ -42,6 +42,7 @@ amaryllian_system_initializer = {
 		size = 12
 		starting_planet = no
 		has_ring = yes
+		flags = { ignore_startup_effect has_megastructure }
 		init_effect = {
 			prevent_anomaly = yes
 			add_modifier = {
@@ -60,7 +61,7 @@ amaryllian_system_initializer = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = research_habitat
-				set_planet_flag = amaryllian_habitat
+				set_planet_flag = amaryllian_habitat				
 				}
 		}
 	}

@@ -34,8 +34,22 @@ civic_amaryllian_habitat = {
 				value = civic_machine_technoorganic_world
 			}
 		}
+		origin = {
+			NOR = {
+				value = origin_life_seeded
+				value = origin_remnants
+				value = origin_shattered_ring
+				value = origin_galactic_doorstep
+				value = origin_tree_of_life
+				value = origin_shoulders_of_giants
+				value = origin_lithoid
+				value = origin_machine
+				value = origin_doomsday
+			}
+		}
 	}
-# Enabled for people who started using the mod before civic was introduced, will be changed some time in the future.
+
+# Enabled for people who started using the mod before civic was introduced, will be changed some time in the future (or not).
 	modification = yes
 	random_weight = {
 		base = 0
