@@ -42,7 +42,6 @@ amaryllian_decision_arms_arcology_project = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_arms_arcology_project_effects
 		hidden_effect = {
-			clear_deposits = yes
 			set_planet_flag = amaryllian_arms_arcology
 			remove_planet_flag = energy_habitat
 			remove_planet_flag = research_habitat
@@ -119,7 +118,6 @@ amaryllian_decision_civilian_arcology_project = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_civilian_arcology_project_effects
 		hidden_effect = {
-			clear_deposits = yes
 			set_planet_flag = amaryllian_civilian_arcology
 			remove_planet_flag = energy_habitat
 			remove_planet_flag = research_habitat
@@ -192,7 +190,6 @@ amaryllian_decision_farming_arcology_project = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_farming_arcology_project_effects
 		hidden_effect = {
-			clear_deposits = yes
 			set_planet_flag = amaryllian_farming_arcology
 			remove_planet_flag = energy_habitat
 			remove_planet_flag = research_habitat
@@ -264,7 +261,6 @@ amaryllian_decision_fortress_arcology_project = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_fortress_arcology_project_effects
 		hidden_effect = {
-			clear_deposits = yes
 			set_planet_flag = amaryllian_fortress_arcology
 			remove_planet_flag = energy_habitat
 			remove_planet_flag = research_habitat
@@ -336,7 +332,6 @@ amaryllian_decision_research_arcology_project = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_research_arcology_project_effects
 		hidden_effect = {
-			clear_deposits = yes
 			set_planet_flag = amaryllian_research_arcology
 			remove_planet_flag = energy_habitat
 			remove_planet_flag = research_habitat
