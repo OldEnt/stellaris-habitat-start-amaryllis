@@ -82,6 +82,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 			
@@ -105,6 +110,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1			
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 
@@ -125,6 +135,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 			
@@ -146,6 +161,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 
@@ -170,6 +190,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 
@@ -193,6 +218,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 			
@@ -214,6 +244,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 			
@@ -235,6 +270,11 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 			}
 
@@ -256,8 +296,28 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
+			planet_event = {
+				id = amaryllian.13
+				days = 5
+				random = 0
+				}
 			break = yes
 		}
+	}
+}
+
+planet_event = {
+	id = amaryllian.13
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = amaryllian_habitat
+	}
+
+	immediate = {
+		check_planet_employment = yes
+		check_planet_employment = yes
+		check_planet_employment = yes
 	}
 }
 
