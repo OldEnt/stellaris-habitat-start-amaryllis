@@ -173,6 +173,10 @@ amaryllian_district_arcology_fortress_industry:0 "Habitat Fortress District"
 amaryllian_district_arcology_fortress_industry_desc:0 "Any pop who can't field-strip his own lasgun by age ten was born on the wrong habitat."
 amaryllian_district_arcology_fortress_industry_plural:0 "Habitat Fortress Districts"
 
+amaryllian_district_arcology_research_industry:0 "Habitat Research District"
+amaryllian_district_arcology_research_industry_desc:0 "The the acme of efficiency, but it makes demands of its inhabitants. It asks them to live in a tight routine and orders their lives under a strict and scientific control."
+amaryllian_district_arcology_research_industry_plural:0 "Habitat Research Districts"
+
 amaryllian_decision_arcology_project_modifier:0 "Habitat Arcology"
 amaryllian_decision_arcology_project_modifier_desc:0 "This habitat has been expanded to accommodate for specialised production."
 
@@ -199,6 +203,11 @@ amaryllian_decision_fortress_arcology_project_desc:0 "Any pop who can't field-st
 amaryllian_decision_fortress_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!"
 amaryllian_decision_fortress_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Fortress Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!."
 amaryllian_decision_fortress_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Fortress Districts§!."
+
+amaryllian_decision_research_arcology_project:0 "Research Habitat Project"
+amaryllian_decision_research_arcology_project_desc:0 "To give us room to explore the varieties of mind and body into which we can evolve, one habitat is not enough."
+amaryllian_decision_research_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!"
+amaryllian_decision_research_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Research Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and standard §YResearch Districts§!."
 
 amaryllian_void_campaign_1:0 "Void Campaign"
 amaryllian_void_campaign_1_desc:0 "Although the chance of a disaster to our home in a given year may be quite low, it adds up over time, and eventually becomes a near certainty. We must expand until it is too late.\n\n§HBonus diminishes by 5% every 5 years.§!"

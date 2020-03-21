@@ -1052,6 +1052,26 @@ planet_event = {
 	}
 }
 
+planet_event = {
+	id = amaryllian.204
+	title = amaryllian.204.name
+	desc = amaryllian.204.desc
+	picture = GFX_evt_physics_research
+	show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_research_arcology
+	}
+
+	option = {
+		name = amaryllian.204.a
+	}
+}
+
 # Mod update notification
 country_event = {
         id = amaryllian.998
