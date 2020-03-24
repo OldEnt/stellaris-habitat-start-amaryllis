@@ -83,7 +83,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
 			planet_event = {
-				id = amaryllian.13
+				id = amaryllian.65
 				days = 5
 				random = 0
 				}
@@ -306,21 +306,6 @@ planet_event = {
 	}
 }
 
-planet_event = {
-	id = amaryllian.13
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_planet_flag = amaryllian_habitat
-	}
-
-	immediate = {
-		check_planet_employment = yes
-		check_planet_employment = yes
-		check_planet_employment = yes
-	}
-}
-
 ### Give starting tech to Amaryllian system starters
 
 country_event = {
@@ -331,6 +316,12 @@ country_event = {
 		country_event = {
 			id = amaryllian.4
 			days = 1
+			random = 0
+		}
+# Firing employment check event no 65 for Habitat Captains
+		country_event = {
+			id = amaryllian.65
+			days = 5
 			random = 0
 		}
 		every_country = {
@@ -536,7 +527,7 @@ country_event = {
 		is_gestalt = yes
 	}
 	immediate = {
-		random_owned_planet = {
+		every_owned_planet = {
 			if = {
 				limit = {
 					is_planet_class = pc_habitat
@@ -561,7 +552,7 @@ country_event = {
 		is_gestalt = no
 	}
 	immediate = {
-		random_owned_planet = {
+		every_owned_planet = {
 			if = {
 				limit = {
 					is_planet_class = pc_habitat
@@ -585,7 +576,7 @@ country_event = {
 		NOT = { has_civic = civic_amaryllian_habitat }
 	}
 	immediate = {
-		random_owned_planet = {
+		every_owned_planet = {
 			if = {
 				limit = {
 					is_planet_class = pc_habitat
@@ -611,7 +602,7 @@ country_event = {
 	}
 	
 	immediate = {
-		random_owned_planet = {
+		every_owned_planet = {
 				limit = {
 					is_planet_class = pc_habitat
 					NOT = { has_modifier = amaryllian_voidchildren_habitat_modifier }
@@ -623,6 +614,25 @@ country_event = {
 			}
 		}
 	}
+
+country_event = {
+	id = amaryllian.65
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+	}
+	immediate = {
+		every_owned_planet = {
+			check_planet_employment = yes
+			check_planet_employment = yes
+			check_planet_employment = yes
+			check_planet_employment = yes
+		}
+		remove_modifier = amaryllian_gestalt_unity_0
+		remove_modifier = amaryllian_unity_0
+	}
+}
 
 ### Count habitat captains and apply unity bonus
 country_event = {
