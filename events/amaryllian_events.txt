@@ -507,6 +507,7 @@ country_event = {
 					is_planet_class = pc_fhab	
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+					is_planet_class = pc_starborn_habitat_start
 					}
 					NOT = { has_modifier = amaryllian_habitat_brain_quarters }
 				}
@@ -547,6 +548,7 @@ country_event = {
 					is_planet_class = pc_fhab	
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+					is_planet_class = pc_starborn_habitat_start
 					}
 					NOT = { has_modifier = amaryllian_habitat_captain_quarters }
 				}
@@ -586,6 +588,7 @@ country_event = {
 					is_planet_class = pc_fhab	
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+					is_planet_class = pc_starborn_habitat_start
 					}
 					OR = {
 						has_modifier = amaryllian_habitat_captain_quarters 
@@ -622,6 +625,7 @@ country_event = {
 					is_planet_class = pc_fhab	
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+					is_planet_class = pc_starborn_habitat_start
 					}
 					NOT = { has_modifier = amaryllian_voidchildren_habitat_modifier }
 				}
