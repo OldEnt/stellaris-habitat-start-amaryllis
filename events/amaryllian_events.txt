@@ -82,11 +82,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.65
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 			
@@ -110,11 +105,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1			
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 
@@ -135,11 +125,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 			
@@ -161,11 +146,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 
@@ -190,11 +170,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 
@@ -218,11 +193,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 			
@@ -244,11 +214,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 			
@@ -270,11 +235,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 			}
 
@@ -296,11 +256,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
-			planet_event = {
-				id = amaryllian.13
-				days = 5
-				random = 0
-				}
 			break = yes
 		}
 	}
@@ -322,6 +277,16 @@ country_event = {
 		country_event = {
 			id = amaryllian.65
 			days = 5
+			random = 0
+		}
+		country_event = {
+			id = amaryllian.65
+			days = 15
+			random = 0
+		}
+		country_event = {
+			id = amaryllian.65
+			days = 35
 			random = 0
 		}
 		every_country = {
@@ -528,18 +493,33 @@ country_event = {
 	}
 	immediate = {
 		every_owned_planet = {
-			if = {
 				limit = {
+					OR = {
 					is_planet_class = pc_habitat
+					is_planet_class = pc_gghab
+					is_planet_class = pc_tmhab
+					is_planet_class = pc_tmhab2
+					is_planet_class = pc_mmhab
+					is_planet_class = pc_mmhab2
+					is_planet_class = pc_bhab
+					is_planet_class = pc_bchab
+					is_planet_class = pc_mhab
+					is_planet_class = pc_fhab	
+					is_planet_class = pc_fmhab
+					is_planet_class = pc_mehab
+					}
 					NOT = { has_modifier = amaryllian_habitat_brain_quarters }
 				}
 				add_modifier = {
 					modifier = amaryllian_habitat_brain_quarters
 					days = -1
 					}
-				}
-			else = { break = yes}
 			}
+		country_event = {
+			id = amaryllian.66
+			days = 5
+			random = 0
+		}
 		}
 	}
 	
@@ -553,18 +533,33 @@ country_event = {
 	}
 	immediate = {
 		every_owned_planet = {
-			if = {
 				limit = {
+					OR = {
 					is_planet_class = pc_habitat
+					is_planet_class = pc_gghab
+					is_planet_class = pc_tmhab
+					is_planet_class = pc_tmhab2
+					is_planet_class = pc_mmhab
+					is_planet_class = pc_mmhab2
+					is_planet_class = pc_bhab
+					is_planet_class = pc_bchab
+					is_planet_class = pc_mhab
+					is_planet_class = pc_fhab	
+					is_planet_class = pc_fmhab
+					is_planet_class = pc_mehab
+					}
 					NOT = { has_modifier = amaryllian_habitat_captain_quarters }
 				}
 				add_modifier = {
 					modifier = amaryllian_habitat_captain_quarters
 					days = -1
-					}
 				}
-			else = { break = yes}
 			}
+		country_event = {
+			id = amaryllian.66
+			days = 5
+			random = 0
+		}
 		}
 	}
 	
@@ -577,17 +572,27 @@ country_event = {
 	}
 	immediate = {
 		every_owned_planet = {
-			if = {
 				limit = {
+					OR = {
 					is_planet_class = pc_habitat
+					is_planet_class = pc_gghab
+					is_planet_class = pc_tmhab
+					is_planet_class = pc_tmhab2
+					is_planet_class = pc_mmhab
+					is_planet_class = pc_mmhab2
+					is_planet_class = pc_bhab
+					is_planet_class = pc_bchab
+					is_planet_class = pc_mhab
+					is_planet_class = pc_fhab	
+					is_planet_class = pc_fmhab
+					is_planet_class = pc_mehab
+					}
 					OR = {
 						has_modifier = amaryllian_habitat_captain_quarters 
-						has_modifier =  amaryllian_habitat_brain_quarters
+						has_modifier = amaryllian_habitat_brain_quarters
 					} }
 				remove_modifier = amaryllian_habitat_captain_quarters
 				remove_modifier = amaryllian_habitat_brain_quarters
-				}
-			else = { break = yes}
 			}
 		}
 	}
@@ -604,7 +609,20 @@ country_event = {
 	immediate = {
 		every_owned_planet = {
 				limit = {
+					OR = {
 					is_planet_class = pc_habitat
+					is_planet_class = pc_gghab
+					is_planet_class = pc_tmhab
+					is_planet_class = pc_tmhab2
+					is_planet_class = pc_mmhab
+					is_planet_class = pc_mmhab2
+					is_planet_class = pc_bhab
+					is_planet_class = pc_bchab
+					is_planet_class = pc_mhab
+					is_planet_class = pc_fhab	
+					is_planet_class = pc_fmhab
+					is_planet_class = pc_mehab
+					}
 					NOT = { has_modifier = amaryllian_voidchildren_habitat_modifier }
 				}
 				add_modifier = {
@@ -634,12 +652,29 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = amaryllian.66
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+	}
+	immediate = {
+		every_owned_planet = {
+			check_planet_employment = yes
+		}
+		remove_modifier = amaryllian_gestalt_unity_0
+		remove_modifier = amaryllian_unity_0
+	}
+}
+
 ### Count habitat captains and apply unity bonus
 country_event = {
 	id = amaryllian.7
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+	
 		has_civic = civic_amaryllian_habitat
 	}
 	immediate = {
