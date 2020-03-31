@@ -508,6 +508,7 @@ country_event = {
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
 					is_planet_class = pc_starborn_habitat_start
+					is_planet_class = pc_dyson_swarm
 					}
 					NOT = { has_modifier = amaryllian_habitat_brain_quarters }
 				}
@@ -549,6 +550,7 @@ country_event = {
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
 					is_planet_class = pc_starborn_habitat_start
+					is_planet_class = pc_dyson_swarm
 					}
 					NOT = { has_modifier = amaryllian_habitat_captain_quarters }
 				}
@@ -589,6 +591,7 @@ country_event = {
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
 					is_planet_class = pc_starborn_habitat_start
+					is_planet_class = pc_dyson_swarm
 					}
 					OR = {
 						has_modifier = amaryllian_habitat_captain_quarters 
@@ -626,6 +629,7 @@ country_event = {
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
 					is_planet_class = pc_starborn_habitat_start
+					is_planet_class = pc_dyson_swarm
 					}
 					NOT = { has_modifier = amaryllian_voidchildren_habitat_modifier }
 				}
@@ -1019,7 +1023,6 @@ country_event = {
 	}
 }
 
-
 # Habitat arcology complete
 planet_event = {
 	id = amaryllian.200
@@ -1118,6 +1121,26 @@ planet_event = {
 
 	option = {
 		name = amaryllian.204.a
+	}
+}
+
+planet_event = {
+	id = amaryllian.205
+	title = amaryllian.205.name
+	desc = amaryllian.205.desc
+	picture = GFX_evt_galactic_market
+	show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_bureaucratic_arcology
+	}
+
+	option = {
+		name = amaryllian.205.a
 	}
 }
 
