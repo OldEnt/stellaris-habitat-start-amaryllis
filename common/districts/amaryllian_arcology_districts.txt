@@ -567,3 +567,123 @@ amaryllian_district_arcology_research_industry = {
 		}
 	}
 }
+
+amaryllian_district_arcology_bureaucratic_industry = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_bureaucratic_arcology
+	}
+	
+	potential = {
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_bureaucratic_arcology
+		}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_hab_housing
+	}	
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			rare_crystals = 50
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 2
+		}		
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = 10
+		}
+	}	
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_bureaucrat_add = 10
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_bureaucrat_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_synapse_drone_effect_desc
+	}		
+	
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_coordinator_effect_desc
+	}	
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			buildings_has_crystals = no
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 0 }
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 10 }
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 20 }
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 40 }
+		}
+	}
+	on_queued = {
+		owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 600 } }
+		planet = {
+			set_timed_planet_flag = { flag = recent_admin_building_built days = 720 }
+		}
+	}
+}
