@@ -1144,6 +1144,26 @@ planet_event = {
 	}
 }
 
+planet_event = {
+	id = amaryllian.206
+	title = amaryllian.206.name
+	desc = amaryllian.206.desc
+	picture = GFX_evt_ship_offloading_cargo
+	show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_refinery_arcology
+	}
+
+	option = {
+		name = amaryllian.206.a
+	}
+}
+
 # Mod update notification
 country_event = {
         id = amaryllian.998
