@@ -21,6 +21,7 @@ amaryllian_decision_arms_arcology_project = {
 			has_planet_flag = amaryllian_fortress_arcology
 			has_planet_flag = amaryllian_research_arcology
 			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
 		}
 		habitable_structure = yes
 		exists = owner
@@ -52,6 +53,7 @@ amaryllian_decision_arms_arcology_project = {
 			remove_planet_flag = amaryllian_fortress_arcology
 			remove_planet_flag = amaryllian_research_arcology
 			remove_planet_flag = amaryllian_bureaucratic_arcology
+			remove_planet_flag = amaryllian_refinery_arcology
 			remove_modifier = amaryllian_decision_arcology_project_modifier
 			add_district = amaryllian_district_arcology_arms_industry
 			add_district = amaryllian_district_arcology_civilian_industry
@@ -94,6 +96,7 @@ amaryllian_decision_civilian_arcology_project = {
 			has_planet_flag = amaryllian_fortress_arcology
 			has_planet_flag = amaryllian_research_arcology
 			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
 		}
 		habitable_structure = yes
 		exists = owner
@@ -130,6 +133,7 @@ amaryllian_decision_civilian_arcology_project = {
 			remove_planet_flag = amaryllian_fortress_arcology
 			remove_planet_flag = amaryllian_research_arcology
 			remove_planet_flag = amaryllian_bureaucratic_arcology
+			remove_planet_flag = amaryllian_refinery_arcology
 			remove_modifier = amaryllian_decision_arcology_project_modifier
 			add_district = amaryllian_district_arcology_arms_industry
 			add_district = amaryllian_district_arcology_civilian_industry
@@ -172,6 +176,7 @@ amaryllian_decision_farming_arcology_project = {
 			has_planet_flag = amaryllian_fortress_arcology
 			has_planet_flag = amaryllian_research_arcology
 			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
 		}
 		habitable_structure = yes
 		exists = owner
@@ -204,6 +209,7 @@ amaryllian_decision_farming_arcology_project = {
 			remove_planet_flag = amaryllian_fortress_arcology
 			remove_planet_flag = amaryllian_research_arcology
 			remove_planet_flag = amaryllian_bureaucratic_arcology
+			remove_planet_flag = amaryllian_refinery_arcology
 			remove_modifier = amaryllian_decision_arcology_project_modifier
 			add_district = amaryllian_district_arcology_arms_industry
 			add_district = amaryllian_district_arcology_farming_industry
@@ -246,6 +252,7 @@ amaryllian_decision_fortress_arcology_project = {
 			has_planet_flag = amaryllian_fortress_arcology
 			has_planet_flag = amaryllian_research_arcology
 			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
 		}
 		habitable_structure = yes
 		exists = owner
@@ -277,6 +284,7 @@ amaryllian_decision_fortress_arcology_project = {
 			remove_planet_flag = amaryllian_farming_arcology
 			remove_planet_flag = amaryllian_research_arcology
 			remove_planet_flag = amaryllian_bureaucratic_arcology
+			remove_planet_flag = amaryllian_refinery_arcology
 			remove_modifier = amaryllian_decision_arcology_project_modifier
 			add_district = amaryllian_district_arcology_arms_industry
 			add_district = amaryllian_district_arcology_fortress_industry
@@ -319,6 +327,7 @@ amaryllian_decision_research_arcology_project = {
 			has_planet_flag = amaryllian_fortress_arcology
 			has_planet_flag = amaryllian_research_arcology
 			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
 		}
 		habitable_structure = yes
 		exists = owner
@@ -350,6 +359,7 @@ amaryllian_decision_research_arcology_project = {
 			remove_planet_flag = amaryllian_farming_arcology
 			remove_planet_flag = amaryllian_fortress_arcology
 			remove_planet_flag = amaryllian_bureaucratic_arcology
+			remove_planet_flag = amaryllian_refinery_arcology
 			remove_modifier = amaryllian_decision_arcology_project_modifier
 			remove_all_districts = yes
 			add_district = amaryllian_district_arcology_arms_industry
@@ -393,6 +403,7 @@ amaryllian_decision_bureaucratic_arcology_project = {
 			has_planet_flag = amaryllian_fortress_arcology
 			has_planet_flag = amaryllian_research_arcology
 			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
 		}
 		habitable_structure = yes
 		exists = owner
@@ -425,6 +436,7 @@ amaryllian_decision_bureaucratic_arcology_project = {
 			remove_planet_flag = amaryllian_farming_arcology
 			remove_planet_flag = amaryllian_fortress_arcology
 			remove_planet_flag = amaryllian_research_arcology
+			remove_planet_flag = amaryllian_refinery_arcology
 			remove_modifier = amaryllian_decision_arcology_project_modifier
 			remove_all_districts = yes
 			add_district = amaryllian_district_arcology_arms_industry
@@ -437,6 +449,89 @@ amaryllian_decision_bureaucratic_arcology_project = {
 					}			
 			remove_all_districts = yes
 			planet_event = { id = amaryllian.205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+amaryllian_decision_refinery_arcology_project = {
+	owned_planets_only = yes
+	icon = decision_amaryllian_decision_refinery_arcology_project
+
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			minerals = 10000
+			alloys = 500
+		}
+	}
+
+	potential = {
+		is_planet_class = pc_habitat
+		NOR = {
+			has_planet_flag = amaryllian_civilian_arcology
+			has_planet_flag = amaryllian_arms_arcology
+			has_planet_flag = amaryllian_farming_arcology
+			has_planet_flag = amaryllian_fortress_arcology
+			has_planet_flag = amaryllian_research_arcology
+			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
+		}
+		habitable_structure = yes
+		exists = owner
+		owner = {
+				has_ascension_perk = ap_amaryllian_voidchildren
+				OR = {
+					has_technology = "tech_volatile_motes"
+					has_technology = "tech_rare_crystals"
+					has_technology = "tech_exotic_gases" }
+				}
+			}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = amaryllian_decision_refinery_arcology_project_requirements
+			free_district_slots < 1
+			num_districts = { type = district_hab_energy value < 1 }
+			num_districts = { type = district_hab_mining value < 1 }
+			num_districts = { type = district_hab_science value < 1 }
+			num_districts = { type = district_hab_commercial value < 1 }
+		}
+		
+	}
+
+	effect = {
+		# Make arcology-habitat
+		custom_tooltip = amaryllian_decision_refinery_arcology_project_effects
+		hidden_effect = {
+			set_planet_flag = amaryllian_refinery_arcology
+			remove_planet_flag = energy_habitat
+			remove_planet_flag = research_habitat
+			remove_planet_flag = mining_habitat
+			remove_planet_flag = research_habitat
+			remove_planet_flag = amaryllian_arms_arcology
+			remove_planet_flag = amaryllian_civilian_arcology
+			remove_planet_flag = amaryllian_farming_arcology
+			remove_planet_flag = amaryllian_fortress_arcology
+			remove_planet_flag = amaryllian_research_arcology
+			remove_planet_flag = amaryllian_bureaucratic_arcology
+			remove_modifier = amaryllian_decision_arcology_project_modifier
+			remove_all_districts = yes
+			add_district = amaryllian_district_arcology_arms_industry
+			add_district = amaryllian_district_arcology_refinery_industry
+			remove_district = amaryllian_district_arcology_arms_industry
+			remove_district = amaryllian_district_arcology_refinery_industry
+			add_modifier = {
+					modifier = amaryllian_decision_arcology_project_modifier
+					days = -1
+					}			
+			remove_all_districts = yes
+			planet_event = { id = amaryllian.206 }
 		}
 	}
 
