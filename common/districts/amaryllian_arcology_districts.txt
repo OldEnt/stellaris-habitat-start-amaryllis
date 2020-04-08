@@ -689,7 +689,7 @@ amaryllian_district_arcology_bureaucratic_industry = {
 }
 
 amaryllian_district_arcology_refinery_industry = {
-	base_buildtime = 720
+	base_buildtime = 480
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
@@ -710,16 +710,16 @@ amaryllian_district_arcology_refinery_industry = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 7500
+			minerals = 5000
 			
 		}
 		upkeep = {
-			energy = 45
+			energy = 30
 		}		
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 15
+		planet_housing_add = 10
 	}
 
 # motes jobs
@@ -731,7 +731,7 @@ amaryllian_district_arcology_refinery_industry = {
 			owner = { has_technology = "tech_volatile_motes" }
 		}
 		modifier = {
-			job_chemist_add = 5
+			job_chemist_add = 3
 		}
 	}
 
@@ -742,7 +742,7 @@ amaryllian_district_arcology_refinery_industry = {
 			owner = { has_technology = "tech_volatile_motes" }
 		}
 		modifier = {
-			job_chemist_drone_add = 5
+			job_chemist_drone_add = 3
 		}
 	}
 
@@ -750,6 +750,7 @@ amaryllian_district_arcology_refinery_industry = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
+			owner = { has_technology = "tech_volatile_motes" }
 		}
 		text = job_chemist_effect_desc
 	}
@@ -758,6 +759,7 @@ amaryllian_district_arcology_refinery_industry = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = yes }
+			owner = { has_technology = "tech_volatile_motes" }
 		}
 		text = job_chemist_drone_effect_desc
 	}
@@ -771,7 +773,7 @@ amaryllian_district_arcology_refinery_industry = {
 			owner = { has_technology = "tech_rare_crystals" }
 		}
 		modifier = {
-			job_translucer_add = 5
+			job_translucer_add = 3
 		}
 	}
 
@@ -782,7 +784,7 @@ amaryllian_district_arcology_refinery_industry = {
 			owner = { has_technology = "tech_rare_crystals" }
 		}
 		modifier = {
-			job_translucer_drone_add = 5
+			job_translucer_drone_add = 3
 		}
 	}
 
@@ -790,6 +792,7 @@ amaryllian_district_arcology_refinery_industry = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
+			owner = { has_technology = "tech_rare_crystals" }
 		}
 		text = job_translucer_effect_desc
 	}
@@ -798,6 +801,7 @@ amaryllian_district_arcology_refinery_industry = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = yes }
+			owner = { has_technology = "tech_rare_crystals" }
 		}
 		text = job_translucer_drone_effect_desc
 	}
@@ -811,7 +815,7 @@ amaryllian_district_arcology_refinery_industry = {
 			owner = { has_technology = "tech_exotic_gases" }
 		}
 		modifier = {
-			job_gas_refiner_add = 5
+			job_gas_refiner_add = 3
 		}
 	}
 
@@ -822,7 +826,7 @@ amaryllian_district_arcology_refinery_industry = {
 			owner = { has_technology = "tech_exotic_gases" }
 		}
 		modifier = {
-			job_gas_refiner_drone_add = 5
+			job_gas_refiner_drone_add = 3
 		}
 	}
 
@@ -830,6 +834,7 @@ amaryllian_district_arcology_refinery_industry = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
+			owner = { has_technology = "tech_exotic_gases" }
 		}
 		text = job_gas_refiner_effect_desc
 	}
@@ -838,8 +843,47 @@ amaryllian_district_arcology_refinery_industry = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = yes }
+			owner = { has_technology = "tech_exotic_gases" }
 		}
 		text = job_gas_refiner_drone_effect_desc
+	}
+
+# clerk jobs
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_clerk_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
 	}
 	
 }
