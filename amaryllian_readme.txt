@@ -9,7 +9,7 @@ GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 [*] [b]Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery or Farming arcologies.[/b]
 [*]Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
 [*] Works with Federations DLC and without. Just pick Children of the Void civic from the mod and you are good to go.
-[*] Special early game bonus: Habitat build cost and speed reduced by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
+[*] Special early game bonus: Habitat build time and cost reduced by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
 [*] Note: this mod provides its own habitat start separate from Federations' Void Dwellers since Stellaris 2.5.1. and is backwards compatible with 2.5.1 (at least for now). This legacy habitat start does not require Federations DLC if you are playing on 2.6.*. Formerly known as OE's Habitat start.
 [/list]
 
@@ -29,7 +29,7 @@ This civic can be taken and removed at any point of the game via government refo
 [img]https://i.imgur.com/5AP9TCX.png[/img]
 
 [u][b]Void Campaign: cheaper habitats in the early game[/b][/u]
-Empire modifier for Children of the Void civic which reduces habitat build cost and speed by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
+Empire modifier for Children of the Void civic which reduces habitat build time and cost by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
 
 [img]https://i.imgur.com/6m0psLW.png[/img]
 
@@ -99,3 +99,5 @@ Habitat has some Mineral and Alloy deposits which grant Miner jobs and a few all
 Please report bugs and suggest balance or feature changes.
 
 This (my first) mod is an ongoing project to learn Stellaris modding. Planned features include story campaign and diplomatic events for Human empires, integration with other mods and custom assets.
+
+[url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
