@@ -8,6 +8,7 @@ amaryllian_habitat_captain_quarters = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
 	icon_frame = 1
 	job_amaryllian_habitat_captain_add = 1
+	pop_demotion_time_mult = -1
 }
 
 amaryllian_decision_arcology_project_modifier = {
@@ -162,6 +163,7 @@ amaryllian_habitat_brain_quarters = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
 	icon_frame = 1
 	job_amaryllian_habitat_brain_add = 1
+	pop_demotion_time_mult = -1
 }
 
 amaryllian_gestalt_unity_0 = {

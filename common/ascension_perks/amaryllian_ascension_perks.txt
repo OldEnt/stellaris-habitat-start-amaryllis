@@ -15,6 +15,13 @@ ap_amaryllian_voidchildren = {
 	}
 
 	on_enabled = {
+			give_technology = { tech = amaryllian_tech_arms_industry }
+			give_technology = { tech = amaryllian_tech_civilian_industry }
+			give_technology = { tech = amaryllian_tech_farming_industry }
+			give_technology = { tech = amaryllian_tech_fortress_industry }
+			give_technology = { tech = amaryllian_tech_research_industry }
+			add_research_option = amaryllian_tech_bureaucratic_industry
+			add_research_option = amaryllian_tech_refinery_industry
 		custom_tooltip = "ap_amaryllian_voidchildren_tooltip"
 		hidden_effect = {
 			every_planet_within_border = {

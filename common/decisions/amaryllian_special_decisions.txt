@@ -25,7 +25,12 @@ amaryllian_decision_arms_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { has_ascension_perk = ap_amaryllian_voidchildren }
+		owner = { 
+			OR = {
+			has_ascension_perk = ap_amaryllian_voidchildren
+			has_technology = amaryllian_tech_arms_industry
+			}
+		}
 	}
 
 	allow = {
@@ -100,8 +105,12 @@ amaryllian_decision_civilian_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { has_ascension_perk = ap_amaryllian_voidchildren 
-					OR = {
+		owner = { 
+			OR = {
+			has_ascension_perk = ap_amaryllian_voidchildren
+			has_technology = amaryllian_tech_civilian_industry
+			}
+			OR = {
 				is_gestalt = no
 				has_valid_civic = civic_machine_servitor
 			}
@@ -180,9 +189,13 @@ amaryllian_decision_farming_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { has_ascension_perk = ap_amaryllian_voidchildren 
-					country_uses_food = yes	}
-					}
+		owner = { 
+			OR = {
+			has_ascension_perk = ap_amaryllian_voidchildren
+			has_technology = amaryllian_tech_farming_industry
+			}
+			country_uses_food = yes	}
+			}
 
 	allow = {
 		custom_tooltip = {
@@ -256,8 +269,13 @@ amaryllian_decision_fortress_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { has_ascension_perk = ap_amaryllian_voidchildren }
-					}
+		owner = { 
+			OR = {
+			has_ascension_perk = ap_amaryllian_voidchildren
+			has_technology = amaryllian_tech_fortress_industry
+			}
+		}
+	}
 
 	allow = {
 		custom_tooltip = {
@@ -331,7 +349,12 @@ amaryllian_decision_research_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { has_ascension_perk = ap_amaryllian_voidchildren }
+		owner = { 
+			OR = {
+			has_ascension_perk = ap_amaryllian_voidchildren
+			has_technology = amaryllian_tech_research_industry
+			}
+		}
 					}
 
 	allow = {
@@ -407,8 +430,8 @@ amaryllian_decision_bureaucratic_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { has_ascension_perk = ap_amaryllian_voidchildren }
-					}
+		owner = { has_technology = amaryllian_tech_bureaucratic_industry }
+		}
 
 	allow = {
 		custom_tooltip = {
@@ -485,7 +508,7 @@ amaryllian_decision_refinery_arcology_project = {
 		habitable_structure = yes
 		exists = owner
 		owner = {
-				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_refinery_industry
 				OR = {
 					has_technology = "tech_volatile_motes"
 					has_technology = "tech_rare_crystals"
