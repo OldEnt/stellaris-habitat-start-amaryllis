@@ -676,6 +676,111 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = amaryllian.70
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+		NOT = { has_technology = amaryllian_tech_arms_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_arms_industry
+		}
+	}
+
+country_event = {
+	id = amaryllian.71
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+		NOT = { has_technology = amaryllian_tech_civilian_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_civilian_industry
+		}
+	}
+
+country_event = {
+	id = amaryllian.72
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+		NOT = { has_technology = amaryllian_tech_farming_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_farming_industry
+		}
+	}
+	
+country_event = {
+	id = amaryllian.73
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+		NOT = { has_technology = amaryllian_tech_fortress_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_fortress_industry
+		}
+	}
+	
+country_event = {
+	id = amaryllian.74
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+		NOT = { has_technology = amaryllian_tech_research_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_research_industry
+		}
+	}
+	
+country_event = {
+	id = amaryllian.75
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_amaryllian_voidchildren
+		NOT = { has_technology = amaryllian_tech_bureaucratic_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_bureaucratic_industry
+		}
+	}
+
+country_event = {
+	id = amaryllian.76
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_amaryllian_voidchildren
+		NOT = { has_technology = amaryllian_tech_refinery_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_refinery_industry
+		}
+	}	
+	
 ### Count habitat captains and apply unity bonus
 country_event = {
 	id = amaryllian.7

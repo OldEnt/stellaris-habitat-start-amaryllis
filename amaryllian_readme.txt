@@ -1,3 +1,8 @@
+[list]
+[*] Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery or Farming arcologies.
+[*]Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
+[/list]
+
 [IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
 
 [img]https://i.imgur.com/TN8NeIh.png[/img]
@@ -5,9 +10,6 @@
 GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 
 [list]
-
-[*] [b]Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery or Farming arcologies.[/b]
-[*]Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
 [*] Works with Federations DLC and without. Just pick Children of the Void civic from the mod and you are good to go.
 [*] Special early game bonus: Habitat build time and cost reduced by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
 [*] Note: this mod provides its own habitat start separate from Federations' Void Dwellers since Stellaris 2.5.1. and is backwards compatible with 2.5.1 (at least for now). This legacy habitat start does not require Federations DLC if you are playing on 2.6.*. Formerly known as OE's Habitat start.
@@ -19,7 +21,8 @@ This mod does not overwrite vanilla files and as such is compatible with almost 
 [*] I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=865040033]Guilli's Planet Modifiers[/url] as it provides many habitat modifiers.
 [*] Integration with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]
 [*] Unique experience with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn: Improved Voidtouched[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034940146]see screenshot[/url]). You can convert into Specialised Habitat Arcology any habitat changed by Starborn mod, except special Starborn starting habitat. This is simply a design desision.
-[*] Compatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]. Choose Children of the Void civic as usual to gain Habitat Captain jobs on Habitats and Dyson Swarms and get access to habitat arcology projects (specialised habitats) on standard habitats. Dyson Swarm structure will provide single Habitat Captain job, this may change.
+[*] Compatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]. Choose Children of the Void civic as usual to gain Habitat Captain jobs on Habitats and Dyson Swarms and get access to habitat arcology projects (specialised habitats) on standard habitats. Dyson Swarm structure will provide single Habitat Captain job, this may change
+[*] Optional standalone addon: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url]. Habitat Arcologies from Void Dwellers Expanded are vanilla habitats and do not requre this fix but you might want it if you are settling Ring Worlds.
 [/list]
 
 [u][b]Children of the Void civic[/b][/u]
@@ -31,7 +34,7 @@ This civic can be taken and removed at any point of the game via government refo
 [u][b]Void Campaign: cheaper habitats in the early game[/b][/u]
 Empire modifier for Children of the Void civic which reduces habitat build time and cost by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
 
-[img]https://i.imgur.com/6m0psLW.png[/img]
+[img]https://i.imgur.com/n5qQfH4.png[/img]
 
 
 [u][b]Second stage of Voidborne ascension perk[/b][/u]
@@ -61,6 +64,12 @@ Turn mineral overflow into gas, crystals and motes exports.
 Provide your Habitat Captains with boosts to your habitats. This will be swapped with leveling up leaders in the future (ideally).
 
 [img]https://i.imgur.com/64gOEob.png[/img]
+
+[u][b]Addon: Void Dwellers trait fix[/b][/u]
+
+Void Dwellers will no longer receive negative trait when settling Ring World or custom habitats from supported mods. This fix requires overwrite of original game file and therefore it is available as a standalone mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url]. Habitat Arcologies from Void Dwellers Expanded are vanilla habitats and do not requre this fix but you might want it if you are settling Ring Worlds.
+
+[img]https://i.imgur.com/Ef3N6eo.png[/img]
 
 [u][b]Legacy feature: Habitat start which does not requre Federations DLC (read carefully)[/b][/u]
 Please note that Void Dwellers Origin does not allow gestalt empires (machines and hive minds) but you can choose Habitat start starting system (empire creation menu) from my mod with any empire and species. That said, Void Dwellers (Federations DLC required) or Starborn mod (Federations DLC not required) origins are preferred.
