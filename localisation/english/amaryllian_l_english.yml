@@ -20,7 +20,7 @@ civic_tooltip_amaryllian_habitat_world_effects:0 "Sets habitat habitability. Ena
 
 ap_amaryllian_voidchildren:0 "Elysian Isles"
 ap_amaryllian_voidchildren_desc:0 "We found our place amongst the stars and do not look back."
-ap_amaryllian_voidchildren_tooltip:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! usage on §H$pc_habitat$s§! owned by our Empire: §G-25%§!. Grants access to §YBureaucratic§! and §YRefinery§! §HHabitat Project§! research options.\n\nAppropriate technology is required in order to produce specific Strategic Resources."
+ap_amaryllian_voidchildren_tooltip:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! usage on §H$pc_habitat$s§! owned by our Empire: §G-25%§!. Number of jobs provided by habitat arcology districts increased from 5 to 10.\n\nGrants access to §YBureaucratic§! and §YRefinery§! §HHabitat Project§! research options. Appropriate technology is required in order to produce specific Strategic Resources."
 
 amaryllian_voidchildren_habitat_modifier:0 "$ap_amaryllian_voidchildren$: Perfect Home"
 amaryllian_voidchildren_habitat_modifier_desc:0 "Excellent design and proper exploitation of this $pc_habitat$ decreases £housing£ §Y$PLANET_HOUSING_TITLE$§! usage by §G-25%§!."
@@ -29,7 +29,7 @@ job_amaryllian_habitat_captain:0 "Habitat Captain"
 job_amaryllian_habitat_captain_desc:0 "Empire £unity£ §Y$unity$§! output: §G+2%§!\n\nCaptain on the deck!"
 
 amaryllian_habitat_captain_quarters:0 "Habitat Captain Quarters"
-amaryllian_habitat_captain_quarters_desc:0 "Accommodation and offices for Habitat Captain."
+amaryllian_habitat_captain_quarters_desc:0 "Active Habitat Captain provides §G+5§! £job_clerk£ §Y$job_clerk$ Jobs§! with §H$tr_prosperity_interstellar_franchising$§!.\n\nAccommodation and offices for Habitat Captain."
 mod_job_amaryllian_habitat_captain_add:0 "Habitat Captain jobs"
 
 amaryllian_unity_0:0 "No Habitat Captains in service!"
@@ -141,6 +141,9 @@ amaryllian_gestalt_unity_15_desc:0 "Connection with orbital complex established.
 amaryllian_gestalt_unity_16:0 "Habitat Brain Synapses: 16 or more"
 amaryllian_gestalt_unity_16_desc:0 "Connection with orbital complex established."
 
+amaryllian_col_habitat_farming:0 "Farming Station"
+amaryllian_col_habitat_farming_desc:0 "An artificial deep-space arcology dedicated to food production"
+
 amaryllian_tech_habitat_arcology:0 "Habitat Arcology"
 amaryllian_tech_habitat_arcology_desc:0 "§HUnlocks Arcology Decisions:§! Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking specialised £district£ §Ydistricts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!. Machine empires can still build §YGenerator Districts§!."
 allow_amaryllian_tech_habitat_arcology:0 "§HUnlocks Habitat Projects:§! Farming, Fortress, Foundry, Industrial and Research Habitat."
@@ -192,7 +195,7 @@ amaryllian_tech_army_gestalt_1_desc:0 "Self-destruct equipment for inhibition of
 amaryllian_tech_army_gestalt_1_effect:0 "Health and damage of £defense_army£ §YDefense Armies§! on §H$pc_habitat$s§!: §G+15%§!"
 
 amaryllian_district_arcology_civilian_industry:0 "Habitat Industrial District"
-amaryllian_district_arcology_civilian_industry_desc:0 "Developing the system-run industry is very important in increasing the production of consumer goods."
+amaryllian_district_arcology_civilian_industry_desc:0 "§G+1§! £job_clerk£ §Y$job_clerk$ Job§! with §H$tr_prosperity_interstellar_franchising$§!\n\nDeveloping the system-run industry is very important in increasing the production of consumer goods."
 amaryllian_district_arcology_civilian_industry_plural:0 "Habitat Industrial Districts"
 
 amaryllian_district_arcology_arms_industry:0 "Habitat Foundry District"

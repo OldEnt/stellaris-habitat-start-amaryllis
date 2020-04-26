@@ -40,7 +40,7 @@ Empire modifier for Children of the Void civic which reduces habitat build time 
 [u][b]Second stage of Voidborne ascension perk[/b][/u]
 Elysian Isles perk improves habitats even further and grants access to powerful but costly Habitat Arcologies.
 
-[img]https://i.imgur.com/bCOkkgz.png[/img]
+[img]https://i.imgur.com/o7ckKUx.png[/img]
 
 [u][b]Specialised habitat districts[/b][/u]
 Convert your regular habitats to arcologies with productivity bonuses, additional housing, and dedicated districts.

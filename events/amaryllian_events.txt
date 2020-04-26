@@ -483,6 +483,30 @@ country_event = {
 }
 
 ### Apply civic bonus to habitats
+
+country_event = {
+	id = amaryllian.60
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+	country_event = {
+			id = amaryllian.61
+			days = 4
+			random = 0
+		}
+	country_event = {
+			id = amaryllian.62
+			days = 8
+			random = 0
+		}
+	country_event = {
+			id = amaryllian.63
+			days = 12
+			random = 0
+		}
+	}
+}
+
 country_event = {
 	id = amaryllian.61
 	hide_window = yes
@@ -495,7 +519,10 @@ country_event = {
 		every_owned_planet = {
 				limit = {
 					OR = {
+# Vanilla
 					is_planet_class = pc_habitat
+					is_planet_class = pc_ringworld_habitable
+# Planetary Diversity - Planetary Habitats
 					is_planet_class = pc_gghab
 					is_planet_class = pc_tmhab
 					is_planet_class = pc_tmhab2
@@ -504,11 +531,100 @@ country_event = {
 					is_planet_class = pc_bhab
 					is_planet_class = pc_bchab
 					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab	
+					is_planet_class = pc_fhab
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+# Starborn: Improved Voidtouched
 					is_planet_class = pc_starborn_habitat_start
+# Dyson Swarm - colonizing space
 					is_planet_class = pc_dyson_swarm
+# Living Space
+					is_planet_class = pc_gas_giant_habitat
+					is_planet_class = pc_asteroid_habitat
+					is_planet_class = pc_ice_asteroid_habitat
+					is_planet_class = pc_rare_crystal_asteroid_habitat
+					is_planet_class = pc_molten_habitat
+					is_planet_class = pc_barren_habitat
+					is_planet_class = pc_barren_cold_habitat
+					is_planet_class = pc_toxic_habitat
+					is_planet_class = pc_frozen_habitat
+					is_planet_class = pc_b_star_habitat
+					is_planet_class = pc_a_star_habitat
+					is_planet_class = pc_f_star_habitat
+					is_planet_class = pc_g_star_habitat
+					is_planet_class = pc_k_star_habitat
+					is_planet_class = pc_m_star_habitat
+					is_planet_class = pc_m_giant_star_habitat
+					is_planet_class = pc_t_star_habitat
+					is_planet_class = pc_black_hole_habitat
+					is_planet_class = pc_neutron_star_habitat
+					is_planet_class = pc_pulsar_habitat
+# Habitation
+					is_planet_class = pc_hab_gas_giant_energy
+					is_planet_class = pc_hab_gas_giant_science
+					is_planet_class = pc_hab_gas_giant_minerals
+					is_planet_class = pc_hab_asteroid
+					is_planet_class = pc_hab_ice_asteroid
+					is_planet_class = pc_hab_rare_crystal_asteroid
+					is_planet_class = pc_hab_molten
+					is_planet_class = pc_hab_barren
+					is_planet_class = pc_hab_barren_cold
+					is_planet_class = pc_hab_toxic
+					is_planet_class = pc_hab_frozen
+# Gigastructural Engineering & More
+					is_planet_class = pc_ringworld_city
+					is_planet_class = pc_ringworld_machine
+					is_planet_class = pc_ringworld_hive
+					is_planet_class = pc_birch
+					is_planet_class = pc_flat_world
+					is_planet_class = pc_habitable_m_star
+					is_planet_class = pc_habitable_k_star
+					is_planet_class = pc_habitable_g_star
+					is_planet_class = pc_ringworld_alloys
+					is_planet_class = pc_giga_planetary_computer
+					is_planet_class = pc_city_ringworld_habitable
+#					is_planet_class = pc_habitable_gas_giant
+#					is_planet_class = pc_ll_temperate
+#					is_planet_class = pc_ll_foggy
+					is_planet_class = pc_virtual_world
+					is_planet_class = pc_squareworld_habitable
+					is_planet_class = pc_giga_ringworld_habitable
+					is_planet_class = pc_gigaorbital_ring
+					is_planet_class = pc_interstellar_habitat
+					is_planet_class = pc_interstellar_ringworld_habitable
+					is_planet_class = pc_virtual_reality
+					is_planet_class = pc_virtual_industry
+					is_planet_class = pc_virtual_stellar_industry
+# Ascendancy Ringworlds
+					is_planet_class = pc_ringworld_city
+					is_planet_class = pc_ringworld_eco_city
+					is_planet_class = pc_ringworld_energy_city
+					is_planet_class = pc_ringworld_machine
+					is_planet_class = pc_ringworld_hive
+					is_planet_class = pc_ringworld_shrouded_paradise
+					is_planet_class = pc_square_ringworld_city
+					is_planet_class = pc_square_ringworld_energy_city
+					is_planet_class = pc_square_ringworld_machine
+					is_planet_class = pc_square_ringworld_hive
+					is_planet_class = pc_ringworld_assimilated
+					is_planet_class = pc_ringworld_assimilated2
+					is_planet_class = pc_ringworld_assimilated3
+					is_planet_class = pc_ringworld_assimilated4
+					is_planet_class = pc_ringworld_machine_factory
+					is_planet_class = pc_ringworld_bioforge
+					is_planet_class = pc_ringworld_mining
+					is_planet_class = pc_ringworld_energy
+					is_planet_class = pc_ringworld_trade
+					is_planet_class = pc_ringworld_training
+					is_planet_class = pc_ringworld_training_shielded
+					is_planet_class = pc_ringworld_eco
+					is_planet_class = pc_ringworld_farming
+					is_planet_class = pc_ringworld_razed_city
+					is_planet_class = pc_ringworld_razed_energy
+					is_planet_class = pc_ringworld_razed_farming
+					is_planet_class = pc_ringworld_razed_mining
+					is_planet_class = pc_ringworld_razed_training
+					is_planet_class = pc_ringworld_razed_eco
 					}
 					NOT = { has_modifier = amaryllian_habitat_brain_quarters }
 				}
@@ -524,7 +640,7 @@ country_event = {
 		}
 		}
 	}
-	
+
 country_event = {
 	id = amaryllian.62
 	hide_window = yes
@@ -537,7 +653,10 @@ country_event = {
 		every_owned_planet = {
 				limit = {
 					OR = {
+# Vanilla
 					is_planet_class = pc_habitat
+					is_planet_class = pc_ringworld_habitable
+# Planetary Diversity - Planetary Habitats
 					is_planet_class = pc_gghab
 					is_planet_class = pc_tmhab
 					is_planet_class = pc_tmhab2
@@ -546,11 +665,100 @@ country_event = {
 					is_planet_class = pc_bhab
 					is_planet_class = pc_bchab
 					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab	
+					is_planet_class = pc_fhab
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+# Starborn: Improved Voidtouched
 					is_planet_class = pc_starborn_habitat_start
+# Dyson Swarm - colonizing space
 					is_planet_class = pc_dyson_swarm
+# Living Space
+					is_planet_class = pc_gas_giant_habitat
+					is_planet_class = pc_asteroid_habitat
+					is_planet_class = pc_ice_asteroid_habitat
+					is_planet_class = pc_rare_crystal_asteroid_habitat
+					is_planet_class = pc_molten_habitat
+					is_planet_class = pc_barren_habitat
+					is_planet_class = pc_barren_cold_habitat
+					is_planet_class = pc_toxic_habitat
+					is_planet_class = pc_frozen_habitat
+					is_planet_class = pc_b_star_habitat
+					is_planet_class = pc_a_star_habitat
+					is_planet_class = pc_f_star_habitat
+					is_planet_class = pc_g_star_habitat
+					is_planet_class = pc_k_star_habitat
+					is_planet_class = pc_m_star_habitat
+					is_planet_class = pc_m_giant_star_habitat
+					is_planet_class = pc_t_star_habitat
+					is_planet_class = pc_black_hole_habitat
+					is_planet_class = pc_neutron_star_habitat
+					is_planet_class = pc_pulsar_habitat
+# Habitation
+					is_planet_class = pc_hab_gas_giant_energy
+					is_planet_class = pc_hab_gas_giant_science
+					is_planet_class = pc_hab_gas_giant_minerals
+					is_planet_class = pc_hab_asteroid
+					is_planet_class = pc_hab_ice_asteroid
+					is_planet_class = pc_hab_rare_crystal_asteroid
+					is_planet_class = pc_hab_molten
+					is_planet_class = pc_hab_barren
+					is_planet_class = pc_hab_barren_cold
+					is_planet_class = pc_hab_toxic
+					is_planet_class = pc_hab_frozen
+# Gigastructural Engineering & More
+					is_planet_class = pc_ringworld_city
+					is_planet_class = pc_ringworld_machine
+					is_planet_class = pc_ringworld_hive
+					is_planet_class = pc_birch
+					is_planet_class = pc_flat_world
+					is_planet_class = pc_habitable_m_star
+					is_planet_class = pc_habitable_k_star
+					is_planet_class = pc_habitable_g_star
+					is_planet_class = pc_ringworld_alloys
+					is_planet_class = pc_giga_planetary_computer
+					is_planet_class = pc_city_ringworld_habitable
+#					is_planet_class = pc_habitable_gas_giant
+#					is_planet_class = pc_ll_temperate
+#					is_planet_class = pc_ll_foggy
+					is_planet_class = pc_virtual_world
+					is_planet_class = pc_squareworld_habitable
+					is_planet_class = pc_giga_ringworld_habitable
+					is_planet_class = pc_gigaorbital_ring
+					is_planet_class = pc_interstellar_habitat
+					is_planet_class = pc_interstellar_ringworld_habitable
+					is_planet_class = pc_virtual_reality
+					is_planet_class = pc_virtual_industry
+					is_planet_class = pc_virtual_stellar_industry
+# Ascendancy Ringworlds
+					is_planet_class = pc_ringworld_city
+					is_planet_class = pc_ringworld_eco_city
+					is_planet_class = pc_ringworld_energy_city
+					is_planet_class = pc_ringworld_machine
+					is_planet_class = pc_ringworld_hive
+					is_planet_class = pc_ringworld_shrouded_paradise
+					is_planet_class = pc_square_ringworld_city
+					is_planet_class = pc_square_ringworld_energy_city
+					is_planet_class = pc_square_ringworld_machine
+					is_planet_class = pc_square_ringworld_hive
+					is_planet_class = pc_ringworld_assimilated
+					is_planet_class = pc_ringworld_assimilated2
+					is_planet_class = pc_ringworld_assimilated3
+					is_planet_class = pc_ringworld_assimilated4
+					is_planet_class = pc_ringworld_machine_factory
+					is_planet_class = pc_ringworld_bioforge
+					is_planet_class = pc_ringworld_mining
+					is_planet_class = pc_ringworld_energy
+					is_planet_class = pc_ringworld_trade
+					is_planet_class = pc_ringworld_training
+					is_planet_class = pc_ringworld_training_shielded
+					is_planet_class = pc_ringworld_eco
+					is_planet_class = pc_ringworld_farming
+					is_planet_class = pc_ringworld_razed_city
+					is_planet_class = pc_ringworld_razed_energy
+					is_planet_class = pc_ringworld_razed_farming
+					is_planet_class = pc_ringworld_razed_mining
+					is_planet_class = pc_ringworld_razed_training
+					is_planet_class = pc_ringworld_razed_eco
 					}
 					NOT = { has_modifier = amaryllian_habitat_captain_quarters }
 				}
@@ -578,7 +786,10 @@ country_event = {
 		every_owned_planet = {
 				limit = {
 					OR = {
+# Vanilla
 					is_planet_class = pc_habitat
+					is_planet_class = pc_ringworld_habitable
+# Planetary Diversity - Planetary Habitats
 					is_planet_class = pc_gghab
 					is_planet_class = pc_tmhab
 					is_planet_class = pc_tmhab2
@@ -587,11 +798,100 @@ country_event = {
 					is_planet_class = pc_bhab
 					is_planet_class = pc_bchab
 					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab	
+					is_planet_class = pc_fhab
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+# Starborn: Improved Voidtouched
 					is_planet_class = pc_starborn_habitat_start
+# Dyson Swarm - colonizing space
 					is_planet_class = pc_dyson_swarm
+# Living Space
+					is_planet_class = pc_gas_giant_habitat
+					is_planet_class = pc_asteroid_habitat
+					is_planet_class = pc_ice_asteroid_habitat
+					is_planet_class = pc_rare_crystal_asteroid_habitat
+					is_planet_class = pc_molten_habitat
+					is_planet_class = pc_barren_habitat
+					is_planet_class = pc_barren_cold_habitat
+					is_planet_class = pc_toxic_habitat
+					is_planet_class = pc_frozen_habitat
+					is_planet_class = pc_b_star_habitat
+					is_planet_class = pc_a_star_habitat
+					is_planet_class = pc_f_star_habitat
+					is_planet_class = pc_g_star_habitat
+					is_planet_class = pc_k_star_habitat
+					is_planet_class = pc_m_star_habitat
+					is_planet_class = pc_m_giant_star_habitat
+					is_planet_class = pc_t_star_habitat
+					is_planet_class = pc_black_hole_habitat
+					is_planet_class = pc_neutron_star_habitat
+					is_planet_class = pc_pulsar_habitat
+# Habitation
+					is_planet_class = pc_hab_gas_giant_energy
+					is_planet_class = pc_hab_gas_giant_science
+					is_planet_class = pc_hab_gas_giant_minerals
+					is_planet_class = pc_hab_asteroid
+					is_planet_class = pc_hab_ice_asteroid
+					is_planet_class = pc_hab_rare_crystal_asteroid
+					is_planet_class = pc_hab_molten
+					is_planet_class = pc_hab_barren
+					is_planet_class = pc_hab_barren_cold
+					is_planet_class = pc_hab_toxic
+					is_planet_class = pc_hab_frozen
+# Gigastructural Engineering & More
+					is_planet_class = pc_ringworld_city
+					is_planet_class = pc_ringworld_machine
+					is_planet_class = pc_ringworld_hive
+					is_planet_class = pc_birch
+					is_planet_class = pc_flat_world
+					is_planet_class = pc_habitable_m_star
+					is_planet_class = pc_habitable_k_star
+					is_planet_class = pc_habitable_g_star
+					is_planet_class = pc_ringworld_alloys
+					is_planet_class = pc_giga_planetary_computer
+					is_planet_class = pc_city_ringworld_habitable
+#					is_planet_class = pc_habitable_gas_giant
+#					is_planet_class = pc_ll_temperate
+#					is_planet_class = pc_ll_foggy
+					is_planet_class = pc_virtual_world
+					is_planet_class = pc_squareworld_habitable
+					is_planet_class = pc_giga_ringworld_habitable
+					is_planet_class = pc_gigaorbital_ring
+					is_planet_class = pc_interstellar_habitat
+					is_planet_class = pc_interstellar_ringworld_habitable
+					is_planet_class = pc_virtual_reality
+					is_planet_class = pc_virtual_industry
+					is_planet_class = pc_virtual_stellar_industry
+# Ascendancy Ringworlds
+					is_planet_class = pc_ringworld_city
+					is_planet_class = pc_ringworld_eco_city
+					is_planet_class = pc_ringworld_energy_city
+					is_planet_class = pc_ringworld_machine
+					is_planet_class = pc_ringworld_hive
+					is_planet_class = pc_ringworld_shrouded_paradise
+					is_planet_class = pc_square_ringworld_city
+					is_planet_class = pc_square_ringworld_energy_city
+					is_planet_class = pc_square_ringworld_machine
+					is_planet_class = pc_square_ringworld_hive
+					is_planet_class = pc_ringworld_assimilated
+					is_planet_class = pc_ringworld_assimilated2
+					is_planet_class = pc_ringworld_assimilated3
+					is_planet_class = pc_ringworld_assimilated4
+					is_planet_class = pc_ringworld_machine_factory
+					is_planet_class = pc_ringworld_bioforge
+					is_planet_class = pc_ringworld_mining
+					is_planet_class = pc_ringworld_energy
+					is_planet_class = pc_ringworld_trade
+					is_planet_class = pc_ringworld_training
+					is_planet_class = pc_ringworld_training_shielded
+					is_planet_class = pc_ringworld_eco
+					is_planet_class = pc_ringworld_farming
+					is_planet_class = pc_ringworld_razed_city
+					is_planet_class = pc_ringworld_razed_energy
+					is_planet_class = pc_ringworld_razed_farming
+					is_planet_class = pc_ringworld_razed_mining
+					is_planet_class = pc_ringworld_razed_training
+					is_planet_class = pc_ringworld_razed_eco
 					}
 					OR = {
 						has_modifier = amaryllian_habitat_captain_quarters 
@@ -604,19 +904,36 @@ country_event = {
 	}
 
 country_event = {
+	id = amaryllian.67	
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_ascension_perk = ap_amaryllian_voidchildren
+	}
+	immediate = {
+	country_event = {
+			id = amaryllian.66
+			days = 16
+			random = 0
+		}
+	}
+}
+
+country_event = {
 	id = amaryllian.64
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		has_ascension_perk = ap_amaryllian_voidchildren
-		has_civic = civic_amaryllian_habitat
 	}
 	
 	immediate = {
 		every_owned_planet = {
 				limit = {
 					OR = {
+# Vanilla
 					is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
 					is_planet_class = pc_gghab
 					is_planet_class = pc_tmhab
 					is_planet_class = pc_tmhab2
@@ -625,11 +942,46 @@ country_event = {
 					is_planet_class = pc_bhab
 					is_planet_class = pc_bchab
 					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab	
+					is_planet_class = pc_fhab
 					is_planet_class = pc_fmhab
 					is_planet_class = pc_mehab
+# Starborn: Improved Voidtouched
 					is_planet_class = pc_starborn_habitat_start
+# Dyson Swarm - colonizing space
 					is_planet_class = pc_dyson_swarm
+# Living Space
+					is_planet_class = pc_gas_giant_habitat
+					is_planet_class = pc_asteroid_habitat
+					is_planet_class = pc_ice_asteroid_habitat
+					is_planet_class = pc_rare_crystal_asteroid_habitat
+					is_planet_class = pc_molten_habitat
+					is_planet_class = pc_barren_habitat
+					is_planet_class = pc_barren_cold_habitat
+					is_planet_class = pc_toxic_habitat
+					is_planet_class = pc_frozen_habitat
+					is_planet_class = pc_b_star_habitat
+					is_planet_class = pc_a_star_habitat
+					is_planet_class = pc_f_star_habitat
+					is_planet_class = pc_g_star_habitat
+					is_planet_class = pc_k_star_habitat
+					is_planet_class = pc_m_star_habitat
+					is_planet_class = pc_m_giant_star_habitat
+					is_planet_class = pc_t_star_habitat
+					is_planet_class = pc_black_hole_habitat
+					is_planet_class = pc_neutron_star_habitat
+					is_planet_class = pc_pulsar_habitat
+# Habitation
+					is_planet_class = pc_hab_gas_giant_energy
+					is_planet_class = pc_hab_gas_giant_science
+					is_planet_class = pc_hab_gas_giant_minerals
+					is_planet_class = pc_hab_asteroid
+					is_planet_class = pc_hab_ice_asteroid
+					is_planet_class = pc_hab_rare_crystal_asteroid
+					is_planet_class = pc_hab_molten
+					is_planet_class = pc_hab_barren
+					is_planet_class = pc_hab_barren_cold
+					is_planet_class = pc_hab_toxic
+					is_planet_class = pc_hab_frozen
 					}
 					NOT = { has_modifier = amaryllian_voidchildren_habitat_modifier }
 				}
@@ -801,7 +1153,7 @@ country_event = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_brain } count = 0 }
 			}
-		add_modifier = { modifier = amaryllian_gestalt_unity_0 days = 360 }
+		break = yes
 		}
 		
 		else_if = {
@@ -925,7 +1277,7 @@ country_event = {
 			limit = {
 				count_owned_pops = { limit = { has_job = amaryllian_habitat_captain } count = 0 }
 			}
-		add_modifier = { modifier = amaryllian_unity_0 days = 360 }
+		break = yes
 		}
 		
 		else_if = {
