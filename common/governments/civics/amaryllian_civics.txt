@@ -3,54 +3,7 @@ civic_amaryllian_habitat = {
 	habitability_preference = pc_habitat
 	preferred_planet_class_neighbor = no
 	potential = {
-		country_type = { value = default } }
-	possible = {
-		civics = {
-			NOR = {
-				value = civic_post_apocalyptic
-				value = civic_life_seeded
-				value = civic_hive_world
-				value = civic_machine_world
-				value = civic_crystal_world
-				value = civic_floating_world
-				value = civic_graveyard_world
-				value = civic_technoorganic_world
-				value = civic_gpm_death_world
-				value = civic_gpm_precursor_world
-				value = civic_gpm_fallen_empire_colony
-				value = civic_machine_archive_world
-				value = civic_gpm_precursor_world_machine
-				value = civic_mega_crystal_world
-				value = civic_mega_floating_world
-				value = civic_mega_graveyard_world
-				value = civic_mega_technoorganic_world
-				value = civic_hive_crystal_world
-				value = civic_hive_floating_world
-				value = civic_hive_graveyard_world
-				value = civic_hive_technoorganic_world
-				value = civic_machine_crystal_world
-				value = civic_machine_floating_world
-				value = civic_machine_graveyard_world
-				value = civic_machine_technoorganic_world
-			}
-		}
-		origin = {
-			NOR = {
-				value = origin_life_seeded
-				value = origin_remnants
-				value = origin_shattered_ring
-				value = origin_galactic_doorstep
-				value = origin_tree_of_life
-				value = origin_shoulders_of_giants
-				value = origin_lithoid
-				value = origin_machine
-				value = origin_doomsday
-			}
-		}
-	}
-
-# Enabled for people who started using the mod before civic was introduced, will be changed some time in the future (or not).
-	modification = yes
+	country_type = { value = default } }
 	random_weight = {
 		base = 0
 		modifier = {

@@ -1,0 +1,44 @@
+# Farming Station
+amaryllian_col_habitat_farming = {
+	icon = 12
+
+	potential = {
+		is_planet_class = pc_habitat
+		exists = owner
+		owner = { country_uses_food = yes }
+	}
+	planet_modifier = {
+		planet_farmers_produces_mult = 0.10
+	}
+	weight_modifier = {
+		base = 200
+		modifier = {
+			factor = 2
+			owner = { has_monthly_income = { resource = food value < 0 } }
+		}
+		modifier = {
+			factor = 3
+			has_designation = amaryllian_col_habitat_farming
+		}
+		modifier = {
+			factor = 3
+			num_districts = { type = amaryllian_district_arcology_farming_industry value >= 1 }
+		}
+		modifier = {
+			factor = 10
+			num_districts = { type = amaryllian_district_arcology_farming_industry value >= 1 }
+		}
+		modifier = {
+			factor = 2
+			num_buildings = { type = building_hydroponics_farm value >= 2 }
+		}
+		modifier = {
+			factor = 2
+			num_buildings = { type = building_food_processing_facility value >= 1 }
+		}
+		modifier = {
+			factor = 2
+			num_buildings = { type = building_food_processing_center value >= 1 }
+		}
+	}
+}
