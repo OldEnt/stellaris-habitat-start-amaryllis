@@ -912,7 +912,7 @@ country_event = {
 	}
 	immediate = {
 	country_event = {
-			id = amaryllian.66
+			id = amaryllian.64
 			days = 16
 			random = 0
 		}
