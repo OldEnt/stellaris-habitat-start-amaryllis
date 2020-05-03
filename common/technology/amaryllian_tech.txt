@@ -502,3 +502,43 @@ amaryllian_tech_refinery_industry = {
 		}
 	}
 }
+
+amaryllian_tech_trade_industry = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	ai_update_type = all
+	prerequisites = { "tech_habitat_1" }
+	is_rare = yes
+
+	prereqfor_desc = {	
+		ship = {
+			title = "allow_amaryllian_tech_trade_industry"
+			desc = "allow_amaryllian_tech_trade_industry_DETAILS"
+		}
+	}
+	
+	potential = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+		is_gestalt = no
+	}
+	
+	weight = 0
+
+	weight_modifier = {
+		factor = 0
+	}
+
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
