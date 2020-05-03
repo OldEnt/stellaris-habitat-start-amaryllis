@@ -1,7 +1,7 @@
 amaryllian_habitat_captain = {	
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
-	building_icon = buildings\old_production\building_engineering_facility_1
+	building_icon = old_production/building_engineering_facility_1
 	clothes_texture_index = 4
 	
 	possible_pre_triggers = {
