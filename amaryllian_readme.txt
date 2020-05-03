@@ -16,13 +16,22 @@ GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 [/list]
 
 [u][b]High compatibility[/b][/u]
-This mod does not overwrite vanilla files and as such is compatible with almost anything. Works great with numerous mods. Below are a few examples.
+This mod does not overwrite vanilla files and as such is compatible with almost anything. Works great with numerous mods.
+
+I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=865040033]Guilli's Planet Modifiers[/url] as it provides many habitat modifiers.
+
+Structures from following mods receive Habitat Captain job and benefit from Elysian Isles Ascension Perk (-25% housing usage):
 [list]
-[*] I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=865040033]Guilli's Planet Modifiers[/url] as it provides many habitat modifiers.
-[*] Integration with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]
-[*] Unique experience with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn: Improved Voidtouched[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034940146]see screenshot[/url]). You can convert into Specialised Habitat Arcology any habitat changed by Starborn mod, except special Starborn starting habitat. This is simply a design desision.
-[*] Compatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]. Choose Children of the Void civic as usual to gain Habitat Captain jobs on Habitats and Dyson Swarms and get access to habitat arcology projects (specialised habitats) on standard habitats. Dyson Swarm structure will provide single Habitat Captain job, this may change
-[*] Optional standalone addon: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url]. Habitat Arcologies from Void Dwellers Expanded are vanilla habitats and do not requre this fix but you might want it if you are settling Ring Worlds.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn: Improved Voidtouched[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034940146]see screenshot[/url]). You can convert into Specialised Habitat Arcology any habitat changed by Starborn mod, except special Starborn starting habitat. This is simply a design desision.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1510731495]Habitation[/url]
+[/list]
+Structures from following mods receive Habitat Captain job:
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url]
 [/list]
 
 [u][b]Children of the Void civic[/b][/u]
