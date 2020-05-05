@@ -1081,6 +1081,7 @@ amaryllian_district_arcology_trade_industry = {
 		modifier = {
 			job_merchant_add = 1
 			job_clerk_add = 10
+			trade_value_mult = 0.10
 		}
 	}
 
@@ -1091,6 +1092,7 @@ amaryllian_district_arcology_trade_industry = {
 		}
 		modifier = {
 			job_clerk_add = 5
+			trade_value_mult = 0.05
 		}
 	}
 
@@ -1100,7 +1102,8 @@ amaryllian_district_arcology_trade_industry = {
 			owner = { has_ascension_perk = ap_amaryllian_voidchildren is_fallen_empire_spiritualist = yes }
 		}
 		modifier = {
-			job_manager_add = 5
+			job_manager_add = 10
+			trade_value_mult = 0.10
 		}
 	}
 
@@ -1110,7 +1113,8 @@ amaryllian_district_arcology_trade_industry = {
 			owner = { NOT = { has_ascension_perk = ap_amaryllian_voidchildren } is_fallen_empire_spiritualist = yes }
 		}
 		modifier = {
-			job_manager_add = 10
+			job_manager_add = 5
+			trade_value_mult = 0.05
 		}
 	}		
 
