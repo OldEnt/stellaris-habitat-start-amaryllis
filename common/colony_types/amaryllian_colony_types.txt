@@ -5,13 +5,14 @@ amaryllian_col_habitat_farming = {
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
+		has_planet_flag = amaryllian_farming_arcology
 		owner = { country_uses_food = yes }
 	}
 	planet_modifier = {
 		planet_farmers_produces_mult = 0.10
 	}
 	weight_modifier = {
-		base = 200
+		base = 50
 		modifier = {
 			factor = 2
 			owner = { has_monthly_income = { resource = food value < 0 } }
@@ -39,6 +40,27 @@ amaryllian_col_habitat_farming = {
 		modifier = {
 			factor = 2
 			num_buildings = { type = building_food_processing_center value >= 1 }
+		}
+	}
+}
+
+# Mining Station for arcology habitats
+amaryllian_col_habitat_mining = {
+	icon = 12
+
+	potential = {
+		is_planet_class = pc_habitat
+		exists = owner
+		has_planet_flag = amaryllian_mining_arcology
+	}
+	planet_modifier = {
+		planet_miners_produces_mult = 0.05
+	}
+	weight_modifier = {
+		base = 50
+		modifier = {
+			factor = 3
+			has_designation = amaryllian_col_habitat_mining
 		}
 	}
 }

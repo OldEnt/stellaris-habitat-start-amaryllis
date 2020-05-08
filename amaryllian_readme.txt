@@ -1,5 +1,5 @@
 [list]
-[*] Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade or Farming arcologies.
+[*] Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining or Farming arcologies.
 [*]Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
 [/list]
 

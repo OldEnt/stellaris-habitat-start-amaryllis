@@ -1146,6 +1146,21 @@ country_event = {
 	immediate = {
 		add_research_option = amaryllian_tech_trade_industry
 		}
+	}
+	
+country_event = {
+	id = amaryllian.78
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+		NOT = { has_technology = amaryllian_tech_mining_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_mining_industry
+		}
 	}	
 	
 ### Count habitat captains and apply unity bonus
@@ -1653,6 +1668,26 @@ planet_event = {
 
 	option = {
 		name = amaryllian.207.a
+	}
+}
+
+planet_event = {
+	id = amaryllian.208
+	title = amaryllian.208.name
+	desc = amaryllian.208.desc
+	picture = GFX_evt_resource_cache
+	show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_mining_arcology
+	}
+
+	option = {
+		name = amaryllian.208.a
 	}
 }
 

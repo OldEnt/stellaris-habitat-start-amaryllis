@@ -542,3 +542,42 @@ amaryllian_tech_trade_industry = {
 		}
 	}
 }
+
+amaryllian_tech_mining_industry = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_habitat_1" }
+	is_rare = yes
+
+	prereqfor_desc = {	
+		ship = {
+			title = "allow_amaryllian_tech_mining_industry"
+			desc = "allow_amaryllian_tech_mining_industry_DETAILS"
+		}
+	}
+	
+	potential = {
+		has_civic = civic_amaryllian_habitat
+		has_ascension_perk = ap_voidborn
+	}
+	
+	weight = 0
+
+	weight_modifier = {
+		factor = 0
+	}
+
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

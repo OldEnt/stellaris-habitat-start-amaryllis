@@ -146,6 +146,9 @@ amaryllian_gestalt_unity_16_desc:0 "Connection with orbital complex established.
 amaryllian_col_habitat_farming:0 "Farming Station"
 amaryllian_col_habitat_farming_desc:0 "An artificial deep-space arcology dedicated to food production"
 
+amaryllian_col_habitat_mining:0 "Mining Station"
+amaryllian_col_habitat_mining_desc:0 "An artificial deep-space arcology dedicated to the harvesting of minerals"
+
 amaryllian_tech_habitat_arcology:0 "Habitat Arcology"
 amaryllian_tech_habitat_arcology_desc:0 "§HUnlocks Arcology Decisions:§! Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking specialised £district£ §Ydistricts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!. Machine empires can still build §YGenerator Districts§!."
 allow_amaryllian_tech_habitat_arcology:0 "§HUnlocks Habitat Projects:§! Farming, Fortress, Foundry, Industrial and Research Habitat."
@@ -167,6 +170,8 @@ amaryllian_tech_refinery_industry:0 "$amaryllian_decision_refinery_arcology_proj
 amaryllian_tech_refinery_industry_desc:0 "$amaryllian_decision_refinery_arcology_project_desc$"
 amaryllian_tech_trade_industry:0 "$amaryllian_decision_trade_arcology_project$"
 amaryllian_tech_trade_industry_desc:0 "$amaryllian_decision_trade_arcology_project_desc$"
+amaryllian_tech_mining_industry:0 "$amaryllian_decision_mining_arcology_project$"
+amaryllian_tech_mining_industry_desc:0 "$amaryllian_decision_mining_arcology_project_desc$"
 allow_amaryllian_tech_arms_industry:0 "§HUnlocks Habitat Project:§! Foundry Habitat"
 allow_amaryllian_tech_arms_industry_DETAILS:0 "$amaryllian_decision_arms_arcology_project_effects$"
 allow_amaryllian_tech_civilian_industry:0 "§HUnlocks Habitat Project:§! Industrial Habitat"
@@ -183,6 +188,8 @@ allow_amaryllian_tech_refinery_industry:0 "§HUnlocks Habitat Project:§! Refine
 allow_amaryllian_tech_refinery_industry_DETAILS:0 "$amaryllian_decision_refinery_arcology_project_effects$"
 allow_amaryllian_tech_trade_industry:0 "§HUnlocks Habitat Project:§! Trade Habitat"
 allow_amaryllian_tech_trade_industry_DETAILS:0 "$amaryllian_decision_trade_arcology_project_effects$"
+allow_amaryllian_tech_mining_industry:0 "§HUnlocks Habitat Project:§! Mining Habitat"
+allow_amaryllian_tech_mining_industry_DETAILS:0 "$amaryllian_decision_mining_arcology_project_effects$"
 
 amaryllian_tech_housing_1:0 "Habitat Captains: Administrative Prerogative"
 amaryllian_tech_housing_1_desc:0 "It is in the common interest to vest power to those who can utilise resources efficiently."
@@ -227,6 +234,10 @@ amaryllian_district_arcology_bureaucratic_industry_plural:0 "Habitat Bureaucrati
 amaryllian_district_arcology_refinery_industry:0 "Habitat Refinery District"
 amaryllian_district_arcology_refinery_industry_desc:0 "Our Strategic Resources Valley."
 amaryllian_district_arcology_refinery_industry_plural:0 "Habitat Refinery Districts"
+
+amaryllian_district_arcology_mining_industry:0 "Habitat Mining District"
+amaryllian_district_arcology_mining_industry_desc:0 "Red-hot iron, white-hot iron, cold-black iron; an iron taste, and iron smell, and a Babel of iron sounds."
+amaryllian_district_arcology_mining_industry_plural:0 "Habitat Mining Districts"
 
 amaryllian_district_arcology_trade_industry:0 "Habitat Trade District"
 amaryllian_district_arcology_trade_industry_desc:0 "§G+1§! £job_clerk£ §Y$job_clerk$ Job§! with §H$tr_prosperity_interstellar_franchising$§!\n\nConsumption is the sole end and purpose of all production."
@@ -282,6 +293,12 @@ amaryllian_decision_trade_arcology_project_desc:0 "There is no place like it, no
 amaryllian_decision_trade_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!"
 amaryllian_decision_trade_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Trade Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YResearch Districts§!."
 amaryllian_decision_trade_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Trade Districts§!."
+
+amaryllian_decision_mining_arcology_project:0 "Mining Habitat Project"
+amaryllian_decision_mining_arcology_project_desc:0 "Digging, digging a hole."
+amaryllian_decision_mining_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_mining_plural$§!"
+amaryllian_decision_mining_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Mining Districts§! at the expense of the habitat's other natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YResearch§! and standard §YMining Districts§!."
+amaryllian_decision_mining_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Mining Districts§!."
 
 amaryllian_void_campaign_1:0 "Void Campaign"
 amaryllian_void_campaign_1_desc:0 "Although the chance of a disaster to our home in a given year may be quite low, it adds up over time, and eventually becomes a near certainty. We must expand before it is too late.\n\n§HBonus diminishes by 5% every 5 years.§!"
