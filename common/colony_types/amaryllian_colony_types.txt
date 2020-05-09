@@ -64,3 +64,24 @@ amaryllian_col_habitat_mining = {
 		}
 	}
 }
+
+# Generator Station for arcology habitats
+amaryllian_col_habitat_generator = {
+	icon = 12
+
+	potential = {
+		is_planet_class = pc_habitat
+		exists = owner
+		has_planet_flag = amaryllian_generator_arcology
+	}
+	planet_modifier = {
+		planet_technician_produces_mult = 0.05
+	}
+	weight_modifier = {
+		base = 50
+		modifier = {
+			factor = 3
+			has_designation = amaryllian_col_habitat_generator
+		}
+	}
+}

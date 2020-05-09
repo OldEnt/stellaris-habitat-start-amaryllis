@@ -1367,3 +1367,192 @@ amaryllian_district_arcology_mining_industry = {
 		}
 	}
 }
+
+amaryllian_district_arcology_generator_industry = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {	
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_generator_arcology
+	}
+	
+	potential = { 
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_generator_arcology
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_hab_housing
+	}		
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			exotic_gases = 50
+		}
+		upkeep = {
+		trigger = {
+				owner = { has_ascension_perk = ap_amaryllian_voidchildren }
+			}
+			energy = 5
+			exotic_gases = 2
+		}
+		upkeep = {
+		trigger = {
+				owner = { NOT = { has_ascension_perk = ap_amaryllian_voidchildren }
+			} }
+			energy = 5
+			exotic_gases = 1
+		}	
+	}	
+
+	triggered_planet_modifier = {
+		modifier = {
+			planet_housing_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_ascension_perk = ap_amaryllian_voidchildren is_hive_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_ascension_perk = ap_amaryllian_voidchildren } is_hive_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 5
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_ascension_perk = ap_amaryllian_voidchildren is_machine_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_ascension_perk = ap_amaryllian_voidchildren } is_machine_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 5
+		}
+	}
+		
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				has_ascension_perk = ap_amaryllian_voidchildren
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_technician_add = 10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				NOT = { has_ascension_perk = ap_amaryllian_voidchildren }
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_technician_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			has_ascension_perk = ap_amaryllian_voidchildren
+			is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_generator_add = 10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			NOT = { has_ascension_perk = ap_amaryllian_voidchildren }
+			is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_generator_add = 5
+		}
+	}
+		
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_technician_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_technician_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_fe_acolyte_generator_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 0
+		
+		modifier = {
+			weight = 20000
+			
+			owner = { 
+				has_monthly_income = {
+					resource = energy
+					value < 200
+				}
+			}
+		}
+		}
+
+	ai_resource_production = {
+		minerals = 10
+		trigger = {
+			always = yes
+		}
+	}
+}

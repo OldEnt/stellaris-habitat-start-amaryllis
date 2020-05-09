@@ -22,6 +22,7 @@ ap_amaryllian_voidchildren = {
 			give_technology = { tech = amaryllian_tech_research_industry }
 			give_technology = { tech = amaryllian_tech_trade_industry }
 			give_technology = { tech = amaryllian_tech_mining_industry }
+			give_technology = { tech = amaryllian_tech_generator_industry }
 			add_research_option = amaryllian_tech_bureaucratic_industry
 			add_research_option = amaryllian_tech_refinery_industry
 		custom_tooltip = "ap_amaryllian_voidchildren_tooltip"
