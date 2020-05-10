@@ -1,5 +1,5 @@
 [list]
-[*]Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator or Farming arcologies.
+[*]Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator, Farming or Sanctuary arcologies.
 [*]Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
 [/list]
 
@@ -10,7 +10,7 @@
 GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 
 [list]
-[*] Works with Federations DLC and without. Just pick Children of the Void civic from the mod and you are good to go.
+[*] Works with Federations DLC and without. Just pick Children of the Void civic from the mod, Void Dwellers origin (if you have Federations)  and you are good to go.
 [*] Special early game bonus: Habitat build time and cost reduced by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
 [*] Note: this mod provides its own habitat start separate from Federations' Void Dwellers since Stellaris 2.5.1. and is backwards compatible with 2.5.1 (at least for now). This legacy habitat start does not require Federations DLC if you are playing on 2.6.*. Formerly known as OE's Habitat start.
 [/list]

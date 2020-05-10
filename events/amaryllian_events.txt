@@ -1176,7 +1176,26 @@ country_event = {
 	immediate = {
 		add_research_option = amaryllian_tech_generator_industry
 		}
-	}	
+	}
+
+country_event = {
+	id = amaryllian.80
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+		has_valid_civic = civic_machine_servitor
+		has_ascension_perk = ap_voidborn
+		NOT = { has_technology = amaryllian_tech_sanctuary_industry }
+	}
+
+	immediate = {
+		add_research_option = amaryllian_tech_sanctuary_industry
+		}
+	}
+
+
+	
 	
 ### Count habitat captains and apply unity bonus
 country_event = {
@@ -1723,6 +1742,26 @@ planet_event = {
 
 	option = {
 		name = amaryllian.209.a
+	}
+}
+
+planet_event = {
+	id = amaryllian.210
+	title = amaryllian.210.name
+	desc = amaryllian.210.desc
+	picture = GFX_evt_arena
+	show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_sanctuary_arcology
+	}
+
+	option = {
+		name = amaryllian.210.a
 	}
 }
 

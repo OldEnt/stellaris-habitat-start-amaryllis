@@ -20,5 +20,6 @@ on_monthly_pulse_country = {
 		amaryllian.77
 		amaryllian.78
 		amaryllian.79
+		amaryllian.80
 	}
 }

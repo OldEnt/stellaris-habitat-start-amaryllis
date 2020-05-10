@@ -1556,3 +1556,78 @@ amaryllian_district_arcology_generator_industry = {
 		}
 	}
 }
+
+amaryllian_district_arcology_sanctuary_industry = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {	
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_sanctuary_arcology
+	}
+	
+	potential = { 
+		is_planet_class = pc_habitat
+		has_planet_flag = amaryllian_sanctuary_arcology
+		owner = { has_valid_civic = civic_machine_servitor }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_hab_housing
+	}		
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			exotic_gases = 50
+		}
+		upkeep = {
+		trigger = {
+				owner = { has_ascension_perk = ap_amaryllian_voidchildren }
+			}
+			energy = 20
+			exotic_gases = 2
+		}
+		upkeep = {
+		trigger = {
+				owner = { NOT = { has_ascension_perk = ap_amaryllian_voidchildren }
+			} }
+			energy = 10
+			exotic_gases = 1
+		}	
+	}	
+
+	triggered_planet_modifier = {
+		modifier = {
+			planet_housing_add = 20
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_ascension_perk = ap_amaryllian_voidchildren has_valid_civic = civic_machine_servitor }
+		}
+		modifier = {
+			job_bio_trophy_add = 20
+			job_maintenance_drone_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_ascension_perk = ap_amaryllian_voidchildren } has_valid_civic = civic_machine_servitor }
+		}
+		modifier = {
+			job_bio_trophy_add = 10
+			job_maintenance_drone_add = 1
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+		}
+}

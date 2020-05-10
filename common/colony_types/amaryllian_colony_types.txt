@@ -85,3 +85,24 @@ amaryllian_col_habitat_generator = {
 		}
 	}
 }
+
+# Sanctuary Station
+amaryllian_col_habitat_sanctuary = {
+	icon = 12
+
+	potential = {
+		is_planet_class = pc_habitat
+		exists = owner
+		has_planet_flag = amaryllian_sanctuary_arcology
+	}
+	planet_modifier = {
+		planet_bio_trophies_unity_produces_mult = 0.05
+	}
+	weight_modifier = {
+		base = 50
+		modifier = {
+			factor = 3
+			has_designation = amaryllian_col_habitat_sanctuary
+		}
+	}
+}
