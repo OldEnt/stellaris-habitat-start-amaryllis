@@ -5,6 +5,7 @@ amaryllian_d_hab_minerals_1 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	triggered_planet_modifier = {
@@ -62,7 +63,7 @@ amaryllian_d_hab_minerals_1 = {
 
 	# weight 0: event added
 	drop_weight = {
-		weight = 0.1
+		weight = 0
 	}
 }
 
@@ -73,6 +74,7 @@ amaryllian_d_hab_energy_1 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	triggered_planet_modifier = {
@@ -120,7 +122,7 @@ amaryllian_d_hab_energy_1 = {
 
 	# weight 0: event added
 	drop_weight = {
-		weight = 0.1
+		weight = 0
 	}
 }
 
@@ -131,6 +133,7 @@ amaryllian_d_hab_food_1 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	triggered_planet_modifier = {
@@ -165,6 +168,6 @@ amaryllian_d_hab_food_1 = {
 
 	# weight 0: event added
 	drop_weight = {
-		weight = 0.1
+		weight = 0
 	}
 }
