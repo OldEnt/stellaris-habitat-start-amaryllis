@@ -45,6 +45,7 @@ amaryllian_decision_arms_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -137,6 +138,7 @@ amaryllian_decision_civilian_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -225,6 +227,7 @@ amaryllian_decision_farming_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -313,6 +316,7 @@ amaryllian_decision_fortress_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -401,6 +405,7 @@ amaryllian_decision_research_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -485,6 +490,7 @@ amaryllian_decision_bureaucratic_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -575,6 +581,7 @@ amaryllian_decision_refinery_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -663,7 +670,8 @@ amaryllian_decision_trade_arcology_project = {
 			num_districts = { type = district_hab_energy value < 1 }
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_commercial value >= 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -690,12 +698,10 @@ amaryllian_decision_trade_arcology_project = {
 			add_district = amaryllian_district_arcology_farming_industry
 			add_district = amaryllian_district_arcology_trade_industry
 			remove_district = amaryllian_district_arcology_farming_industry
-			remove_district = amaryllian_district_arcology_trade_industry
 			add_modifier = {
 					modifier = amaryllian_decision_arcology_project_modifier
 					days = -1
 					}			
-			remove_all_districts = yes
 			planet_event = { id = amaryllian.207 }
 		}
 	}
@@ -756,6 +762,7 @@ amaryllian_decision_mining_arcology_project = {
 			num_districts = { type = district_hab_mining value >= 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -847,6 +854,7 @@ amaryllian_decision_generator_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
 	}
@@ -928,12 +936,13 @@ amaryllian_decision_sanctuary_arcology_project = {
 
 	allow = {
 		custom_tooltip = {
-			fail_text = amaryllian_decision_civilian_arcology_project_requirements
+			fail_text = amaryllian_decision_sanctuary_arcology_project_requirements
 			free_district_slots < 1
 			num_districts = { type = district_hab_energy value < 1 }
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
+			num_districts = { type = district_hab_cultural value >= 1 }
 		}
 		
 	}
@@ -959,12 +968,10 @@ amaryllian_decision_sanctuary_arcology_project = {
 			add_district = amaryllian_district_arcology_farming_industry
 			add_district = amaryllian_district_arcology_sanctuary_industry
 			remove_district = amaryllian_district_arcology_farming_industry
-			remove_district = amaryllian_district_arcology_sanctuary_industry
 			add_modifier = {
 					modifier = amaryllian_decision_arcology_project_modifier
 					days = -1
 					}
-			remove_all_districts = yes
 			planet_event = { id = amaryllian.210 }
 		}
 	}
