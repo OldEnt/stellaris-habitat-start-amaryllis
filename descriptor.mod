@@ -1,4 +1,4 @@
-version="2"
+version="3"
 tags={
 	"Events"
 	"Gameplay"
@@ -7,7 +7,7 @@ tags={
 	"Galaxy Generation"
 	"Fixes"
 }
-name="Void Dwellers Expanded [2.6+]"
+name="Void Dwellers Expanded [2.7+]"
 picture="thumbnail.png"
-supported_version="2.6.*"
+supported_version="2.7.*"
 remote_file_id="1961367151"

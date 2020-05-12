@@ -1,7 +1,7 @@
 on_yearly_pulse_country = {
 	events = {
 		amaryllian.7
-		amaryllian.10
+#		amaryllian.10	Disabled in 2.7.1 due to habitat changes
 	}
 }
 

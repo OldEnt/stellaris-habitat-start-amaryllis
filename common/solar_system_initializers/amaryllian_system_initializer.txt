@@ -61,7 +61,7 @@ amaryllian_system_initializer = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = research_habitat
-				set_planet_flag = amaryllian_habitat				
+				set_planet_flag = amaryllian_habitat		
 				}
 		}
 	}
