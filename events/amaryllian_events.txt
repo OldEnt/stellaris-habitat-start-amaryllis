@@ -534,6 +534,13 @@ country_event = {
 					is_planet_class = pc_habitat
 					is_planet_class = pc_ringworld_habitable
 # Planetary Diversity - Planetary Habitats
+					is_planet_class = pc_pd_barren_cold_hab
+					is_planet_class = pc_pd_barren_hab
+					is_planet_class = pc_pd_frozen_hab
+					is_planet_class = pc_pd_gas_giant_hab
+					is_planet_class = pc_pd_hothouse_hab
+					is_planet_class = pc_pd_molten_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
 					is_planet_class = pc_gghab
 					is_planet_class = pc_tmhab
 					is_planet_class = pc_tmhab2
@@ -668,6 +675,13 @@ country_event = {
 					is_planet_class = pc_habitat
 					is_planet_class = pc_ringworld_habitable
 # Planetary Diversity - Planetary Habitats
+					is_planet_class = pc_pd_barren_cold_hab
+					is_planet_class = pc_pd_barren_hab
+					is_planet_class = pc_pd_frozen_hab
+					is_planet_class = pc_pd_gas_giant_hab
+					is_planet_class = pc_pd_hothouse_hab
+					is_planet_class = pc_pd_molten_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
 					is_planet_class = pc_gghab
 					is_planet_class = pc_tmhab
 					is_planet_class = pc_tmhab2
