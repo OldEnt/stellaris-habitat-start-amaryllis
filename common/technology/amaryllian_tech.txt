@@ -326,7 +326,7 @@ amaryllian_tech_farming_industry = {
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
-		country_uses_food = yes
+		OR = { country_uses_food = yes has_ascension_perk = ap_synthetic_evolution }
 	}
 	
 	weight = 0

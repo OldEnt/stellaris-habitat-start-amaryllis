@@ -219,7 +219,7 @@ amaryllian_decision_farming_arcology_project = {
 			has_ascension_perk = ap_amaryllian_voidchildren
 			has_technology = amaryllian_tech_farming_industry
 			}
-			country_uses_food = yes	}
+			OR = { country_uses_food = yes has_ascension_perk = ap_synthetic_evolution } }
 			}
 
 	allow = {
