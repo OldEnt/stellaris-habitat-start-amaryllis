@@ -265,14 +265,12 @@ amaryllian_district_arcology_farming_industry = {
 	show_on_uncolonized = {	
 		is_planet_class = pc_habitat
 		exists = from
-		from = { country_uses_food = yes }
 		has_planet_flag = amaryllian_farming_arcology
 	}
 	
 	potential = { 
 		is_planet_class = pc_habitat
 		exists = owner
-		owner = { country_uses_food = yes }
 		has_planet_flag = amaryllian_farming_arcology
 	}
 
