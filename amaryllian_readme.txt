@@ -9,10 +9,11 @@
 [img]https://i.imgur.com/ygvTkkE.png[/img]
 GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 
+[IMG]https://i.imgur.com/4WpcQRA.png[/IMG]
+
 [list]
 [*] Works with Federations DLC and without. Just pick Children of the Void civic from the mod, Void Dwellers origin (if you have Federations)  and you are good to go.
-[*] Special early game bonus: Habitat build time and cost reduced by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
-[*] Note: this mod provides its own habitat start separate from Federations' Void Dwellers since Stellaris 2.5.1. and is backwards compatible with 2.5.1 (at least for now). This legacy habitat start does not require Federations DLC if you are playing on 2.6.*. Formerly known as OE's Habitat start.
+[*] Note: this mod provides its own habitat start separate from Federations' Void Dwellers since Stellaris 2.5.1. This legacy habitat start does not require Federations DLC. Formerly known as OE's Habitat start. Use of Void Dwellers or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn[/url] origin with Children of the Void civic is preferable, though.
 [/list]
 
 [u][b]High compatibility[/b][/u]
@@ -38,18 +39,12 @@ Structures from following mods receive Habitat Captain job:
 Select in the empire creation menu to enable mod features. Works great with vanilla Void Dwellers or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn mod[/url] origins.
 This civic can be taken and removed at any point of the game via government reform.
 
-[img]https://i.imgur.com/5AP9TCX.png[/img]
-
-[u][b]Void Campaign: cheaper habitats in the early game[/b][/u]
-Empire modifier for Children of the Void civic which reduces habitat build time and cost by 50%. Bonus diminishes by 5% every 5 years and disappears 50 years after start of the game.
-
-[img]https://i.imgur.com/n5qQfH4.png[/img]
-
+[img]https://i.imgur.com/vHx6tjX.png[/img]
 
 [u][b]Second stage of Voidborne ascension perk[/b][/u]
 Elysian Isles perk improves habitats even further and grants access to powerful but costly Habitat Arcologies.
 
-[img]https://i.imgur.com/o7ckKUx.png[/img]
+[img]https://i.imgur.com/vbCCsfl.png[/img]
 
 [u][b]Specialised habitat districts[/b][/u]
 Convert your regular habitats to arcologies with productivity bonuses, additional housing, and dedicated districts.
@@ -72,13 +67,13 @@ Turn mineral overflow into gas, crystals and motes exports.
 [u][b]New technologies[/b][/u]
 Provide your Habitat Captains with boosts to your habitats. This will be swapped with leveling up leaders in the future (ideally).
 
-[img]https://i.imgur.com/64gOEob.png[/img]
+[img]https://i.imgur.com/3qZJDjK.png[/img]
 
 [u][b]Addon: Void Dwellers trait fix[/b][/u]
 
 Void Dwellers will no longer receive negative trait when settling Ring World or custom habitats from supported mods. This fix requires overwrite of original game file and therefore it is available as a standalone mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url]. Habitat Arcologies from Void Dwellers Expanded are vanilla habitats and do not requre this fix but you might want it if you are settling Ring Worlds.
 
-[img]https://i.imgur.com/Ef3N6eo.png[/img]
+[img]https://i.imgur.com/viPfO61.png[/img]
 
 [u][b]Legacy feature: Habitat start which does not requre Federations DLC (read carefully)[/b][/u]
 Please note that Void Dwellers Origin does not allow gestalt empires (machines and hive minds) but you can choose Habitat start starting system (empire creation menu) from my mod with any empire and species. That said, Void Dwellers (Federations DLC required) or Starborn mod (Federations DLC not required) origins are preferred.

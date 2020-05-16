@@ -3,7 +3,7 @@
 humans_amaryllian:0 "Technocracy of Man"
 
 amaryllian_system_initializer_NAME:0 "Habitat start"
-amaryllian_system_initializer_DESC:0 "Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait one month for the game to set the habitat up.\n\nThe Technocracy of Man's starting solar system.\n\n$system_initializer_DESC$"
+amaryllian_system_initializer_DESC:0 "Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait one month for the game to set the habitat up.\n\nAvailable for all species and empire types. Best played with $civic_amaryllian_habitat$ civic which sets habitat habitability but enables features for habitat-oriented play.\n\nThe Technocracy of Man's starting solar system.\n\n$system_initializer_DESC$"
 
 amaryllian_d_hab_minerals_1:0 "Mineral Deposit"
 amaryllian_d_hab_minerals_1_desc:1 "This habitat is built near an exploitable mineral deposit."
@@ -16,7 +16,7 @@ amaryllian_d_hab_food_1_desc:1 "This habitat can process biowaste efficiently tu
 
 civic_amaryllian_habitat:0 "Children of the Void"
 civic_amaryllian_habitat_desc:0 "While others look for new homes, we forge them ourselves."
-civic_tooltip_amaryllian_habitat_world_effects:0 "Sets habitat habitability. Enables second stage of Voidborne ascension perk and grants access to unique technologies.\n\n§H$pc_habitat$s§! have £job_amaryllian_habitat_captain£ §YCaptains§! (or £job_amaryllian_habitat_brain£ §YBrain Synapses§!) who provide Empire £unity£ §Y$unity$§! output modifier which increases per §HHabitat§! owned.\n\nDoes not grant habitat start - you can opt for that in the empire creation menu."
+civic_tooltip_amaryllian_habitat_world_effects:0 "Sets habitat habitability. Enables second stage of §HVoidborne§! ascension perk and grants access to §HHabitat Arcologies§!.\n\n§H$pc_habitat$s§! have £job_amaryllian_habitat_captain£ §YCaptains§! (or £job_amaryllian_habitat_brain£ §YBrain Synapses§!) who provide Empire £unity£ §Y$unity$§! output modifier which increases per §HHabitat§! owned.\n\nDoes not grant habitat start - you can opt for that in the empire creation menu."
 
 ap_amaryllian_voidchildren:0 "Elysian Isles"
 ap_amaryllian_voidchildren_desc:0 "We found our place amongst the stars and do not look back."

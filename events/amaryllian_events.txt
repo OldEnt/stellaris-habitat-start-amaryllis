@@ -1825,11 +1825,11 @@ country_event = {
 	name = amaryllian.999.a
 	set_country_flag = 200_subscribers_update_notification
 	}
-	option = {
-	name = amaryllian.999.b
-	add_resource = {
-			influence = 250
-		}
-	set_country_flag = 200_subscribers_update_notification
-	}
+#	option = {
+#	name = amaryllian.999.b
+#	add_resource = {
+#			influence = 250
+#		}
+#	set_country_flag = 200_subscribers_update_notification
+#	}
 	}
