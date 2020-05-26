@@ -1,6 +1,5 @@
 civic_amaryllian_habitat = {
 	playable = { host_has_dlc = "Utopia" }
-	habitability_preference = pc_habitat
 	preferred_planet_class_neighbor = no
 	potential = {
 	country_type = { value = default } }
