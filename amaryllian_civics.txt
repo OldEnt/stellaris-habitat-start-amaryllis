@@ -1,0 +1,15 @@
+civic_amaryllian_habitat = {
+	playable = { host_has_dlc = "Utopia" }
+	habitability_preference = pc_habitat
+	preferred_planet_class_neighbor = no
+	potential = {
+	country_type = { value = default } }
+	random_weight = {
+		base = 0
+		modifier = {
+			factor = 0
+			has_global_flag = game_started
+		}
+	}		
+	description = "civic_tooltip_amaryllian_habitat_world_effects"
+	}
