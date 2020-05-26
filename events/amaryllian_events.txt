@@ -408,6 +408,11 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_civic = civic_amaryllian_habitat
+		NOR = {
+		has_origin = origin_starborn
+		has_country_flag = EGS_START_STARBORN
+		has_country_flag = starborn_origin
+	}
 		any_owned_pop = {
 			is_same_species = root
 			NOT = { pop_has_trait = trait_pc_habitat_preference }
@@ -438,7 +443,12 @@ country_event = {
 	id = amaryllian.444
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {	has_civic = civic_amaryllian_habitat }
+	trigger = {	has_civic = civic_amaryllian_habitat 
+	NOR = {
+		has_origin = origin_starborn
+		has_country_flag = EGS_START_STARBORN
+		has_country_flag = starborn_origin
+	} }
 		immediate = {
 			random_owned_pop = {
 					limit = { has_pop_flag = amaryllian_pop }
@@ -449,7 +459,6 @@ country_event = {
 
 # set_built_species = amaryllian_pop	need to implement to the above
 
-
 ### Change habitability of secondary species if civic is picked
 country_event = {
 	id = amaryllian.4
@@ -457,6 +466,11 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_civic = civic_amaryllian_habitat
+		NOR = {
+		has_origin = origin_starborn
+		has_country_flag = EGS_START_STARBORN
+		has_country_flag = starborn_origin
+	}
 		any_owned_planet = {
 					is_homeworld = yes
 					is_capital = yes
