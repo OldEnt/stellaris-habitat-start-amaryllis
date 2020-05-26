@@ -408,10 +408,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_civic = civic_amaryllian_habitat
-		any_owned_planet = {
-					is_homeworld = yes
-					is_capital = yes
-					has_planet_flag = amaryllian_habitat }		
 		any_owned_pop = {
 			is_same_species = root
 			NOT = { pop_has_trait = trait_pc_habitat_preference }
