@@ -13,6 +13,20 @@ event = {
         }
 }
 
+### Home name change
+
+planet_event = {
+	id = amaryllian.1111
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		has_planet_flag = amaryllian_habitat
+		}
+	immediate = {
+		set_name = "NAME_lotus"
+			}
+		}
+
 ### Prepare starting habitat
 
 planet_event = {
@@ -85,6 +99,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 			
@@ -109,6 +124,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1			
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 
@@ -130,6 +146,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 			
@@ -152,6 +169,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 
@@ -177,6 +195,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 
@@ -201,6 +220,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 			
@@ -223,6 +243,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 			
@@ -245,6 +266,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 			}
 
@@ -267,6 +289,7 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
+			check_planet_employment = yes
 			break = yes
 		}
 	}
