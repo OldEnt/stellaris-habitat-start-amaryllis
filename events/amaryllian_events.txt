@@ -13,20 +13,6 @@ event = {
         }
 }
 
-### Home name change
-
-planet_event = {
-	id = amaryllian.1111
-	hide_window = yes
-	fire_only_once = yes
-	trigger = {
-		has_planet_flag = amaryllian_habitat
-		}
-	immediate = {
-		set_name = "NAME_lotus"
-			}
-		}
-
 ### Prepare starting habitat
 
 planet_event = {
@@ -35,6 +21,7 @@ planet_event = {
 	fire_only_once = yes
 	trigger = {
 	has_planet_flag = amaryllian_habitat
+	NOT = { has_global_flag = vchecker_2_6_and_down }
 	}
 	immediate = {
 		save_event_target_as = amaryllian_habitat_target
@@ -52,6 +39,29 @@ planet_event = {
 }
 
 planet_event = {
+	id = amaryllian.230
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+	has_planet_flag = amaryllian_habitat
+	has_global_flag = vchecker_2_6_and_down
+	}
+	immediate = {
+		save_event_target_as = amaryllian_habitat_target
+		clear_blockers = yes
+		clear_deposits = yes
+		set_planet_flag = megastructure
+		set_planet_flag = habitat
+		set_planet_flag = advanced_habitat_2
+		planet_event = {
+			id = amaryllian.231
+			days = 1
+			random = 0
+		}
+	}
+}
+
+planet_event = {
 	id = amaryllian.1
 	hide_window = yes
 	is_triggered_only = yes
@@ -61,6 +71,25 @@ planet_event = {
 	immediate = {
 		change_pc = pc_habitat
 		set_planet_entity = { entity = "habitat_phase_03_entity" graphical_culture = fromfrom }
+		set_planet_size = 10
+		planet_event = {
+			id = amaryllian.2
+			days = 1
+			random = 0
+		}
+	}
+}
+
+planet_event = {
+	id = amaryllian.231
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+	has_planet_flag = amaryllian_habitat
+	}
+	immediate = {
+		change_pc = pc_habitat
+		set_planet_entity = { entity = "orbital_habitat_entity" graphical_culture = fromfrom }
 		set_planet_size = 10
 		planet_event = {
 			id = amaryllian.2
@@ -1573,6 +1602,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		has_global_flag = vchecker_2_6_and_down
 		has_civic = civic_amaryllian_habitat
 		NOT = { has_country_flag = amaryllian_void_campaign_finished }
 	}

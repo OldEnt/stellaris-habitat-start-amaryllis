@@ -14,7 +14,10 @@ amaryllian_decision_arms_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat }
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -104,7 +107,10 @@ amaryllian_decision_civilian_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -198,7 +204,10 @@ amaryllian_decision_farming_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -288,7 +297,10 @@ amaryllian_decision_fortress_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -378,7 +390,10 @@ amaryllian_decision_research_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -469,7 +484,10 @@ amaryllian_decision_bureaucratic_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -555,7 +573,10 @@ amaryllian_decision_refinery_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -647,7 +668,10 @@ amaryllian_decision_trade_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -735,7 +759,10 @@ amaryllian_decision_mining_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		OR = {
 		has_planet_flag = mining_habitat
 		num_districts = { type = district_hab_mining value >= 1 }
@@ -827,7 +854,10 @@ amaryllian_decision_generator_arcology_project = {
 
 	potential = {
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		OR = {
 		has_planet_flag = energy_habitat
 		num_districts = { type = district_hab_energy value >= 1 }
@@ -922,7 +952,10 @@ amaryllian_decision_sanctuary_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		is_planet_class = pc_habitat
-		OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+		OR = {
+			has_global_flag = vchecker_2_6_and_down
+			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			}
 		owner = { has_valid_civic = civic_machine_servitor }
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
