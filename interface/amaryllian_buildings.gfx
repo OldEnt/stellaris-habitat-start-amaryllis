@@ -1,0 +1,32 @@
+# This does not work so I have to copy vanilla gfx files into mod package...
+#spriteTypes = {
+#	spriteType = {
+#		name = "amaryllian_building_mineral_purification_plant"
+#		texturefile = "gfx/interface/icons/buildings/building_mineral_purification_plant.dds"
+#		alwaystransparent = yes
+#	}
+#}
+#
+#spriteTypes = {
+#	spriteType = {
+#		name = "amaryllian_building_mineral_purification_hub"
+#		texturefile = "gfx/interface/icons/buildings/building_mineral_purification_hub.dds"
+#		alwaystransparent = yes
+#	}
+#}
+#
+#spriteTypes = {
+#	spriteType = {
+#		name = "amaryllian_building_energy_grid"
+#		texturefile = "gfx/interface/icons/buildings/building_energy_grid.dds"
+#		alwaystransparent = yes
+#	}
+#}
+#
+#spriteTypes = {
+#	spriteType = {
+#		name = "amaryllian_building_energy_nexus"
+#		texturefile = "gfx/interface/icons/buildings/building_energy_nexus.dds"
+#		alwaystransparent = yes
+#	}
+#}

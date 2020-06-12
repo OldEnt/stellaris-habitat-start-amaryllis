@@ -160,6 +160,15 @@ amaryllian_tech_habitat_arcology_desc:0 "§HUnlocks Arcology Decisions:§! Turns
 allow_amaryllian_tech_habitat_arcology:0 "§HUnlocks Habitat Projects:§! Farming, Fortress, Foundry, Industrial and Research Habitat."
 allow_amaryllian_tech_habitat_arcology_DETAILS:0 "That is where all stars end."
 
+amaryllian_building_mineral_purification_plant:0 "$building_mineral_purification_plant$"
+amaryllian_building_mineral_purification_plant_desc:0 "$building_mineral_purification_plant_desc$"
+amaryllian_building_mineral_purification_hub:0 "$building_mineral_purification_hub$"
+amaryllian_building_mineral_purification_hub_desc:0 "$building_mineral_purification_hub_desc$"
+amaryllian_building_energy_grid:0 "$building_energy_grid$"
+amaryllian_building_energy_grid_desc:0 "$building_energy_grid_desc$"
+amaryllian_building_energy_nexus:0 "$building_energy_nexus$"
+amaryllian_building_energy_nexus_desc:0 "$building_energy_nexus_desc$"
+
 amaryllian_tech_arms_industry:0 "$amaryllian_decision_arms_arcology_project$"
 amaryllian_tech_arms_industry_desc:0 "$amaryllian_decision_arms_arcology_project_desc$"
 amaryllian_tech_civilian_industry:0 "$amaryllian_decision_civilian_arcology_project$"
