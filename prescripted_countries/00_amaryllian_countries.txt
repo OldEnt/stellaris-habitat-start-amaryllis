@@ -28,10 +28,10 @@ humans_amaryllian = {
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_fanatic_materialist"
 	flags = {
-		hyacinth_started human_2 custom_start_screen amaryllian_empire 
+		amaryllian_empire
 	}
 	ftl = wormhole
-	planet_name = "NAME_Earth"
+	planet_name = "NAME_lotus"
 	planet_class = "pc_continental"
 	initializer = "amaryllian_system_initializer"
 	system_name = "NAME_vesta"
