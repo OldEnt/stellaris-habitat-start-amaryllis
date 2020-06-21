@@ -3,12 +3,56 @@ amaryllian_district_arcology_arms_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_arms_arcology
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_arms_arcology
 		}
 	
@@ -128,12 +172,56 @@ amaryllian_district_arcology_civilian_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_civilian_arcology
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_civilian_arcology
 		exists = owner
 		owner = {
@@ -263,13 +351,57 @@ amaryllian_district_arcology_farming_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {	
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		exists = from
 		has_planet_flag = amaryllian_farming_arcology
 	}
 	
 	potential = { 
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		exists = owner
 		has_planet_flag = amaryllian_farming_arcology
 	}
@@ -480,12 +612,56 @@ amaryllian_district_arcology_fortress_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_fortress_arcology
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_fortress_arcology
 		}
 	
@@ -576,12 +752,56 @@ amaryllian_district_arcology_research_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_research_arcology
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_research_arcology
 		}
 	
@@ -720,12 +940,56 @@ amaryllian_district_arcology_bureaucratic_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_bureaucratic_arcology
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_bureaucratic_arcology
 		}
 	
@@ -840,12 +1104,56 @@ amaryllian_district_arcology_refinery_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_refinery_arcology
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_refinery_arcology
 		}
 	
@@ -1039,12 +1347,56 @@ amaryllian_district_arcology_trade_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_trade_arcology
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_trade_arcology
 		exists = owner
 		owner = { is_gestalt = no }
@@ -1170,12 +1522,56 @@ amaryllian_district_arcology_mining_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {	
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_mining_arcology
 	}
 	
 	potential = { 
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_mining_arcology
 	}
 
@@ -1371,12 +1767,56 @@ amaryllian_district_arcology_generator_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {	
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_generator_arcology
 	}
 	
 	potential = { 
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_generator_arcology
 	}
 
@@ -1560,12 +2000,56 @@ amaryllian_district_arcology_sanctuary_industry = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {	
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_sanctuary_arcology
 	}
 	
 	potential = { 
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+# Planetary Diversity - Planetary Habitats
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_frozen_hab
+			is_planet_class = pc_pd_gas_giant_hab
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_molten_hab
+			is_planet_class = pc_pd_asteroid_hab
+# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+			is_planet_class = pc_gghab
+			is_planet_class = pc_tmhab
+			is_planet_class = pc_tmhab2
+			is_planet_class = pc_mmhab
+			is_planet_class = pc_mmhab2
+			is_planet_class = pc_bhab
+			is_planet_class = pc_bchab
+			is_planet_class = pc_mhab
+			is_planet_class = pc_fhab
+			is_planet_class = pc_fmhab
+			is_planet_class = pc_mehab
+		}
 		has_planet_flag = amaryllian_sanctuary_arcology
 		owner = { has_valid_civic = civic_machine_servitor }
 	}

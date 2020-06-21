@@ -11,6 +11,12 @@ amaryllian_habitat_captain_quarters = {
 	pop_demotion_time_mult = -1
 }
 
+amaryllian_pd_hab_postterraform = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = 1
+	pop_demotion_time_mult = -1
+}
+
 amaryllian_decision_arcology_project_modifier = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 1

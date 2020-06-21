@@ -1902,6 +1902,57 @@ planet_event = {
 	}
 }
 
+# Planetary Diversity - Planetary habitat compatibility
+
+planet_event = {
+	id = amaryllian.800
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+			OR = {
+			has_planet_flag = amaryllian_arms_arcology
+			has_planet_flag = amaryllian_civilian_arcology
+			has_planet_flag = amaryllian_arms_arcology
+			has_planet_flag = amaryllian_farming_arcology
+			has_planet_flag = amaryllian_fortress_arcology
+			has_planet_flag = amaryllian_research_arcology
+			has_planet_flag = amaryllian_bureaucratic_arcology
+			has_planet_flag = amaryllian_refinery_arcology
+			has_planet_flag = amaryllian_trade_arcology
+			has_planet_flag = amaryllian_mining_arcology
+			has_planet_flag = amaryllian_generator_arcology
+			has_planet_flag = amaryllian_sanctuary_arcology
+			has_planet_flag = amaryllian_hab_arcology
+			}
+				NOT = {
+# In case any smartbum mod adds terraforming to a habitat.
+					is_planet_class = pc_habitat
+				}
+			}
+		add_modifier = { modifier = amaryllian_pd_hab_postterraform days = 7 } 
+		remove_modifier = amaryllian_voidchildren_habitat_modifier
+		remove_modifier = amaryllian_decision_arcology_project_modifier
+		remove_modifier = amaryllian_habitat_captain_quarters
+		remove_modifier = amaryllian_habitat_brain_quarters
+		remove_planet_flag = amaryllian_arms_arcology
+		remove_planet_flag = amaryllian_civilian_arcology
+		remove_planet_flag = amaryllian_farming_arcology
+		remove_planet_flag = amaryllian_fortress_arcology
+		remove_planet_flag = amaryllian_research_arcology
+		remove_planet_flag = amaryllian_bureaucratic_arcology
+		remove_planet_flag = amaryllian_refinery_arcology
+		remove_planet_flag = amaryllian_trade_arcology
+		remove_planet_flag = amaryllian_mining_arcology
+		remove_planet_flag = amaryllian_generator_arcology
+		remove_planet_flag = amaryllian_sanctuary_arcology
+		remove_planet_flag = amaryllian_hab_arcology
+		}
+	}
+}
+	
 # Mod update notification
 country_event = {
         id = amaryllian.998
