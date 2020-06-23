@@ -16,33 +16,14 @@ amaryllian_decision_arms_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat }
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
+		OR = { is_planet_class = pc_habitat has_planet_flag = pd_foundry_hab }
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -135,32 +116,12 @@ amaryllian_decision_civilian_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
@@ -258,33 +219,14 @@ amaryllian_decision_farming_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
+		OR = { is_planet_class = pc_habitat has_planet_flag = pd_farming_hab }
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -377,32 +319,12 @@ amaryllian_decision_fortress_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
@@ -496,33 +418,14 @@ amaryllian_decision_research_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
+		OR = { is_planet_class = pc_habitat has_planet_flag = pd_science_hab }
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -616,32 +519,12 @@ amaryllian_decision_bureaucratic_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
@@ -731,32 +614,12 @@ amaryllian_decision_refinery_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
@@ -852,33 +715,14 @@ amaryllian_decision_trade_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
+		OR = { is_planet_class = pc_habitat has_planet_flag = pd_commercial_hab }
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -909,7 +753,7 @@ amaryllian_decision_trade_arcology_project = {
 			num_districts = { type = district_hab_energy value < 1 }
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value >= 1 }
+			OR = { num_districts = { type = district_hab_commercial value >= 1 } num_districts = { type = district_pdhab_commercial value >= 1 } }
 			num_districts = { type = district_hab_cultural value < 1 }
 		}
 		
@@ -969,36 +813,16 @@ amaryllian_decision_mining_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
 		OR = {
-		has_planet_flag = mining_habitat
-		num_districts = { type = district_hab_mining value >= 1 }
+		OR = { has_planet_flag = mining_habitat has_planet_flag = pd_mining_hab has_planet_flag = pd_mining2_hab }
+		OR = { num_districts = { type = district_hab_mining value >= 1 } num_districts = { type = district_pdhab_mining value >= 1 } num_districts = { type = district_pdhab_mining2 value >= 1 } }
 		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
@@ -1028,7 +852,7 @@ amaryllian_decision_mining_arcology_project = {
 			fail_text = amaryllian_decision_mining_arcology_project_requirements
 			free_district_slots < 1
 			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value >= 1 }
+			OR = { num_districts = { type = district_hab_mining value >= 1 } num_districts = { type = district_pdhab_mining value >= 1 } num_districts = { type = district_pdhab_mining2 value >= 1 } }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
@@ -1090,38 +914,18 @@ amaryllian_decision_generator_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
 		OR = {
-		has_planet_flag = energy_habitat
-		num_districts = { type = district_hab_energy value >= 1 }
-		owner = { is_gestalt = yes }
-		}
+			OR = { has_planet_flag = energy_habitat has_planet_flag = pd_energy_hab has_planet_flag = pd_energy2_hab }
+			OR = { num_districts = { type = district_hab_energy value >= 1 } num_districts = { type = district_pdhab_energy value >= 1 } num_districts = { type = district_pdhab_energy2 value >= 1 } }
+			owner = { is_gestalt = yes }
+		 }
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -1149,7 +953,7 @@ amaryllian_decision_generator_arcology_project = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_generator_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value >= 1 }
+			OR = { num_districts = { type = district_hab_energy value >= 1 } num_districts = { type = district_pdhab_energy value >= 1 } num_districts = { type = district_pdhab_energy2 value >= 1 } }
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
@@ -1212,32 +1016,12 @@ amaryllian_decision_sanctuary_arcology_project = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-			is_planet_class = pc_habitat
-# Planetary Diversity - Planetary Habitats
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_frozen_hab
-			is_planet_class = pc_pd_gas_giant_hab
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_molten_hab
-			is_planet_class = pc_pd_asteroid_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		is_planet_class = pc_habitat
+		is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
 			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
-			AND = { has_planet_flag = pd_hab has_global_flag = vchecker_2_6_and_down }
 			}
 		owner = { has_valid_civic = civic_machine_servitor }
 		NOR = {
@@ -1269,7 +1053,7 @@ amaryllian_decision_sanctuary_arcology_project = {
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value >= 1 }
+			OR = { num_districts = { type = district_hab_cultural value >= 1 } num_districts = { type = district_pdhab_cultural value >= 1 } }
 		}
 		
 	}
