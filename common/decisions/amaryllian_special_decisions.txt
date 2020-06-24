@@ -51,11 +51,22 @@ amaryllian_decision_arms_arcology_project = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_arms_arcology_project_requirements
 			free_district_slots < 1
+			OR = { num_districts = { type = district_hab_housing value >= 1 } num_districts = { type = district_pdhab_foundry value >= 1 } }
 			num_districts = { type = district_hab_energy value < 1 }
 			num_districts = { type = district_hab_mining value < 1 }
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+#			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -159,6 +170,16 @@ amaryllian_decision_civilian_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+#			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -252,7 +273,7 @@ amaryllian_decision_farming_arcology_project = {
 
 	allow = {
 		custom_tooltip = {
-			fail_text = amaryllian_decision_civilian_arcology_project_requirements
+			fail_text = amaryllian_decision_farming_arcology_project_requirements
 			free_district_slots < 1
 			OR = { num_districts = { type = district_hab_housing value >= 1 } num_districts = { type = district_pdhab_food value >= 1 } }
 			num_districts = { type = district_hab_energy value < 1 }
@@ -260,6 +281,16 @@ amaryllian_decision_farming_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+#			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -359,6 +390,16 @@ amaryllian_decision_fortress_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -455,11 +496,21 @@ amaryllian_decision_research_arcology_project = {
 			fail_text = amaryllian_decision_research_arcology_project_requirements
 			free_district_slots < 1
 			num_districts = { type = district_hab_energy value < 1 }
-			OR = { num_districts = { type = district_hab_science value >= 0 } num_districts = { type = district_pdhab_science value >= 0 } }
+			OR = { num_districts = { type = district_hab_science value >= 0 } AND = { num_districts = { type = district_pdhab_housing value >= 0 } num_districts = { type = district_pdhab_science value >= 1 } } }
 			num_districts = { type = district_hab_mining value < 1 }
 #			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+#			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -555,6 +606,16 @@ amaryllian_decision_bureaucratic_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -656,6 +717,16 @@ amaryllian_decision_refinery_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -757,6 +828,16 @@ amaryllian_decision_trade_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			OR = { num_districts = { type = district_hab_commercial value >= 1 } num_districts = { type = district_pdhab_commercial value >= 1 } }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+#			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -858,6 +939,16 @@ amaryllian_decision_mining_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+#			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+#			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -960,6 +1051,16 @@ amaryllian_decision_generator_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
+			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+#			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+#			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
@@ -1056,6 +1157,16 @@ amaryllian_decision_sanctuary_arcology_project = {
 			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			OR = { num_districts = { type = district_hab_cultural value >= 1 } num_districts = { type = district_pdhab_cultural value >= 1 } }
+#			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
 		
 	}
