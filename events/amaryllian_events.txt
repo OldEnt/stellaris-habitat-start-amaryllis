@@ -1932,7 +1932,7 @@ planet_event = {
 					is_planet_class = pc_habitat
 				}
 			}
-		add_modifier = { modifier = amaryllian_pd_hab_postterraform days = 7 } 
+		add_modifier = { modifier = amaryllian_pd_hab_postterraform days = 32 } 
 		remove_modifier = amaryllian_voidchildren_habitat_modifier
 		remove_modifier = amaryllian_decision_arcology_project_modifier
 		remove_modifier = amaryllian_habitat_captain_quarters

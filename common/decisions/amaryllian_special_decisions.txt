@@ -454,8 +454,9 @@ amaryllian_decision_research_arcology_project = {
 			fail_text = amaryllian_decision_research_arcology_project_requirements
 			free_district_slots < 1
 			num_districts = { type = district_hab_energy value < 1 }
+			OR = { num_districts = { type = district_hab_science value >= 0 } num_districts = { type = district_pdhab_science value >= 0 } }
 			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
+#			num_districts = { type = district_hab_science value < 1 }
 			num_districts = { type = district_hab_commercial value < 1 }
 			num_districts = { type = district_hab_cultural value < 1 }
 		}

@@ -25,6 +25,9 @@ ap_amaryllian_voidchildren_tooltip:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! u
 amaryllian_voidchildren_habitat_modifier:0 "$ap_amaryllian_voidchildren$: Perfect Home"
 amaryllian_voidchildren_habitat_modifier_desc:0 "Excellent design and proper exploitation of this $pc_habitat$ decreases £housing£ §Y$PLANET_HOUSING_TITLE$§! usage by §G-25%§!."
 
+amaryllian_pd_hab_postterraform:0 "$megastructure_demands_rejected$"
+amaryllian_pd_hab_postterraform_desc:0 "$megastructure_demands_rejected$"
+
 job_amaryllian_habitat_captain:0 "Habitat Captain"
 job_amaryllian_habitat_captain_plural:0 "Habitat Captains"
 job_amaryllian_habitat_captain_desc:0 "Empire £unity£ §Y$unity$§! output: §G+2%§!\n\nCaptain on the deck!"
@@ -303,7 +306,7 @@ amaryllian_decision_fortress_arcology_project_effects_short:0 "Turns colony into
 
 amaryllian_decision_research_arcology_project:0 "Research Habitat Project"
 amaryllian_decision_research_arcology_project_desc:0 "Requires upgraded Habitat - §H$habitat_1$§! or §H$habitat_2$§!.\n\nTo give us room to explore the varieties of mind and body into which we can evolve, one habitat is not enough."
-amaryllian_decision_research_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§!\n\nRequires upgraded Habitat - §H$habitat_1$§! or §H$habitat_2$§!."
+amaryllian_decision_research_arcology_project_requirements:0 "£trigger_no£ §RAll district slots on the habitat must be filled with§! §Y$district_hab_housing_plural$§! and or §Y$district_hab_science_plural$§!\n\nRequires upgraded Habitat - §H$habitat_1$§! or §H$habitat_2$§!."
 amaryllian_decision_research_arcology_project_effects:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Research Districts§! at the expense of the habitat's natural resource exploitation facilities becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and standard §YResearch Districts§!."
 amaryllian_decision_research_arcology_project_effects_short:0 "Turns colony into a specialised §Y$pc_habitat$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YHabitat Research Districts§!."
 
