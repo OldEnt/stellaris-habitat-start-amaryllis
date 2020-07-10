@@ -1,14 +1,24 @@
 civic_amaryllian_habitat = {
-	playable = { host_has_dlc = "Utopia" }
+	playable = {
+		host_has_dlc = "Utopia"
+	}
 	preferred_planet_class_neighbor = no
 	potential = {
-	country_type = { value = default } }
+		country_type = {
+			OR = {
+				value = default
+				value = ascended_empire
+				value = lost_empire
+				value = ascended_hive_mind
+			}
+		}
+	}
 	random_weight = {
 		base = 0
 		modifier = {
 			factor = 0
 			has_global_flag = game_started
 		}
-	}		
-	description = "civic_tooltip_amaryllian_habitat_world_effects"
 	}
+	description = "civic_tooltip_amaryllian_habitat_world_effects"
+}
