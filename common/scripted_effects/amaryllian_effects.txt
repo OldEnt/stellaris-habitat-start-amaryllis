@@ -10,9 +10,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_arms_arcology
 		add_district = amaryllian_district_arcology_arms_industry
 		remove_district = amaryllian_district_arcology_arms_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_civilian_arcology_setup
@@ -23,9 +22,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_civilian_arcology
 		add_district = amaryllian_district_arcology_civilian_industry
 		remove_district = amaryllian_district_arcology_civilian_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_farming_arcology_setup
@@ -36,9 +34,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_farming_arcology
 		add_district = amaryllian_district_arcology_farming_industry
 		remove_district = amaryllian_district_arcology_farming_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_fortress_arcology_setup
@@ -49,9 +46,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_fortress_arcology
 		add_district = amaryllian_district_arcology_fortress_industry
 		remove_district = amaryllian_district_arcology_fortress_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_research_arcology_setup
@@ -62,9 +58,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_research_arcology
 		add_district = amaryllian_district_arcology_research_industry
 		remove_district = amaryllian_district_arcology_research_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_bureaucratic_arcology_setup
@@ -75,9 +70,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_bureaucratic_arcology
 		add_district = amaryllian_district_arcology_bureaucratic_industry
 		remove_district = amaryllian_district_arcology_bureaucratic_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_refinery_arcology_setup
@@ -88,9 +82,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_refinery_arcology
 		add_district = amaryllian_district_arcology_refinery_industry
 		remove_district = amaryllian_district_arcology_refinery_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_trade_arcology_setup
@@ -101,9 +94,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_trade_arcology
 		add_district = amaryllian_district_arcology_trade_industry
 		remove_district = amaryllian_district_arcology_trade_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_mining_arcology_setup
@@ -114,9 +106,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_mining_arcology
 		add_district = amaryllian_district_arcology_mining_industry
 		remove_district = amaryllian_district_arcology_mining_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_generator_arcology_setup
@@ -127,9 +118,8 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_generator_arcology
 		add_district = amaryllian_district_arcology_generator_industry
 		remove_district = amaryllian_district_arcology_generator_industry
-		break = no
 	}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				has_planet_flag = amaryllian_sanctuary_arcology_setup
@@ -140,7 +130,6 @@ amaryllian_construct_grand_arcology = {
 		set_planet_flag = amaryllian_sanctuary_arcology
 		add_district = amaryllian_district_arcology_sanctuary_industry
 		remove_district = amaryllian_district_arcology_sanctuary_industry
-		break = no
 	}
 	else = {
 		break = yes
