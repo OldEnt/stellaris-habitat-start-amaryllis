@@ -1,7 +1,6 @@
 amaryllian_decision_arms_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_arms_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -11,19 +10,24 @@ amaryllian_decision_arms_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat }
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
-		OR = { is_planet_class = pc_habitat has_planet_flag = pd_foundry_hab }
+		}
+		OR = {
+			is_planet_class = pc_habitat
+			has_planet_flag = pd_foundry_hab
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -39,38 +43,86 @@ amaryllian_decision_arms_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_arms_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_arms_industry
 			}
 		}
 	}
-
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_arms_arcology_project_requirements
 			free_district_slots < 1
-			OR = { num_districts = { type = district_hab_housing value >= 1 } num_districts = { type = district_pdhab_foundry value >= 1 } }
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-#			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			OR = {
+				num_districts = {
+					type = district_hab_housing
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_foundry
+					value >= 1
+				}
+			}
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_foundry value < 1 }
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_arms_arcology_project_effects
@@ -96,14 +148,15 @@ amaryllian_decision_arms_arcology_project = {
 			remove_district = amaryllian_district_arcology_arms_industry
 			remove_district = amaryllian_district_arcology_farming_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
 			remove_all_districts = yes
-			planet_event = { id = amaryllian.201 }
+			planet_event = {
+				id = amaryllian.201
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -112,7 +165,6 @@ amaryllian_decision_arms_arcology_project = {
 amaryllian_decision_civilian_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_civilian_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -122,18 +174,20 @@ amaryllian_decision_civilian_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -149,41 +203,80 @@ amaryllian_decision_civilian_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_civilian_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_civilian_industry
 			}
 			OR = {
 				is_gestalt = no
 				has_valid_civic = civic_machine_servitor
 			}
-					}
+		}
 	}
-
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_civilian_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-#			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_factory value < 1 }
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_civilian_arcology_project_effects
@@ -209,14 +302,15 @@ amaryllian_decision_civilian_arcology_project = {
 			remove_district = amaryllian_district_arcology_farming_industry
 			remove_district = amaryllian_district_arcology_civilian_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
 			remove_all_districts = yes
-			planet_event = { id = amaryllian.200 }
+			planet_event = {
+				id = amaryllian.200
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -225,7 +319,6 @@ amaryllian_decision_civilian_arcology_project = {
 amaryllian_decision_farming_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_farming_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -235,19 +328,24 @@ amaryllian_decision_farming_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
-		OR = { is_planet_class = pc_habitat has_planet_flag = pd_farming_hab }
+		}
+		OR = {
+			is_planet_class = pc_habitat
+			has_planet_flag = pd_farming_hab
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -263,38 +361,90 @@ amaryllian_decision_farming_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_farming_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_farming_industry
 			}
-			OR = { country_uses_food = yes has_ascension_perk = ap_synthetic_evolution } }
+			OR = {
+				country_uses_food = yes
+				has_ascension_perk = ap_synthetic_evolution
 			}
-
+		}
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_farming_arcology_project_requirements
 			free_district_slots < 1
-			OR = { num_districts = { type = district_hab_housing value >= 1 } num_districts = { type = district_pdhab_food value >= 1 } }
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-#			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			OR = {
+				num_districts = {
+					type = district_hab_housing
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_food
+					value >= 1
+				}
+			}
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_food value < 1 }
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_farming_arcology_project_effects
@@ -320,14 +470,15 @@ amaryllian_decision_farming_arcology_project = {
 			remove_district = amaryllian_district_arcology_fortress_industry
 			remove_district = amaryllian_district_arcology_farming_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
 			remove_all_districts = yes
-			planet_event = { id = amaryllian.202 }
+			planet_event = {
+				id = amaryllian.202
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -336,7 +487,6 @@ amaryllian_decision_farming_arcology_project = {
 amaryllian_decision_fortress_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_fortress_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -346,18 +496,20 @@ amaryllian_decision_fortress_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -373,37 +525,79 @@ amaryllian_decision_fortress_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_fortress_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_fortress_industry
 			}
 		}
 	}
-
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_fortress_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_fortress_arcology_project_effects
@@ -429,14 +623,15 @@ amaryllian_decision_fortress_arcology_project = {
 			remove_district = amaryllian_district_arcology_farming_industry
 			remove_district = amaryllian_district_arcology_fortress_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
 			remove_all_districts = yes
-			planet_event = { id = amaryllian.203 }
+			planet_event = {
+				id = amaryllian.203
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -445,7 +640,6 @@ amaryllian_decision_fortress_arcology_project = {
 amaryllian_decision_research_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_research_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -455,19 +649,24 @@ amaryllian_decision_research_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
-		OR = { is_planet_class = pc_habitat has_planet_flag = pd_science_hab }
+		}
+		OR = {
+			is_planet_class = pc_habitat
+			has_planet_flag = pd_science_hab
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -483,38 +682,89 @@ amaryllian_decision_research_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_research_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_research_industry
 			}
 		}
-					}
-
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_research_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			OR = { num_districts = { type = district_hab_science value >= 0 } AND = { num_districts = { type = district_pdhab_housing value >= 0 } num_districts = { type = district_pdhab_science value >= 1 } } }
-			num_districts = { type = district_hab_mining value < 1 }
-#			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-#			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			OR = {
+				num_districts = {
+					type = district_hab_science
+					value >= 0
+				}
+				AND = {
+					num_districts = {
+						type = district_pdhab_housing
+						value >= 0
+					}
+					num_districts = {
+						type = district_pdhab_science
+						value >= 1
+					}
+				}
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			#			num_districts = { type = district_hab_science value < 1 }
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_science value < 1 }
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_research_arcology_project_effects
@@ -541,14 +791,15 @@ amaryllian_decision_research_arcology_project = {
 			remove_district = amaryllian_district_arcology_farming_industry
 			remove_district = amaryllian_district_arcology_research_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
 			remove_all_districts = yes
-			planet_event = { id = amaryllian.204 }
+			planet_event = {
+				id = amaryllian.204
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -557,7 +808,6 @@ amaryllian_decision_research_arcology_project = {
 amaryllian_decision_bureaucratic_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_bureaucratic_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -567,18 +817,20 @@ amaryllian_decision_bureaucratic_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -594,32 +846,76 @@ amaryllian_decision_bureaucratic_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { has_technology = amaryllian_tech_bureaucratic_industry }
+		owner = {
+			has_technology = amaryllian_tech_bureaucratic_industry
 		}
-
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_bureaucratic_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_bureaucratic_arcology_project_effects
@@ -646,14 +942,15 @@ amaryllian_decision_bureaucratic_arcology_project = {
 			remove_district = amaryllian_district_arcology_farming_industry
 			remove_district = amaryllian_district_arcology_bureaucratic_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
 			remove_all_districts = yes
-			planet_event = { id = amaryllian.205 }
+			planet_event = {
+				id = amaryllian.205
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -662,7 +959,6 @@ amaryllian_decision_bureaucratic_arcology_project = {
 amaryllian_decision_refinery_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_refinery_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -672,18 +968,20 @@ amaryllian_decision_refinery_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -700,37 +998,80 @@ amaryllian_decision_refinery_arcology_project = {
 		habitable_structure = yes
 		exists = owner
 		owner = {
-				has_technology = amaryllian_tech_refinery_industry
-				OR = {
-					has_technology = "tech_volatile_motes"
-					has_technology = "tech_rare_crystals"
-					has_technology = "tech_exotic_gases" }
-				}
+			has_technology = amaryllian_tech_refinery_industry
+			OR = {
+				has_technology = "tech_volatile_motes"
+				has_technology = "tech_rare_crystals"
+				has_technology = "tech_exotic_gases"
 			}
-
+		}
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_refinery_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_refinery_arcology_project_effects
@@ -757,14 +1098,15 @@ amaryllian_decision_refinery_arcology_project = {
 			remove_district = amaryllian_district_arcology_farming_industry
 			remove_district = amaryllian_district_arcology_refinery_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
 			remove_all_districts = yes
-			planet_event = { id = amaryllian.206 }
+			planet_event = {
+				id = amaryllian.206
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -773,7 +1115,6 @@ amaryllian_decision_refinery_arcology_project = {
 amaryllian_decision_trade_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_trade_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -783,19 +1124,24 @@ amaryllian_decision_trade_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
-		OR = { is_planet_class = pc_habitat has_planet_flag = pd_commercial_hab }
+		}
+		OR = {
+			is_planet_class = pc_habitat
+			has_planet_flag = pd_commercial_hab
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -811,37 +1157,83 @@ amaryllian_decision_trade_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { is_gestalt = no
+		owner = {
+			is_gestalt = no
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_trade_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_trade_industry
 			}
 		}
 	}
-
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_trade_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			OR = { num_districts = { type = district_hab_commercial value >= 1 } num_districts = { type = district_pdhab_commercial value >= 1 } }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-#			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			OR = {
+				num_districts = {
+					type = district_hab_commercial
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_commercial
+					value >= 1
+				}
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_commercial value < 1 }
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_trade_arcology_project_effects
@@ -866,13 +1258,14 @@ amaryllian_decision_trade_arcology_project = {
 			add_district = amaryllian_district_arcology_trade_industry
 			remove_district = amaryllian_district_arcology_farming_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}			
-			planet_event = { id = amaryllian.207 }
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
+			planet_event = {
+				id = amaryllian.207
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -881,7 +1274,6 @@ amaryllian_decision_trade_arcology_project = {
 amaryllian_decision_mining_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_mining_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -891,21 +1283,40 @@ amaryllian_decision_mining_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
+		}
 		OR = {
-		OR = { has_planet_flag = mining_habitat has_planet_flag = pd_mining_hab has_planet_flag = pd_mining2_hab }
-		OR = { num_districts = { type = district_hab_mining value >= 1 } num_districts = { type = district_pdhab_mining value >= 1 } num_districts = { type = district_pdhab_mining2 value >= 1 } }
+			OR = {
+				has_planet_flag = mining_habitat
+				has_planet_flag = pd_mining_hab
+				has_planet_flag = pd_mining2_hab
+			}
+			OR = {
+				num_districts = {
+					type = district_hab_mining
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_mining
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_mining2
+					value >= 1
+				}
+			}
 		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
@@ -922,37 +1333,83 @@ amaryllian_decision_mining_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_mining_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_mining_industry
 			}
-			}
-			}
-
+		}
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_mining_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			OR = { num_districts = { type = district_hab_mining value >= 1 } num_districts = { type = district_pdhab_mining value >= 1 } num_districts = { type = district_pdhab_mining2 value >= 1 } }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-#			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-#			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			OR = {
+				num_districts = {
+					type = district_hab_mining
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_mining
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_mining2
+					value >= 1
+				}
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_mining value < 1 }
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_mining2 value < 1 }
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_mining_arcology_project_effects
@@ -977,13 +1434,14 @@ amaryllian_decision_mining_arcology_project = {
 			add_district = amaryllian_district_arcology_mining_industry
 			remove_district = amaryllian_district_arcology_farming_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}
-			planet_event = { id = amaryllian.208 }
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
+			planet_event = {
+				id = amaryllian.208
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -992,7 +1450,6 @@ amaryllian_decision_mining_arcology_project = {
 amaryllian_decision_generator_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_generator_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -1002,23 +1459,44 @@ amaryllian_decision_generator_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
+		}
 		OR = {
-			OR = { has_planet_flag = energy_habitat has_planet_flag = pd_energy_hab has_planet_flag = pd_energy2_hab }
-			OR = { num_districts = { type = district_hab_energy value >= 1 } num_districts = { type = district_pdhab_energy value >= 1 } num_districts = { type = district_pdhab_energy2 value >= 1 } }
-			owner = { is_gestalt = yes }
-		 }
+			OR = {
+				has_planet_flag = energy_habitat
+				has_planet_flag = pd_energy_hab
+				has_planet_flag = pd_energy2_hab
+			}
+			OR = {
+				num_districts = {
+					type = district_hab_energy
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_energy
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_energy2
+					value >= 1
+				}
+			}
+			owner = {
+				is_gestalt = yes
+			}
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -1034,37 +1512,83 @@ amaryllian_decision_generator_arcology_project = {
 		}
 		habitable_structure = yes
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_generator_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_generator_industry
 			}
-			}
-			}
-
+		}
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_generator_arcology_project_requirements
 			free_district_slots < 1
-			OR = { num_districts = { type = district_hab_energy value >= 1 } num_districts = { type = district_pdhab_energy value >= 1 } num_districts = { type = district_pdhab_energy2 value >= 1 } }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			num_districts = { type = district_hab_cultural value < 1 }
-			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-#			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-#			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			OR = {
+				num_districts = {
+					type = district_hab_energy
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_energy
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_energy2
+					value >= 1
+				}
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_cultural
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_energy value < 1 }
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			#			num_districts = { type = district_pdhab_energy2 value < 1 }
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_generator_arcology_project_effects
@@ -1089,13 +1613,14 @@ amaryllian_decision_generator_arcology_project = {
 			add_district = amaryllian_district_arcology_generator_industry
 			remove_district = amaryllian_district_arcology_farming_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}
-			planet_event = { id = amaryllian.209 }
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
+			planet_event = {
+				id = amaryllian.209
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -1104,7 +1629,6 @@ amaryllian_decision_generator_arcology_project = {
 amaryllian_decision_sanctuary_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_sanctuary_arcology_project
-
 	enactment_time = 1800
 	resources = {
 		category = decisions
@@ -1114,19 +1638,23 @@ amaryllian_decision_sanctuary_arcology_project = {
 			alloys = 500
 		}
 	}
-
 	potential = {
 		exists = owner
 		habitable_structure = yes
 		OR = {
-		is_planet_class = pc_habitat
-		is_pd_planetary_habitat = yes
+			is_planet_class = pc_habitat
+			is_pd_planetary_habitat = yes
 		}
 		OR = {
 			has_global_flag = vchecker_2_6_and_down
-			OR = { has_planet_flag = advanced_habitat_2 has_planet_flag = advanced_habitat}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = advanced_habitat
 			}
-		owner = { has_valid_civic = civic_machine_servitor }
+		}
+		owner = {
+			has_valid_civic = civic_machine_servitor
+		}
 		NOR = {
 			has_planet_flag = amaryllian_civilian_arcology
 			has_planet_flag = amaryllian_arms_arcology
@@ -1140,37 +1668,82 @@ amaryllian_decision_sanctuary_arcology_project = {
 			has_planet_flag = amaryllian_generator_arcology
 			has_planet_flag = amaryllian_sanctuary_arcology
 		}
-		owner = { 
+		owner = {
 			OR = {
-			has_ascension_perk = ap_amaryllian_voidchildren
-			has_technology = amaryllian_tech_sanctuary_industry
+				has_ascension_perk = ap_amaryllian_voidchildren
+				has_technology = amaryllian_tech_sanctuary_industry
 			}
-			}
-			}
-
+		}
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = amaryllian_decision_sanctuary_arcology_project_requirements
 			free_district_slots < 1
-			num_districts = { type = district_hab_energy value < 1 }
-			num_districts = { type = district_hab_mining value < 1 }
-			num_districts = { type = district_hab_science value < 1 }
-			num_districts = { type = district_hab_commercial value < 1 }
-			OR = { num_districts = { type = district_hab_cultural value >= 1 } num_districts = { type = district_pdhab_cultural value >= 1 } }
-#			num_districts = { type = district_pdhab_cultural value < 1 }
-			num_districts = { type = district_pdhab_food value < 1 }
-			num_districts = { type = district_pdhab_energy value < 1 }
-			num_districts = { type = district_pdhab_mining value < 1 }
-			num_districts = { type = district_pdhab_science value < 1 }
-			num_districts = { type = district_pdhab_commercial value < 1 }
-			num_districts = { type = district_pdhab_foundry value < 1 }
-			num_districts = { type = district_pdhab_factory value < 1 }
-			num_districts = { type = district_pdhab_energy2 value < 1 }
-			num_districts = { type = district_pdhab_mining2 value < 1 }
+			num_districts = {
+				type = district_hab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_hab_commercial
+				value < 1
+			}
+			OR = {
+				num_districts = {
+					type = district_hab_cultural
+					value >= 1
+				}
+				num_districts = {
+					type = district_pdhab_cultural
+					value >= 1
+				}
+			}
+			#			num_districts = { type = district_pdhab_cultural value < 1 }
+			num_districts = {
+				type = district_pdhab_food
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_science
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_commercial
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_foundry
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_factory
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_energy2
+				value < 1
+			}
+			num_districts = {
+				type = district_pdhab_mining2
+				value < 1
+			}
 		}
-		
 	}
-
 	effect = {
 		# Make arcology-habitat
 		custom_tooltip = amaryllian_decision_sanctuary_arcology_project_effects
@@ -1194,13 +1767,210 @@ amaryllian_decision_sanctuary_arcology_project = {
 			add_district = amaryllian_district_arcology_sanctuary_industry
 			remove_district = amaryllian_district_arcology_farming_industry
 			add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
-					days = -1
-					}
-			planet_event = { id = amaryllian.210 }
+				modifier = amaryllian_decision_arcology_project_modifier
+				days = -1
+			}
+			planet_event = {
+				id = amaryllian.210
+			}
 		}
 	}
+	ai_weight = {
+		weight = 0
+	}
+}
 
+amaryllian_decision_grand_arcology_designer = {
+	owned_planets_only = yes
+	icon = decision_amaryllian_decision_grand_arcology_designer
+	potential = {
+		exists = owner
+		habitable_structure = yes
+		NOT = {
+			has_planet_flag = amaryllian_hab_grand_arcology
+		}
+		#		OR = {
+		is_planet_class = pc_habitat
+		#		is_pd_planetary_habitat = yes
+		#		}
+		#		OR = {
+		#			has_global_flag = vchecker_2_6_and_down
+		#			has_planet_flag = advanced_habitat_2
+		#			}
+		#		OR = {
+		#			has_planet_flag = advanced_habitat_2
+		#			has_planet_flag = amaryllian_hab_arcology
+		#			has_planet_flag = amaryllian_civilian_arcology
+		#			has_planet_flag = amaryllian_arms_arcology
+		#			has_planet_flag = amaryllian_farming_arcology
+		#			has_planet_flag = amaryllian_fortress_arcology
+		#			has_planet_flag = amaryllian_research_arcology
+		#			has_planet_flag = amaryllian_bureaucratic_arcology
+		#			has_planet_flag = amaryllian_refinery_arcology
+		#			has_planet_flag = amaryllian_trade_arcology
+		#			has_planet_flag = amaryllian_mining_arcology
+		#			has_planet_flag = amaryllian_generator_arcology
+		#			has_planet_flag = amaryllian_sanctuary_arcology
+		#		}
+		owner = {
+			has_civic = civic_amaryllian_habitat
+		}
+	}
+	#	allow = {
+	#		custom_tooltip = {
+	#			fail_text = amaryllian_decision_grand_arcology_designer_requirements
+	#			owner = { 
+	#			has_ascension_perk = ap_amaryllian_voidchildren
+	#			}
+	#		}
+	#	}
+	effect = {
+		# Make design grand-arcology-habitat
+		custom_tooltip = amaryllian_decision_grand_arcology_designer_effects
+		hidden_effect = {
+			planet_event = {
+				id = amaryllian.900
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+amaryllian_decision_grand_arcology_project = {
+	owned_planets_only = yes
+	icon = decision_amaryllian_decision_grand_arcology_project
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				NOT = {
+					has_planet_flag = amaryllian_hab_arcology
+				}
+			}
+			influence = 100
+			minerals = 15000
+			alloys = 750
+		}
+		cost = {
+			trigger = {
+				has_planet_flag = amaryllian_hab_arcology
+			}
+			minerals = 5000
+			alloys = 250
+		}
+	}
+	potential = {
+		exists = owner
+		habitable_structure = yes
+		NOT = {
+			has_planet_flag = amaryllian_hab_grand_arcology
+		}
+		#		OR = {
+		is_planet_class = pc_habitat
+		#		is_pd_planetary_habitat = yes
+		#		}
+		#		OR = {
+		#			has_planet_flag = advanced_habitat_2
+		#			has_planet_flag = amaryllian_hab_arcology
+		#			has_global_flag = vchecker_2_6_and_down
+		#			}
+		#		OR = {
+		#			has_planet_flag = advanced_habitat_2
+		#			has_planet_flag = amaryllian_hab_arcology
+		#			has_planet_flag = amaryllian_civilian_arcology
+		#			has_planet_flag = amaryllian_arms_arcology
+		#			has_planet_flag = amaryllian_farming_arcology
+		#			has_planet_flag = amaryllian_fortress_arcology
+		#			has_planet_flag = amaryllian_research_arcology
+		#			has_planet_flag = amaryllian_bureaucratic_arcology
+		#			has_planet_flag = amaryllian_refinery_arcology
+		#			has_planet_flag = amaryllian_trade_arcology
+		#			has_planet_flag = amaryllian_mining_arcology
+		#			has_planet_flag = amaryllian_generator_arcology
+		#			has_planet_flag = amaryllian_sanctuary_arcology
+		#		}
+		owner = {
+			has_civic = civic_amaryllian_habitat
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = amaryllian_decision_grand_arcology_project_requirements
+			owner = {
+				has_ascension_perk = ap_amaryllian_voidchildren
+			}
+			OR = {
+				has_planet_flag = advanced_habitat_2
+				has_planet_flag = amaryllian_hab_arcology
+				has_global_flag = vchecker_2_6_and_down
+				has_planet_flag = amaryllian_civilian_arcology
+				has_planet_flag = amaryllian_arms_arcology
+				has_planet_flag = amaryllian_farming_arcology
+				has_planet_flag = amaryllian_fortress_arcology
+				has_planet_flag = amaryllian_research_arcology
+				has_planet_flag = amaryllian_bureaucratic_arcology
+				has_planet_flag = amaryllian_refinery_arcology
+				has_planet_flag = amaryllian_trade_arcology
+				has_planet_flag = amaryllian_mining_arcology
+				has_planet_flag = amaryllian_generator_arcology
+				has_planet_flag = amaryllian_sanctuary_arcology
+			}
+			check_variable = {
+				which = "amaryllian_arcology_setup_num"
+				value = 4
+			}
+		}
+	}
+	effect = {
+		# Make design grand-arcology-habitat
+		custom_tooltip = amaryllian_decision_grand_arcology_project_effects
+		hidden_effect = {
+			set_variable = {
+				which = amaryllian_arcology_setup_num
+				value = 0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_planet_flag = amaryllian_hab_arcology
+						has_planet_flag = amaryllian_civilian_arcology
+						has_planet_flag = amaryllian_arms_arcology
+						has_planet_flag = amaryllian_farming_arcology
+						has_planet_flag = amaryllian_fortress_arcology
+						has_planet_flag = amaryllian_research_arcology
+						has_planet_flag = amaryllian_bureaucratic_arcology
+						has_planet_flag = amaryllian_refinery_arcology
+						has_planet_flag = amaryllian_trade_arcology
+						has_planet_flag = amaryllian_mining_arcology
+						has_planet_flag = amaryllian_generator_arcology
+						has_planet_flag = amaryllian_sanctuary_arcology
+					}
+				}
+				set_planet_flag = amaryllian_hab_grand_arcology
+				remove_planet_flag = amaryllian_hab_arcology
+				amaryllian_remove_all_vanilla_habitat_districts = yes
+				amaryllian_construct_grand_arcology = yes
+				break = yes
+			}
+			else = {
+				set_planet_flag = amaryllian_hab_grand_arcology
+				add_modifier = {
+					modifier = amaryllian_decision_arcology_project_modifier
+					days = -1
+				}
+				remove_all_districts = yes
+				amaryllian_construct_grand_arcology = yes
+				break = yes
+			}
+			# TODO			
+			#			planet_event = {
+			#				id = amaryllian.910
+			#			}
+		}
+	}
 	ai_weight = {
 		weight = 0
 	}

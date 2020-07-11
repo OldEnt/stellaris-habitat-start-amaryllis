@@ -106,3 +106,26 @@ amaryllian_col_habitat_sanctuary = {
 		}
 	}
 }
+
+# Grand Habitat Arcology
+amaryllian_col_grand_habitat_arcology = {
+	icon = 12
+
+	potential = {
+		is_planet_class = pc_habitat
+		exists = owner
+		has_planet_flag = amaryllian_grand_habitat_arcology
+	}
+	
+	planet_modifier = {
+		planet_stability_add = 10
+	}
+	
+	weight_modifier = {
+		base = 50
+		modifier = {
+			factor = 3
+			has_designation = amaryllian_col_grand_habitat_arcology
+		}
+	}
+}

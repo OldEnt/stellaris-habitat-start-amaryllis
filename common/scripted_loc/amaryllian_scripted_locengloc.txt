@@ -1,0 +1,259 @@
+defined_text = {
+	name = GetTechInfo_bureaucratic
+	text = {
+		trigger = {
+			OR = {
+				has_planet_flag = amaryllian_bureaucratic_arcology
+				owner = {
+					has_technology = amaryllian_tech_bureaucratic_industry
+				}
+			}
+		}
+		localization_key = amaryllian_gettechinfo_bureaucratic_yes
+	}
+	text = {
+		trigger = {
+			NOR = {
+				has_planet_flag = amaryllian_bureaucratic_arcology
+				owner = {
+					has_technology = amaryllian_tech_bureaucratic_industry
+				}
+			}
+		}
+		localization_key = amaryllian_gettechinfo_bureaucratic_no
+	}
+}
+
+defined_text = {
+	name = GetTechInfo_refinery
+	text = {
+		trigger = {
+			OR = {
+				has_planet_flag = amaryllian_refinery_arcology
+				owner = {
+					has_technology = amaryllian_tech_refinery_industry
+					OR = {
+						has_technology = "tech_volatile_motes"
+						has_technology = "tech_rare_crystals"
+						has_technology = "tech_exotic_gases"
+					}
+				}
+			}
+		}
+		localization_key = amaryllian_gettechinfo_refinery_yes
+	}
+	text = {
+		trigger = {
+			NOR = {
+				has_planet_flag = amaryllian_refinery_arcology
+				owner = {
+					has_technology = amaryllian_tech_refinery_industry
+					OR = {
+						has_technology = "tech_volatile_motes"
+						has_technology = "tech_rare_crystals"
+						has_technology = "tech_exotic_gases"
+					}
+				}
+			}
+		}
+		localization_key = amaryllian_gettechinfo_refinery_no
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_arms
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_arms_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_arms_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_arms_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_arms_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_civilian
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_civilian_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_civilian_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_civilian_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_civilian_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_farming
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_farming_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_farming_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_farming_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_farming_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_fortress
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_fortress_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_fortress_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_fortress_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_fortress_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_research
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_research_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_research_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_research_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_research_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_bureaucratic
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_bureaucratic_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_bureaucratic_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_bureaucratic_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_bureaucratic_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_refinery
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_refinery_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_refinery_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_refinery_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_refinery_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_trade
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_trade_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_trade_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_trade_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_trade_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_mining
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_mining_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_mining_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_mining_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_mining_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_generator
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_generator_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_generator_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_generator_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_generator_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_sanctuary
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_sanctuary_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_sanctuary_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_sanctuary_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_sanctuary_industry
+	}
+}
