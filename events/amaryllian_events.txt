@@ -2321,11 +2321,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_arms_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_arms_arcology
+						owner = {
+							has_technology = amaryllian_tech_arms_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_arms_arcology_setup
@@ -2368,11 +2375,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_civilian_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_civilian_arcology
+						owner = {
+							has_technology = amaryllian_tech_civilian_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_civilian_arcology_setup
@@ -2415,11 +2429,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_farming_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_farming_arcology
+						owner = {
+							has_technology = amaryllian_tech_farming_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_farming_arcology_setup
@@ -2451,11 +2472,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_fortress_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_fortress_arcology
+						owner = {
+							has_technology = amaryllian_tech_fortress_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_fortress_arcology_setup
@@ -2487,11 +2515,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_research_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_research_arcology
+						owner = {
+							has_technology = amaryllian_tech_research_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_research_arcology_setup
@@ -2522,6 +2557,9 @@ planet_event = {
 		hidden_effect = {
 			if = {
 				limit = {
+					NOT = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+					}
 					OR = {
 						has_planet_flag = amaryllian_bureaucratic_arcology
 						owner = {
@@ -2564,6 +2602,9 @@ planet_event = {
 		hidden_effect = {
 			if = {
 				limit = {
+					NOT = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+					}
 					OR = {
 						has_planet_flag = amaryllian_refinery_arcology
 						owner = {
@@ -2620,11 +2661,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_trade_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_trade_arcology
+						owner = {
+							has_technology = amaryllian_tech_trade_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_trade_arcology_setup
@@ -2662,11 +2710,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_mining_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_mining_arcology
+						owner = {
+							has_technology = amaryllian_tech_mining_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_mining_arcology_setup
@@ -2704,11 +2759,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_generator_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_generator_arcology
+						owner = {
+							has_technology = amaryllian_tech_generator_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_generator_arcology_setup
@@ -2748,11 +2810,18 @@ planet_event = {
 			if = {
 				limit = {
 					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 						check_variable = {
 							which = "amaryllian_arcology_setup_num"
 							value >= 4
 						}
 						has_planet_flag = amaryllian_sanctuary_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_sanctuary_arcology
+						owner = {
+							has_technology = amaryllian_tech_sanctuary_industry
+						}
 					}
 				}
 				set_planet_flag = amaryllian_sanctuary_arcology_setup
@@ -2779,27 +2848,66 @@ planet_event = {
 	}
 	#	Clear
 	option = {
+		name = amaryllian.900.x
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+					}
+				}
+				set_variable = {
+					which = amaryllian_arcology_setup_num
+					value = 0
+				}
+				remove_planet_flag = amaryllian_arms_arcology_setup
+				remove_planet_flag = amaryllian_civilian_arcology_setup
+				remove_planet_flag = amaryllian_farming_arcology_setup
+				remove_planet_flag = amaryllian_fortress_arcology_setup
+				remove_planet_flag = amaryllian_research_arcology_setup
+				remove_planet_flag = amaryllian_bureaucratic_arcology_setup
+				remove_planet_flag = amaryllian_refinery_arcology_setup
+				remove_planet_flag = amaryllian_trade_arcology_setup
+				remove_planet_flag = amaryllian_mining_arcology_setup
+				remove_planet_flag = amaryllian_generator_arcology_setup
+				remove_planet_flag = amaryllian_sanctuary_arcology_setup
+				planet_event = {
+					id = amaryllian.900
+					days = 0
+					random = 0
+				}
+			}
+			else = {
+				planet_event = {
+					id = amaryllian.900
+					days = 0
+					random = 0
+				}
+			}
+		}
+	}
+	#	Lock
+	option = {
 		name = amaryllian.900.y
 		hidden_effect = {
-			set_variable = {
-				which = amaryllian_arcology_setup_num
-				value = 0
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+					}
+				}
+				set_timed_planet_flag = { flag = amaryllian_decision_grand_arcology_designer_locked days = 180 }
+				planet_event = {
+					id = amaryllian.900
+					days = 0
+					random = 0
+				}
 			}
-			remove_planet_flag = amaryllian_arms_arcology_setup
-			remove_planet_flag = amaryllian_civilian_arcology_setup
-			remove_planet_flag = amaryllian_farming_arcology_setup
-			remove_planet_flag = amaryllian_fortress_arcology_setup
-			remove_planet_flag = amaryllian_research_arcology_setup
-			remove_planet_flag = amaryllian_bureaucratic_arcology_setup
-			remove_planet_flag = amaryllian_refinery_arcology_setup
-			remove_planet_flag = amaryllian_trade_arcology_setup
-			remove_planet_flag = amaryllian_mining_arcology_setup
-			remove_planet_flag = amaryllian_generator_arcology_setup
-			remove_planet_flag = amaryllian_sanctuary_arcology_setup
-			planet_event = {
-				id = amaryllian.900
-				days = 0
-				random = 0
+			else = {
+				planet_event = {
+					id = amaryllian.900
+					days = 0
+				}
 			}
 		}
 	}
