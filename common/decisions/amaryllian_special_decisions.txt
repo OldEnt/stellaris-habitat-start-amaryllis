@@ -172,12 +172,12 @@ amaryllian_decision_grand_arcology_project = {
 					value = 0
 				}
 				remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+				planet_event = {
+					id = amaryllian.199
+					days = 1
+				}
 				amaryllian_construct_arcology = yes
 				break = yes
-				# TODO			
-				#			planet_event = {
-				#				id = amaryllian.910
-				#			}
 			}
 			# Upgrade from Specialised to Grand Arcology	
 			else_if = {
@@ -199,12 +199,12 @@ amaryllian_decision_grand_arcology_project = {
 					value = 0
 				}
 				remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+				planet_event = {
+					id = amaryllian.199
+					days = 1
+				}
 				amaryllian_construct_arcology = yes
 				break = yes
-				# TODO			
-				#			planet_event = {
-				#				id = amaryllian.910
-				#			}
 			}
 			# Grand Arcology			
 			else_if = {
@@ -231,12 +231,12 @@ amaryllian_decision_grand_arcology_project = {
 					value = 0
 				}
 				remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+				planet_event = {
+					id = amaryllian.199
+					days = 1
+				}
 				amaryllian_construct_arcology = yes
 				break = yes
-				# TODO			
-				#			planet_event = {
-				#				id = amaryllian.910
-				#			}
 			}
 		}
 	}

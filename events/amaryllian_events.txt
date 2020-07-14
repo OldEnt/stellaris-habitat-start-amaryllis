@@ -2070,6 +2070,160 @@ country_event = {
 
 # Habitat arcology complete
 planet_event = {
+	id = amaryllian.199
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_grand_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.220
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_civilian_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.200
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_arms_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.201
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_farming_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.202
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_fortress_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.203
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_research_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.204
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_bureaucratic_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.205
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_refinery_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.206
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_trade_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.207
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_mining_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.208
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_generator_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.209
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = amaryllian_hab_arcology
+				has_planet_flag = amaryllian_sanctuary_arcology
+				NOT = {
+					has_planet_flag = amaryllian_hab_grand_arcology
+				}
+			}
+			planet_event = {
+				id = amaryllian.210
+			}
+		}
+		else = {
+			break = yes
+		}
+	}
+}
+
+planet_event = {
 	id = amaryllian.200
 	title = amaryllian.200.name
 	desc = amaryllian.200.desc
@@ -2094,10 +2248,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_arms_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_arms_arcology
+	# }
 	option = {
 		name = amaryllian.201.a
 	}
@@ -2111,10 +2265,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_farming_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_farming_arcology
+	# }
 	option = {
 		name = amaryllian.202.a
 	}
@@ -2128,10 +2282,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_fortress_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_fortress_arcology
+	# }
 	option = {
 		name = amaryllian.203.a
 	}
@@ -2145,10 +2299,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_research_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_research_arcology
+	# }
 	option = {
 		name = amaryllian.204.a
 	}
@@ -2162,10 +2316,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_bureaucratic_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_bureaucratic_arcology
+	# }
 	option = {
 		name = amaryllian.205.a
 	}
@@ -2179,10 +2333,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_refinery_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_refinery_arcology
+	# }
 	option = {
 		name = amaryllian.206.a
 	}
@@ -2196,10 +2350,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_trade_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_trade_arcology
+	# }
 	option = {
 		name = amaryllian.207.a
 	}
@@ -2213,10 +2367,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_mining_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_mining_arcology
+	# }
 	option = {
 		name = amaryllian.208.a
 	}
@@ -2230,10 +2384,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_generator_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_generator_arcology
+	# }
 	option = {
 		name = amaryllian.209.a
 	}
@@ -2247,12 +2401,29 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_sanctuary_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_sanctuary_arcology
+	# }
 	option = {
 		name = amaryllian.210.a
+	}
+}
+
+planet_event = {
+	id = amaryllian.220
+	title = amaryllian.220.name
+	desc = amaryllian.220.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_cityscape
+	location = root
+	is_triggered_only = yes
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_hab_grand_arcology
+	# }
+	option = {
+		name = amaryllian.220.a
 	}
 }
 
