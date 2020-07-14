@@ -2278,6 +2278,7 @@ planet_event = {
 					has_planet_flag = amaryllian_generator_arcology
 					has_planet_flag = amaryllian_sanctuary_arcology
 					has_planet_flag = amaryllian_hab_arcology
+					has_planet_flag = amaryllian_hab_grand_arcology
 				}
 				NOT = {
 					# In case any smartbum mod adds terraforming to a habitat.
@@ -2304,6 +2305,24 @@ planet_event = {
 			remove_planet_flag = amaryllian_generator_arcology
 			remove_planet_flag = amaryllian_sanctuary_arcology
 			remove_planet_flag = amaryllian_hab_arcology
+			remove_planet_flag = amaryllian_hab_grand_arcology
+			remove_planet_flag = amaryllian_arms_arcology_setup
+			remove_planet_flag = amaryllian_civilian_arcology_setup
+			remove_planet_flag = amaryllian_farming_arcology_setup
+			remove_planet_flag = amaryllian_fortress_arcology_setup
+			remove_planet_flag = amaryllian_research_arcology_setup
+			remove_planet_flag = amaryllian_bureaucratic_arcology_setup
+			remove_planet_flag = amaryllian_refinery_arcology_setup
+			remove_planet_flag = amaryllian_trade_arcology_setup
+			remove_planet_flag = amaryllian_mining_arcology_setup
+			remove_planet_flag = amaryllian_generator_arcology_setup
+			remove_planet_flag = amaryllian_sanctuary_arcology_setup
+			remove_planet_flag = amaryllian_hab_arcology_setup
+			remove_planet_flag = amaryllian_hab_grand_arcology_setup
+			set_variable = {
+				which = "amaryllian_arcology_setup_num"
+				value = 0
+			}
 		}
 	}
 }
@@ -2943,6 +2962,50 @@ planet_event = {
 	#	Save
 	option = {
 		name = amaryllian.900.z
+	}
+}
+
+# Temporary planet_flag fix for older saves
+country_event = {
+	id = amaryllian.997
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		always = yes
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_civic = civic_amaryllian_habitat
+			}
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_planet_flag = amaryllian_civilian_arcology
+						has_planet_flag = amaryllian_arms_arcology
+						has_planet_flag = amaryllian_farming_arcology
+						has_planet_flag = amaryllian_fortress_arcology
+						has_planet_flag = amaryllian_research_arcology
+						has_planet_flag = amaryllian_bureaucratic_arcology
+						has_planet_flag = amaryllian_refinery_arcology
+						has_planet_flag = amaryllian_trade_arcology
+						has_planet_flag = amaryllian_mining_arcology
+						has_planet_flag = amaryllian_generator_arcology
+						has_planet_flag = amaryllian_sanctuary_arcology
+					}
+					NOR = {
+						has_planet_flag = amaryllian_hab_arcology
+						has_planet_flag = amaryllian_hab_grand_arcology
+					}
+				}
+				set_planet_flag = amaryllian_hab_arcology
+				set_global_flag = amaryllian_hab_arcology_flag_save_fix
+			}
+		}
+		else = {
+			set_global_flag = amaryllian_hab_arcology_flag_save_fix
+			break = yes
+		}
 	}
 }
 
