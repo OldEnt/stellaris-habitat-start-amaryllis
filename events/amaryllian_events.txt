@@ -29,6 +29,7 @@ planet_event = {
 		clear_deposits = yes
 		set_planet_flag = megastructure
 		set_planet_flag = habitat
+		set_planet_flag = advanced_habitat
 		set_planet_flag = advanced_habitat_2
 		planet_event = {
 			id = amaryllian.1
@@ -52,6 +53,7 @@ planet_event = {
 		clear_deposits = yes
 		set_planet_flag = megastructure
 		set_planet_flag = habitat
+		set_planet_flag = advanced_habitat
 		set_planet_flag = advanced_habitat_2
 		planet_event = {
 			id = amaryllian.231
@@ -2753,6 +2755,9 @@ planet_event = {
 			OR = {
 				has_planet_flag = amaryllian_generator_arcology
 				has_planet_flag = energy_habitat
+				owner = {
+					is_gestalt = yes
+				}
 			}
 		}
 		hidden_effect = {
@@ -2896,7 +2901,10 @@ planet_event = {
 						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 					}
 				}
-				set_timed_planet_flag = { flag = amaryllian_decision_grand_arcology_designer_locked days = 180 }
+				set_timed_planet_flag = {
+					flag = amaryllian_decision_grand_arcology_designer_locked
+					days = 180
+				}
 				planet_event = {
 					id = amaryllian.900
 					days = 0

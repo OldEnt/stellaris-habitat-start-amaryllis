@@ -1,4 +1,4 @@
-amaryllian_construct_grand_arcology = {
+amaryllian_construct_arcology = {
 	if = {
 		limit = {
 			OR = {

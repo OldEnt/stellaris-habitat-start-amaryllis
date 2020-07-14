@@ -30,7 +30,7 @@ amaryllian_decision_grand_arcology_designer = {
 amaryllian_decision_grand_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_grand_arcology_project
-	enactment_time = 1800
+	enactment_time = 1
 	resources = {
 		category = decisions
 		# Grand Arcology cost 
@@ -112,7 +112,7 @@ amaryllian_decision_grand_arcology_project = {
 						value = 1
 					}
 					OR = {
-						has_planet_flag = advanced_habitat_1
+						has_planet_flag = advanced_habitat
 						has_planet_flag = advanced_habitat_2
 						has_global_flag = vchecker_2_6_and_down
 					}
@@ -167,12 +167,12 @@ amaryllian_decision_grand_arcology_project = {
 					days = -1
 				}
 				remove_all_districts = yes
-				amaryllian_construct_specialised_arcology = yes
 				set_variable = {
 					which = amaryllian_arcology_setup_num
 					value = 0
 				}
 				remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+				amaryllian_construct_arcology = yes
 				break = yes
 				# TODO			
 				#			planet_event = {
@@ -185,9 +185,7 @@ amaryllian_decision_grand_arcology_project = {
 					owner = {
 						has_ascension_perk = ap_amaryllian_voidchildren
 					}
-					NOT = {
-						has_planet_flag = amaryllian_hab_arcology
-					}
+					has_planet_flag = amaryllian_hab_arcology
 					check_variable = {
 						which = "amaryllian_arcology_setup_num"
 						value = 4
@@ -196,12 +194,12 @@ amaryllian_decision_grand_arcology_project = {
 				set_planet_flag = amaryllian_hab_grand_arcology
 				remove_planet_flag = amaryllian_hab_arcology
 				amaryllian_remove_all_vanilla_habitat_districts = yes
-				amaryllian_construct_grand_arcology = yes
 				set_variable = {
 					which = amaryllian_arcology_setup_num
 					value = 0
 				}
 				remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+				amaryllian_construct_arcology = yes
 				break = yes
 				# TODO			
 				#			planet_event = {
@@ -228,12 +226,12 @@ amaryllian_decision_grand_arcology_project = {
 					days = -1
 				}
 				remove_all_districts = yes
-				amaryllian_construct_grand_arcology = yes
 				set_variable = {
 					which = amaryllian_arcology_setup_num
 					value = 0
 				}
 				remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+				amaryllian_construct_arcology = yes
 				break = yes
 				# TODO			
 				#			planet_event = {
