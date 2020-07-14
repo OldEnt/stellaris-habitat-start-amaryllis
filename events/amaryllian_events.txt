@@ -2753,11 +2753,11 @@ planet_event = {
 		name = amaryllian.900.j
 		trigger = {
 			OR = {
-				has_planet_flag = amaryllian_generator_arcology
-				has_planet_flag = energy_habitat
 				owner = {
 					is_gestalt = yes
 				}
+				has_planet_flag = amaryllian_generator_arcology
+				has_planet_flag = energy_habitat
 			}
 		}
 		hidden_effect = {
@@ -2899,6 +2899,21 @@ planet_event = {
 				limit = {
 					NOT = {
 						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+					}
+					OR = {
+						check_variable = {
+							which = amaryllian_arcology_setup_num
+							value = 1
+						}
+						AND = {
+							owner = {
+								has_ascension_perk = ap_amaryllian_voidchildren
+							}
+							check_variable = {
+								which = amaryllian_arcology_setup_num
+								value = 4
+							}
+						}
 					}
 				}
 				set_timed_planet_flag = {
