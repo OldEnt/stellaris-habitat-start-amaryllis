@@ -2706,6 +2706,9 @@ planet_event = {
 			OR = {
 				has_planet_flag = amaryllian_mining_arcology
 				has_planet_flag = mining_habitat
+				# Planetary Diversity - Planetary Habitats
+				has_planet_flag = pd_mining_hab
+				has_planet_flag = pd_mining2_hab
 			}
 		}
 		hidden_effect = {
@@ -2758,6 +2761,9 @@ planet_event = {
 				}
 				has_planet_flag = amaryllian_generator_arcology
 				has_planet_flag = energy_habitat
+				# Planetary Diversity - Planetary Habitats
+				has_planet_flag = pd_energy_hab
+				has_planet_flag = pd_energy2_hab
 			}
 		}
 		hidden_effect = {
