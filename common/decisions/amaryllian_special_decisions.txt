@@ -193,6 +193,11 @@ amaryllian_decision_grand_arcology_project = {
 				}
 				set_planet_flag = amaryllian_hab_grand_arcology
 				remove_planet_flag = amaryllian_hab_arcology
+				remove_modifier = amaryllian_decision_arcology_project_modifier
+				add_modifier = {
+					modifier = amaryllian_decision_grand_arcology_project_modifier
+					days = -1
+				}
 				amaryllian_remove_all_vanilla_habitat_districts = yes
 				set_variable = {
 					which = amaryllian_arcology_setup_num
@@ -222,7 +227,7 @@ amaryllian_decision_grand_arcology_project = {
 				}
 				set_planet_flag = amaryllian_hab_grand_arcology
 				add_modifier = {
-					modifier = amaryllian_decision_arcology_project_modifier
+					modifier = amaryllian_decision_grand_arcology_project_modifier
 					days = -1
 				}
 				remove_all_districts = yes

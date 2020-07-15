@@ -1,4 +1,5 @@
 ﻿l_polish:
+
 amaryllian.11.name:0 "Void Campaign"
 amaryllian.11.desc:0 "Although the chance of a disaster to our home in a given year may be quite low, it adds up over time, and eventually becomes a near certainty. We must expand before it is too late."
 amaryllian.11.a:0 "We must construct additional habitats! Commence a 50-year plan."
@@ -36,7 +37,7 @@ amaryllian.210.name:0 "§GSanctuary Habitat:§! [From.GetName] repurposed"
 amaryllian.210.desc:0 "Biological entities require care, this station will allow us to care for them, serve their every needs. Keep them safe. Study them. Observe them in their sleep. They are ours. Now and always."
 amaryllian.210.a:0 "$EXCELLENT$"
 amaryllian.220.name:0 "§P$amaryllian_col_grand_habitat_arcology$:§! [From.GetName] repurposed"
-amaryllian.220.desc:0 "$amaryllian_col_grand_habitat_arcology_desc$"
+amaryllian.220.desc:0 "This pinnacle of state-of-the-art space habitation systems cannot be easily matched. $amaryllian_col_grand_habitat_arcology_desc$ $civic_amaryllian_habitat_desc$"
 amaryllian.220.a:0 "$EXCELLENT$"
 amaryllian.999.name:0 "New features: Void Dwellers Expanded"
 amaryllian.999.desc:0 "Fellow player, thank for using my Void Dwellers Expanded mod (formerly: OE's Habitat start). Please note that this mod introduced a number of features which are inactive in your current playthrough, unless you take the new §GChildren of the Void§! civic. You can do that by reforming government in your Empire window or restarting the game with the civic.\n\nAmongst new features are: Habitat Captains providing habitat-specific bonuses, second stage of Voidborne ascension perk, and specialised Habitats with £district£ §YIndustrial§!, §YFoundry§!, §YFarming§!, and §YFortress Districts§! (and more).\n\nTaking §GChildren of the Void§! civic during this playthrough will not change your species' habitability.\n\nThank you again and see you on the Steam mod page. / OE"

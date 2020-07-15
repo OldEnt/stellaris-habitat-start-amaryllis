@@ -27,6 +27,17 @@ amaryllian_decision_arcology_project_modifier = {
 	planet_jobs_produces_mult = 0.05
 }
 
+amaryllian_decision_grand_arcology_project_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_amaryllian_grand_arcology_project.dds"
+	icon_frame = 1
+	planet_housing_add = 20
+	pop_growth_speed = 0.1
+	lith_pop_growth_speed = 0.1
+	pop_assembly_speed = 0.1
+	planet_jobs_produces_mult = 0.05
+	planet_max_districts_add = 2
+}
+
 amaryllian_void_campaign_1 = {
 	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
 	icon_frame = 1
