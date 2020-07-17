@@ -720,25 +720,7 @@ country_event = {
 					is_planet_class = pc_habitat
 					is_planet_class = pc_ringworld_habitable
 					# Planetary Diversity - Planetary Habitats
-					is_planet_class = pc_pd_barren_cold_hab
-					is_planet_class = pc_pd_barren_hab
-					is_planet_class = pc_pd_frozen_hab
-					is_planet_class = pc_pd_gas_giant_hab
-					is_planet_class = pc_pd_hothouse_hab
-					is_planet_class = pc_pd_molten_hab
-					is_planet_class = pc_pd_asteroid_hab
-					# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-					is_planet_class = pc_gghab
-					is_planet_class = pc_tmhab
-					is_planet_class = pc_tmhab2
-					is_planet_class = pc_mmhab
-					is_planet_class = pc_mmhab2
-					is_planet_class = pc_bhab
-					is_planet_class = pc_bchab
-					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab
-					is_planet_class = pc_fmhab
-					is_planet_class = pc_mehab
+					is_pd_planetary_habitat = yes
 					# Starborn: Improved Voidtouched
 					is_planet_class = pc_starborn_habitat_start
 					# Dyson Swarm - colonizing space
@@ -864,25 +846,7 @@ country_event = {
 					is_planet_class = pc_habitat
 					is_planet_class = pc_ringworld_habitable
 					# Planetary Diversity - Planetary Habitats
-					is_planet_class = pc_pd_barren_cold_hab
-					is_planet_class = pc_pd_barren_hab
-					is_planet_class = pc_pd_frozen_hab
-					is_planet_class = pc_pd_gas_giant_hab
-					is_planet_class = pc_pd_hothouse_hab
-					is_planet_class = pc_pd_molten_hab
-					is_planet_class = pc_pd_asteroid_hab
-					# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-					is_planet_class = pc_gghab
-					is_planet_class = pc_tmhab
-					is_planet_class = pc_tmhab2
-					is_planet_class = pc_mmhab
-					is_planet_class = pc_mmhab2
-					is_planet_class = pc_bhab
-					is_planet_class = pc_bchab
-					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab
-					is_planet_class = pc_fmhab
-					is_planet_class = pc_mehab
+					is_pd_planetary_habitat = yes
 					# Starborn: Improved Voidtouched
 					is_planet_class = pc_starborn_habitat_start
 					# Dyson Swarm - colonizing space
@@ -1009,25 +973,7 @@ country_event = {
 					is_planet_class = pc_habitat
 					is_planet_class = pc_ringworld_habitable
 					# Planetary Diversity - Planetary Habitats
-					is_planet_class = pc_pd_barren_cold_hab
-					is_planet_class = pc_pd_barren_hab
-					is_planet_class = pc_pd_frozen_hab
-					is_planet_class = pc_pd_gas_giant_hab
-					is_planet_class = pc_pd_hothouse_hab
-					is_planet_class = pc_pd_molten_hab
-					is_planet_class = pc_pd_asteroid_hab
-					# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-					is_planet_class = pc_gghab
-					is_planet_class = pc_tmhab
-					is_planet_class = pc_tmhab2
-					is_planet_class = pc_mmhab
-					is_planet_class = pc_mmhab2
-					is_planet_class = pc_bhab
-					is_planet_class = pc_bchab
-					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab
-					is_planet_class = pc_fmhab
-					is_planet_class = pc_mehab
+					is_pd_planetary_habitat = yes
 					# Starborn: Improved Voidtouched
 					is_planet_class = pc_starborn_habitat_start
 					# Dyson Swarm - colonizing space
@@ -1161,13 +1107,7 @@ country_event = {
 					# Vanilla
 					is_planet_class = pc_habitat
 					# Planetary Diversity - Planetary Habitats
-					is_planet_class = pc_pd_barren_cold_hab
-					is_planet_class = pc_pd_barren_hab
-					is_planet_class = pc_pd_frozen_hab
-					is_planet_class = pc_pd_gas_giant_hab
-					is_planet_class = pc_pd_hothouse_hab
-					is_planet_class = pc_pd_molten_hab
-					is_planet_class = pc_pd_asteroid_hab
+					is_pd_planetary_habitat = yes
 					# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
 					is_planet_class = pc_gghab
 					is_planet_class = pc_tmhab
