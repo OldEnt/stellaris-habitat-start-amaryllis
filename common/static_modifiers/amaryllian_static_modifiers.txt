@@ -41,8 +41,8 @@ amaryllian_decision_grand_arcology_project_modifier = {
 amaryllian_void_campaign_1 = {
 	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
 	icon_frame = 1
-	megastructure_build_speed_mult = 0.50
-	megastructures_cost_mult = -0.50
+	megastructure_build_speed_mult = 0.5
+	megastructures_cost_mult = -0.5
 }
 
 amaryllian_void_campaign_2 = {
@@ -55,8 +55,8 @@ amaryllian_void_campaign_2 = {
 amaryllian_void_campaign_3 = {
 	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
 	icon_frame = 1
-	megastructure_build_speed_mult = 0.40
-	megastructures_cost_mult = -0.40
+	megastructure_build_speed_mult = 0.4
+	megastructures_cost_mult = -0.4
 }
 
 amaryllian_void_campaign_4 = {
@@ -69,8 +69,8 @@ amaryllian_void_campaign_4 = {
 amaryllian_void_campaign_5 = {
 	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
 	icon_frame = 1
-	megastructure_build_speed_mult = 0.30
-	megastructures_cost_mult = -0.30
+	megastructure_build_speed_mult = 0.3
+	megastructures_cost_mult = -0.3
 }
 
 amaryllian_void_campaign_6 = {
@@ -83,8 +83,8 @@ amaryllian_void_campaign_6 = {
 amaryllian_void_campaign_7 = {
 	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
 	icon_frame = 1
-	megastructure_build_speed_mult = 0.20
-	megastructures_cost_mult = -0.20
+	megastructure_build_speed_mult = 0.2
+	megastructures_cost_mult = -0.2
 }
 
 amaryllian_void_campaign_8 = {
@@ -97,8 +97,8 @@ amaryllian_void_campaign_8 = {
 amaryllian_void_campaign_9 = {
 	icon = "gfx/interface/icons/modifiers/mod_megastructure_build_speed_mult.dds"
 	icon_frame = 1
-	megastructure_build_speed_mult = 0.10
-	megastructures_cost_mult = -0.10
+	megastructure_build_speed_mult = 0.1
+	megastructures_cost_mult = -0.1
 }
 
 amaryllian_void_campaign_10 = {
@@ -109,7 +109,7 @@ amaryllian_void_campaign_10 = {
 }
 
 amaryllian_unity_0 = {
-	country_unity_produces_mult = -0.30
+	country_unity_produces_mult = -0.3
 }
 
 amaryllian_unity_1 = {
@@ -129,7 +129,7 @@ amaryllian_unity_4 = {
 }
 
 amaryllian_unity_5 = {
-	country_unity_produces_mult = 0.10
+	country_unity_produces_mult = 0.1
 }
 
 amaryllian_unity_6 = {
@@ -149,7 +149,7 @@ amaryllian_unity_9 = {
 }
 
 amaryllian_unity_10 = {
-	country_unity_produces_mult = 0.20
+	country_unity_produces_mult = 0.2
 }
 
 amaryllian_unity_11 = {
@@ -169,11 +169,11 @@ amaryllian_unity_14 = {
 }
 
 amaryllian_unity_15 = {
-	country_unity_produces_mult = 0.30
+	country_unity_produces_mult = 0.3
 }
 
 amaryllian_unity_16 = {
-	country_unity_produces_mult = 0.30
+	country_unity_produces_mult = 0.3
 }
 
 amaryllian_habitat_brain_quarters = {
@@ -184,7 +184,7 @@ amaryllian_habitat_brain_quarters = {
 }
 
 amaryllian_gestalt_unity_0 = {
-	country_unity_produces_mult = -0.30
+	country_unity_produces_mult = -0.3
 }
 
 amaryllian_gestalt_unity_1 = {
@@ -204,7 +204,7 @@ amaryllian_gestalt_unity_4 = {
 }
 
 amaryllian_gestalt_unity_5 = {
-	country_unity_produces_mult = 0.10
+	country_unity_produces_mult = 0.1
 }
 
 amaryllian_gestalt_unity_6 = {
@@ -224,7 +224,7 @@ amaryllian_gestalt_unity_9 = {
 }
 
 amaryllian_gestalt_unity_10 = {
-	country_unity_produces_mult = 0.20
+	country_unity_produces_mult = 0.2
 }
 
 amaryllian_gestalt_unity_11 = {
@@ -244,9 +244,9 @@ amaryllian_gestalt_unity_14 = {
 }
 
 amaryllian_gestalt_unity_15 = {
-	country_unity_produces_mult = 0.30
+	country_unity_produces_mult = 0.3
 }
 
 amaryllian_gestalt_unity_16 = {
-	country_unity_produces_mult = 0.30
+	country_unity_produces_mult = 0.3
 }

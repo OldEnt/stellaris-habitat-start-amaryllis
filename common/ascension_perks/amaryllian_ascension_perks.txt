@@ -6,45 +6,61 @@ ap_amaryllian_voidchildren = {
 			has_ascension_perk = ap_amaryllian_voidchildren
 		}
 	}
-
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_ap_voidborn"
 			has_ascension_perk = ap_voidborn
 		}
 	}
-
 	on_enabled = {
-			give_technology = { tech = amaryllian_tech_arms_industry }
-			give_technology = { tech = amaryllian_tech_civilian_industry }
-			give_technology = { tech = amaryllian_tech_farming_industry }
-			give_technology = { tech = amaryllian_tech_fortress_industry }
-			give_technology = { tech = amaryllian_tech_research_industry }
-			give_technology = { tech = amaryllian_tech_trade_industry }
-			give_technology = { tech = amaryllian_tech_mining_industry }
-			give_technology = { tech = amaryllian_tech_generator_industry }
-			give_technology = { tech = amaryllian_tech_sanctuary_industry }
-			add_research_option = amaryllian_tech_bureaucratic_industry
-			add_research_option = amaryllian_tech_refinery_industry
+		give_technology = {
+			tech = amaryllian_tech_arms_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_civilian_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_farming_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_fortress_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_research_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_trade_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_mining_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_generator_industry
+		}
+		give_technology = {
+			tech = amaryllian_tech_sanctuary_industry
+		}
+		add_research_option = amaryllian_tech_bureaucratic_industry
+		add_research_option = amaryllian_tech_refinery_industry
 		custom_tooltip = "ap_amaryllian_voidchildren_tooltip"
 		hidden_effect = {
 			every_planet_within_border = {
 				limit = {
 					is_planet_class = pc_habitat
-					NOT = { has_modifier = amaryllian_voidchildren_habitat_modifier }
+					NOT = {
+						has_modifier = amaryllian_voidchildren_habitat_modifier
+					}
 				}
 				add_modifier = {
 					modifier = amaryllian_voidchildren_habitat_modifier
 					days = -1
 				}
 			}
-		}		
+		}
 	}
-
 	modifier = {
 		megastructure_build_speed_mult = 0.15
-	}	
-	
+	}
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -62,6 +78,6 @@ ap_amaryllian_voidchildren = {
 		modifier = {
 			factor = 3
 			has_ethic = ethic_fanatic_pacifist
-		}		
+		}
 	}
 }

@@ -1,7 +1,7 @@
 is_pd_planetary_habitat = {
 	OR = {
-# Planetary Diversity - Planetary Habitats
-			uses_district_set = pdplanethab
+		# Planetary Diversity - Planetary Habitats
+		uses_district_set = pdplanethab
 		#	is_planet_class = pc_pd_barren_cold_hab
 		#	is_planet_class = pc_pd_barren_hab
 		#	is_planet_class = pc_pd_frozen_hab
@@ -10,17 +10,17 @@ is_pd_planetary_habitat = {
 		#	is_planet_class = pc_pd_molten_hab
 		#	is_planet_class = pc_pd_asteroid_hab
 		#	is_planet_class = pc_pd_toxic_hab
-# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-			is_planet_class = pc_gghab
-			is_planet_class = pc_tmhab
-			is_planet_class = pc_tmhab2
-			is_planet_class = pc_mmhab
-			is_planet_class = pc_mmhab2
-			is_planet_class = pc_bhab
-			is_planet_class = pc_bchab
-			is_planet_class = pc_mhab
-			is_planet_class = pc_fhab
-			is_planet_class = pc_fmhab
-			is_planet_class = pc_mehab
+		# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
+		is_planet_class = pc_gghab
+		is_planet_class = pc_tmhab
+		is_planet_class = pc_tmhab2
+		is_planet_class = pc_mmhab
+		is_planet_class = pc_mmhab2
+		is_planet_class = pc_bhab
+		is_planet_class = pc_bchab
+		is_planet_class = pc_mhab
+		is_planet_class = pc_fhab
+		is_planet_class = pc_fmhab
+		is_planet_class = pc_mehab
 	}
 }

@@ -3,18 +3,17 @@ amaryllian_tech_housing_1 = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight1
-
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		is_gestalt = no
 	}
-	
 	modifier = {
 		description = amaryllian_tech_housing_1_effect
 	}
-	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -29,7 +28,6 @@ amaryllian_tech_housing_1 = {
 			has_tradition = tr_prosperity_adopt
 		}
 	}
-	
 	ai_weight = {
 		factor = 2
 		modifier = {
@@ -40,27 +38,24 @@ amaryllian_tech_housing_1 = {
 			}
 		}
 	}
-
 	ai_update_type = all
-	
-	}
-	
-	amaryllian_tech_housing_gestalt_1 = {
+}
+
+amaryllian_tech_housing_gestalt_1 = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight1
-
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		is_gestalt = yes
 	}
-	
 	modifier = {
 		description = amaryllian_tech_housing_gestalt_1_effect
 	}
-	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -75,7 +70,6 @@ amaryllian_tech_housing_1 = {
 			has_tradition = tr_prosperity_adopt
 		}
 	}
-	
 	ai_weight = {
 		factor = 2
 		modifier = {
@@ -86,28 +80,25 @@ amaryllian_tech_housing_1 = {
 			}
 		}
 	}
-
 	ai_update_type = all
-	
-	}
+}
 
 # Habitat Captain army
 amaryllian_tech_army_1 = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight1
-
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		is_gestalt = no
 	}
-	
 	modifier = {
 		description = amaryllian_tech_army_1_effect
 	}
-	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -122,7 +113,6 @@ amaryllian_tech_army_1 = {
 			has_tradition = tr_prosperity_adopt
 		}
 	}
-	
 	ai_weight = {
 		factor = 2
 		modifier = {
@@ -133,27 +123,24 @@ amaryllian_tech_army_1 = {
 			}
 		}
 	}
-
 	ai_update_type = all
-	
-	}
+}
 
-	amaryllian_tech_army_gestalt_1 = {
+amaryllian_tech_army_gestalt_1 = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight1
-
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		is_gestalt = yes
 	}
-	
 	modifier = {
 		description = amaryllian_tech_army_gestalt_1_effect
 	}
-	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -168,7 +155,6 @@ amaryllian_tech_army_1 = {
 			has_tradition = tr_prosperity_adopt
 		}
 	}
-	
 	ai_weight = {
 		factor = 2
 		modifier = {
@@ -179,10 +165,8 @@ amaryllian_tech_army_1 = {
 			}
 		}
 	}
-
 	ai_update_type = all
-	
-	}
+}
 
 # Habitat Arcology
 # amaryllian_tech_habitat_arcology is redundant and serves testing purposes only
@@ -190,29 +174,28 @@ amaryllian_tech_habitat_arcology = {
 	area = engineering
 	cost = @tier3cost2
 	tier = 3
-	category = { voidcraft }
+	category = {
+		voidcraft
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_habitat_arcology"
 			desc = "allow_amaryllian_tech_habitat_arcology_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -229,29 +212,28 @@ amaryllian_tech_arms_industry = {
 	area = engineering
 	cost = @tier2cost1
 	tier = 2
-	category = { industry }
+	category = {
+		industry
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_arms_industry"
 			desc = "allow_amaryllian_tech_arms_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -268,33 +250,32 @@ amaryllian_tech_civilian_industry = {
 	area = engineering
 	cost = @tier2cost1
 	tier = 2
-	category = { industry }
+	category = {
+		industry
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_civilian_industry"
 			desc = "allow_amaryllian_tech_civilian_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 		OR = {
-				is_gestalt = no
-				has_valid_civic = civic_machine_servitor
-			}
+			is_gestalt = no
+			has_valid_civic = civic_machine_servitor
+		}
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -311,30 +292,32 @@ amaryllian_tech_farming_industry = {
 	area = society
 	cost = @tier2cost1
 	tier = 2
-	category = { biology }
+	category = {
+		biology
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_farming_industry"
 			desc = "allow_amaryllian_tech_farming_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
-		OR = { country_uses_food = yes has_ascension_perk = ap_synthetic_evolution }
+		OR = {
+			country_uses_food = yes
+			has_ascension_perk = ap_synthetic_evolution
+		}
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -351,29 +334,28 @@ amaryllian_tech_fortress_industry = {
 	area = society
 	cost = @tier2cost1
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_fortress_industry"
 			desc = "allow_amaryllian_tech_fortress_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -390,29 +372,28 @@ amaryllian_tech_research_industry = {
 	area = physics
 	cost = @tier2cost1
 	tier = 2
-	category = { computing }
+	category = {
+		computing
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_research_industry"
 			desc = "allow_amaryllian_tech_research_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -429,29 +410,28 @@ amaryllian_tech_bureaucratic_industry = {
 	area = society
 	cost = @tier3cost2
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_bureaucratic_industry"
 			desc = "allow_amaryllian_tech_bureaucratic_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_amaryllian_voidchildren
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -468,29 +448,28 @@ amaryllian_tech_refinery_industry = {
 	area = physics
 	cost = @tier3cost2
 	tier = 2
-	category = { particles }
+	category = {
+		particles
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_refinery_industry"
 			desc = "allow_amaryllian_tech_refinery_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_amaryllian_voidchildren
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -507,30 +486,29 @@ amaryllian_tech_trade_industry = {
 	area = society
 	cost = @tier2cost1
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_trade_industry"
 			desc = "allow_amaryllian_tech_trade_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 		is_gestalt = no
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -547,29 +525,28 @@ amaryllian_tech_mining_industry = {
 	area = engineering
 	cost = @tier2cost1
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_mining_industry"
 			desc = "allow_amaryllian_tech_mining_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -586,29 +563,28 @@ amaryllian_tech_generator_industry = {
 	area = physics
 	cost = @tier2cost1
 	tier = 2
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_generator_industry"
 			desc = "allow_amaryllian_tech_generator_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {
@@ -625,30 +601,29 @@ amaryllian_tech_sanctuary_industry = {
 	area = society
 	cost = @tier2cost1
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
+	prerequisites = {
+		"tech_habitat_1"
+	}
 	is_rare = yes
-
-	prereqfor_desc = {	
+	prereqfor_desc = {
 		ship = {
 			title = "allow_amaryllian_tech_sanctuary_industry"
 			desc = "allow_amaryllian_tech_sanctuary_industry_DETAILS"
 		}
 	}
-	
 	potential = {
 		has_civic = civic_amaryllian_habitat
 		has_ascension_perk = ap_voidborn
 		has_valid_civic = civic_machine_servitor
 	}
-	
 	weight = 0
-
 	weight_modifier = {
 		factor = 0
 	}
-
 	ai_weight = {
 		factor = 100
 		modifier = {

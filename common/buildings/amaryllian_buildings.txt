@@ -2,42 +2,45 @@ amaryllian_building_mineral_purification_plant = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-
 	potential = {
 		is_planet_class = pc_habitat
 		has_planet_flag = amaryllian_mining_arcology
-		NOT = { has_planet_flag = mining_habitat }
-		NOR = { has_building = building_mineral_purification_plant has_building = building_mineral_purification_hub }
+		NOT = {
+			has_planet_flag = mining_habitat
+		}
+		NOR = {
+			has_building = building_mineral_purification_plant
+			has_building = building_mineral_purification_hub
+		}
 	}
-
 	allow = {
 		buildings_simple_allow = yes
 	}
-
 	planet_modifier = {
 		planet_miners_minerals_produces_mult = 0.15
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+				is_regular_empire = yes
+			}
 		}
 		modifier = {
 			job_miner_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_mining_drone_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -55,7 +58,7 @@ amaryllian_building_mineral_purification_plant = {
 			owner = {
 				is_robot_empire = yes
 			}
-			NOR  = {
+			NOR = {
 				is_planet_class = pc_habitat
 				is_planet_class = pc_machine
 				is_planet_class = pc_hive
@@ -66,7 +69,6 @@ amaryllian_building_mineral_purification_plant = {
 			district_mining_max = 2
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -85,30 +87,30 @@ amaryllian_building_mineral_purification_plant = {
 			energy = 2
 		}
 	}
-
 	prerequisites = {
 		tech_mineral_purification_1
 	}
-
 	upgrades = {
 		amaryllian_building_mineral_purification_hub
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		text = job_mining_drone_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = {
+				is_gestalt = no
+			}
 		}
 		text = job_miner_effect_desc
 	}
-
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -119,7 +121,10 @@ amaryllian_building_mineral_purification_plant = {
 			}
 			OR = {
 				districts_good_minerals = yes
-				num_districts = { type = amaryllian_district_arcology_mining_industry value >= 1 }
+				num_districts = {
+					type = amaryllian_district_arcology_mining_industry
+					value >= 1
+				}
 				owner = {
 					has_monthly_income = {
 						resource = minerals
@@ -139,7 +144,6 @@ amaryllian_building_mineral_purification_plant = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		minerals = 1
 		trigger = {
@@ -152,41 +156,39 @@ amaryllian_building_mineral_purification_hub = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
-
 	allow = {
 		has_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		OR = {
 			buildings_no_motes = yes
 		}
 	}
-
 	planet_modifier = {
 		planet_miners_minerals_produces_mult = 0.25
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+				is_regular_empire = yes
+			}
 		}
 		modifier = {
 			job_miner_add = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_mining_drone_add = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -204,7 +206,7 @@ amaryllian_building_mineral_purification_hub = {
 			owner = {
 				is_robot_empire = yes
 			}
-			NOR  = {
+			NOR = {
 				is_planet_class = pc_habitat
 				is_planet_class = pc_machine
 				is_planet_class = pc_hive
@@ -215,7 +217,6 @@ amaryllian_building_mineral_purification_hub = {
 			district_mining_max = 4
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -236,26 +237,27 @@ amaryllian_building_mineral_purification_hub = {
 			volatile_motes = @b2_rare_upkeep
 		}
 	}
-
 	prerequisites = {
 		tech_mineral_purification_2
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		text = job_mining_drone_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = {
+				is_gestalt = no
+			}
 		}
 		text = job_miner_effect_desc
 	}
-
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -273,7 +275,6 @@ amaryllian_building_mineral_purification_hub = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		minerals = 1
 		trigger = {
@@ -286,42 +287,45 @@ amaryllian_building_energy_grid = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-
 	potential = {
 		is_planet_class = pc_habitat
 		has_planet_flag = amaryllian_generator_arcology
-		NOT = { has_planet_flag = energy_habitat }
-		NOR = { has_building = building_energy_grid has_building = building_energy_nexus }
+		NOT = {
+			has_planet_flag = energy_habitat
+		}
+		NOR = {
+			has_building = building_energy_grid
+			has_building = building_energy_nexus
+		}
 	}
-	
 	allow = {
 		buildings_simple_allow = yes
 	}
-
 	planet_modifier = {
 		planet_technician_energy_produces_mult = 0.15
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+				is_regular_empire = yes
+			}
 		}
 		modifier = {
 			job_technician_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_technician_drone_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -339,7 +343,7 @@ amaryllian_building_energy_grid = {
 			owner = {
 				is_robot_empire = yes
 			}
-			NOR  = {
+			NOR = {
 				is_planet_class = pc_habitat
 				is_planet_class = pc_machine
 				is_planet_class = pc_hive
@@ -350,7 +354,6 @@ amaryllian_building_energy_grid = {
 			district_generator_max = 2
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -369,30 +372,30 @@ amaryllian_building_energy_grid = {
 			energy = 2
 		}
 	}
-
 	prerequisites = {
 		tech_power_hub_1
 	}
-
 	upgrades = {
 		amaryllian_building_energy_nexus
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		text = job_technician_drone_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = {
+				is_gestalt = no
+			}
 		}
 		text = job_technician_effect_desc
 	}
-
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -403,7 +406,10 @@ amaryllian_building_energy_grid = {
 			}
 			OR = {
 				districts_good_energy = yes
-				num_districts = { type = amaryllian_district_arcology_generator_industry value >= 1 }
+				num_districts = {
+					type = amaryllian_district_arcology_generator_industry
+					value >= 1
+				}
 				AND = {
 					exists = owner
 					owner = {
@@ -426,7 +432,6 @@ amaryllian_building_energy_grid = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -439,41 +444,39 @@ amaryllian_building_energy_nexus = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
-
 	allow = {
 		has_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		OR = {
 			buildings_no_exotic_gases = yes
 		}
 	}
-
 	planet_modifier = {
 		planet_technician_energy_produces_mult = 0.25
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+				is_regular_empire = yes
+			}
 		}
 		modifier = {
 			job_technician_add = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_technician_drone_add = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -485,14 +488,13 @@ amaryllian_building_energy_nexus = {
 			planet_technician_energy_produces_mult = 0.05
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_robot_empire = yes
 			}
-			NOR  = {
+			NOR = {
 				is_planet_class = pc_habitat
 				is_planet_class = pc_machine
 				is_planet_class = pc_hive
@@ -503,7 +505,6 @@ amaryllian_building_energy_nexus = {
 			district_generator_max = 4
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -524,26 +525,27 @@ amaryllian_building_energy_nexus = {
 			exotic_gases = @b2_rare_upkeep
 		}
 	}
-
 	prerequisites = {
 		tech_power_hub_2
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		text = job_technician_drone_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = {
+				is_gestalt = no
+			}
 		}
 		text = job_technician_effect_desc
 	}
-
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -561,7 +563,6 @@ amaryllian_building_energy_nexus = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		energy = 1
 		trigger = {
