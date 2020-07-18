@@ -2021,6 +2021,12 @@ planet_event = {
 					has_planet_flag = amaryllian_hab_arcology
 				}
 			}
+			if = {
+				limit = {
+					is_capital = no
+				}
+				set_colony_type = amaryllian_col_grand_habitat_arcology
+			}
 			planet_event = {
 				id = amaryllian.220
 			}
@@ -2032,6 +2038,20 @@ planet_event = {
 				NOT = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_planet_class = pc_habitat
+				}
+				set_colony_type = col_habitat_factory
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_pd_planetary_habitat = yes
+				}
+				set_colony_type = col_dome_factory
 			}
 			planet_event = {
 				id = amaryllian.200
@@ -2045,6 +2065,20 @@ planet_event = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
 			}
+			if = {
+				limit = {
+					is_capital = no
+					is_planet_class = pc_habitat
+				}
+				set_colony_type = col_habitat_foundry
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_pd_planetary_habitat = yes
+				}
+				set_colony_type = col_dome_foundry
+			}
 			planet_event = {
 				id = amaryllian.201
 			}
@@ -2056,6 +2090,13 @@ planet_event = {
 				NOT = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
+			}
+			if = {
+				limit = {
+					is_capital = no
+					#	is_planet_class = pc_habitat
+				}
+				set_colony_type = amaryllian_col_habitat_farming
 			}
 			planet_event = {
 				id = amaryllian.202
@@ -2069,6 +2110,20 @@ planet_event = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
 			}
+			if = {
+				limit = {
+					is_capital = no
+					is_planet_class = pc_habitat
+				}
+				set_colony_type = col_habitat_fortress
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_pd_planetary_habitat = yes
+				}
+				set_colony_type = col_dome_fortress
+			}
 			planet_event = {
 				id = amaryllian.203
 			}
@@ -2080,6 +2135,20 @@ planet_event = {
 				NOT = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_planet_class = pc_habitat
+				}
+				set_colony_type = col_habitat_research
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_pd_planetary_habitat = yes
+				}
+				set_colony_type = col_dome_research
 			}
 			planet_event = {
 				id = amaryllian.204
@@ -2093,6 +2162,13 @@ planet_event = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
 			}
+			if = {
+				limit = {
+					is_capital = no
+					#	is_planet_class = pc_habitat
+				}
+				set_colony_type = col_bureau
+			}
 			planet_event = {
 				id = amaryllian.205
 			}
@@ -2104,6 +2180,20 @@ planet_event = {
 				NOT = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_planet_class = pc_habitat
+				}
+				set_colony_type = col_habitat_refinery
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_pd_planetary_habitat = yes
+				}
+				set_colony_type = col_dome_refinery
 			}
 			planet_event = {
 				id = amaryllian.206
@@ -2117,6 +2207,20 @@ planet_event = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
 			}
+			if = {
+				limit = {
+					is_capital = no
+					is_planet_class = pc_habitat
+				}
+				set_colony_type = col_habitat_trade
+			}
+			if = {
+				limit = {
+					is_capital = no
+					is_pd_planetary_habitat = yes
+				}
+				set_colony_type = col_dome_trade
+			}
 			planet_event = {
 				id = amaryllian.207
 			}
@@ -2128,6 +2232,13 @@ planet_event = {
 				NOT = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
+			}
+			if = {
+				limit = {
+					is_capital = no
+					#	is_planet_class = pc_habitat
+				}
+				set_colony_type = amaryllian_col_habitat_mining
 			}
 			planet_event = {
 				id = amaryllian.208
@@ -2141,6 +2252,13 @@ planet_event = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
 			}
+			if = {
+				limit = {
+					is_capital = no
+					#	is_planet_class = pc_habitat
+				}
+				set_colony_type = amaryllian_col_habitat_generator
+			}
 			planet_event = {
 				id = amaryllian.209
 			}
@@ -2152,6 +2270,13 @@ planet_event = {
 				NOT = {
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
+			}
+			if = {
+				limit = {
+					is_capital = no
+					#	is_planet_class = pc_habitat
+				}
+				set_colony_type = amaryllian_col_habitat_sanctuary
 			}
 			planet_event = {
 				id = amaryllian.210

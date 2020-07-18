@@ -13,7 +13,7 @@ amaryllian_col_habitat_farming = {
 		planet_farmers_produces_mult = 0.1
 	}
 	weight_modifier = {
-		base = 50
+		base = 500
 		modifier = {
 			factor = 2
 			owner = {
@@ -24,43 +24,8 @@ amaryllian_col_habitat_farming = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 2
 			has_designation = amaryllian_col_habitat_farming
-		}
-		modifier = {
-			factor = 3
-			num_districts = {
-				type = amaryllian_district_arcology_farming_industry
-				value >= 1
-			}
-		}
-		modifier = {
-			factor = 10
-			num_districts = {
-				type = amaryllian_district_arcology_farming_industry
-				value >= 1
-			}
-		}
-		modifier = {
-			factor = 2
-			num_buildings = {
-				type = building_hydroponics_farm
-				value >= 2
-			}
-		}
-		modifier = {
-			factor = 2
-			num_buildings = {
-				type = building_food_processing_facility
-				value >= 1
-			}
-		}
-		modifier = {
-			factor = 2
-			num_buildings = {
-				type = building_food_processing_center
-				value >= 1
-			}
 		}
 	}
 }
@@ -74,12 +39,12 @@ amaryllian_col_habitat_mining = {
 		has_planet_flag = amaryllian_mining_arcology
 	}
 	planet_modifier = {
-		planet_miners_produces_mult = 0.05
+		planet_miners_produces_mult = 0.1
 	}
 	weight_modifier = {
-		base = 50
+		base = 500
 		modifier = {
-			factor = 3
+			factor = 2
 			has_designation = amaryllian_col_habitat_mining
 		}
 	}
@@ -94,12 +59,12 @@ amaryllian_col_habitat_generator = {
 		has_planet_flag = amaryllian_generator_arcology
 	}
 	planet_modifier = {
-		planet_technician_produces_mult = 0.05
+		planet_technician_produces_mult = 0.1
 	}
 	weight_modifier = {
-		base = 50
+		base = 500
 		modifier = {
-			factor = 3
+			factor = 2
 			has_designation = amaryllian_col_habitat_generator
 		}
 	}
@@ -117,9 +82,9 @@ amaryllian_col_habitat_sanctuary = {
 		planet_bio_trophies_unity_produces_mult = 0.05
 	}
 	weight_modifier = {
-		base = 50
+		base = 500
 		modifier = {
-			factor = 3
+			factor = 2
 			has_designation = amaryllian_col_habitat_sanctuary
 		}
 	}
@@ -131,15 +96,15 @@ amaryllian_col_grand_habitat_arcology = {
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
-		has_planet_flag = amaryllian_grand_habitat_arcology
+		has_planet_flag = amaryllian_hab_grand_arcology
 	}
 	planet_modifier = {
 		planet_stability_add = 10
 	}
 	weight_modifier = {
-		base = 50
+		base = 1000
 		modifier = {
-			factor = 3
+			factor = 2
 			has_designation = amaryllian_col_grand_habitat_arcology
 		}
 	}
