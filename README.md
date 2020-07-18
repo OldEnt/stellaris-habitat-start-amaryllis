@@ -2,10 +2,9 @@
 
 Void Dwellers Expanded mod for Stellaris
 
-[list]
-[*]Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator, Farming or Sanctuary arcologies.
-[*]Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
-[/list]
+Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator, Farming or Sanctuary arcologies.
+
+Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
 
 [IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
 
@@ -18,6 +17,7 @@ GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 [list]
 [*] Works with Federations DLC and without. Just pick Children of the Void civic from the mod, Void Dwellers origin (if you have Federations)  and you are good to go.
 [*] Note: this mod provides its own habitat start separate from Federations' Void Dwellers since Stellaris 2.5.1. This legacy habitat start does not require Federations DLC. Formerly known as OE's Habitat start. Use of Void Dwellers or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn[/url] origin with Children of the Void civic is preferable, though.
+[*] Backwards compatible with 2.6.* if you install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2124541406]Stellaris version checker[/url]. Should also work on 2.5.* but bureaucratic habitat arcologies introduced in 2.6 won't function.
 [/list]
 
 [u][b]High compatibility[/b][/u]
@@ -53,7 +53,17 @@ Elysian Isles perk improves habitats even further and grants access to powerful 
 [u][b]Specialised habitat districts[/b][/u]
 Convert your regular habitats to arcologies with productivity bonuses, additional housing, and dedicated districts.
 
-[img]https://i.imgur.com/vK1wJTG.png[/img]
+[img]https://i.imgur.com/tHurBCY.png[/img]
+
+[img]https://i.imgur.com/hUtog6r.png[/img]
+
+[img]https://i.imgur.com/7tkqd6g.png[/img]
+
+[img]https://i.imgur.com/l3falLF.png[/img]
+
+[img]https://i.imgur.com/qv9RLGv.png[/img]
+
+[img]https://i.imgur.com/0VHLjb5.png[/img]
 
 [u][b]Featured: Refinery and Bureaucratic Districts[/b][/u]
 Reduce late game chores by utilising districts which increase your Administrative Capacity or produce strategic resources.*
@@ -82,11 +92,11 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [u][b]Legacy feature: Habitat start which does not requre Federations DLC (read carefully)[/b][/u]
 Please note that Void Dwellers Origin does not allow gestalt empires (machines and hive minds) but you can choose Habitat start starting system (empire creation menu) from my mod with any empire and species. That said, Void Dwellers (Federations DLC required) or Starborn mod (Federations DLC not required) origins are preferred.
 
-For people who do not own Federations DLC or play on 2.5.1.: Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait a month for the game to set the habitat up. Supports all empire and species types. This includes Rogue Servitor, Hive Mind, Syncretic Evolution etc.
+For people who do not own Federations DLC or play on 2.5 / 2.6: Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait a month for the game to set the habitat up. Supports all empire and species types. This includes Rogue Servitor, Hive Mind, Syncretic Evolution etc.
 
 Children of the Void sets habitat habitability and grants access to 99% of mod features but is not necessarily required if you go with "Habitat start" system. If you forego the civic your species will spawn with habitability as defined in the creation menu.
 
-How (non-Void Dwellers, no Federations DLC or Stellaris 2.5.1):
+How (non-Void Dwellers, no Federations DLC or Stellaris 2.5 / 2.6):
 
 In the empire creation menu use Habitat start as your starting system or pick Technocracy of Man. For best experience pick Children of the Void civic.
 
@@ -114,7 +124,5 @@ Habitat has some Mineral and Alloy deposits which grant Miner jobs and a few all
 [u][b]Final notes[/b][/u]
 
 Please report bugs and suggest balance or feature changes.
-
-This (my first) mod is an ongoing project to learn Stellaris modding. Planned features include story campaign and diplomatic events for Human empires, integration with other mods and custom assets.
 
 [url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
