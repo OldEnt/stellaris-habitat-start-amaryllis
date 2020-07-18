@@ -6,6 +6,11 @@ Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, 
 
 Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
 
+Addons:
+[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url][/list]
+Languages:
+[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese 汉语[/url], translation courtesy of vesel099[/list]
+
 [IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
 
 [img]https://i.imgur.com/TN8NeIh.png[/img]
@@ -27,7 +32,7 @@ I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=
 
 Structures from following mods receive Habitat Captain job and benefit from Elysian Isles Ascension Perk (-25% housing usage):
 [list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]. Additionally, Planetary Habitats can be converted into Arcologies just like normal habitats (full support).
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn: Improved Voidtouched[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034940146]see screenshot[/url]). You can convert into Specialised Habitat Arcology any habitat changed by Starborn mod, except special Starborn starting habitat. This is simply a design desision.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
@@ -41,7 +46,7 @@ Structures from following mods receive Habitat Captain job:
 
 [u][b]Children of the Void civic[/b][/u]
 Select in the empire creation menu to enable mod features. Works great with vanilla Void Dwellers or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn mod[/url] origins.
-This civic can be taken and removed at any point of the game via government reform.
+This civic can be taken and removed at any point of the game via government reform without incurring Habitat habitability.
 
 [img]https://i.imgur.com/vHx6tjX.png[/img]
 
@@ -90,24 +95,14 @@ Void Dwellers will no longer receive negative trait when settling Ring World or 
 [img]https://i.imgur.com/viPfO61.png[/img]
 
 [u][b]Legacy feature: Habitat start which does not requre Federations DLC (read carefully)[/b][/u]
-Please note that Void Dwellers Origin does not allow gestalt empires (machines and hive minds) but you can choose Habitat start starting system (empire creation menu) from my mod with any empire and species. That said, Void Dwellers (Federations DLC required) or Starborn mod (Federations DLC not required) origins are preferred.
 
-For people who do not own Federations DLC or play on 2.5 / 2.6: Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait a month for the game to set the habitat up. Supports all empire and species types. This includes Rogue Servitor, Hive Mind, Syncretic Evolution etc.
+Please note that Void Dwellers Origin does not allow gestalt empires (machines and hive minds) but you can choose Habitat start starting system from my mod with any empire and species. Use Habitat start in the empire creation menu or pick Technocracy of Man. For best experience pick Children of the Void civic. That said, Void Dwellers (Federations DLC required) or Starborn mod (Federations DLC not required) origins are preferred.
+
+Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait a month for the game to set the habitat up. Supports all empire and species types. This includes Rogue Servitor, Hive Mind, Syncretic Evolution etc.
 
 Children of the Void sets habitat habitability and grants access to 99% of mod features but is not necessarily required if you go with "Habitat start" system. If you forego the civic your species will spawn with habitability as defined in the creation menu.
 
-How (non-Void Dwellers, no Federations DLC or Stellaris 2.5 / 2.6):
-
-In the empire creation menu use Habitat start as your starting system or pick Technocracy of Man. For best experience pick Children of the Void civic.
-
-Number and type of starting districts, buildings and technologies varies slightly depending on the empire and species type:
-[list]
-[*]Habitat start empires are granted Habitat technology.
-[*]Empires with biological pops get Hydroponics technology and two Hydroponics Farms.
-[*]Lithoid empires get Mineral purification technology and one irreplacable Mineral purification plant.
-[*]Machine empires without biological pops get Habitat technology only.
-[*]Owning Lithoids as a secondary species does not grant Mineral purification.
-[/list]
+Number and type of starting districts, buildings and technologies varies slightly depending on the empire and species type.
 
 Habitat has:
 [list]
@@ -120,6 +115,8 @@ Habitat has:
 [/list]
 
 Habitat has some Mineral and Alloy deposits which grant Miner jobs and a few alloys, just enough to keep the empire going.
+
+[url=https://steamuserimages-a.akamaihd.net/ugc/1030706967792811034/56B0D80AB94E21954247A9F1BAC7C12BD71E085B/][img]https://steamuserimages-a.akamaihd.net/ugc/1030706967792811034/56B0D80AB94E21954247A9F1BAC7C12BD71E085B/[/img][/url]
 
 [u][b]Final notes[/b][/u]
 
