@@ -96,9 +96,17 @@ amaryllian_decision_grand_arcology_project = {
 					owner = {
 						has_ascension_perk = ap_amaryllian_voidchildren
 					}
+					NOR = {
+						has_planet_flag = amaryllian_hab_grand_arcology
+						has_planet_flag = amaryllian_hab_arcology
+					}
 					check_variable = {
 						which = "amaryllian_arcology_setup_num"
 						value = 4
+					}
+					OR = {
+						has_planet_flag = advanced_habitat_2
+						has_global_flag = vchecker_2_6_and_down
 					}
 				}
 				# Specialised Arcology			
@@ -119,11 +127,7 @@ amaryllian_decision_grand_arcology_project = {
 				}
 				# Upgrade from Specialised to Grand Arcology
 				AND = {
-					OR = {
-						#	has_planet_flag = amaryllian_hab_arcology
-						has_planet_flag = advanced_habitat_2
-						has_global_flag = vchecker_2_6_and_down
-					}
+					has_planet_flag = amaryllian_hab_arcology
 					check_variable = {
 						which = "amaryllian_arcology_setup_num"
 						value = 4
