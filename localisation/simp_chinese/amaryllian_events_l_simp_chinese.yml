@@ -1,0 +1,6 @@
+﻿# Placeholder until language pack has translation of these. Delete this file when translation is available.
+l_simp_chinese:
+
+amaryllian.220.name:0 "§P$amaryllian_col_grand_habitat_arcology$:§! [From.GetName] repurposed"
+amaryllian.220.desc:0 "This pinnacle of state-of-the-art space habitation systems cannot be easily matched. $amaryllian_col_grand_habitat_arcology_desc$ $civic_amaryllian_habitat_desc$"
+amaryllian.220.a:0 "$EXCELLENT$"

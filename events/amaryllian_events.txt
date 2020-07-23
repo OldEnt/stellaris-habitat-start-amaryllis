@@ -3179,7 +3179,7 @@ planet_event = {
 				}
 				set_timed_planet_flag = {
 					flag = amaryllian_decision_grand_arcology_designer_locked
-					days = 180
+					days = 90
 				}
 				planet_event = {
 					id = amaryllian.900
