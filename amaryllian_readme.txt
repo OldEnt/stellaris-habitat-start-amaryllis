@@ -5,7 +5,9 @@ Habitat Captains (and gestalt equivalent) increase unity output. The more habita
 Addons:
 [list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url][/list]
 Languages:
-[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese 汉语[/url], translation courtesy of vesel099[/list]
+[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese (汉语)[/url], translation courtesy of vesel099
+[*]Polish (Polski), integrated
+[/list]
 
 [IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
 

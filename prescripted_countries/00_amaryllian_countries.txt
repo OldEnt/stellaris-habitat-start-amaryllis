@@ -29,6 +29,7 @@ humans_amaryllian = {
 	ethic = "ethic_fanatic_materialist"
 	flags = {
 		amaryllian_empire
+		hyacinth_started human_2 custom_start_screen
 	}
 	ftl = wormhole
 	planet_name = "NAME_lotus"
