@@ -140,6 +140,27 @@ amaryllian_habitat_brain = {
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
+				is_machine_empire = yes
+				is_fallen_empire_machine = no
+			}
+		}
+		modifier = {
+			job_maintenance_drone_per_pop = 0.1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_fallen_empire_machine = yes
+			}
+		}
+		modifier = {
+			job_fe_maintenance_bot_per_pop = 0.1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
 				has_technology = amaryllian_tech_housing_gestalt_1
 			}
 		}
