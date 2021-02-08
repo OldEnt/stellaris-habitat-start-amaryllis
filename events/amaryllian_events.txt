@@ -517,8 +517,10 @@ country_event = {
 			has_origin = origin_pd_sol_hab_start
 			has_origin = origin_pd_hab_start
 			has_origin = origin_starborn
+			has_origin = origin_nsc_freebooter
 			has_country_flag = EGS_START_STARBORN
 			has_country_flag = starborn_origin
+			has_country_flag = amaryllian_ignore_habitability_change
 		}
 		any_owned_pop = {
 			is_same_species = root
@@ -571,8 +573,10 @@ country_event = {
 			has_origin = origin_pd_sol_hab_start
 			has_origin = origin_pd_hab_start
 			has_origin = origin_starborn
+			has_origin = origin_nsc_freebooter
 			has_country_flag = EGS_START_STARBORN
 			has_country_flag = starborn_origin
+			has_country_flag = amaryllian_ignore_habitability_change
 		}
 	}
 	immediate = {
@@ -601,8 +605,10 @@ country_event = {
 			has_origin = origin_pd_sol_hab_start
 			has_origin = origin_pd_hab_start
 			has_origin = origin_starborn
+			has_origin = origin_nsc_freebooter
 			has_country_flag = EGS_START_STARBORN
 			has_country_flag = starborn_origin
+			has_country_flag = amaryllian_ignore_habitability_change
 		}
 		any_owned_planet = {
 			is_homeworld = yes
@@ -812,6 +818,8 @@ country_event = {
 					is_planet_class = pc_ringworld_razed_mining
 					is_planet_class = pc_ringworld_razed_training
 					is_planet_class = pc_ringworld_razed_eco
+					# NSC2 Modjam Freebooters
+					uses_district_set = nsc_freebooter_habitat
 				}
 				NOT = {
 					has_modifier = amaryllian_habitat_brain_quarters
@@ -938,6 +946,8 @@ country_event = {
 					is_planet_class = pc_ringworld_razed_mining
 					is_planet_class = pc_ringworld_razed_training
 					is_planet_class = pc_ringworld_razed_eco
+					# NSC2 Modjam Freebooters
+					uses_district_set = nsc_freebooter_habitat
 				}
 				NOT = {
 					has_modifier = amaryllian_habitat_captain_quarters
@@ -1065,6 +1075,8 @@ country_event = {
 					is_planet_class = pc_ringworld_razed_mining
 					is_planet_class = pc_ringworld_razed_training
 					is_planet_class = pc_ringworld_razed_eco
+					# NSC2 Modjam Freebooters
+					uses_district_set = nsc_freebooter_habitat
 				}
 				OR = {
 					has_modifier = amaryllian_habitat_captain_quarters
@@ -1157,6 +1169,8 @@ country_event = {
 					is_planet_class = pc_hab_barren_cold
 					is_planet_class = pc_hab_toxic
 					is_planet_class = pc_hab_frozen
+					# NSC2 Modjam Freebooters
+					uses_district_set = nsc_freebooter_habitat
 				}
 				NOT = {
 					has_modifier = amaryllian_voidchildren_habitat_modifier
