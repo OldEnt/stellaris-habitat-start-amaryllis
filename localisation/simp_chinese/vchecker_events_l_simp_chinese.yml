@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+vchecker.100.name:0 "Stellaris version checker"
+vchecker.100.desc_0:0 "Stellaris version: ?"
+vchecker.100.desc_2_7:0 "Stellaris version: >=2.7"
+vchecker.100.desc_2_6:0 "Stellaris version: <=2.6"
+vchecker.100a:0 "OK"

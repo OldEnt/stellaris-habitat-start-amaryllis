@@ -1,0 +1,157 @@
+namespace = vchecker
+### Flags mod as present
+country_event = {
+	id = vchecker.0
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		set_global_flag = vchecker_installed
+		country_event = {
+			id = vchecker.1
+			days = 0
+			random = 0
+		}
+	}
+}
+
+### Fires sequence of events leading to a check. Execute event vchecker.1 to check or execute remove_global_flag = vchecker_version_checked and event vchecker.1 to re-evaluate. Run vchecker.100 for pop-up with game version shown.
+country_event = {
+	id = vchecker.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = vchecker_version_checked
+		}
+	}
+	immediate = {
+		country_event = {
+			id = vchecker.2
+			days = 0
+			random = 0
+		}
+		country_event = {
+			id = vchecker.3
+			days = 0
+			random = 0
+		}
+		country_event = {
+			id = vchecker.4
+			days = 1
+			random = 0
+		}
+		country_event = {
+			id = vchecker.80
+			days = 5
+			random = 0
+		}
+		country_event = {
+			id = vchecker.81
+			days = 5
+			random = 0
+		}
+	}
+}
+
+### Assigns appropriate pop flag to determine if the game is 2.7+ or 2.6 and earlier. Each scripted effect works only for specified version as every_pop effect was replaced with every_galaxy_pop in 2.7.
+country_event = {
+	id = vchecker.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = vchecker_version_checked
+		}
+	}
+	immediate = {
+		vchecker_every_galaxy_pop_effect_2_7_check = yes
+	}
+}
+
+country_event = {
+	id = vchecker.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = vchecker_version_checked
+		}
+	}
+	immediate = {
+		vchecker_every_pop_effect_2_6_check = yes
+	}
+}
+
+### Sets up a global flag indicating Stellaris version
+country_event = {
+	id = vchecker.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = vchecker_version_checked
+		}
+	}
+	immediate = {
+		vchecker_guess_stellaris_version = yes
+	}
+}
+
+### Cleanup events
+country_event = {
+	id = vchecker.80
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = vchecker_version_checked
+	}
+	immediate = {
+		vchecker_every_galaxy_pop_effect_2_7_cleanup = yes
+	}
+}
+
+country_event = {
+	id = vchecker.81
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = vchecker_version_checked
+	}
+	immediate = {
+		vchecker_every_pop_effect_2_6_cleanup = yes
+	}
+}
+
+### Test event. Run vchecker.100 for pop-up with game version shown.
+country_event = {
+	id = vchecker.100
+	title = vchecker.100.name
+	picture = GFX_evt_friendly_amoeba
+	show_sound = event_default
+	location = root
+	is_triggered_only = yes
+	desc = {
+		text = vchecker.100.desc_2_7
+		trigger = {
+			has_global_flag = vchecker_2_7_and_up
+		}
+	}
+	desc = {
+		text = vchecker.100.desc_2_6
+		trigger = {
+			has_global_flag = vchecker_2_6_and_down
+		}
+	}
+	desc = {
+		text = vchecker.100.desc_0
+		trigger = {
+			NOR = {
+				has_global_flag = vchecker_2_7_and_up
+				has_global_flag = vchecker_2_6_and_down
+			}
+		}
+	}
+	option = {
+		name = vchecker.100a
+	}
+}

@@ -1,0 +1,3 @@
+### Stellaris version checker (vchecker). Feel free to copy and modify. Best implemented into a mod by setting this version checker as required for your mod on Steam Workshop or by copying all vchecker files into your mod for ease of update. Credit is welcome but not necessary. - OldEnt
+### Variable used for advanced scripts
+@vchecker_stellaris_version = 0

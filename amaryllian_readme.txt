@@ -1,3 +1,6 @@
+Void Dwellers Expanded Legacy + Stellaris Version Checker (vchecker)
+Current version here: https://steamcommunity.com/sharedfiles/filedetails/?id=1961367151
+
 Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator, Farming or Sanctuary arcologies.
 
 Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.

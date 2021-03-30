@@ -1,0 +1,59 @@
+### Stellaris version checker (vchecker). Feel free to copy and modify. Best implemented into a mod by setting this version checker as required for your mod on Steam Workshop or by copying all vchecker files into your mod for ease of update. Credit is welcome but not necessary. - OldEnt
+# Tries to guess Stellaris version by looking for version-specific configuration
+vchecker_every_galaxy_pop_effect_2_7_check = {
+	every_owned_pop = {
+		every_galaxy_pop = {
+			set_pop_flag = vchecker_2_7_pop
+		}
+	}
+}
+
+vchecker_every_pop_effect_2_6_check = {
+	every_owned_pop = {
+		every_pop = {
+			set_pop_flag = vchecker_2_6_pop
+		}
+	}
+}
+
+vchecker_every_galaxy_pop_effect_2_7_cleanup = {
+	every_owned_pop = {
+		every_galaxy_pop = {
+			remove_pop_flag = vchecker_2_7_pop
+		}
+	}
+}
+
+vchecker_every_pop_effect_2_6_cleanup = {
+	every_owned_pop = {
+		every_pop = {
+			remove_pop_flag = vchecker_2_6_pop
+		}
+	}
+}
+
+vchecker_guess_stellaris_version = {
+	if = {
+		limit = {
+			any_owned_pop = {
+				has_pop_flag = vchecker_2_7_pop
+			}
+		}
+		set_global_flag = vchecker_version_checked
+		remove_global_flag = vchecker_2_6_and_down
+		set_global_flag = vchecker_2_7_and_up
+	}
+	else_if = {
+		limit = {
+			any_owned_pop = {
+				has_pop_flag = vchecker_2_6_pop
+			}
+		}
+		set_global_flag = vchecker_version_checked
+		remove_global_flag = vchecker_2_7_and_up
+		set_global_flag = vchecker_2_6_and_down
+	}
+	else = {
+		break = yes
+	}
+}

@@ -7,7 +7,6 @@ tags={
 	"Galaxy Generation"
 	"Fixes"
 }
-name="Void Dwellers Expanded [2.8+]"
+name="Void Dwellers Expanded Legacy"
 picture="thumbnail.png"
-supported_version="2.8.*"
-remote_file_id="1961367151"
+supported_version="2.*"

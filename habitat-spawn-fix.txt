@@ -1,0 +1,36 @@
+Fix for habitat failing to spawn (unusual):
+
+Load game in singleplayer, click on homeworld (planet window). Open console:
+
+1. COPY AND PASTE THIS BLOCK OF TEXT:
+
+effect = {
+set_planet_flag = research_habitat
+set_planet_flag = amaryllian_habitat
+clear_blockers = yes
+clear_deposits = yes
+set_planet_flag = megastructure
+set_planet_flag = habitat }
+
+2. PRESS ENTER
+
+3. EXECUTE:
+event amaryllian.1
+
+4. SWITCH TO EMPIRE WINDOW (the one with empire leader)
+
+5. Having empire window up, open console window and execute two more events by copying them and pressing enter each time:
+event amaryllian.3
+event amaryllian.10
+
+
+6. WAIT UNTIL NEW MONTH, then execute:
+effect remove_modifier = amaryllian_unity_0
+
+7. EXECUTE:
+effect give_technology = { tech = tech_habitat_1 } give_technology = { tech = tech_hydroponics }
+
+If you are Lithoid use tech_mineral_purification_1 instead of tech_hydroponics .
+
+
+This should leave you with habitat set up. Unity bonus should pop up next month.
