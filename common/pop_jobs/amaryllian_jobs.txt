@@ -18,6 +18,9 @@ amaryllian_habitat_captain = {
 			unity = 3
 		}
 	}
+	planet_modifier = {
+		planet_amenities_add = 3
+	}
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
@@ -136,6 +139,9 @@ amaryllian_habitat_brain = {
 		upkeep = {
 			energy = 3
 		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 3
 	}
 	triggered_planet_modifier = {
 		potential = {

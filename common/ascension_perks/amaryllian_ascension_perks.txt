@@ -1,6 +1,5 @@
 ap_amaryllian_voidchildren = {
 	potential = {
-		host_has_dlc = "Utopia"
 		has_civic = civic_amaryllian_habitat
 		NOT = {
 			has_ascension_perk = ap_amaryllian_voidchildren
@@ -9,10 +8,20 @@ ap_amaryllian_voidchildren = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_ap_voidborn"
-			has_ascension_perk = ap_voidborn
+			OR = {
+				has_ascension_perk = ap_voidborn
+				AND = {
+					amaryllian_is_habitat_tech_dlc_present = no					# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
+					num_ascension_perks > 1
+				}
+			}
 		}
 	}
 	on_enabled = {
+		give_technology = {
+			tech = amaryllian_tech_habitat_arcology
+			message = yes
+		}
 		give_technology = {
 			tech = amaryllian_tech_arms_industry
 		}
@@ -46,63 +55,7 @@ ap_amaryllian_voidchildren = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					OR = {
-						# Vanilla
-						is_planet_class = pc_habitat
-						# Planetary Diversity - Planetary Habitats
-						is_pd_planetary_habitat = yes
-						# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-						is_planet_class = pc_gghab
-						is_planet_class = pc_tmhab
-						is_planet_class = pc_tmhab2
-						is_planet_class = pc_mmhab
-						is_planet_class = pc_mmhab2
-						is_planet_class = pc_bhab
-						is_planet_class = pc_bchab
-						is_planet_class = pc_mhab
-						is_planet_class = pc_fhab
-						is_planet_class = pc_fmhab
-						is_planet_class = pc_mehab
-						# Starborn: Improved Voidtouched
-						is_planet_class = pc_starborn_habitat_start
-						# Dyson Swarm - colonizing space
-						is_planet_class = pc_dyson_swarm
-						# Living Space
-						is_planet_class = pc_gas_giant_habitat
-						is_planet_class = pc_asteroid_habitat
-						is_planet_class = pc_ice_asteroid_habitat
-						is_planet_class = pc_rare_crystal_asteroid_habitat
-						is_planet_class = pc_molten_habitat
-						is_planet_class = pc_barren_habitat
-						is_planet_class = pc_barren_cold_habitat
-						is_planet_class = pc_toxic_habitat
-						is_planet_class = pc_frozen_habitat
-						is_planet_class = pc_b_star_habitat
-						is_planet_class = pc_a_star_habitat
-						is_planet_class = pc_f_star_habitat
-						is_planet_class = pc_g_star_habitat
-						is_planet_class = pc_k_star_habitat
-						is_planet_class = pc_m_star_habitat
-						is_planet_class = pc_m_giant_star_habitat
-						is_planet_class = pc_t_star_habitat
-						is_planet_class = pc_black_hole_habitat
-						is_planet_class = pc_neutron_star_habitat
-						is_planet_class = pc_pulsar_habitat
-						# Habitation
-						is_planet_class = pc_hab_gas_giant_energy
-						is_planet_class = pc_hab_gas_giant_science
-						is_planet_class = pc_hab_gas_giant_minerals
-						is_planet_class = pc_hab_asteroid
-						is_planet_class = pc_hab_ice_asteroid
-						is_planet_class = pc_hab_rare_crystal_asteroid
-						is_planet_class = pc_hab_molten
-						is_planet_class = pc_hab_barren
-						is_planet_class = pc_hab_barren_cold
-						is_planet_class = pc_hab_toxic
-						is_planet_class = pc_hab_frozen
-						# NSC2 Modjam Freebooters
-						uses_district_set = nsc_freebooter_habitat
-					}
+					amaryllian_is_valid_voidchildren_planet = yes
 					NOT = {
 						has_modifier = amaryllian_voidchildren_habitat_modifier
 					}
@@ -118,7 +71,7 @@ ap_amaryllian_voidchildren = {
 		megastructure_build_speed_mult = 0.15
 	}
 	ai_weight = {
-		factor = 10
+		factor = 1000
 		modifier = {
 			factor = 2
 			has_ethic = ethic_materialist

@@ -1,0 +1,268 @@
+amaryllian_construct_arcology = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_arms_arcology_setup
+				has_planet_flag = amaryllian_arms_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_arms_arcology_setup
+		set_planet_flag = amaryllian_arms_arcology
+		add_district = amaryllian_district_arcology_arms_industry
+		remove_district = amaryllian_district_arcology_arms_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_civilian_arcology_setup
+				has_planet_flag = amaryllian_civilian_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_civilian_arcology_setup
+		set_planet_flag = amaryllian_civilian_arcology
+		add_district = amaryllian_district_arcology_civilian_industry
+		remove_district = amaryllian_district_arcology_civilian_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_farming_arcology_setup
+				has_planet_flag = amaryllian_farming_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_farming_arcology_setup
+		set_planet_flag = amaryllian_farming_arcology
+		add_district = amaryllian_district_arcology_farming_industry
+		remove_district = amaryllian_district_arcology_farming_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_fortress_arcology_setup
+				has_planet_flag = amaryllian_fortress_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_fortress_arcology_setup
+		set_planet_flag = amaryllian_fortress_arcology
+		add_district = amaryllian_district_arcology_fortress_industry
+		remove_district = amaryllian_district_arcology_fortress_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_research_arcology_setup
+				has_planet_flag = amaryllian_research_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_research_arcology_setup
+		set_planet_flag = amaryllian_research_arcology
+		add_district = amaryllian_district_arcology_research_industry
+		remove_district = amaryllian_district_arcology_research_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_bureaucratic_arcology_setup
+				has_planet_flag = amaryllian_bureaucratic_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_bureaucratic_arcology_setup
+		set_planet_flag = amaryllian_bureaucratic_arcology
+		add_district = amaryllian_district_arcology_bureaucratic_industry
+		remove_district = amaryllian_district_arcology_bureaucratic_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_refinery_arcology_setup
+				has_planet_flag = amaryllian_refinery_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_refinery_arcology_setup
+		set_planet_flag = amaryllian_refinery_arcology
+		add_district = amaryllian_district_arcology_refinery_industry
+		remove_district = amaryllian_district_arcology_refinery_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_trade_arcology_setup
+				has_planet_flag = amaryllian_trade_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_trade_arcology_setup
+		set_planet_flag = amaryllian_trade_arcology
+		add_district = amaryllian_district_arcology_trade_industry
+		remove_district = amaryllian_district_arcology_trade_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_mining_arcology_setup
+				has_planet_flag = amaryllian_mining_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_mining_arcology_setup
+		set_planet_flag = amaryllian_mining_arcology
+		add_district = amaryllian_district_arcology_mining_industry
+		remove_district = amaryllian_district_arcology_mining_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_generator_arcology_setup
+				has_planet_flag = amaryllian_generator_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_generator_arcology_setup
+		set_planet_flag = amaryllian_generator_arcology
+		add_district = amaryllian_district_arcology_generator_industry
+		remove_district = amaryllian_district_arcology_generator_industry
+	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_sanctuary_arcology_setup
+				has_planet_flag = amaryllian_sanctuary_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_sanctuary_arcology_setup
+		set_planet_flag = amaryllian_sanctuary_arcology
+		add_district = amaryllian_district_arcology_sanctuary_industry
+		remove_district = amaryllian_district_arcology_sanctuary_industry
+	}
+	else = {
+		break = yes
+	}
+}
+
+amaryllian_remove_all_vanilla_habitat_districts = {
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_housing
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_energy
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_science
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_commercial
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_mining
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+	remove_district = district_hab_cultural
+}
+
+amaryllian_remove_unity_effect = {
+	remove_modifier = amaryllian_unity_0
+	remove_modifier = amaryllian_unity_1
+	remove_modifier = amaryllian_unity_2
+	remove_modifier = amaryllian_unity_3
+	remove_modifier = amaryllian_unity_4
+	remove_modifier = amaryllian_unity_5
+	remove_modifier = amaryllian_unity_6
+	remove_modifier = amaryllian_unity_7
+	remove_modifier = amaryllian_unity_8
+	remove_modifier = amaryllian_unity_9
+	remove_modifier = amaryllian_unity_10
+	remove_modifier = amaryllian_unity_11
+	remove_modifier = amaryllian_unity_12
+	remove_modifier = amaryllian_unity_13
+	remove_modifier = amaryllian_unity_14
+	remove_modifier = amaryllian_unity_15
+}
+
+amaryllian_remove_gestalt_unity_effect = {
+	remove_modifier = amaryllian_gestalt_unity_0
+	remove_modifier = amaryllian_gestalt_unity_1
+	remove_modifier = amaryllian_gestalt_unity_2
+	remove_modifier = amaryllian_gestalt_unity_3
+	remove_modifier = amaryllian_gestalt_unity_4
+	remove_modifier = amaryllian_gestalt_unity_5
+	remove_modifier = amaryllian_gestalt_unity_6
+	remove_modifier = amaryllian_gestalt_unity_7
+	remove_modifier = amaryllian_gestalt_unity_8
+	remove_modifier = amaryllian_gestalt_unity_9
+	remove_modifier = amaryllian_gestalt_unity_10
+	remove_modifier = amaryllian_gestalt_unity_11
+	remove_modifier = amaryllian_gestalt_unity_12
+	remove_modifier = amaryllian_gestalt_unity_13
+	remove_modifier = amaryllian_gestalt_unity_14
+	remove_modifier = amaryllian_gestalt_unity_15
+}

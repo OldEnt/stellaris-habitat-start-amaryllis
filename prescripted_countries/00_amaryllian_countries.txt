@@ -24,15 +24,15 @@ humans_amaryllian = {
 		"civic_amaryllian_habitat"
 	}
 	government = "gov_science_directorate"
-	advisor_voice_type = "l_xenophobe"
+	# advisor_voice_type = "l_xenophobe"
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_fanatic_materialist"
 	flags = {
 		amaryllian_empire
 		hyacinth_started human_2 custom_start_screen
 	}
-	ftl = wormhole
-	planet_name = "NAME_lotus"
+	# ftl = wormhole
+	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
 	initializer = "amaryllian_system_initializer"
 	system_name = "NAME_vesta"

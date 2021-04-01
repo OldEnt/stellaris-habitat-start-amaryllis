@@ -2,17 +2,9 @@ amaryllian_district_arcology_arms_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_arms_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_arms_arcology
 	}
 	conversion_ratio = 1
@@ -160,17 +152,9 @@ amaryllian_district_arcology_civilian_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_civilian_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_civilian_arcology
 		exists = owner
 		owner = {
@@ -310,18 +294,10 @@ amaryllian_district_arcology_farming_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		exists = from
 		has_planet_flag = amaryllian_farming_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		exists = owner
 		has_planet_flag = amaryllian_farming_arcology
 	}
@@ -543,17 +519,9 @@ amaryllian_district_arcology_fortress_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_fortress_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_fortress_arcology
 	}
 	conversion_ratio = 1
@@ -653,17 +621,9 @@ amaryllian_district_arcology_research_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_research_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_research_arcology
 	}
 	conversion_ratio = 1
@@ -818,17 +778,9 @@ amaryllian_district_arcology_bureaucratic_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_bureaucratic_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_bureaucratic_arcology
 	}
 	conversion_ratio = 1
@@ -940,37 +892,15 @@ amaryllian_district_arcology_bureaucratic_industry = {
 			}
 		}
 	}
-	on_queued = {
-		owner = {
-			set_timed_country_flag = {
-				flag = buildings_new_crystal_building
-				days = 600
-			}
-		}
-		planet = {
-			set_timed_planet_flag = {
-				flag = recent_admin_building_built
-				days = 720
-			}
-		}
-	}
 }
 
 amaryllian_district_arcology_refinery_industry = {
 	base_buildtime = 480
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_refinery_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_refinery_arcology
 	}
 	conversion_ratio = 1
@@ -1195,17 +1125,9 @@ amaryllian_district_arcology_trade_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_trade_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_trade_arcology
 		exists = owner
 		owner = {
@@ -1349,17 +1271,9 @@ amaryllian_district_arcology_mining_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_mining_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_mining_arcology
 	}
 	conversion_ratio = 1
@@ -1568,17 +1482,9 @@ amaryllian_district_arcology_generator_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_generator_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_generator_arcology
 	}
 	conversion_ratio = 1
@@ -1775,17 +1681,9 @@ amaryllian_district_arcology_sanctuary_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_sanctuary_arcology
 	}
 	potential = {
-		OR = {
-			is_planet_class = pc_habitat
-			is_pd_planetary_habitat = yes
-		}
 		has_planet_flag = amaryllian_sanctuary_arcology
 		owner = {
 			has_valid_civic = civic_machine_servitor

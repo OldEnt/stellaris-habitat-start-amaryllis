@@ -1,26 +1,64 @@
 is_pd_planetary_habitat = {
 	OR = {
 		# Planetary Diversity - Planetary Habitats
+		has_planet_flag = pdhab		# failsafe flag
 		uses_district_set = pdplanethab
-		#	is_planet_class = pc_pd_barren_cold_hab
-		#	is_planet_class = pc_pd_barren_hab
-		#	is_planet_class = pc_pd_frozen_hab
-		#	is_planet_class = pc_pd_gas_giant_hab
-		#	is_planet_class = pc_pd_hothouse_hab
-		#	is_planet_class = pc_pd_molten_hab
-		#	is_planet_class = pc_pd_asteroid_hab
-		#	is_planet_class = pc_pd_toxic_hab
-		# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-		is_planet_class = pc_gghab
-		is_planet_class = pc_tmhab
-		is_planet_class = pc_tmhab2
-		is_planet_class = pc_mmhab
-		is_planet_class = pc_mmhab2
-		is_planet_class = pc_bhab
-		is_planet_class = pc_bchab
-		is_planet_class = pc_mhab
-		is_planet_class = pc_fhab
-		is_planet_class = pc_fmhab
-		is_planet_class = pc_mehab
+	}
+}
+
+amaryllian_is_valid_voidchildren_planet = {
+	OR = {
+		# Custom flags for mods to use. Set on your planet.
+		has_planet_flag = amaryllian_voidchildren		# Use this flag if you want to implement compatibility.
+		has_planet_flag = voiddwellerstraitsfix		# Void Dwellers traits fix flag
+		# Vanilla
+		uses_district_set = habitat
+		uses_district_set = ring_world
+		# Planetary Diversity - Planetary Habitats
+		has_planet_flag = pdhab		# failsafe flag
+		uses_district_set = pdplanethab
+		# Starborn: Improved Voidtouched
+		uses_district_set = starborn_start
+		# Dyson Swarm - colonizing space
+		uses_district_set = Dyson_swarm
+		# Living Space
+		has_planet_flag = stpg_planetary_habitat
+		# Habitation
+		has_planet_flag = hab_init
+		# Gigastructural Engineering & More
+		uses_district_set = giga_planet
+		uses_district_set = giga_alderson
+		uses_district_set = giga_birch
+		uses_district_set = giga_habitat
+		uses_district_set = interstellar_ring
+		uses_district_set = penrose_ring
+		uses_district_set = virtual_ring
+		# Twinks Atlanteans
+		uses_district_set = skypalace
+		# NSC2 Modjam Freebooters Origin
+		uses_district_set = nsc_freebooter_habitat
+		# More Events Mod
+		is_planet_class = pc_mem_vazuran_habitat
+	}
+}
+
+amaryllian_habitability_change_allowed = {
+	NOR = {
+		has_origin = origin_pd_sol_hab_start
+		has_origin = origin_pd_hab_start
+		has_origin = origin_starborn
+		has_origin = origin_nsc_freebooter
+		has_country_flag = EGS_START_STARBORN
+		has_country_flag = starborn_origin
+		has_country_flag = amaryllian_ignore_habitability_change
+	}
+}
+
+amaryllian_is_habitat_tech_dlc_present = {
+	OR = {
+		host_has_dlc = "Utopia"
+		host_has_dlc = "Federations"
+		# local_has_dlc = "Utopia"
+		# local_has_dlc = "Federations"
 	}
 }

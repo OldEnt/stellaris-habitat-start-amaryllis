@@ -1,120 +1,160 @@
 namespace = amaryllian
-### Flags mod as present
+# Flags mod as present.
 event = {
-	id = amaryllian.9
+	id = amaryllian.0
 	hide_window = yes
 	fire_only_once = yes
-	trigger = {
-		always = yes
-	}
 	immediate = {
 		set_global_flag = amaryllian_habitat_start_installed
 	}
 }
 
-### Prepare starting habitat
-planet_event = {
-	id = amaryllian.0
-	hide_window = yes
-	fire_only_once = yes
-	trigger = {
-		has_planet_flag = amaryllian_habitat
-		NOT = {
-			has_global_flag = vchecker_2_6_and_down
-		}
+country_event = {
+	id = amaryllian.5
+	is_triggered_only = yes
+	title = amaryllian_system_initializer_NAME
+	desc = REQUIRES_DLC_WITH_NAME
+	picture = GFX_evt_space_station
+	show_sound = event_cityscape
+	location = capital_scope
+	option = {
+		name = UTOPIA_TITLE
 	}
-	immediate = {
-		save_event_target_as = amaryllian_habitat_target
-		clear_blockers = yes
-		clear_deposits = yes
-		set_planet_flag = megastructure
-		set_planet_flag = habitat
-		set_planet_flag = advanced_habitat
-		set_planet_flag = advanced_habitat_2
-		planet_event = {
-			id = amaryllian.1
-			days = 1
-			random = 0
-		}
+	option = {
+		name = FEDERATIONS_TITLE
 	}
 }
 
-planet_event = {
-	id = amaryllian.230
-	hide_window = yes
-	fire_only_once = yes
-	trigger = {
-		has_planet_flag = amaryllian_habitat
-		has_global_flag = vchecker_2_6_and_down
-	}
-	immediate = {
-		save_event_target_as = amaryllian_habitat_target
-		clear_blockers = yes
-		clear_deposits = yes
-		set_planet_flag = megastructure
-		set_planet_flag = habitat
-		set_planet_flag = advanced_habitat
-		set_planet_flag = advanced_habitat_2
-		planet_event = {
-			id = amaryllian.231
-			days = 1
-			random = 0
-		}
-	}
-}
-
-planet_event = {
-	id = amaryllian.1
+# Find habitat start empires.
+event = {
+	id = amaryllian.10
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		has_planet_flag = amaryllian_habitat
-	}
 	immediate = {
+		if = {
+			limit = {
+				amaryllian_is_habitat_tech_dlc_present = yes
+			}
+			every_country = {
+				limit = {
+					exists = capital_scope
+				}
+				if = {
+					limit = {
+						has_country_flag = amaryllian_empire
+					}
+					capital_scope = {
+						set_planet_name = "NAME_lotus"
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							has_planet_flag = amaryllian_planet_start
+						}
+					}
+					country_event = {
+						id = amaryllian.11
+					}
+				}
+			}
+		}
+		else = {
+			set_global_flag = amaryllian_habitat_tech_dlc_check_failed
+			every_country = {
+				limit = {
+					has_country_flag = amaryllian_empire
+				}
+				if = {
+					limit = {
+						exists = capital_scope
+					}
+					capital_scope = {
+						set_planet_name = "NAME_lotus"
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = {
+					id = amaryllian.5
+				}
+			}
+		}
+	}
+}
+
+# Prepare habitat start system.
+country_event = {
+	id = amaryllian.11
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		capital_scope = {
+			planet_event = {
+				id = amaryllian.12
+			}
+			solar_system = {
+				every_system_planet = {
+					limit = {
+						has_planet_flag = amaryllian_planet_barren
+						any_moon = {
+							has_planet_flag = amaryllian_planet_start
+						}
+					}
+					set_planet_flag = has_megastructure
+				}
+			}
+		}
+	}
+}
+
+# Change habitat start planet to a habitat class.
+planet_event = {
+	id = amaryllian.12
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = amaryllian_empire
+				}
+			}
+			set_planet_name = "NAME_lotus"
+		}
+		save_event_target_as = amaryllian_habitat_target
+		clear_blockers = yes
+		clear_deposits = yes
+		set_planet_flag = megastructure
+		set_planet_flag = habitat
+		set_planet_flag = research_habitat
+		set_planet_flag = amaryllian_habitat
+		set_planet_flag = advanced_habitat
+		set_planet_flag = advanced_habitat_2
+		set_planet_size = 10
 		change_pc = pc_habitat
 		set_planet_entity = {
 			entity = "habitat_phase_03_entity"
-			graphical_culture = fromfrom
+			graphical_culture = owner
 		}
-		set_planet_size = 10
 		planet_event = {
-			id = amaryllian.2
-			days = 1
-			random = 0
+			id = amaryllian.13
 		}
 	}
 }
 
+# Prepare habitat start planet.
 planet_event = {
-	id = amaryllian.231
+	id = amaryllian.13
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		has_planet_flag = amaryllian_habitat
-	}
 	immediate = {
-		change_pc = pc_habitat
-		set_planet_entity = {
-			entity = "orbital_habitat_entity"
-			graphical_culture = fromfrom
-		}
-		set_planet_size = 10
-		planet_event = {
-			id = amaryllian.2
-			days = 1
-			random = 0
-		}
-	}
-}
-
-planet_event = {
-	id = amaryllian.2
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_planet_flag = amaryllian_habitat
-	}
-	immediate = {
+		clear_blockers = yes
+		clear_deposits = yes
+		# remove_all_buildings = yes	# We do not use this in case mods add starting buildings. Worst case better have it ruined than removed. This also keeps building_necrophage_elevation_chamber
 		if = {
 			limit = {
 				owner = {
@@ -123,8 +163,6 @@ planet_event = {
 					is_machine_empire = no
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -153,8 +191,6 @@ planet_event = {
 					is_organic_species = yes
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -181,8 +217,6 @@ planet_event = {
 					is_hive_empire = no
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -207,8 +241,6 @@ planet_event = {
 					is_hive_empire = yes
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_hive_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -237,8 +269,6 @@ planet_event = {
 					is_organic_species = yes
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_machine_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -268,8 +298,6 @@ planet_event = {
 					is_organic_species = yes
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_machine_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -294,8 +322,6 @@ planet_event = {
 					is_machine_empire = yes
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_machine_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -321,8 +347,6 @@ planet_event = {
 					is_lithoid_empire = no
 				}
 			}
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_hive_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -342,8 +366,6 @@ planet_event = {
 			break = yes
 		}
 		else = {
-			clear_blockers = yes
-			clear_deposits = yes
 			remove_building = building_capital
 			add_building = building_hab_major_capital
 			remove_building = building_research_lab_1
@@ -363,226 +385,124 @@ planet_event = {
 			check_planet_employment = yes
 			break = yes
 		}
-	}
-}
-
-### Give starting tech to Amaryllian system starters
-country_event = {
-	id = amaryllian.3
-	hide_window = yes
-	fire_only_once = yes
-	immediate = {
-		country_event = {
-			id = amaryllian.4
-			days = 1
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.44
-			days = 1
-			random = 0
-		}
-		# Firing employment check event no 65 for Habitat Captains
-		country_event = {
-			id = amaryllian.65
-			days = 5
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.65
-			days = 15
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.65
-			days = 35
-			random = 0
-		}
-		every_country = {
-			limit = {
-				any_owned_planet = {
-					is_homeworld = yes
-					is_capital = yes
-					has_planet_flag = amaryllian_habitat
-				}
-				any_owned_pop = {
-					is_lithoid = no
-					is_organic_species = yes
-				}
-			}
-			give_technology = {
-				message = no
-				tech = tech_hydroponics
-			}
-		}
-		every_country = {
-			limit = {
-				any_owned_planet = {
-					is_homeworld = yes
-					is_capital = yes
-					has_planet_flag = amaryllian_habitat
-				}
-				is_lithoid_empire = yes
-			}
-			give_technology = {
-				message = no
-				tech = tech_mineral_purification_1
-			}
-		}
-		every_country = {
-			limit = {
-				any_owned_planet = {
-					is_homeworld = yes
-					is_capital = yes
-					has_planet_flag = amaryllian_habitat
-				}
-			}
-			give_technology = {
-				message = no
-				tech = tech_habitat_1
+		owner = {
+			country_event = {
+				id = amaryllian.60
+				days = 2
 			}
 		}
 	}
 }
 
-# Federations Void Dwellers Origin
-country_event = {
-	id = amaryllian.12
-	hide_window = yes
-	fire_only_once = yes
-	immediate = {
-		#		country_event = {
-		#			id = amaryllian.4
-		#			days = 2
-		#			random = 0
-		#		}
-		every_country = {
-			limit = {
-				has_civic = civic_amaryllian_habitat
-				any_owned_planet = {
-					is_homeworld = yes
-					is_capital = yes
-					has_planet_flag = void_dweller_habitat_1
-				}
-				any_owned_pop = {
-					is_lithoid = no
-					is_organic_species = yes
-				}
-			}
-			give_technology = {
-				message = no
-				tech = tech_hydroponics
-			}
-		}
-		every_country = {
-			limit = {
-				has_civic = civic_amaryllian_habitat
-				any_owned_planet = {
-					is_homeworld = yes
-					is_capital = yes
-					has_planet_flag = void_dweller_habitat_1
-				}
-				is_lithoid_empire = yes
-			}
-			give_technology = {
-				message = no
-				tech = tech_mineral_purification_1
-			}
-		}
-		every_country = {
-			limit = {
-				has_civic = civic_amaryllian_habitat
-				any_owned_planet = {
-					is_homeworld = yes
-					is_capital = yes
-					has_planet_flag = void_dweller_habitat_1
-				}
-			}
-			give_technology = {
-				message = no
-				tech = tech_habitat_1
-			}
-		}
-	}
-}
-
-### Change habitability of primary species if civic is picked
-country_event = {
-	id = amaryllian.44
+# Find amaryllian countries to give starting tech.
+event = {
+	id = amaryllian.20
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		NOR = {
-			has_origin = origin_pd_sol_hab_start
-			has_origin = origin_pd_hab_start
-			has_origin = origin_starborn
-			has_origin = origin_nsc_freebooter
-			has_country_flag = EGS_START_STARBORN
-			has_country_flag = starborn_origin
-			has_country_flag = amaryllian_ignore_habitability_change
-		}
-		any_owned_pop = {
-			is_same_species = root
-			NOT = {
-				pop_has_trait = trait_pc_habitat_preference
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_civic = civic_amaryllian_habitat
+					exists = capital_scope
+				}
 			}
-			OR = {
-				is_organic_species = yes
-				is_lithoid = yes
+			if = {
+				limit = {
+					capital_scope = {
+						has_planet_flag = amaryllian_planet_start
+					}
+				}
+				country_event = {
+					id = amaryllian.21
+				}
 			}
 		}
 	}
+}
+
+# Give starting tech to amaryllian country.
+country_event = {
+	id = amaryllian.21
+	hide_window = yes
+	is_triggered_only = yes
 	immediate = {
-		owner_species = {
-			save_event_target_as = amaryllian_pop
+		if = {
+			limit = {
+				amaryllian_is_habitat_tech_dlc_present = yes
+			}
+			give_technology = {
+				message = yes
+				tech = tech_habitat_1
+			}
 		}
+		if = {
+			limit = {
+				is_lithoid_empire = yes
+			}
+			give_technology = {
+				message = yes
+				tech = tech_mineral_purification_1
+			}
+		}
+		if = {
+			limit = {
+				any_owned_pop = {
+					is_lithoid = no
+					is_organic_species = yes
+				}
+			}
+			give_technology = {
+				message = yes
+				tech = tech_hydroponics
+			}
+		}
+	}
+}
+
+# Change habitability for amaryllian primary species.
+event = {
+	id = amaryllian.30
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_amaryllian_habitat
+				exists = capital_scope
+			}
+			if = {
+				limit = {
+					amaryllian_is_habitat_tech_dlc_present = yes
+					amaryllian_habitability_change_allowed = yes
+				}
+				country_event = {
+					id = amaryllian.31
+				}
+			}
+		}
+	}
+}
+
+# Change habitability - primary.
+country_event = {
+	id = amaryllian.31
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
 		every_owned_pop = {
 			limit = {
 				is_same_species = root
 				NOT = {
 					pop_has_trait = trait_pc_habitat_preference
 				}
-				OR = {
-					is_organic_species = yes
-					is_lithoid = yes
-				}
+				is_organic_species = yes
 			}
-			set_pop_flag = amaryllian_pop
+			set_pop_flag = amaryllian_pop			# For debug purposes.
 			modify_species = {
 				species = this
 				ideal_planet_class = pc_habitat
 				add_trait = trait_void_dweller_1
-			}
-		}
-		country_event = {
-			id = amaryllian.444
-			days = 1
-			random = 0
-		}
-	}
-}
-
-country_event = {
-	id = amaryllian.444
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		NOR = {
-			has_origin = origin_pd_sol_hab_start
-			has_origin = origin_pd_hab_start
-			has_origin = origin_starborn
-			has_origin = origin_nsc_freebooter
-			has_country_flag = EGS_START_STARBORN
-			has_country_flag = starborn_origin
-			has_country_flag = amaryllian_ignore_habitability_change
-		}
-	}
-	immediate = {
-		random_owned_pop = {
-			limit = {
-				has_pop_flag = amaryllian_pop
 			}
 			root = {
 				change_dominant_species = {
@@ -593,48 +513,40 @@ country_event = {
 	}
 }
 
-# set_built_species = amaryllian_pop	need to implement to the above
-### Change habitability of secondary species if civic is picked
-country_event = {
-	id = amaryllian.4
+# Change habitability for amaryllian seconday species.
+event = {
+	id = amaryllian.40
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		NOR = {
-			has_origin = origin_pd_sol_hab_start
-			has_origin = origin_pd_hab_start
-			has_origin = origin_starborn
-			has_origin = origin_nsc_freebooter
-			has_country_flag = EGS_START_STARBORN
-			has_country_flag = starborn_origin
-			has_country_flag = amaryllian_ignore_habitability_change
-		}
-		any_owned_planet = {
-			is_homeworld = yes
-			is_capital = yes
-			has_planet_flag = amaryllian_habitat
-		}
-		any_owned_pop = {
-			NOT = {
-				is_same_species = root
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_amaryllian_habitat
+				exists = capital_scope
 			}
-			NOT = {
-				pop_has_trait = trait_pc_habitat_preference
-			}
-			OR = {
-				is_organic_species = yes
-				is_lithoid = yes
+			if = {
+				limit = {
+					amaryllian_is_habitat_tech_dlc_present = yes
+					amaryllian_habitability_change_allowed = yes
+				}
+				country_event = {
+					id = amaryllian.41
+				}
 			}
 		}
 	}
+}
+
+# Change habitability - secondary.
+country_event = {
+	id = amaryllian.41
+	hide_window = yes
+	is_triggered_only = yes
 	immediate = {
 		every_owned_pop = {
 			limit = {
-				NOT = {
+				NOR = {
 					is_same_species = root
-				}
-				NOT = {
 					pop_has_trait = trait_pc_habitat_preference
 				}
 				OR = {
@@ -654,1370 +566,822 @@ country_event = {
 	}
 }
 
-### Launch events 6 and 7
+# # Give civic jobs with delay.
 country_event = {
-	id = amaryllian.8
+	id = amaryllian.50
 	hide_window = yes
-	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = {
 		has_civic = civic_amaryllian_habitat
 	}
 	immediate = {
 		country_event = {
-			id = amaryllian.61
-			days = 2
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.62
-			days = 2
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.63
-			days = 2
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.7
+			id = amaryllian.51
 			days = 4
-			random = 0
 		}
 	}
 }
 
-### Apply civic bonus to habitats
+# Give civic jobs. (called from amaryllian.50)
 country_event = {
-	id = amaryllian.60
+	id = amaryllian.51
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		country_event = {
-			id = amaryllian.61
-			days = 4
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.62
-			days = 8
-			random = 0
-		}
-		country_event = {
-			id = amaryllian.63
-			days = 12
-			random = 0
-		}
-	}
-}
-
-country_event = {
-	id = amaryllian.61
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		is_gestalt = yes
-	}
-	immediate = {
-		every_owned_planet = {
+		if = {
 			limit = {
-				OR = {
-					# Vanilla
-					is_planet_class = pc_habitat
-					is_planet_class = pc_ringworld_habitable
-					# Planetary Diversity - Planetary Habitats
-					is_pd_planetary_habitat = yes
-					# Starborn: Improved Voidtouched
-					is_planet_class = pc_starborn_habitat_start
-					# Dyson Swarm - colonizing space
-					is_planet_class = pc_dyson_swarm
-					# Living Space
-					is_planet_class = pc_gas_giant_habitat
-					is_planet_class = pc_asteroid_habitat
-					is_planet_class = pc_ice_asteroid_habitat
-					is_planet_class = pc_rare_crystal_asteroid_habitat
-					is_planet_class = pc_molten_habitat
-					is_planet_class = pc_barren_habitat
-					is_planet_class = pc_barren_cold_habitat
-					is_planet_class = pc_toxic_habitat
-					is_planet_class = pc_frozen_habitat
-					is_planet_class = pc_b_star_habitat
-					is_planet_class = pc_a_star_habitat
-					is_planet_class = pc_f_star_habitat
-					is_planet_class = pc_g_star_habitat
-					is_planet_class = pc_k_star_habitat
-					is_planet_class = pc_m_star_habitat
-					is_planet_class = pc_m_giant_star_habitat
-					is_planet_class = pc_t_star_habitat
-					is_planet_class = pc_black_hole_habitat
-					is_planet_class = pc_neutron_star_habitat
-					is_planet_class = pc_pulsar_habitat
-					# Habitation
-					is_planet_class = pc_hab_gas_giant_energy
-					is_planet_class = pc_hab_gas_giant_science
-					is_planet_class = pc_hab_gas_giant_minerals
-					is_planet_class = pc_hab_asteroid
-					is_planet_class = pc_hab_ice_asteroid
-					is_planet_class = pc_hab_rare_crystal_asteroid
-					is_planet_class = pc_hab_molten
-					is_planet_class = pc_hab_barren
-					is_planet_class = pc_hab_barren_cold
-					is_planet_class = pc_hab_toxic
-					is_planet_class = pc_hab_frozen
-					# Gigastructural Engineering & More
-					is_planet_class = pc_ringworld_city
-					is_planet_class = pc_ringworld_machine
-					is_planet_class = pc_ringworld_hive
-					is_planet_class = pc_birch
-					is_planet_class = pc_flat_world
-					is_planet_class = pc_habitable_m_star
-					is_planet_class = pc_habitable_k_star
-					is_planet_class = pc_habitable_g_star
-					is_planet_class = pc_ringworld_alloys
-					is_planet_class = pc_giga_planetary_computer
-					is_planet_class = pc_city_ringworld_habitable
-					#					is_planet_class = pc_habitable_gas_giant
-					#					is_planet_class = pc_ll_temperate
-					#					is_planet_class = pc_ll_foggy
-					is_planet_class = pc_virtual_world
-					is_planet_class = pc_squareworld_habitable
-					is_planet_class = pc_giga_ringworld_habitable
-					is_planet_class = pc_gigaorbital_ring
-					is_planet_class = pc_interstellar_habitat
-					is_planet_class = pc_interstellar_ringworld_habitable
-					is_planet_class = pc_virtual_reality
-					is_planet_class = pc_virtual_industry
-					is_planet_class = pc_virtual_stellar_industry
-					# Ascendancy Ringworlds
-					is_planet_class = pc_ringworld_city
-					is_planet_class = pc_ringworld_eco_city
-					is_planet_class = pc_ringworld_energy_city
-					is_planet_class = pc_ringworld_machine
-					is_planet_class = pc_ringworld_hive
-					is_planet_class = pc_ringworld_shrouded_paradise
-					is_planet_class = pc_square_ringworld_city
-					is_planet_class = pc_square_ringworld_energy_city
-					is_planet_class = pc_square_ringworld_machine
-					is_planet_class = pc_square_ringworld_hive
-					is_planet_class = pc_ringworld_assimilated
-					is_planet_class = pc_ringworld_assimilated2
-					is_planet_class = pc_ringworld_assimilated3
-					is_planet_class = pc_ringworld_assimilated4
-					is_planet_class = pc_ringworld_machine_factory
-					is_planet_class = pc_ringworld_bioforge
-					is_planet_class = pc_ringworld_mining
-					is_planet_class = pc_ringworld_energy
-					is_planet_class = pc_ringworld_trade
-					is_planet_class = pc_ringworld_training
-					is_planet_class = pc_ringworld_training_shielded
-					is_planet_class = pc_ringworld_eco
-					is_planet_class = pc_ringworld_farming
-					is_planet_class = pc_ringworld_razed_city
-					is_planet_class = pc_ringworld_razed_energy
-					is_planet_class = pc_ringworld_razed_farming
-					is_planet_class = pc_ringworld_razed_mining
-					is_planet_class = pc_ringworld_razed_training
-					is_planet_class = pc_ringworld_razed_eco
-					# NSC2 Modjam Freebooters
-					uses_district_set = nsc_freebooter_habitat
+				is_gestalt = no
+			}
+			every_owned_planet = {
+				limit = {
+					amaryllian_is_valid_voidchildren_planet = yes
 				}
-				NOT = {
-					has_modifier = amaryllian_habitat_brain_quarters
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_habitat_captain_quarters
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_habitat_captain_quarters
+						days = -1
+					}
+					check_planet_employment = yes
 				}
 			}
-			add_modifier = {
-				modifier = amaryllian_habitat_brain_quarters
-				days = -1
+		}
+		else = {
+			every_owned_planet = {
+				limit = {
+					amaryllian_is_valid_voidchildren_planet = yes
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_habitat_brain_quarters
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_habitat_brain_quarters
+						days = -1
+					}
+					check_planet_employment = yes
+				}
 			}
 		}
 		country_event = {
-			id = amaryllian.66
-			days = 5
-			random = 0
+			id = amaryllian.60
+			days = 1
 		}
 	}
 }
 
-country_event = {
-	id = amaryllian.62
+# Remove unity bonus from invalid countries.
+event = {
+	id = amaryllian.52
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		is_gestalt = no
-	}
 	immediate = {
-		every_owned_planet = {
+		every_country = {
 			limit = {
-				OR = {
-					# Vanilla
-					is_planet_class = pc_habitat
-					is_planet_class = pc_ringworld_habitable
-					# Planetary Diversity - Planetary Habitats
-					is_pd_planetary_habitat = yes
-					# Starborn: Improved Voidtouched
-					is_planet_class = pc_starborn_habitat_start
-					# Dyson Swarm - colonizing space
-					is_planet_class = pc_dyson_swarm
-					# Living Space
-					is_planet_class = pc_gas_giant_habitat
-					is_planet_class = pc_asteroid_habitat
-					is_planet_class = pc_ice_asteroid_habitat
-					is_planet_class = pc_rare_crystal_asteroid_habitat
-					is_planet_class = pc_molten_habitat
-					is_planet_class = pc_barren_habitat
-					is_planet_class = pc_barren_cold_habitat
-					is_planet_class = pc_toxic_habitat
-					is_planet_class = pc_frozen_habitat
-					is_planet_class = pc_b_star_habitat
-					is_planet_class = pc_a_star_habitat
-					is_planet_class = pc_f_star_habitat
-					is_planet_class = pc_g_star_habitat
-					is_planet_class = pc_k_star_habitat
-					is_planet_class = pc_m_star_habitat
-					is_planet_class = pc_m_giant_star_habitat
-					is_planet_class = pc_t_star_habitat
-					is_planet_class = pc_black_hole_habitat
-					is_planet_class = pc_neutron_star_habitat
-					is_planet_class = pc_pulsar_habitat
-					# Habitation
-					is_planet_class = pc_hab_gas_giant_energy
-					is_planet_class = pc_hab_gas_giant_science
-					is_planet_class = pc_hab_gas_giant_minerals
-					is_planet_class = pc_hab_asteroid
-					is_planet_class = pc_hab_ice_asteroid
-					is_planet_class = pc_hab_rare_crystal_asteroid
-					is_planet_class = pc_hab_molten
-					is_planet_class = pc_hab_barren
-					is_planet_class = pc_hab_barren_cold
-					is_planet_class = pc_hab_toxic
-					is_planet_class = pc_hab_frozen
-					# Gigastructural Engineering & More
-					is_planet_class = pc_ringworld_city
-					is_planet_class = pc_ringworld_machine
-					is_planet_class = pc_ringworld_hive
-					is_planet_class = pc_birch
-					is_planet_class = pc_flat_world
-					is_planet_class = pc_habitable_m_star
-					is_planet_class = pc_habitable_k_star
-					is_planet_class = pc_habitable_g_star
-					is_planet_class = pc_ringworld_alloys
-					is_planet_class = pc_giga_planetary_computer
-					is_planet_class = pc_city_ringworld_habitable
-					#					is_planet_class = pc_habitable_gas_giant
-					#					is_planet_class = pc_ll_temperate
-					#					is_planet_class = pc_ll_foggy
-					is_planet_class = pc_virtual_world
-					is_planet_class = pc_squareworld_habitable
-					is_planet_class = pc_giga_ringworld_habitable
-					is_planet_class = pc_gigaorbital_ring
-					is_planet_class = pc_interstellar_habitat
-					is_planet_class = pc_interstellar_ringworld_habitable
-					is_planet_class = pc_virtual_reality
-					is_planet_class = pc_virtual_industry
-					is_planet_class = pc_virtual_stellar_industry
-					# Ascendancy Ringworlds
-					is_planet_class = pc_ringworld_city
-					is_planet_class = pc_ringworld_eco_city
-					is_planet_class = pc_ringworld_energy_city
-					is_planet_class = pc_ringworld_machine
-					is_planet_class = pc_ringworld_hive
-					is_planet_class = pc_ringworld_shrouded_paradise
-					is_planet_class = pc_square_ringworld_city
-					is_planet_class = pc_square_ringworld_energy_city
-					is_planet_class = pc_square_ringworld_machine
-					is_planet_class = pc_square_ringworld_hive
-					is_planet_class = pc_ringworld_assimilated
-					is_planet_class = pc_ringworld_assimilated2
-					is_planet_class = pc_ringworld_assimilated3
-					is_planet_class = pc_ringworld_assimilated4
-					is_planet_class = pc_ringworld_machine_factory
-					is_planet_class = pc_ringworld_bioforge
-					is_planet_class = pc_ringworld_mining
-					is_planet_class = pc_ringworld_energy
-					is_planet_class = pc_ringworld_trade
-					is_planet_class = pc_ringworld_training
-					is_planet_class = pc_ringworld_training_shielded
-					is_planet_class = pc_ringworld_eco
-					is_planet_class = pc_ringworld_farming
-					is_planet_class = pc_ringworld_razed_city
-					is_planet_class = pc_ringworld_razed_energy
-					is_planet_class = pc_ringworld_razed_farming
-					is_planet_class = pc_ringworld_razed_mining
-					is_planet_class = pc_ringworld_razed_training
-					is_planet_class = pc_ringworld_razed_eco
-					# NSC2 Modjam Freebooters
-					uses_district_set = nsc_freebooter_habitat
-				}
 				NOT = {
-					has_modifier = amaryllian_habitat_captain_quarters
+					has_civic = civic_amaryllian_habitat
 				}
 			}
-			add_modifier = {
-				modifier = amaryllian_habitat_captain_quarters
-				days = -1
+			every_owned_planet = {
+				remove_modifier = amaryllian_habitat_captain_quarters
+				remove_modifier = amaryllian_habitat_brain_quarters
 			}
-		}
-		country_event = {
-			id = amaryllian.66
-			days = 5
-			random = 0
 		}
 	}
 }
 
-country_event = {
-	id = amaryllian.63
+# Give civic jobs - planet
+planet_event = {
+	id = amaryllian.53
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		NOT = {
+		owner = {
 			has_civic = civic_amaryllian_habitat
 		}
 	}
 	immediate = {
-		every_owned_planet = {
+		if = {
 			limit = {
-				OR = {
-					# Vanilla
-					is_planet_class = pc_habitat
-					is_planet_class = pc_ringworld_habitable
-					# Planetary Diversity - Planetary Habitats
-					is_pd_planetary_habitat = yes
-					# Starborn: Improved Voidtouched
-					is_planet_class = pc_starborn_habitat_start
-					# Dyson Swarm - colonizing space
-					is_planet_class = pc_dyson_swarm
-					# Living Space
-					is_planet_class = pc_gas_giant_habitat
-					is_planet_class = pc_asteroid_habitat
-					is_planet_class = pc_ice_asteroid_habitat
-					is_planet_class = pc_rare_crystal_asteroid_habitat
-					is_planet_class = pc_molten_habitat
-					is_planet_class = pc_barren_habitat
-					is_planet_class = pc_barren_cold_habitat
-					is_planet_class = pc_toxic_habitat
-					is_planet_class = pc_frozen_habitat
-					is_planet_class = pc_b_star_habitat
-					is_planet_class = pc_a_star_habitat
-					is_planet_class = pc_f_star_habitat
-					is_planet_class = pc_g_star_habitat
-					is_planet_class = pc_k_star_habitat
-					is_planet_class = pc_m_star_habitat
-					is_planet_class = pc_m_giant_star_habitat
-					is_planet_class = pc_t_star_habitat
-					is_planet_class = pc_black_hole_habitat
-					is_planet_class = pc_neutron_star_habitat
-					is_planet_class = pc_pulsar_habitat
-					# Habitation
-					is_planet_class = pc_hab_gas_giant_energy
-					is_planet_class = pc_hab_gas_giant_science
-					is_planet_class = pc_hab_gas_giant_minerals
-					is_planet_class = pc_hab_asteroid
-					is_planet_class = pc_hab_ice_asteroid
-					is_planet_class = pc_hab_rare_crystal_asteroid
-					is_planet_class = pc_hab_molten
-					is_planet_class = pc_hab_barren
-					is_planet_class = pc_hab_barren_cold
-					is_planet_class = pc_hab_toxic
-					is_planet_class = pc_hab_frozen
-					# Gigastructural Engineering & More
-					is_planet_class = pc_ringworld_city
-					is_planet_class = pc_ringworld_machine
-					is_planet_class = pc_ringworld_hive
-					is_planet_class = pc_birch
-					is_planet_class = pc_flat_world
-					is_planet_class = pc_habitable_m_star
-					is_planet_class = pc_habitable_k_star
-					is_planet_class = pc_habitable_g_star
-					is_planet_class = pc_ringworld_alloys
-					is_planet_class = pc_giga_planetary_computer
-					is_planet_class = pc_city_ringworld_habitable
-					#					is_planet_class = pc_habitable_gas_giant
-					#					is_planet_class = pc_ll_temperate
-					#					is_planet_class = pc_ll_foggy
-					is_planet_class = pc_virtual_world
-					is_planet_class = pc_squareworld_habitable
-					is_planet_class = pc_giga_ringworld_habitable
-					is_planet_class = pc_gigaorbital_ring
-					is_planet_class = pc_interstellar_habitat
-					is_planet_class = pc_interstellar_ringworld_habitable
-					is_planet_class = pc_virtual_reality
-					is_planet_class = pc_virtual_industry
-					is_planet_class = pc_virtual_stellar_industry
-					# Ascendancy Ringworlds
-					is_planet_class = pc_ringworld_city
-					is_planet_class = pc_ringworld_eco_city
-					is_planet_class = pc_ringworld_energy_city
-					is_planet_class = pc_ringworld_machine
-					is_planet_class = pc_ringworld_hive
-					is_planet_class = pc_ringworld_shrouded_paradise
-					is_planet_class = pc_square_ringworld_city
-					is_planet_class = pc_square_ringworld_energy_city
-					is_planet_class = pc_square_ringworld_machine
-					is_planet_class = pc_square_ringworld_hive
-					is_planet_class = pc_ringworld_assimilated
-					is_planet_class = pc_ringworld_assimilated2
-					is_planet_class = pc_ringworld_assimilated3
-					is_planet_class = pc_ringworld_assimilated4
-					is_planet_class = pc_ringworld_machine_factory
-					is_planet_class = pc_ringworld_bioforge
-					is_planet_class = pc_ringworld_mining
-					is_planet_class = pc_ringworld_energy
-					is_planet_class = pc_ringworld_trade
-					is_planet_class = pc_ringworld_training
-					is_planet_class = pc_ringworld_training_shielded
-					is_planet_class = pc_ringworld_eco
-					is_planet_class = pc_ringworld_farming
-					is_planet_class = pc_ringworld_razed_city
-					is_planet_class = pc_ringworld_razed_energy
-					is_planet_class = pc_ringworld_razed_farming
-					is_planet_class = pc_ringworld_razed_mining
-					is_planet_class = pc_ringworld_razed_training
-					is_planet_class = pc_ringworld_razed_eco
-					# NSC2 Modjam Freebooters
-					uses_district_set = nsc_freebooter_habitat
+				amaryllian_is_valid_voidchildren_planet = yes
+			}
+			if = {
+				limit = {
+					owner = {
+						is_gestalt = no
+					}
 				}
-				OR = {
-					has_modifier = amaryllian_habitat_captain_quarters
-					has_modifier = amaryllian_habitat_brain_quarters
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_habitat_captain_quarters
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_habitat_captain_quarters
+						days = -1
+					}
+					check_planet_employment = yes
 				}
 			}
-			remove_modifier = amaryllian_habitat_captain_quarters
-			remove_modifier = amaryllian_habitat_brain_quarters
+			else = {
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_habitat_brain_quarters
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_habitat_brain_quarters
+						days = -1
+					}
+					check_planet_employment = yes
+				}
+			}
+			owner = {
+				country_event = {
+					id = amaryllian.60					# Apply unity bonus.
+					days = 2
+				}
+			}
 		}
 	}
 }
 
 country_event = {
-	id = amaryllian.67
+	id = amaryllian.54
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		has_ascension_perk = ap_amaryllian_voidchildren
-	}
-	immediate = {
-		country_event = {
-			id = amaryllian.64
-			days = 16
-			random = 0
-		}
-	}
-}
-
-country_event = {
-	id = amaryllian.64
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_ascension_perk = ap_amaryllian_voidchildren
-	}
 	immediate = {
 		every_owned_planet = {
+			check_planet_employment = yes
+		}
+	}
+}
+
+# Apply unity bonus. (called from amaryllian.60)
+country_event = {
+	id = amaryllian.60
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_civic = civic_amaryllian_habitat
+	}
+	immediate = {
+		if = {
 			limit = {
-				OR = {
-					# Vanilla
-					is_planet_class = pc_habitat
-					# Planetary Diversity - Planetary Habitats
-					is_pd_planetary_habitat = yes
-					# Planetary Diversity - Planetary Habitats - old classes for backwards compatibility
-					is_planet_class = pc_gghab
-					is_planet_class = pc_tmhab
-					is_planet_class = pc_tmhab2
-					is_planet_class = pc_mmhab
-					is_planet_class = pc_mmhab2
-					is_planet_class = pc_bhab
-					is_planet_class = pc_bchab
-					is_planet_class = pc_mhab
-					is_planet_class = pc_fhab
-					is_planet_class = pc_fmhab
-					is_planet_class = pc_mehab
-					# Starborn: Improved Voidtouched
-					is_planet_class = pc_starborn_habitat_start
-					# Dyson Swarm - colonizing space
-					is_planet_class = pc_dyson_swarm
-					# Living Space
-					is_planet_class = pc_gas_giant_habitat
-					is_planet_class = pc_asteroid_habitat
-					is_planet_class = pc_ice_asteroid_habitat
-					is_planet_class = pc_rare_crystal_asteroid_habitat
-					is_planet_class = pc_molten_habitat
-					is_planet_class = pc_barren_habitat
-					is_planet_class = pc_barren_cold_habitat
-					is_planet_class = pc_toxic_habitat
-					is_planet_class = pc_frozen_habitat
-					is_planet_class = pc_b_star_habitat
-					is_planet_class = pc_a_star_habitat
-					is_planet_class = pc_f_star_habitat
-					is_planet_class = pc_g_star_habitat
-					is_planet_class = pc_k_star_habitat
-					is_planet_class = pc_m_star_habitat
-					is_planet_class = pc_m_giant_star_habitat
-					is_planet_class = pc_t_star_habitat
-					is_planet_class = pc_black_hole_habitat
-					is_planet_class = pc_neutron_star_habitat
-					is_planet_class = pc_pulsar_habitat
-					# Habitation
-					is_planet_class = pc_hab_gas_giant_energy
-					is_planet_class = pc_hab_gas_giant_science
-					is_planet_class = pc_hab_gas_giant_minerals
-					is_planet_class = pc_hab_asteroid
-					is_planet_class = pc_hab_ice_asteroid
-					is_planet_class = pc_hab_rare_crystal_asteroid
-					is_planet_class = pc_hab_molten
-					is_planet_class = pc_hab_barren
-					is_planet_class = pc_hab_barren_cold
-					is_planet_class = pc_hab_toxic
-					is_planet_class = pc_hab_frozen
-					# NSC2 Modjam Freebooters
-					uses_district_set = nsc_freebooter_habitat
+				is_gestalt = no
+			}
+			if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 1
+					}
 				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_1
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_2
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 3
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_3
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 4
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_4
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 5
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_5
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 6
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_6
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_6
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 7
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_7
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_7
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 8
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_8
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_8
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 9
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_9
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_9
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 10
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_10
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 11
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_11
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_11
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 12
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_12
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_12
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 13
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_13
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_13
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value = 14
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_14
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_14
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_captain
+						value >= 15
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_unity_15
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_unity_15
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_1
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_2
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 3
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_3
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 4
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_4
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 5
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_5
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 6
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_6
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_6
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 7
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_7
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_7
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 8
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_8
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_8
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 9
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_9
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_9
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 10
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_10
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 11
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_11
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_11
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 12
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_12
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_12
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 13
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_13
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_13
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value = 14
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_14
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_14
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					num_assigned_jobs = {
+						job = amaryllian_habitat_brain
+						value >= 15
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_gestalt_unity_15
+						}
+					}
+					amaryllian_remove_unity_effect = yes
+					add_modifier = {
+						modifier = amaryllian_gestalt_unity_15
+					}
+				}
+			}
+		}
+	}
+}
+
+# Remove unity bonus from invalid countries.
+event = {
+	id = amaryllian.61
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			limit = {
 				NOT = {
-					has_modifier = amaryllian_voidchildren_habitat_modifier
+					has_civic = civic_amaryllian_habitat
 				}
 			}
-			add_modifier = {
-				modifier = amaryllian_voidchildren_habitat_modifier
-				days = -1
-			}
+			amaryllian_remove_unity_effect = yes
+			amaryllian_remove_gestalt_unity_effect = yes
 		}
 	}
 }
 
-country_event = {
-	id = amaryllian.65
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-	}
-	immediate = {
-		every_owned_planet = {
-			check_planet_employment = yes
-			check_planet_employment = yes
-			check_planet_employment = yes
-			check_planet_employment = yes
-		}
-		remove_modifier = amaryllian_gestalt_unity_0
-		remove_modifier = amaryllian_unity_0
-	}
-}
-
-country_event = {
-	id = amaryllian.66
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-	}
-	immediate = {
-		every_owned_planet = {
-			check_planet_employment = yes
-		}
-		remove_modifier = amaryllian_gestalt_unity_0
-		remove_modifier = amaryllian_unity_0
-	}
-}
-
+# Give research options to AP Voidborne owner.
 country_event = {
 	id = amaryllian.70
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
 		NOT = {
-			has_technology = amaryllian_tech_arms_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_arms_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.71
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_civilian_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_civilian_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.72
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_farming_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_farming_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.73
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_fortress_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_fortress_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.74
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_research_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_research_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.75
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_amaryllian_voidchildren
-		NOT = {
-			has_technology = amaryllian_tech_bureaucratic_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_bureaucratic_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.76
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_amaryllian_voidchildren
-		NOT = {
-			has_technology = amaryllian_tech_refinery_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_refinery_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.77
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_trade_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_trade_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.78
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_mining_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_mining_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.79
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_generator_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_generator_industry
-	}
-}
-
-country_event = {
-	id = amaryllian.80
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-		has_valid_civic = civic_machine_servitor
-		has_ascension_perk = ap_voidborn
-		NOT = {
-			has_technology = amaryllian_tech_sanctuary_industry
-		}
-	}
-	immediate = {
-		add_research_option = amaryllian_tech_sanctuary_industry
-	}
-}
-
-### Count habitat captains and apply unity bonus
-country_event = {
-	id = amaryllian.7
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_civic = civic_amaryllian_habitat
-	}
-	immediate = {
-		if = {
-			limit = {
-				is_gestalt = yes
-			}
-			if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 0
-					}
-				}
-				break = yes
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 1
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_1
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 2
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_2
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 3
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_3
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 4
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_4
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 5
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_5
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 6
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_6
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 7
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_7
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 8
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_8
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 9
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_9
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 10
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_10
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 11
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_11
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 12
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_12
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 13
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_13
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 14
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_14
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count = 15
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_15
-					days = 360
-				}
-			}
-			else = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_brain
-						}
-						count > 15
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_gestalt_unity_16
-					days = 360
-				}
-			}
-		}
-		else = {
-			if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 0
-					}
-				}
-				break = yes
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 1
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_1
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 2
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_2
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 3
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_3
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 4
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_4
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 5
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_5
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 6
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_6
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 7
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_7
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 8
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_8
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 9
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_9
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 10
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_10
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 11
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_11
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 12
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_12
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 13
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_13
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 14
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_14
-					days = 360
-				}
-			}
-			else_if = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count = 15
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_15
-					days = 360
-				}
-			}
-			else = {
-				limit = {
-					count_owned_pops = {
-						limit = {
-							has_job = amaryllian_habitat_captain
-						}
-						count > 15
-					}
-				}
-				add_modifier = {
-					modifier = amaryllian_unity_16
-					days = 360
-				}
-			}
-		}
-	}
-}
-
-# Disabled in 2.7.1 due to habitat changes. See on_actions
-# Habitat cost and speed build bonus campaign
-country_event = {
-	id = amaryllian.10
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_global_flag = vchecker_2_6_and_down
-		has_civic = civic_amaryllian_habitat
-		NOT = {
-			has_country_flag = amaryllian_void_campaign_finished
+			has_country_flag = amaryllian_research_option_added
 		}
 	}
 	immediate = {
 		if = {
 			limit = {
-				years_passed = 1
+				OR = {
+					has_ascension_perk = ap_voidborn
+					AND = {
+						amaryllian_is_habitat_tech_dlc_present = no						# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
+						num_ascension_perks > 1
+					}
+				}
 			}
-			country_event = {
-				id = amaryllian.11
-				days = 31
-				random = 0
+			set_country_flag = amaryllian_research_option_added
+			if = {
+				limit = {
+					NOT = {
+						has_technology = amaryllian_tech_habitat_arcology
+					}
+				}
+				give_technology = {
+					tech = amaryllian_tech_habitat_arcology
+					message = yes
+				}
 			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 6
+			add_research_option = amaryllian_tech_arms_industry
+			add_research_option = amaryllian_tech_civilian_industry
+			add_research_option = amaryllian_tech_farming_industry
+			add_research_option = amaryllian_tech_fortress_industry
+			add_research_option = amaryllian_tech_research_industry
+			add_research_option = amaryllian_tech_bureaucratic_industry
+			add_research_option = amaryllian_tech_refinery_industry
+			add_research_option = amaryllian_tech_trade_industry
+			add_research_option = amaryllian_tech_mining_industry
+			add_research_option = amaryllian_tech_generator_industry
+			if = {
+				limit = {
+					has_valid_civic = civic_machine_servitor
+				}
+				add_research_option = amaryllian_tech_sanctuary_industry
 			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_2
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 11
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_3
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 16
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_4
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 21
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_5
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 26
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_6
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 31
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_7
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 36
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_8
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 41
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_9
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed = 46
-			}
-			add_modifier = {
-				modifier = amaryllian_void_campaign_10
-				days = 1800
-			}
-		}
-		else_if = {
-			limit = {
-				years_passed > 50
-			}
-			set_country_flag = amaryllian_void_campaign_finished
-		}
-		else = {
-			break = yes
-		}
-	}
-}
-
-country_event = {
-	id = amaryllian.11
-	title = amaryllian.11.name
-	desc = amaryllian.11.desc
-	picture = GFX_evt_megastructure_construction
-	show_sound = event_construction_03
-	location = root
-	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
-	option = {
-		name = amaryllian.11.a
-		add_modifier = {
-			modifier = amaryllian_void_campaign_1
-			days = 1800
 		}
 	}
 }
@@ -2572,6 +1936,175 @@ planet_event = {
 			set_variable = {
 				which = "amaryllian_arcology_setup_num"
 				value = 0
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = amaryllian.801
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = amaryllian_habitat_captain_quarters
+		remove_modifier = amaryllian_habitat_brain_quarters
+	}
+}
+
+# Apply or remove civic bonuses on owner change.
+#From = Country scope (new owner)
+#This = Planet scope
+planet_event = {
+	id = amaryllian.802
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			owner = {
+				has_civic = civic_amaryllian_habitat
+			}
+			from = {
+				has_civic = civic_amaryllian_habitat
+			}
+		}
+	}
+	immediate = {
+		# Both countries have civic.
+		if = {
+			limit = {
+				owner = {
+					has_civic = civic_amaryllian_habitat
+				}
+				from = {
+					has_civic = civic_amaryllian_habitat
+				}
+			}
+			if = {
+				limit = {
+					from = {
+						is_gestalt = no
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_habitat_captain_quarters
+						}
+					}
+					remove_modifier = amaryllian_habitat_brain_quarters
+					add_modifier = {
+						modifier = amaryllian_habitat_captain_quarters
+						days = -1
+					}
+					check_planet_employment = yes
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = amaryllian_habitat_brain_quarters
+						}
+					}
+					remove_modifier = amaryllian_habitat_captain_quarters
+					add_modifier = {
+						modifier = amaryllian_habitat_brain_quarters
+						days = -1
+					}
+					check_planet_employment = yes
+				}
+			}
+			owner = {
+				country_event = {
+					id = amaryllian.60
+					days = 2
+				}
+			}
+			from = {
+				country_event = {
+					id = amaryllian.60
+					days = 2
+				}
+			}
+		}
+		# New owner has civic.
+		else_if = {
+			limit = {
+				from = {
+					has_civic = civic_amaryllian_habitat
+				}
+				owner = {
+					NOT = {
+						has_civic = civic_amaryllian_habitat
+					}
+				}
+			}
+			if = {
+				limit = {
+					amaryllian_is_valid_voidchildren_planet = yes
+				}
+				if = {
+					limit = {
+						from = {
+							is_gestalt = no
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = amaryllian_habitat_captain_quarters
+							}
+						}
+						remove_modifier = amaryllian_habitat_brain_quarters
+						add_modifier = {
+							modifier = amaryllian_habitat_captain_quarters
+							days = -1
+						}
+						check_planet_employment = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = amaryllian_habitat_brain_quarters
+							}
+						}
+						remove_modifier = amaryllian_habitat_captain_quarters
+						add_modifier = {
+							modifier = amaryllian_habitat_brain_quarters
+							days = -1
+						}
+						check_planet_employment = yes
+					}
+				}
+				from = {
+					country_event = {
+						id = amaryllian.60						# Apply unity bonus.
+						days = 2
+					}
+				}
+			}
+		}
+		# Former owner has civic.
+		else_if = {
+			limit = {
+				from = {
+					NOT = {
+						has_civic = civic_amaryllian_habitat
+					}
+				}
+				owner = {
+					has_civic = civic_amaryllian_habitat
+				}
+			}
+			remove_modifier = amaryllian_habitat_captain_quarters
+			remove_modifier = amaryllian_habitat_brain_quarters
+			owner = {
+				country_event = {
+					id = amaryllian.60					# Apply unity bonus.
+					days = 2
+				}
 			}
 		}
 	}
@@ -3215,94 +2748,26 @@ planet_event = {
 	}
 }
 
-# Temporary planet_flag fix for older saves
-country_event = {
-	id = amaryllian.997
+# Dummy event to reduce error.log. Do not use!
+event = {
+	id = amaryllian.950
 	hide_window = yes
-	fire_only_once = yes
-	trigger = {
-		always = yes
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_civic = civic_amaryllian_habitat
-			}
-			every_owned_planet = {
-				limit = {
-					OR = {
-						has_planet_flag = amaryllian_civilian_arcology
-						has_planet_flag = amaryllian_arms_arcology
-						has_planet_flag = amaryllian_farming_arcology
-						has_planet_flag = amaryllian_fortress_arcology
-						has_planet_flag = amaryllian_research_arcology
-						has_planet_flag = amaryllian_bureaucratic_arcology
-						has_planet_flag = amaryllian_refinery_arcology
-						has_planet_flag = amaryllian_trade_arcology
-						has_planet_flag = amaryllian_mining_arcology
-						has_planet_flag = amaryllian_generator_arcology
-						has_planet_flag = amaryllian_sanctuary_arcology
-					}
-					NOR = {
-						has_planet_flag = amaryllian_hab_arcology
-						has_planet_flag = amaryllian_hab_grand_arcology
-					}
-				}
-				set_planet_flag = amaryllian_hab_arcology
-				set_global_flag = amaryllian_hab_arcology_flag_save_fix
-			}
-		}
-		else = {
-			set_global_flag = amaryllian_hab_arcology_flag_save_fix
-			break = yes
-		}
-	}
-}
-
-# Mod update notification
-country_event = {
-	id = amaryllian.998
-	hide_window = yes
-	fire_only_once = yes
-	trigger = {
-		always = yes
-	}
-	immediate = {
-		country_event = {
-			id = amaryllian.999
-			days = 5
-			random = 0
-		}
-	}
-}
-
-country_event = {
-	id = amaryllian.999
-	title = amaryllian.999.name
-	desc = amaryllian.999.desc
-	picture = GFX_evt_200_subscribers_update
-	show_sound = event_default
-	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-		NOT = {
-			has_country_flag = 200_subscribers_update_notification
-			has_civic = civic_amaryllian_habitat
-		}
-		any_owned_planet = {
-			has_planet_flag = amaryllian_habitat
-		}
+	immediate = {
+		set_planet_flag = amaryllian_voidchildren		# Use this flag if you want to implement compatibility.
+		set_planet_flag = amaryllian_arcology_allowed		#	Apply this flag to a planet to allow arcology project.
+		set_planet_flag = voiddwellerstraitsfix
+		set_planet_flag = stpg_planetary_habitat
+		set_planet_flag = hab_init
+		set_planet_flag = pdhab
+		set_planet_flag = pd_mining_hab
+		set_planet_flag = pd_mining2_hab
+		set_planet_flag = pd_energy_hab
+		set_planet_flag = pd_energy2_hab
+		set_country_flag = EGS_START_STARBORN
+		set_country_flag = starborn_origin
+		set_country_flag = amaryllian_ignore_habitability_change
+		set_planet_flag = forbid_guillis_planet_modifiers
+		set_planet_flag = pd_ignore
 	}
-	option = {
-		name = amaryllian.999.a
-		set_country_flag = 200_subscribers_update_notification
-	}
-	#	option = {
-	#	name = amaryllian.999.b
-	#	add_resource = {
-	#			influence = 250
-	#		}
-	#	set_country_flag = 200_subscribers_update_notification
-	#	}
 }

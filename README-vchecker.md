@@ -1,1 +1,0 @@
-Tries to guess Stellaris version in-game by looking for version-specific configuration. Sets appropriate global flag.

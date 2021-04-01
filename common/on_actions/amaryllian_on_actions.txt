@@ -1,31 +1,73 @@
-on_yearly_pulse_country = {
+on_game_start = {
 	events = {
-		amaryllian.7
-		amaryllian.10		# Disabled in 2.7.1 due to habitat changes
+		amaryllian.0		# Flags mod as present.
+		amaryllian.10		# Find habitat start empires.
+		amaryllian.20		# Find amaryllian countries to give starting tech.
+		amaryllian.30		# Change habitability for amaryllian primary species.
+		amaryllian.40		# Change habitability for amaryllian seconday species.
+	}
+}
+
+on_game_start_country = {
+	events = {
+		amaryllian.51		# Give civic jobs. (called from amaryllian.50)
+		# amaryllian.60		# Apply unity bonus. (called from amaryllian.51)
 	}
 }
 
 on_monthly_pulse_country = {
 	events = {
-		amaryllian.7
-		amaryllian.60
-		amaryllian.67
-		amaryllian.70
-		amaryllian.71
-		amaryllian.72
-		amaryllian.73
-		amaryllian.74
-		amaryllian.75
-		amaryllian.76
-		amaryllian.77
-		amaryllian.78
-		amaryllian.79
-		amaryllian.80
+		amaryllian.70		# Give research options to AP Voidborne owner.
+		amaryllian.54
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		amaryllian.50		# Give civic jobs with delay.
+		# amaryllian.60		# Apply unity bonus.
+	}
+}
+
+on_five_year_pulse = {
+	events = {
+		amaryllian.52		# Remove civic jobs from invalid countries.
+		amaryllian.61		# Remove unity bonus from invalid countries.
+	}
+}
+
+on_colony_destroyed = {
+	events = {
+		amaryllian.801		# Remove civic jobs from invalid planet.
+	}
+}
+
+on_planet_ownerless = {
+	events = {
+		amaryllian.801		# Remove civic jobs from invalid planet.
+	}
+}
+
+on_planet_zero_pops = {
+	events = {
+		amaryllian.801		# Remove civic jobs from invalid planet.
+	}
+}
+
+on_planet_transfer = {
+	events = {
+		amaryllian.802		# Apply or remove civic bonuses on owner change.
+	}
+}
+
+on_colonized = {
+	events = {
+		amaryllian.53		# Give civic jobs - planet
 	}
 }
 
 on_terraforming_complete = {
 	events = {
-		amaryllian.800
+		amaryllian.800		# Planetary Diversity - Planetary habitat compatibility
 	}
 }

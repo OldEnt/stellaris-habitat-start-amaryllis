@@ -40,7 +40,7 @@ amaryllian_system_initializer = {
 		has_ring = yes
 		flags = {
 			ignore_startup_effect
-			has_megastructure
+			amaryllian_planet_barren
 		}
 		init_effect = {
 			prevent_anomaly = yes
@@ -56,10 +56,14 @@ amaryllian_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 110
 			has_ring = no
+			flags = {
+				ignore_startup_effect
+				forbid_guillis_planet_modifiers
+				pd_ignore
+				amaryllian_planet_start
+			}
 			init_effect = {
 				prevent_anomaly = yes
-				set_planet_flag = research_habitat
-				set_planet_flag = amaryllian_habitat
 			}
 		}
 	}
