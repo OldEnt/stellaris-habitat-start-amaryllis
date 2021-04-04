@@ -1,8 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_evt_200_subscribers_update"
-		texturefile = "gfx/event_pictures/200_subscribers_update.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-}
