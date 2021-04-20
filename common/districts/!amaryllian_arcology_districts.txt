@@ -2029,8 +2029,8 @@ amaryllian_district_arcology_sanctuary_industry = {
 			}
 		}
 		modifier = {
-			job_bio_trophy_add = 14
-			job_maintenance_drone_add = 4
+			job_bio_trophy_add = 20
+			job_maintenance_drone_add = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -2044,8 +2044,8 @@ amaryllian_district_arcology_sanctuary_industry = {
 			}
 		}
 		modifier = {
-			job_bio_trophy_add = 7
-			job_maintenance_drone_add = 2
+			job_bio_trophy_add = 10
+			job_maintenance_drone_add = 1
 		}
 	}
 	ai_weight = {
