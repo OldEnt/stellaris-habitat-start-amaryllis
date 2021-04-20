@@ -31,16 +31,12 @@ I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=
 Structures from following mods receive Habitat Captain job and benefit from Elysian Isles Ascension Perk (-25% housing usage):
 [list]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]. Additionally, Planetary Habitats can be converted into Arcologies just like normal habitats (full support).
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn: Improved Voidtouched[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034940146]see screenshot[/url]). You can convert into Specialised Habitat Arcology any habitat changed by Starborn mod, except special Starborn starting habitat. This is simply a design desision.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1510731495]Habitation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
-[/list]
-Structures from following mods receive Habitat Captain job:
-[list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url]
 [/list]
 
 [u][b]Children of the Void civic[/b][/u]
@@ -91,7 +87,7 @@ Provide your Habitat Captains with boosts to your habitats. This will be swapped
 
 Void Dwellers will no longer receive negative trait when settling Ring World or custom habitats from supported mods. This fix requires overwrite of original game file and therefore it is available as a standalone mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url]. Habitat Arcologies from Void Dwellers Expanded are vanilla habitats and do not requre this fix but you might want it if you are settling Ring Worlds.
 
-[img]https://i.imgur.com/xmo8fNu.png[/img]
+[img]https://i.imgur.com/zC5qzNr.png[/img]
 
 [u][b]Legacy feature: Habitat start which does not requre Federations DLC (read carefully)[/b][/u]
 
@@ -120,3 +116,4 @@ Habitat has some Mineral and Alloy deposits which grant Miner jobs and a few all
 [u][b]Final notes[/b][/u]
 
 Please report bugs and suggest balance or feature changes.
+[url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]

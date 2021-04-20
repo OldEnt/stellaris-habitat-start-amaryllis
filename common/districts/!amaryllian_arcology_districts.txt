@@ -34,7 +34,7 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 		modifier = {
-			job_fabricator_add = 10
+			job_fabricator_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -48,7 +48,7 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 		modifier = {
-			job_fabricator_add = 5
+			job_fabricator_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -60,7 +60,7 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 		modifier = {
-			job_alloy_drone_add = 10
+			job_alloy_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -74,7 +74,7 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 		modifier = {
-			job_alloy_drone_add = 5
+			job_alloy_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -86,7 +86,7 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 		modifier = {
-			job_foundry_add = 10
+			job_foundry_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -100,7 +100,7 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 		modifier = {
-			job_foundry_add = 5
+			job_foundry_add = 4
 		}
 	}
 	triggered_desc = {
@@ -129,6 +129,101 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 		text = job_fabricator_effect_desc
+	}
+	# Extra jobs from foundry buildings
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			has_active_building = building_foundry_2
+		}
+		modifier = {
+			job_foundry_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			has_active_building = building_foundry_3
+		}
+		modifier = {
+			job_foundry_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+			has_active_building = building_foundry_2
+		}
+		modifier = {
+			job_fabricator_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+			has_active_building = building_foundry_3
+		}
+		modifier = {
+			job_fabricator_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+			has_active_building = building_foundry_2
+		}
+		modifier = {
+			job_alloy_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+			has_active_building = building_foundry_3
+		}
+		modifier = {
+			job_alloy_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+			}
+		}
+		text = job_maintenance_drone_effect_desc
 	}
 	ai_weight = {
 		weight = 0
@@ -191,7 +286,7 @@ amaryllian_district_arcology_civilian_industry = {
 			}
 		}
 		modifier = {
-			job_artisan_drone_add = 10
+			job_artisan_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -205,7 +300,7 @@ amaryllian_district_arcology_civilian_industry = {
 			}
 		}
 		modifier = {
-			job_artisan_drone_add = 5
+			job_artisan_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -217,7 +312,7 @@ amaryllian_district_arcology_civilian_industry = {
 			}
 		}
 		modifier = {
-			job_artisan_add = 10
+			job_artisan_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -231,7 +326,7 @@ amaryllian_district_arcology_civilian_industry = {
 			}
 		}
 		modifier = {
-			job_artisan_add = 5
+			job_artisan_add = 4
 		}
 	}
 	triggered_desc = {
@@ -262,6 +357,77 @@ amaryllian_district_arcology_civilian_industry = {
 		modifier = {
 			job_clerk_add = 1
 		}
+	}
+	# Extra jobs from factory buildings
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			has_active_building = building_factory_2
+		}
+		modifier = {
+			job_artisan_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			has_active_building = building_factory_3
+		}
+		modifier = {
+			job_artisan_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+			has_active_building = building_factory_2
+		}
+		modifier = {
+			job_artisan_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+			has_active_building = building_factory_3
+		}
+		modifier = {
+			job_artisan_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+			}
+		}
+		text = job_maintenance_drone_effect_desc
 	}
 	ai_weight = {
 		weight = 0
@@ -347,7 +513,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_agri_drone_add = 10
+			job_agri_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -361,7 +527,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_agri_drone_add = 5
+			job_agri_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -373,7 +539,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_agri_drone_add = 10
+			job_agri_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -387,7 +553,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_agri_drone_add = 5
+			job_agri_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -400,7 +566,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_farmer_add = 10
+			job_farmer_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -415,7 +581,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_farmer_add = 5
+			job_farmer_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -427,7 +593,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_fe_acolyte_farm_add = 10
+			job_fe_acolyte_farm_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -441,7 +607,7 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		modifier = {
-			job_fe_acolyte_farm_add = 5
+			job_fe_acolyte_farm_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -494,6 +660,43 @@ amaryllian_district_arcology_farming_industry = {
 			}
 		}
 		text = job_fe_acolyte_farm_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_active_building = building_food_processing_center
+		}
+		modifier = {
+			job_agri_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			has_active_building = building_food_processing_center
+		}
+		modifier = {
+			job_farmer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+			has_active_building = building_food_processing_center
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 1
+		}
 	}
 	ai_weight = {
 		weight = 0
@@ -551,7 +754,7 @@ amaryllian_district_arcology_fortress_industry = {
 			}
 		}
 		modifier = {
-			job_warrior_drone_add = 10
+			job_warrior_drone_add = 7
 		}
 	}
 	triggered_planet_modifier = {
@@ -565,7 +768,7 @@ amaryllian_district_arcology_fortress_industry = {
 			}
 		}
 		modifier = {
-			job_warrior_drone_add = 5
+			job_warrior_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -577,7 +780,7 @@ amaryllian_district_arcology_fortress_industry = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 10
+			job_soldier_add = 7
 		}
 	}
 	triggered_planet_modifier = {
@@ -591,7 +794,7 @@ amaryllian_district_arcology_fortress_industry = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 5
+			job_soldier_add = 4
 		}
 	}
 	triggered_desc = {
@@ -653,7 +856,7 @@ amaryllian_district_arcology_research_industry = {
 			}
 		}
 		modifier = {
-			job_calculator_add = 10
+			job_calculator_add = 7
 		}
 	}
 	triggered_planet_modifier = {
@@ -667,7 +870,7 @@ amaryllian_district_arcology_research_industry = {
 			}
 		}
 		modifier = {
-			job_calculator_add = 5
+			job_calculator_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -679,7 +882,7 @@ amaryllian_district_arcology_research_industry = {
 			}
 		}
 		modifier = {
-			job_brain_drone_add = 10
+			job_brain_drone_add = 7
 		}
 	}
 	triggered_planet_modifier = {
@@ -693,7 +896,7 @@ amaryllian_district_arcology_research_industry = {
 			}
 		}
 		modifier = {
-			job_brain_drone_add = 5
+			job_brain_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -705,7 +908,7 @@ amaryllian_district_arcology_research_industry = {
 			}
 		}
 		modifier = {
-			job_researcher_add = 10
+			job_researcher_add = 7
 		}
 	}
 	triggered_planet_modifier = {
@@ -719,7 +922,7 @@ amaryllian_district_arcology_research_industry = {
 			}
 		}
 		modifier = {
-			job_researcher_add = 5
+			job_researcher_add = 4
 		}
 	}
 	triggered_desc = {
@@ -809,7 +1012,7 @@ amaryllian_district_arcology_bureaucratic_industry = {
 			}
 		}
 		modifier = {
-			job_coordinator_add = 10
+			job_coordinator_add = 7
 		}
 	}
 	triggered_planet_modifier = {
@@ -820,7 +1023,7 @@ amaryllian_district_arcology_bureaucratic_industry = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = 10
+			job_synapse_drone_add = 7
 		}
 	}
 	triggered_planet_modifier = {
@@ -831,7 +1034,7 @@ amaryllian_district_arcology_bureaucratic_industry = {
 			}
 		}
 		modifier = {
-			job_bureaucrat_add = 10
+			job_bureaucrat_add = 7
 		}
 	}
 	triggered_desc = {
@@ -1321,7 +1524,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_mining_drone_add = 10
+			job_mining_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1335,7 +1538,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_mining_drone_add = 5
+			job_mining_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -1347,7 +1550,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_mining_drone_add = 10
+			job_mining_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1361,7 +1564,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_mining_drone_add = 5
+			job_mining_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -1374,7 +1577,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_miner_add = 10
+			job_miner_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1389,7 +1592,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_miner_add = 5
+			job_miner_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -1401,7 +1604,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_fe_acolyte_mine_add = 10
+			job_fe_acolyte_mine_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1415,7 +1618,7 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		modifier = {
-			job_fe_acolyte_mine_add = 5
+			job_fe_acolyte_mine_add = 4
 		}
 	}
 	#	Disabled because too OP
@@ -1457,6 +1660,52 @@ amaryllian_district_arcology_mining_industry = {
 			}
 		}
 		text = job_fe_acolyte_mine_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			OR = {
+				has_active_building = building_mineral_purification_hub
+				has_active_building = amaryllian_building_mineral_purification_hub
+			}
+		}
+		modifier = {
+			job_mining_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			OR = {
+				has_active_building = building_mineral_purification_hub
+				has_active_building = amaryllian_building_mineral_purification_hub
+			}
+		}
+		modifier = {
+			job_miner_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+			OR = {
+				has_active_building = building_mineral_purification_hub
+				has_active_building = amaryllian_building_mineral_purification_hub
+			}
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 1
+		}
 	}
 	ai_weight = {
 		weight = 0
@@ -1532,7 +1781,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_technician_drone_add = 10
+			job_technician_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1546,7 +1795,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_technician_drone_add = 5
+			job_technician_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -1558,7 +1807,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_technician_drone_add = 10
+			job_technician_drone_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1572,7 +1821,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_technician_drone_add = 5
+			job_technician_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -1585,7 +1834,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_technician_add = 10
+			job_technician_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1600,7 +1849,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_technician_add = 5
+			job_technician_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -1612,7 +1861,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_fe_acolyte_generator_add = 10
+			job_fe_acolyte_generator_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -1626,7 +1875,7 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		modifier = {
-			job_fe_acolyte_generator_add = 5
+			job_fe_acolyte_generator_add = 4
 		}
 	}
 	triggered_desc = {
@@ -1656,6 +1905,52 @@ amaryllian_district_arcology_generator_industry = {
 			}
 		}
 		text = job_fe_acolyte_generator_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			OR = {
+				has_active_building = building_energy_nexus
+				has_active_building = amaryllian_building_energy_nexus
+			}
+		}
+		modifier = {
+			job_technician_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			OR = {
+				has_active_building = building_energy_nexus
+				has_active_building = amaryllian_building_energy_nexus
+			}
+		}
+		modifier = {
+			job_technician_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+			OR = {
+				has_active_building = building_energy_nexus
+				has_active_building = amaryllian_building_energy_nexus
+			}
+		}
+		modifier = {
+			job_fe_acolyte_generator_add = 1
+		}
 	}
 	ai_weight = {
 		weight = 0
@@ -1734,8 +2029,8 @@ amaryllian_district_arcology_sanctuary_industry = {
 			}
 		}
 		modifier = {
-			job_bio_trophy_add = 20
-			job_maintenance_drone_add = 2
+			job_bio_trophy_add = 14
+			job_maintenance_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -1749,8 +2044,8 @@ amaryllian_district_arcology_sanctuary_industry = {
 			}
 		}
 		modifier = {
-			job_bio_trophy_add = 10
-			job_maintenance_drone_add = 1
+			job_bio_trophy_add = 7
+			job_maintenance_drone_add = 2
 		}
 	}
 	ai_weight = {

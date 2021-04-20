@@ -25,6 +25,7 @@ amaryllian_decision_arcology_project_modifier = {
 	lith_pop_growth_speed = 0.1
 	pop_assembly_speed = 0.1
 	planet_jobs_produces_mult = 0.05
+	planet_max_buildings_add = 6
 }
 
 amaryllian_decision_grand_arcology_project_modifier = {
@@ -36,6 +37,7 @@ amaryllian_decision_grand_arcology_project_modifier = {
 	pop_assembly_speed = 0.1
 	planet_jobs_produces_mult = 0.05
 	planet_max_districts_add = 2
+	planet_max_buildings_add = 12
 }
 
 amaryllian_unity_0 = {
