@@ -179,3 +179,25 @@ amaryllian_d_hab_food_1 = {
 		weight = 0
 	}
 }
+
+amaryllian_d_hab_building_slots_3 = {
+	icon = "d_station_cargo"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	potential = {
+		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			planet_max_buildings_add = 3
+		}
+	}
+	# weight 0: event added
+	drop_weight = {
+		weight = 0
+	}
+}

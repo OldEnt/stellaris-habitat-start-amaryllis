@@ -71,3 +71,9 @@ on_terraforming_complete = {
 		amaryllian.800		# Planetary Diversity - Planetary habitat compatibility
 	}
 }
+
+on_post_government_changed = {
+	events = {
+		amaryllian.51		# Give civic jobs. (called from amaryllian.50)
+	}
+}

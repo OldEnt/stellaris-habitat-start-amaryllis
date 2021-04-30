@@ -14,6 +14,9 @@ amaryllian_d_hab_energy_1_desc:1 "This habitat is equipped with extensive solar 
 amaryllian_d_hab_food_1:0 "Composting Plant"
 amaryllian_d_hab_food_1_desc:1 "This habitat can process biowaste efficiently turning it into a fertilizer... or food."
 
+amaryllian_d_hab_building_slots_3:0 "$building_hab_capital$"
+amaryllian_d_hab_building_slots_3_desc:0 "$OUTLINER_PLANET_CONSTRUCTION_AVAILABLE$: §G+3§!"
+
 civic_amaryllian_habitat:0 "Children of the Void"
 civic_amaryllian_habitat_desc:0 "While others look for new homes, we forge them ourselves."
 civic_tooltip_amaryllian_habitat_world_effects:0 "Sets habitat habitability. Enables second stage of §HVoidborne§! ascension perk and grants access to §HHabitat Arcologies§!.\n\n§H$pc_habitat$s§! have £job_amaryllian_habitat_captain£ §YCaptains§! (or £job_amaryllian_habitat_brain£ §YBrain Synapses§!) who provide Empire £unity£ §Y$unity$§! output modifier which increases per §HHabitat§! owned.\n\nDoes not grant habitat start - you can opt for that in the empire creation menu."

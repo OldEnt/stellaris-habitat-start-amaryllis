@@ -14,6 +14,9 @@ amaryllian_d_hab_energy_1_desc:1 "Ta Stacja orbitalna posiada szerokie panele s�
 amaryllian_d_hab_food_1:0 "Kompostownia"
 amaryllian_d_hab_food_1_desc:1 "Ta Stacja orbitalna jest w stanie efektywnie przetwarzać biomasę w nawóz... lub jedzenie."
 
+amaryllian_d_hab_building_slots_3:0 "$building_hab_capital$"
+amaryllian_d_hab_building_slots_3_desc:0 "$OUTLINER_PLANET_CONSTRUCTION_AVAILABLE$: §G+3§!"
+
 civic_amaryllian_habitat:0 "Dzieci Próżni"
 civic_amaryllian_habitat_desc:0 "Kiedy inni poszukują nowych domów, my tworzymy je własnymi rękoma."
 civic_tooltip_amaryllian_habitat_world_effects:0 "Ustawia $trait_pc_habitat_preference$. Udostępnia drugi poziom §H$ap_voidborn$§! oraz pozwala na budowę §HOrbitalnych Arkologii§!.\n\n§HOrbitalne stacje mieszkalne§! mają miejsce pracy dla £job_amaryllian_habitat_captain£ §YKapitanów§! (albo £job_amaryllian_habitat_brain£ §YCentralizatorów§!) którzy zwiększają £unity£ §Y$unity$§! o 2% za każdą Orbitalną stacją mieszkalną.\n\nNie ustawia początku na Orbitalnej stacji mieszkalnej - można to wybrać w kreatorze imperium"
