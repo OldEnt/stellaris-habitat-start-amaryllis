@@ -2011,49 +2011,54 @@ planet_event = {
 			}
 			if = {
 				limit = {
-					from = {
-						is_gestalt = no
-					}
+					amaryllian_is_valid_voidchildren_planet = yes
 				}
 				if = {
 					limit = {
-						NOT = {
-							has_modifier = amaryllian_habitat_captain_quarters
+						from = {
+							is_gestalt = no
 						}
 					}
-					remove_modifier = amaryllian_habitat_brain_quarters
-					add_modifier = {
-						modifier = amaryllian_habitat_captain_quarters
-						days = -1
-					}
-					check_planet_employment = yes
-				}
-			}
-			else = {
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_habitat_brain_quarters
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = amaryllian_habitat_captain_quarters
+							}
 						}
+						remove_modifier = amaryllian_habitat_brain_quarters
+						add_modifier = {
+							modifier = amaryllian_habitat_captain_quarters
+							days = -1
+						}
+						check_planet_employment = yes
 					}
-					remove_modifier = amaryllian_habitat_captain_quarters
-					add_modifier = {
-						modifier = amaryllian_habitat_brain_quarters
-						days = -1
+				}
+				else = {
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = amaryllian_habitat_brain_quarters
+							}
+						}
+						remove_modifier = amaryllian_habitat_captain_quarters
+						add_modifier = {
+							modifier = amaryllian_habitat_brain_quarters
+							days = -1
+						}
+						check_planet_employment = yes
 					}
-					check_planet_employment = yes
 				}
-			}
-			owner = {
-				country_event = {
-					id = amaryllian.60
-					days = 2
+				owner = {
+					country_event = {
+						id = amaryllian.60
+						days = 2
+					}
 				}
-			}
-			from = {
-				country_event = {
-					id = amaryllian.60
-					days = 2
+				from = {
+					country_event = {
+						id = amaryllian.60
+						days = 2
+					}
 				}
 			}
 		}
