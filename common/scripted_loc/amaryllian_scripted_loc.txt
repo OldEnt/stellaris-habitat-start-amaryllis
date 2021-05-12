@@ -95,6 +95,7 @@ defined_text = {
 			OR = {
 				has_planet_flag = advanced_habitat_2
 				has_planet_flag = amaryllian_hab_arcology
+				is_aot_habitat = yes				# Acquisition of Technology
 			}
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_yes
@@ -104,6 +105,7 @@ defined_text = {
 			NOR = {
 				has_planet_flag = advanced_habitat_2
 				has_planet_flag = amaryllian_hab_arcology
+				is_aot_habitat = yes				# Acquisition of Technology
 			}
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_no
@@ -118,6 +120,7 @@ defined_text = {
 				has_planet_flag = advanced_habitat
 				has_planet_flag = advanced_habitat_2
 				has_planet_flag = amaryllian_hab_arcology
+				is_aot_habitat = yes				# Acquisition of Technology
 			}
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_yes
@@ -128,6 +131,7 @@ defined_text = {
 				has_planet_flag = advanced_habitat
 				has_planet_flag = advanced_habitat_2
 				has_planet_flag = amaryllian_hab_arcology
+				is_aot_habitat = yes				# Acquisition of Technology
 			}
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_no

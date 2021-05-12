@@ -6,6 +6,15 @@ is_pd_planetary_habitat = {
 	}
 }
 
+is_aot_habitat = {
+	OR = {
+		# Acquisition of Technology
+		uses_district_set = dm_habitat
+		uses_district_set = ae_habitat
+		uses_district_set = sigma_habitat
+	}
+}
+
 amaryllian_is_valid_voidchildren_planet = {
 	OR = {
 		# Custom flags for mods to use. Set on your planet.
@@ -39,6 +48,8 @@ amaryllian_is_valid_voidchildren_planet = {
 		uses_district_set = nsc_freebooter_habitat
 		# More Events Mod
 		is_planet_class = pc_mem_vazuran_habitat
+		# Acquisition of Technology
+		is_aot_habitat = yes
 	}
 }
 

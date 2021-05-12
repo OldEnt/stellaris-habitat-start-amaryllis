@@ -7,8 +7,9 @@ amaryllian_decision_grand_arcology_designer = {
 			has_civic = civic_amaryllian_habitat
 		}
 		OR = {
-			is_planet_class = pc_habitat
+			uses_district_set = habitat
 			is_pd_planetary_habitat = yes
+			is_aot_habitat = yes
 			has_planet_flag = amaryllian_arcology_allowed			#	Apply this flag to a planet to allow arcology project.
 		}
 		NOT = {
@@ -79,8 +80,9 @@ amaryllian_decision_grand_arcology_project = {
 			has_civic = civic_amaryllian_habitat
 		}
 		OR = {
-			is_planet_class = pc_habitat
+			uses_district_set = habitat
 			is_pd_planetary_habitat = yes
+			is_aot_habitat = yes
 			has_planet_flag = amaryllian_arcology_allowed			#	Apply this flag to a planet to allow arcology project.
 		}
 		NOT = {
@@ -107,8 +109,9 @@ amaryllian_decision_grand_arcology_project = {
 						value = 4
 					}
 					OR = {
+						is_aot_habitat = yes
 						has_planet_flag = advanced_habitat_2
-						has_planet_flag = amaryllian_arcology_allowed						#	Apply this flag to a planet to allow arcology project.	
+						has_planet_flag = amaryllian_arcology_allowed						#	Apply this flag to a planet to allow arcology project.
 					}
 				}
 				# Specialised Arcology			
@@ -122,6 +125,7 @@ amaryllian_decision_grand_arcology_project = {
 						value = 1
 					}
 					OR = {
+						is_aot_habitat = yes
 						has_planet_flag = advanced_habitat
 						has_planet_flag = advanced_habitat_2
 						has_planet_flag = amaryllian_arcology_allowed						#	Apply this flag to a planet to allow arcology project.

@@ -34,17 +34,14 @@ I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=
 
 Structures from following mods receive Habitat Captain job and benefit from Elysian Isles Ascension Perk (-25% housing usage):
 [list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]. Additionally, Planetary Habitats can be converted into Arcologies just like normal habitats (full support).
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]. Additionally, Planetary Habitats can be converted into Arcologies just like normal habitats (full support).  PD districts have to be rebuilt!
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2178603631]Acquisition of Technology[/url] - AoT habitats can be converted into Arcologies just like normal habitats (full support). AoT districts have to be rebuilt!
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn: Improved Voidtouched[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034940146]see screenshot[/url]). You can convert into Specialised Habitat Arcology any habitat changed by Starborn mod, except special Starborn starting habitat. This is simply a design desision.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1510731495]Habitation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
-[/list]
-Structures from following mods receive Habitat Captain job:
-[list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1644767570]Ascendancy Ringworlds[/url]
 [/list]
 
 [u][b]Children of the Void civic[/b][/u]
@@ -107,16 +104,6 @@ Children of the Void sets habitat habitability and grants access to 99% of mod f
 
 Number and type of starting districts, buildings and technologies varies slightly depending on the empire and species type.
 
-Habitat has:
-[list]
-[*]At least one habitation district.
-[*]Two or three energy/commercial districts.
-[*]One research district instead of a research lab.
-[*]At most one cultural district instead of unity building.
-[*]One drone storage for machine empires.
-[*]At most one unity building.
-[/list]
-
 Habitat has some Mineral and Alloy deposits which grant Miner jobs and a few alloys, just enough to keep the empire going.
 
 [url=https://steamuserimages-a.akamaihd.net/ugc/1030706967792811034/56B0D80AB94E21954247A9F1BAC7C12BD71E085B/][img]https://steamuserimages-a.akamaihd.net/ugc/1030706967792811034/56B0D80AB94E21954247A9F1BAC7C12BD71E085B/[/img][/url]
@@ -124,5 +111,4 @@ Habitat has some Mineral and Alloy deposits which grant Miner jobs and a few all
 [u][b]Final notes[/b][/u]
 
 Please report bugs and suggest balance or feature changes.
-
 [url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]

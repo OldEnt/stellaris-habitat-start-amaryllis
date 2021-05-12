@@ -1704,10 +1704,10 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 	is_triggered_only = yes
-	trigger = {
-		is_planet_class = pc_habitat
-		has_planet_flag = amaryllian_civilian_arcology
-	}
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_civilian_arcology
+	# }
 	option = {
 		name = amaryllian.200.a
 	}

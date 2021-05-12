@@ -460,11 +460,9 @@ amaryllian_district_arcology_farming_industry = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
 	show_on_uncolonized = {
-		exists = from
 		has_planet_flag = amaryllian_farming_arcology
 	}
 	potential = {
-		exists = owner
 		has_planet_flag = amaryllian_farming_arcology
 	}
 	conversion_ratio = 1
@@ -1980,6 +1978,7 @@ amaryllian_district_arcology_sanctuary_industry = {
 	}
 	potential = {
 		has_planet_flag = amaryllian_sanctuary_arcology
+		exists = owner
 		owner = {
 			has_valid_civic = civic_machine_servitor
 		}

@@ -30,7 +30,8 @@ I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=
 
 Structures from following mods receive Habitat Captain job and benefit from Elysian Isles Ascension Perk (-25% housing usage):
 [list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]. Additionally, Planetary Habitats can be converted into Arcologies just like normal habitats (full support).
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034510991](screenshot VDE+GPM+PD-PH)[/url]. Additionally, Planetary Habitats can be converted into Arcologies just like normal habitats (full support).  PD districts have to be rebuilt!
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2178603631]Acquisition of Technology[/url] - AoT habitats can be converted into Arcologies just like normal habitats (full support). AoT districts have to be rebuilt!
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn: Improved Voidtouched[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2034940146]see screenshot[/url]). You can convert into Specialised Habitat Arcology any habitat changed by Starborn mod, except special Starborn starting habitat. This is simply a design desision.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm - colonizing space[/url]
@@ -98,16 +99,6 @@ Start on a developed research habitat with hydroponics and habitat technologies 
 Children of the Void sets habitat habitability and grants access to 99% of mod features but is not necessarily required if you go with "Habitat start" system. If you forego the civic your species will spawn with habitability as defined in the creation menu.
 
 Number and type of starting districts, buildings and technologies varies slightly depending on the empire and species type.
-
-Habitat has:
-[list]
-[*]At least one habitation district.
-[*]Two or three energy/commercial districts.
-[*]One research district instead of a research lab.
-[*]At most one cultural district instead of unity building.
-[*]One drone storage for machine empires.
-[*]At most one unity building.
-[/list]
 
 Habitat has some Mineral and Alloy deposits which grant Miner jobs and a few alloys, just enough to keep the empire going.
 
