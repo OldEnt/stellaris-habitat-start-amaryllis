@@ -593,13 +593,16 @@ country_event = {
 	}
 }
 
-# # Give civic jobs with delay.
+# Give civic jobs and ascension perk modifier with delay. Called from on_yearly_pulse_country.
 country_event = {
 	id = amaryllian.50
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_civic = civic_amaryllian_habitat
+		OR = {
+			has_civic = civic_amaryllian_habitat
+			has_ascension_perk = ap_amaryllian_voidchildren
+		}
 	}
 	immediate = {
 		country_event = {
@@ -609,13 +612,16 @@ country_event = {
 	}
 }
 
-# Give civic jobs. (called from amaryllian.50)
+# Give civic jobs and ascension perk modifier. (called from amaryllian.50)
 country_event = {
 	id = amaryllian.51
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_civic = civic_amaryllian_habitat
+		OR = {
+			has_civic = civic_amaryllian_habitat
+			has_ascension_perk = ap_amaryllian_voidchildren
+		}
 	}
 	immediate = {
 		if = {
@@ -628,6 +634,9 @@ country_event = {
 				}
 				if = {
 					limit = {
+						root = {
+							has_civic = civic_amaryllian_habitat
+						}
 						NOT = {
 							has_modifier = amaryllian_habitat_captain_quarters
 						}
@@ -638,6 +647,20 @@ country_event = {
 					}
 					check_planet_employment = yes
 				}
+				if = {
+					limit = {
+						root = {
+							has_ascension_perk = ap_amaryllian_voidchildren
+						}
+						NOT = {
+							has_modifier = amaryllian_voidchildren_habitat_modifier
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_voidchildren_habitat_modifier
+						days = -1
+					}
+				}
 			}
 		}
 		else = {
@@ -647,6 +670,9 @@ country_event = {
 				}
 				if = {
 					limit = {
+						root = {
+							has_civic = civic_amaryllian_habitat
+						}
 						NOT = {
 							has_modifier = amaryllian_habitat_brain_quarters
 						}
@@ -656,6 +682,20 @@ country_event = {
 						days = -1
 					}
 					check_planet_employment = yes
+				}
+				if = {
+					limit = {
+						root = {
+							has_ascension_perk = ap_amaryllian_voidchildren
+						}
+						NOT = {
+							has_modifier = amaryllian_voidchildren_habitat_modifier
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_voidchildren_habitat_modifier
+						days = -1
+					}
 				}
 			}
 		}
@@ -719,6 +759,20 @@ planet_event = {
 					}
 					check_planet_employment = yes
 				}
+				if = {
+					limit = {
+						owner = {
+							has_ascension_perk = ap_amaryllian_voidchildren
+						}
+						NOT = {
+							has_modifier = amaryllian_voidchildren_habitat_modifier
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_voidchildren_habitat_modifier
+						days = -1
+					}
+				}
 			}
 			else = {
 				if = {
@@ -732,6 +786,20 @@ planet_event = {
 						days = -1
 					}
 					check_planet_employment = yes
+				}
+				if = {
+					limit = {
+						owner = {
+							has_ascension_perk = ap_amaryllian_voidchildren
+						}
+						NOT = {
+							has_modifier = amaryllian_voidchildren_habitat_modifier
+						}
+					}
+					add_modifier = {
+						modifier = amaryllian_voidchildren_habitat_modifier
+						days = -1
+					}
 				}
 			}
 			owner = {
@@ -1926,7 +1994,7 @@ planet_event = {
 				}
 				NOT = {
 					# In case any smartbum mod adds terraforming to a habitat.
-					is_planet_class = pc_habitat
+					uses_district_set = habitat
 				}
 			}
 			add_modifier = {
