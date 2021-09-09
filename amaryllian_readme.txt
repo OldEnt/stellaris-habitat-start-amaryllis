@@ -1,6 +1,6 @@
 Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator, Farming or Sanctuary arcologies.
 
-Habitat Captains (and gestalt equivalent) increase unity output. The more habitats you own, the bigger unity bonus is.
+Habitat Captains (and gestalt equivalent) increase unity output scaling with numbers.
 
 Addons:
 [list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url][/list]
@@ -24,7 +24,7 @@ GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 [/list]
 
 [u][b]High compatibility[/b][/u]
-This mod does not overwrite vanilla files and as such is compatible with almost anything. Works great with numerous mods.
+This mod does not overwrite vanilla files and as such is compatible with almost anything.
 
 I highly recommend  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=865040033]Guilli's Planet Modifiers[/url] as it provides many habitat modifiers.
 
@@ -38,7 +38,10 @@ Structures from following mods receive Habitat Captain job and benefit from Elys
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2049549075]Living Space[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1510731495]Habitation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2 Modjam Freebooters Origin[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2536057864]Planetary Ringworlds[/url]
 [/list]
+
+Counts habitable_structure = yes. Inclusion and exclusion planet flags: amaryllian_voidchildren & amaryllian_voidchildren_forbidden .
 
 [u][b]Children of the Void civic[/b][/u]
 Select in the empire creation menu to enable mod features. Works great with vanilla Void Dwellers or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn mod[/url] origins.
@@ -66,10 +69,7 @@ Convert your regular habitats to arcologies with productivity bonuses, additiona
 
 [img]https://i.imgur.com/0VHLjb5.png[/img]
 
-[u][b]Featured: Refinery and Bureaucratic Districts[/b][/u]
-Reduce late game chores by utilising districts which increase your Administrative Capacity or produce strategic resources.*
-
-Make your habitat administrative centre of the empire.
+[u][b]Featured: Refinery and Bureaucratic districts[/b][/u]
 
 [img]https://i.imgur.com/260zDJ5.png[/img]
 
