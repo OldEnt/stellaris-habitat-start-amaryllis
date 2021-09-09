@@ -16,6 +16,9 @@ is_aot_habitat = {
 }
 
 amaryllian_is_valid_voidchildren_planet = {
+	NOT = {
+		has_planet_flag = amaryllian_voidchildren_forbidden
+	}
 	OR = {
 		# Custom flags for mods to use. Set on your planet.
 		has_planet_flag = amaryllian_voidchildren		# Use this flag if you want to implement compatibility.
@@ -23,6 +26,7 @@ amaryllian_is_valid_voidchildren_planet = {
 		# Vanilla
 		uses_district_set = habitat
 		uses_district_set = ring_world
+		habitable_structure = yes		# Very useful with The Merger of Rules mod.
 		# Planetary Diversity - Planetary Habitats
 		has_planet_flag = pdhab		# failsafe flag
 		uses_district_set = pdplanethab
@@ -50,6 +54,11 @@ amaryllian_is_valid_voidchildren_planet = {
 		is_planet_class = pc_mem_vazuran_habitat
 		# Acquisition of Technology
 		is_aot_habitat = yes
+		# Planetary Ringworlds
+		is_planet_class = pc_planetary_ringworld
+		is_planet_class = pc_planetary_ringworld_machine
+		is_planet_class = pc_planetary_ringworld_hive
+		is_planet_class = pc_planetary_ringworld_city
 	}
 }
 
