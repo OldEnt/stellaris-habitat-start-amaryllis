@@ -351,7 +351,7 @@ amaryllian_district_arcology_civilian_industry = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+				has_tradition = tr_prosperity_interstellar_franchising
 			}
 		}
 		modifier = {
@@ -1432,7 +1432,7 @@ amaryllian_district_arcology_trade_industry = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+				has_active_tradition = tr_prosperity_interstellar_franchising
 			}
 		}
 		modifier = {

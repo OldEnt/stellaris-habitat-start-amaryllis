@@ -1,6 +1,6 @@
 amaryllian_d_hab_minerals_1 = {
 	icon = "amaryllian_minerals"
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
 		can_have_habitable_deposits = yes
@@ -72,7 +72,7 @@ amaryllian_d_hab_minerals_1 = {
 
 amaryllian_d_hab_energy_1 = {
 	icon = "amaryllian_panels"
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
 		can_have_habitable_deposits = yes
@@ -131,7 +131,7 @@ amaryllian_d_hab_energy_1 = {
 
 amaryllian_d_hab_food_1 = {
 	icon = "amaryllian_hydroponic"
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
 		can_have_habitable_deposits = yes
@@ -182,7 +182,7 @@ amaryllian_d_hab_food_1 = {
 
 amaryllian_d_hab_building_slots_3 = {
 	icon = "d_station_cargo"
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
 		can_have_habitable_deposits = yes

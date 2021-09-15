@@ -1,6 +1,6 @@
 # Farming Station
 amaryllian_col_habitat_farming = {
-	icon = 12
+	icon = GFX_colony_type_farm
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
@@ -32,7 +32,7 @@ amaryllian_col_habitat_farming = {
 
 # Mining Station for arcology habitats
 amaryllian_col_habitat_mining = {
-	icon = 12
+	icon = GFX_colony_type_habitat_mining
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
@@ -52,7 +52,7 @@ amaryllian_col_habitat_mining = {
 
 # Generator Station for arcology habitats
 amaryllian_col_habitat_generator = {
-	icon = 12
+	icon = GFX_colony_type_habitat_energy
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
@@ -72,7 +72,7 @@ amaryllian_col_habitat_generator = {
 
 # Sanctuary Station
 amaryllian_col_habitat_sanctuary = {
-	icon = 12
+	icon = GFX_colony_type_resort
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
@@ -92,7 +92,7 @@ amaryllian_col_habitat_sanctuary = {
 
 # Grand Habitat Arcology
 amaryllian_col_grand_habitat_arcology = {
-	icon = 12
+	icon = GFX_colony_type_habitat
 	potential = {
 		is_planet_class = pc_habitat
 		exists = owner
