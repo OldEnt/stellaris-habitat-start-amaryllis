@@ -39,13 +39,13 @@ amaryllian_habitat_captain_quarters:0 "Kwatery kapitańskie"
 amaryllian_habitat_captain_quarters_desc:0 "Aktywny Kapitan z §H$tr_prosperity_interstellar_franchising$§! udostępnia §G+5§! miejsc pracy dla £job_clerk£ §Y$job_clerk$§!.\n\nKwatera i biura Kapitana Stacji orbitalnej."
 mod_job_amaryllian_habitat_captain_add:0 "Miejsca pracy Kapitana"
 
-amaryllian_unity_capt:0 "Kapitanowie: "
+amaryllian_unity_capt:0 "$job_amaryllian_habitat_captain_plural$"
 amaryllian_unity_capt_desc:0 "Silni charakterem przodują naszym ludziom."
 
 amaryllian_unity_0:0 "Brak aktywnych Kapitanów!"
 amaryllian_unity_0_desc:0 "Zbuduj i skolonizuj Orbitalną stację mieszkalną."
 
-amaryllian_unity_1:0 "$amaryllian_unity_capt$1"
+amaryllian_unity_1:0 "$amaryllian_unity_capt$"
 amaryllian_unity_1_desc:0 "$amaryllian_unity_capt_desc$"
 
 amaryllian_unity_2:0 "$amaryllian_unity_capt$2"
@@ -101,13 +101,13 @@ amaryllian_habitat_brain_quarters:0 "Kompleks Centralizatora"
 amaryllian_habitat_brain_quarters_desc:0 "Centrum komputacyjne do zarządzania stacją."
 mod_job_amaryllian_habitat_brain_add:0 "Miejsca pracy Centralizatora"
 
-amaryllian_gestalt_unity_brain:0 "Centralizatory: "
+amaryllian_gestalt_unity_brain:0 "$job_amaryllian_habitat_brain_plural$"
 amaryllian_gestalt_unity_brain_desc:0 "Orbitalna stacja podłączona."
 
 amaryllian_gestalt_unity_0:0 "Brak aktywnych Centralizatorów!"
 amaryllian_gestalt_unity_0_desc:0 "Zbuduj i skolonizuj Orbitalną stację mieszkalną."
 
-amaryllian_gestalt_unity_1:0 "$amaryllian_gestalt_unity_brain$1"
+amaryllian_gestalt_unity_1:0 "$amaryllian_gestalt_unity_brain$"
 amaryllian_gestalt_unity_1_desc:0 "$amaryllian_gestalt_unity_brain_desc$"
 
 amaryllian_gestalt_unity_2:0 "$amaryllian_gestalt_unity_brain$2"

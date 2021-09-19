@@ -39,13 +39,13 @@ amaryllian_habitat_captain_quarters:0 "Habitat Captain Quarters"
 amaryllian_habitat_captain_quarters_desc:0 "Active Habitat Captain provides §G+5§! £job_clerk£ §Y$job_clerk$ Jobs§! with §H$tr_prosperity_interstellar_franchising$§!.\n\nAccommodation and offices for Habitat Captain."
 mod_job_amaryllian_habitat_captain_add:0 "Habitat Captain jobs"
 
-amaryllian_unity_capt:0 "Captains: "
+amaryllian_unity_capt:0 "$job_amaryllian_habitat_captain_plural$"
 amaryllian_unity_capt_desc:0 "Strong-willed individuals guide our people."
 
 amaryllian_unity_0:0 "No Habitat Captains in service!"
 amaryllian_unity_0_desc:0 "Build and populate habitat to enable Habitat Captain job."
 
-amaryllian_unity_1:0 "$amaryllian_unity_capt$1"
+amaryllian_unity_1:0 "$amaryllian_unity_capt$"
 amaryllian_unity_1_desc:0 "$amaryllian_unity_capt_desc$"
 
 amaryllian_unity_2:0 "$amaryllian_unity_capt$2"
@@ -101,13 +101,13 @@ amaryllian_habitat_brain_quarters:0 "Habitat Brain Complex"
 amaryllian_habitat_brain_quarters_desc:0 "Resources assigned to communications and Habitat maintenance."
 mod_job_amaryllian_habitat_brain_add:0 "Habitat Brain Synapse jobs"
 
-amaryllian_gestalt_unity_brain:0 "Habitat Brain Synapses: "
+amaryllian_gestalt_unity_brain:0 "$job_amaryllian_habitat_brain_plural$"
 amaryllian_gestalt_unity_brain_desc:0 "Connection with orbital complex established."
 
 amaryllian_gestalt_unity_0:0 "No Habitat Brain Synapses present!"
 amaryllian_gestalt_unity_0_desc:0 "Build and populate habitat to enable Habitat Brain Synapse job."
 
-amaryllian_gestalt_unity_1:0 "$amaryllian_gestalt_unity_brain$1"
+amaryllian_gestalt_unity_1:0 "$amaryllian_gestalt_unity_brain$"
 amaryllian_gestalt_unity_1_desc:0 "$amaryllian_gestalt_unity_brain_desc$"
 
 amaryllian_gestalt_unity_2:0 "$amaryllian_gestalt_unity_brain$2"

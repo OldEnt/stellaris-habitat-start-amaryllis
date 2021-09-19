@@ -10,22 +10,28 @@ on_game_start = {
 
 on_game_start_country = {
 	events = {
-		amaryllian.51		# Give civic jobs. (called from amaryllian.50)
+		amaryllian.51		# Give civic jobs.
 		# amaryllian.60		# Apply unity bonus. (called from amaryllian.51)
 	}
 }
 
 on_monthly_pulse_country = {
 	events = {
+		amaryllian.60		# Apply unity bonus.
 		amaryllian.70		# Give research options to AP Voidborne owner.
-		amaryllian.54
 	}
 }
 
-on_yearly_pulse_country = {
+# on_yearly_pulse_country = {
+# 	events = {
+# 		amaryllian.54		# check_planet_employment = yes
+# 	}
+# }
+
+on_ascension_perk_picked = {
 	events = {
-		amaryllian.50		# Give civic jobs and ascension perk modifier with delay.
-		# amaryllian.60		# Apply unity bonus.
+		amaryllian.51		# Give civic jobs and ascension perk modifier.
+		amaryllian.70		# Give research options to AP Voidborne owner.
 	}
 }
 
@@ -74,6 +80,6 @@ on_terraforming_complete = {
 
 on_post_government_changed = {
 	events = {
-		amaryllian.51		# Give civic jobs. (called from amaryllian.50)
+		amaryllian.51		# Give civic jobs.
 	}
 }

@@ -41,72 +41,8 @@ amaryllian_decision_grand_arcology_project_modifier = {
 	planet_max_buildings_add = 12
 }
 
-amaryllian_unity_0 = {
-	country_unity_produces_mult = -0.3
-}
-
 amaryllian_unity_1 = {
 	country_unity_produces_mult = 0.02
-}
-
-amaryllian_unity_2 = {
-	country_unity_produces_mult = 0.04
-}
-
-amaryllian_unity_3 = {
-	country_unity_produces_mult = 0.06
-}
-
-amaryllian_unity_4 = {
-	country_unity_produces_mult = 0.08
-}
-
-amaryllian_unity_5 = {
-	country_unity_produces_mult = 0.1
-}
-
-amaryllian_unity_6 = {
-	country_unity_produces_mult = 0.12
-}
-
-amaryllian_unity_7 = {
-	country_unity_produces_mult = 0.14
-}
-
-amaryllian_unity_8 = {
-	country_unity_produces_mult = 0.16
-}
-
-amaryllian_unity_9 = {
-	country_unity_produces_mult = 0.18
-}
-
-amaryllian_unity_10 = {
-	country_unity_produces_mult = 0.2
-}
-
-amaryllian_unity_11 = {
-	country_unity_produces_mult = 0.22
-}
-
-amaryllian_unity_12 = {
-	country_unity_produces_mult = 0.24
-}
-
-amaryllian_unity_13 = {
-	country_unity_produces_mult = 0.26
-}
-
-amaryllian_unity_14 = {
-	country_unity_produces_mult = 0.28
-}
-
-amaryllian_unity_15 = {
-	country_unity_produces_mult = 0.3
-}
-
-amaryllian_unity_16 = {
-	country_unity_produces_mult = 0.3
 }
 
 amaryllian_habitat_brain_quarters = {
@@ -116,70 +52,6 @@ amaryllian_habitat_brain_quarters = {
 	pop_demotion_time_mult = -1
 }
 
-amaryllian_gestalt_unity_0 = {
-	country_unity_produces_mult = -0.3
-}
-
 amaryllian_gestalt_unity_1 = {
 	country_unity_produces_mult = 0.02
-}
-
-amaryllian_gestalt_unity_2 = {
-	country_unity_produces_mult = 0.04
-}
-
-amaryllian_gestalt_unity_3 = {
-	country_unity_produces_mult = 0.06
-}
-
-amaryllian_gestalt_unity_4 = {
-	country_unity_produces_mult = 0.08
-}
-
-amaryllian_gestalt_unity_5 = {
-	country_unity_produces_mult = 0.1
-}
-
-amaryllian_gestalt_unity_6 = {
-	country_unity_produces_mult = 0.12
-}
-
-amaryllian_gestalt_unity_7 = {
-	country_unity_produces_mult = 0.14
-}
-
-amaryllian_gestalt_unity_8 = {
-	country_unity_produces_mult = 0.16
-}
-
-amaryllian_gestalt_unity_9 = {
-	country_unity_produces_mult = 0.18
-}
-
-amaryllian_gestalt_unity_10 = {
-	country_unity_produces_mult = 0.2
-}
-
-amaryllian_gestalt_unity_11 = {
-	country_unity_produces_mult = 0.22
-}
-
-amaryllian_gestalt_unity_12 = {
-	country_unity_produces_mult = 0.24
-}
-
-amaryllian_gestalt_unity_13 = {
-	country_unity_produces_mult = 0.26
-}
-
-amaryllian_gestalt_unity_14 = {
-	country_unity_produces_mult = 0.28
-}
-
-amaryllian_gestalt_unity_15 = {
-	country_unity_produces_mult = 0.3
-}
-
-amaryllian_gestalt_unity_16 = {
-	country_unity_produces_mult = 0.3
 }

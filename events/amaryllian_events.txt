@@ -593,6 +593,7 @@ country_event = {
 	}
 }
 
+# NO LONGER IN USE. Keeping for save backwards compatibility.
 # Give civic jobs and ascension perk modifier with delay. Called from on_yearly_pulse_country.
 country_event = {
 	id = amaryllian.50
@@ -612,7 +613,10 @@ country_event = {
 	}
 }
 
-# Give civic jobs and ascension perk modifier. (called from amaryllian.50)
+# on_game_start_country
+# on_post_government_changed
+# on_ascension_perk_picked
+# Give civic jobs and ascension perk modifier.
 country_event = {
 	id = amaryllian.51
 	hide_window = yes
@@ -643,7 +647,7 @@ country_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_habitat_captain_quarters
-						days = -1
+						clear_on_owner_change = yes
 					}
 					check_planet_employment = yes
 				}
@@ -658,7 +662,7 @@ country_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_voidchildren_habitat_modifier
-						days = -1
+						clear_on_owner_change = yes
 					}
 				}
 			}
@@ -679,7 +683,7 @@ country_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_habitat_brain_quarters
-						days = -1
+						clear_on_owner_change = yes
 					}
 					check_planet_employment = yes
 				}
@@ -694,7 +698,7 @@ country_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_voidchildren_habitat_modifier
-						days = -1
+						clear_on_owner_change = yes
 					}
 				}
 			}
@@ -755,7 +759,7 @@ planet_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_habitat_captain_quarters
-						days = -1
+						clear_on_owner_change = yes
 					}
 					check_planet_employment = yes
 				}
@@ -770,7 +774,7 @@ planet_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_voidchildren_habitat_modifier
-						days = -1
+						clear_on_owner_change = yes
 					}
 				}
 			}
@@ -783,7 +787,7 @@ planet_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_habitat_brain_quarters
-						days = -1
+						clear_on_owner_change = yes
 					}
 					check_planet_employment = yes
 				}
@@ -798,7 +802,7 @@ planet_event = {
 					}
 					add_modifier = {
 						modifier = amaryllian_voidchildren_habitat_modifier
-						days = -1
+						clear_on_owner_change = yes
 					}
 				}
 			}
@@ -836,577 +840,31 @@ country_event = {
 			limit = {
 				is_gestalt = no
 			}
-			if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 1
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_1
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_1
-					}
+			export_trigger_value_to_variable = {
+				trigger = num_assigned_jobs
+				variable = var_num_amaryllian_habitat
+				parameters = {
+					job = amaryllian_habitat_captain
 				}
 			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_2
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_2
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 3
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_3
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 4
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_4
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_4
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 5
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_5
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_5
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 6
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_6
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_6
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 7
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_7
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_7
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 8
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_8
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_8
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 9
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_9
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_9
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 10
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_10
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_10
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 11
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_11
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_11
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 12
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_12
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_12
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 13
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_13
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_13
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value = 14
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_14
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_14
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_captain
-						value >= 15
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_unity_15
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_unity_15
-					}
-				}
+			remove_modifier = amaryllian_unity_1
+			add_modifier = {
+				modifier = amaryllian_unity_1
+				multiplier = var_num_amaryllian_habitat
 			}
 		}
 		else = {
-			if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 1
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_1
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_1
-					}
+			export_trigger_value_to_variable = {
+				trigger = num_assigned_jobs
+				variable = var_num_amaryllian_habitat
+				parameters = {
+					job = amaryllian_habitat_brain
 				}
 			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_2
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_2
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 3
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_3
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 4
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_4
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_4
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 5
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_5
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_5
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 6
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_6
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_6
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 7
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_7
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_7
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 8
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_8
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_8
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 9
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_9
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_9
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 10
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_10
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_10
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 11
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_11
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_11
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 12
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_12
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_12
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 13
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_13
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_13
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value = 14
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_14
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_14
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					num_assigned_jobs = {
-						job = amaryllian_habitat_brain
-						value >= 15
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_modifier = amaryllian_gestalt_unity_15
-						}
-					}
-					amaryllian_remove_unity_effect = yes
-					add_modifier = {
-						modifier = amaryllian_gestalt_unity_15
-					}
-				}
+			remove_modifier = amaryllian_gestalt_unity_1
+			add_modifier = {
+				modifier = amaryllian_gestalt_unity_1
+				multiplier = var_num_amaryllian_habitat
 			}
 		}
 	}
@@ -1424,8 +882,8 @@ event = {
 					has_civic = civic_amaryllian_habitat
 				}
 			}
-			amaryllian_remove_unity_effect = yes
-			amaryllian_remove_gestalt_unity_effect = yes
+			remove_modifier = amaryllian_unity_1
+			remove_modifier = amaryllian_gestalt_unity_1
 		}
 	}
 }
@@ -2096,7 +1554,7 @@ planet_event = {
 						remove_modifier = amaryllian_habitat_brain_quarters
 						add_modifier = {
 							modifier = amaryllian_habitat_captain_quarters
-							days = -1
+							clear_on_owner_change = yes
 						}
 						check_planet_employment = yes
 					}
@@ -2111,7 +1569,7 @@ planet_event = {
 						remove_modifier = amaryllian_habitat_captain_quarters
 						add_modifier = {
 							modifier = amaryllian_habitat_brain_quarters
-							days = -1
+							clear_on_owner_change = yes
 						}
 						check_planet_employment = yes
 					}
@@ -2161,7 +1619,7 @@ planet_event = {
 						remove_modifier = amaryllian_habitat_brain_quarters
 						add_modifier = {
 							modifier = amaryllian_habitat_captain_quarters
-							days = -1
+							clear_on_owner_change = yes
 						}
 						check_planet_employment = yes
 					}
@@ -2176,7 +1634,7 @@ planet_event = {
 						remove_modifier = amaryllian_habitat_captain_quarters
 						add_modifier = {
 							modifier = amaryllian_habitat_brain_quarters
-							days = -1
+							clear_on_owner_change = yes
 						}
 						check_planet_employment = yes
 					}
