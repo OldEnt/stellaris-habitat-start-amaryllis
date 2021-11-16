@@ -2,8 +2,6 @@ Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, 
 
 Habitat Captains (and gestalt equivalent) increase unity output scaling with numbers.
 
-Addons:
-[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url][/list]
 Languages:
 [list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese (虚空居者扩展 汉语)[/url], translation courtesy of vesel099
 [*]Polish (Polski), integrated
@@ -84,11 +82,6 @@ Provide your Habitat Captains with boosts to your habitats. This will be swapped
 
 [img]https://i.imgur.com/3qZJDjK.png[/img]
 
-[u][b]Addon: Void Dwellers trait fix[/b][/u]
-
-Void Dwellers will no longer receive negative trait when settling Ring World or custom habitats from supported mods. This fix requires overwrite of original game file and therefore it is available as a standalone mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url]. Habitat Arcologies from Void Dwellers Expanded are vanilla habitats and do not requre this fix but you might want it if you are settling Ring Worlds.
-
-[img]https://i.imgur.com/zC5qzNr.png[/img]
 
 [u][b]Legacy feature: Habitat start which does not requre Federations DLC (read carefully)[/b][/u]
 

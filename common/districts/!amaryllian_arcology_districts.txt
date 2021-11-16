@@ -25,12 +25,14 @@ amaryllian_district_arcology_arms_industry = {
 	planet_modifier = {
 		planet_housing_add = 10
 	}
+	# is_catalytic_empire = no
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				has_ascension_perk = ap_amaryllian_voidchildren
 				is_machine_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		modifier = {
@@ -45,6 +47,7 @@ amaryllian_district_arcology_arms_industry = {
 					has_ascension_perk = ap_amaryllian_voidchildren
 				}
 				is_machine_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		modifier = {
@@ -57,6 +60,7 @@ amaryllian_district_arcology_arms_industry = {
 			owner = {
 				has_ascension_perk = ap_amaryllian_voidchildren
 				is_hive_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		modifier = {
@@ -71,6 +75,7 @@ amaryllian_district_arcology_arms_industry = {
 					has_ascension_perk = ap_amaryllian_voidchildren
 				}
 				is_hive_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		modifier = {
@@ -83,6 +88,7 @@ amaryllian_district_arcology_arms_industry = {
 			owner = {
 				has_ascension_perk = ap_amaryllian_voidchildren
 				is_regular_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		modifier = {
@@ -97,6 +103,7 @@ amaryllian_district_arcology_arms_industry = {
 					has_ascension_perk = ap_amaryllian_voidchildren
 				}
 				is_regular_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		modifier = {
@@ -108,6 +115,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		text = job_foundry_effect_desc
@@ -117,6 +125,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_hive_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		text = job_alloy_drone_effect_desc
@@ -126,6 +135,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_machine_empire = yes
+				is_catalytic_empire = no
 			}
 		}
 		text = job_fabricator_effect_desc
@@ -136,6 +146,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				is_catalytic_empire = no
 			}
 			has_active_building = building_foundry_2
 		}
@@ -148,6 +159,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				is_catalytic_empire = no
 			}
 			has_active_building = building_foundry_3
 		}
@@ -160,6 +172,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_machine_empire = yes
+				is_catalytic_empire = no
 			}
 			has_active_building = building_foundry_2
 		}
@@ -172,6 +185,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_machine_empire = yes
+				is_catalytic_empire = no
 			}
 			has_active_building = building_foundry_3
 		}
@@ -184,6 +198,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_hive_empire = yes
+				is_catalytic_empire = no
 			}
 			has_active_building = building_foundry_2
 		}
@@ -196,6 +211,7 @@ amaryllian_district_arcology_arms_industry = {
 			exists = owner
 			owner = {
 				is_hive_empire = yes
+				is_catalytic_empire = no
 			}
 			has_active_building = building_foundry_3
 		}
@@ -209,6 +225,7 @@ amaryllian_district_arcology_arms_industry = {
 			owner = {
 				is_machine_empire = yes
 				has_edict = industrial_maintenance
+				is_catalytic_empire = no
 			}
 		}
 		modifier = {
@@ -221,6 +238,225 @@ amaryllian_district_arcology_arms_industry = {
 			owner = {
 				is_machine_empire = yes
 				has_edict = industrial_maintenance
+				is_catalytic_empire = no
+			}
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+	# is_catalytic_empire = yes
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_amaryllian_voidchildren
+				is_machine_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ascension_perk = ap_amaryllian_voidchildren
+				}
+				is_machine_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_amaryllian_voidchildren
+				is_hive_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ascension_perk = ap_amaryllian_voidchildren
+				}
+				is_hive_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_amaryllian_voidchildren
+				is_regular_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ascension_perk = ap_amaryllian_voidchildren
+				}
+				is_regular_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_catalytic_technician_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_catalytic_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_catalytic_drone_effect_desc
+	}
+	# Extra jobs from foundry buildings
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_catalytic_empire = yes
+			}
+			has_active_building = building_foundry_2
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_catalytic_empire = yes
+			}
+			has_active_building = building_foundry_3
+		}
+		modifier = {
+			job_catalytic_technician_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				is_catalytic_empire = yes
+			}
+			has_active_building = building_foundry_2
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				is_catalytic_empire = yes
+			}
+			has_active_building = building_foundry_3
+		}
+		modifier = {
+			job_catalytic_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				is_catalytic_empire = yes
+			}
+			has_active_building = building_foundry_2
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				is_catalytic_empire = yes
+			}
+			has_active_building = building_foundry_3
+		}
+		modifier = {
+			job_catalytic_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+				is_catalytic_empire = yes
 			}
 		}
 		text = job_maintenance_drone_effect_desc
@@ -277,6 +513,7 @@ amaryllian_district_arcology_civilian_industry = {
 	planet_modifier = {
 		planet_housing_add = 10
 	}
+	# NOT = { owner = { has_civic = civic_crafters } }
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -309,6 +546,9 @@ amaryllian_district_arcology_civilian_industry = {
 			owner = {
 				has_ascension_perk = ap_amaryllian_voidchildren
 				is_regular_empire = yes
+				NOT = {
+					has_civic = civic_crafters
+				}
 			}
 		}
 		modifier = {
@@ -323,6 +563,9 @@ amaryllian_district_arcology_civilian_industry = {
 					has_ascension_perk = ap_amaryllian_voidchildren
 				}
 				is_regular_empire = yes
+				NOT = {
+					has_civic = civic_crafters
+				}
 			}
 		}
 		modifier = {
@@ -334,6 +577,9 @@ amaryllian_district_arcology_civilian_industry = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				NOT = {
+					has_civic = civic_crafters
+				}
 			}
 		}
 		text = job_artisan_effect_desc
@@ -352,6 +598,9 @@ amaryllian_district_arcology_civilian_industry = {
 			exists = owner
 			owner = {
 				has_tradition = tr_prosperity_interstellar_franchising
+				NOT = {
+					has_civic = civic_crafters
+				}
 			}
 		}
 		modifier = {
@@ -364,6 +613,9 @@ amaryllian_district_arcology_civilian_industry = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				NOT = {
+					has_civic = civic_crafters
+				}
 			}
 			has_active_building = building_factory_2
 		}
@@ -376,6 +628,9 @@ amaryllian_district_arcology_civilian_industry = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+				NOT = {
+					has_civic = civic_crafters
+				}
 			}
 			has_active_building = building_factory_3
 		}
@@ -428,6 +683,84 @@ amaryllian_district_arcology_civilian_industry = {
 			}
 		}
 		text = job_maintenance_drone_effect_desc
+	}
+	# owner = { has_civic = civic_crafters }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_amaryllian_voidchildren
+				is_regular_empire = yes
+				has_civic = civic_crafters
+			}
+		}
+		modifier = {
+			job_artificer_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ascension_perk = ap_amaryllian_voidchildren
+				}
+				is_regular_empire = yes
+				has_civic = civic_crafters
+			}
+		}
+		modifier = {
+			job_artificer_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_civic = civic_crafters
+			}
+		}
+		text = job_artificer_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_prosperity_interstellar_franchising
+				has_civic = civic_crafters
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+	# Extra jobs from factory buildings
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_civic = civic_crafters
+			}
+			has_active_building = building_factory_2
+		}
+		modifier = {
+			job_artificer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_civic = civic_crafters
+			}
+			has_active_building = building_factory_3
+		}
+		modifier = {
+			job_artificer_add = 2
+		}
 	}
 	ai_weight = {
 		weight = 0
@@ -1439,13 +1772,28 @@ amaryllian_district_arcology_trade_industry = {
 			job_clerk_add = 1
 		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_mercantile_commercial_enterprise
+			}
+		}
+		modifier = {
+			job_merchant_add = 1
+		}
+	}
 	triggered_desc = {
 		text = job_clerk_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
+			exists = owner
 			owner = {
-				has_ascension_perk = ap_amaryllian_voidchildren
+				OR = {
+					has_ascension_perk = ap_amaryllian_voidchildren
+					has_active_tradition = tr_mercantile_commercial_enterprise
+				}
 			}
 		}
 		text = job_merchant_effect_desc

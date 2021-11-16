@@ -23,7 +23,7 @@ civic_tooltip_amaryllian_habitat_world_effects:0 "Ustawia $trait_pc_habitat_pref
 
 ap_amaryllian_voidchildren:0 "Wyspy Szczęśliwe"
 ap_amaryllian_voidchildren_desc:0 "Znaleźliśmy swoje miejsce w Próżni i nie oglądamy się za siebie."
-ap_amaryllian_voidchildren_tooltip:0 "Użytkowanie £housing£ §Y$PLANET_HOUSING_TITLE$§! na §H$pc_habitat$§!: §G-25%§!. Liczba miejsc pracy z dzielnic Arkologii Orbitalnych zwiększona z 5 do 10.\n\nDostęp do technologii Orbitalnej Arkologii §YBiurokratycznej§! oraz §YPrzetwórczej§!. $amaryllian_decision_arcology_project_strategic_universal$"
+ap_amaryllian_voidchildren_tooltip:0 "Użytkowanie £housing£ §Y$PLANET_HOUSING_TITLE$§! na §H$pc_habitat$§!: §G-25%§!. Zwiększona liczba miejsc pracy z dzielnic Arkologii Orbitalnych.\n\nDostęp do technologii Orbitalnej Arkologii §YBiurokratycznej§! oraz §YPrzetwórczej§!. $amaryllian_decision_arcology_project_strategic_universal$"
 
 amaryllian_voidchildren_habitat_modifier:0 "$ap_amaryllian_voidchildren$: Doskonały Dom"
 amaryllian_voidchildren_habitat_modifier_desc:0 "Efektywne zaprojektowanie i użytkowanie tej Stacji zmniejsza użytkowanie £housing£ §Y$PLANET_HOUSING_TITLE$§! o §G-25%§!."
@@ -275,7 +275,7 @@ amaryllian_district_arcology_mining_industry_desc:0 ""
 amaryllian_district_arcology_mining_industry_plural:0 "Orbitalne dzielnice górnicze"
 
 amaryllian_district_arcology_trade_industry:0 "Orbitalna dzielnica handlowa"
-amaryllian_district_arcology_trade_industry_desc:0 "§G+1§! £job_clerk£ §Y$job_clerk$ Job§! with §H$tr_prosperity_interstellar_franchising$§!\n\n"
+amaryllian_district_arcology_trade_industry_desc:0 "§G+1§! £job_clerk£ §Y$job_clerk$§! z §H$tr_prosperity_interstellar_franchising$§!\n§G+1§! £job_merchant£ §Y$job_merchant$§! z §H$tr_mercantile_commercial_enterprise$§!"
 amaryllian_district_arcology_trade_industry_plural:0 "Orbitalne dzielnice handlowe"
 
 amaryllian_district_arcology_generator_industry:0 "Orbitalna dzielnica energetyczna"

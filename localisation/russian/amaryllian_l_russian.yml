@@ -23,7 +23,7 @@ civic_tooltip_amaryllian_habitat_world_effects:0 "Sets habitat habitability. Ena
 
 ap_amaryllian_voidchildren:0 "Elysian Isles"
 ap_amaryllian_voidchildren_desc:0 "We found our place amongst the stars and do not look back."
-ap_amaryllian_voidchildren_tooltip:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! usage on §H$pc_habitat$s§! owned by our Empire: §G-25%§!. Number of jobs provided by habitat arcology districts increased from 5 to 10.\n\nGrants access to §YBureaucratic§! and §YRefinery§! §HHabitat Project§! research options. $amaryllian_decision_arcology_project_strategic_universal$"
+ap_amaryllian_voidchildren_tooltip:0 "£housing£ §Y$PLANET_HOUSING_TITLE$§! usage on §H$pc_habitat$s§! owned by our Empire: §G-25%§!. Number of jobs provided by habitat arcology districts increased.\n\nGrants access to §YBureaucratic§! and §YRefinery§! §HHabitat Project§! research options. $amaryllian_decision_arcology_project_strategic_universal$"
 
 amaryllian_voidchildren_habitat_modifier:0 "$ap_amaryllian_voidchildren$: Perfect Home"
 amaryllian_voidchildren_habitat_modifier_desc:0 "Excellent design and proper exploitation of this $pc_habitat$ decreases £housing£ §Y$PLANET_HOUSING_TITLE$§! usage by §G-25%§!."
@@ -275,7 +275,7 @@ amaryllian_district_arcology_mining_industry_desc:0 "Red-hot iron, white-hot iro
 amaryllian_district_arcology_mining_industry_plural:0 "Habitat Mining Districts"
 
 amaryllian_district_arcology_trade_industry:0 "Habitat Trade District"
-amaryllian_district_arcology_trade_industry_desc:0 "§G+1§! £job_clerk£ §Y$job_clerk$ Job§! with §H$tr_prosperity_interstellar_franchising$§!\n\nConsumption is the sole end and purpose of all production."
+amaryllian_district_arcology_trade_industry_desc:0 "§G+1§! £job_clerk£ §Y$job_clerk$ Job§! with §H$tr_prosperity_interstellar_franchising$§!\n§G+1§! £job_merchant£ §Y$job_merchant$ Job§! with §H$tr_mercantile_commercial_enterprise$§!\n\nConsumption is the sole end and purpose of all production."
 amaryllian_district_arcology_trade_industry_plural:0 "Habitat Trade Districts"
 
 amaryllian_district_arcology_generator_industry:0 "Habitat Generator District"
