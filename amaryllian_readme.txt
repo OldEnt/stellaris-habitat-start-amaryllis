@@ -3,8 +3,9 @@ Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, 
 Habitat Captains (and gestalt equivalent) increase unity output scaling with numbers.
 
 Languages:
-[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese (虚空居者扩展 汉语)[/url], translation courtesy of vesel099
+[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese (虚空居者扩展 汉语)[/url] - external mod (translation courtesy of vesel099)
 [*]Polish (Polski), integrated
+[*]Russian (Русский), integrated (translation courtesy of [url=https://steamcommunity.com/profiles/76561198011628045]Dimonius[/url])
 [/list]
 
 [IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
