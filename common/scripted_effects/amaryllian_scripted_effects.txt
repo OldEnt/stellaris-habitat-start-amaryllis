@@ -131,6 +131,18 @@ amaryllian_construct_arcology = {
 		add_district = amaryllian_district_arcology_sanctuary_industry
 		remove_district = amaryllian_district_arcology_sanctuary_industry
 	}
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = amaryllian_storage_arcology_setup
+				has_planet_flag = amaryllian_storage_arcology
+			}
+		}
+		remove_planet_flag = amaryllian_storage_arcology_setup
+		set_planet_flag = amaryllian_storage_arcology
+		add_district = amaryllian_district_arcology_storage_industry
+		remove_district = amaryllian_district_arcology_storage_industry
+	}
 	else = {
 		break = yes
 	}

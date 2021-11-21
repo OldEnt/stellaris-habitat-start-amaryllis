@@ -151,6 +151,7 @@ amaryllian_decision_grand_arcology_project = {
 						has_planet_flag = amaryllian_mining_arcology
 						has_planet_flag = amaryllian_generator_arcology
 						has_planet_flag = amaryllian_sanctuary_arcology
+						has_planet_flag = amaryllian_storage_arcology
 					}
 				}
 			}

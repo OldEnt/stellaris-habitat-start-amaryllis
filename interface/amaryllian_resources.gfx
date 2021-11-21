@@ -4,3 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/text_icons/amaryllian_menu_icon_strategic_resource.dds"
 	}
 }
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_text_amaryllian_country_resource_max_add"
+		texturefile = "gfx/interface/icons/text_icons/amaryllian_menu_icon_country_resource_max_add.dds"
+	}
+}

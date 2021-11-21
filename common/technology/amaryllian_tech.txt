@@ -692,3 +692,47 @@ amaryllian_tech_sanctuary_industry = {
 		}
 	}
 }
+
+amaryllian_tech_storage_industry = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = {
+		industry
+	}
+	ai_update_type = all
+	prerequisites = {
+		"amaryllian_tech_habitat_arcology"
+	}
+	is_rare = yes
+	prereqfor_desc = {
+		ship = {
+			title = "allow_amaryllian_tech_storage_industry"
+			desc = "allow_amaryllian_tech_storage_industry_DETAILS"
+		}
+	}
+	potential = {
+		has_civic = civic_amaryllian_habitat
+		OR = {
+			has_ascension_perk = ap_voidborn
+			AND = {
+				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
+				num_ascension_perks > 1
+			}
+		}
+	}
+	weight = 0
+	weight_modifier = {
+		factor = 0
+	}
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}

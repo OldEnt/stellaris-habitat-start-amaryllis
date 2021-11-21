@@ -497,6 +497,32 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetTechInfo_storage
+	text = {
+		trigger = {
+			OR = {
+				has_planet_flag = amaryllian_storage_arcology
+				owner = {
+					has_technology = amaryllian_tech_storage_industry
+				}
+			}
+		}
+		localization_key = amaryllian_gettechinfo_storage_yes
+	}
+	text = {
+		trigger = {
+			NOR = {
+				has_planet_flag = amaryllian_storage_arcology
+				owner = {
+					has_technology = amaryllian_tech_storage_industry
+				}
+			}
+		}
+		localization_key = amaryllian_gettechinfo_storage_no
+	}
+}
+
+defined_text = {
 	name = GetDistrictName_arms
 	text = {
 		trigger = {
@@ -691,5 +717,23 @@ defined_text = {
 			}
 		}
 		localization_key = amaryllian_district_arcology_sanctuary_industry
+	}
+}
+
+defined_text = {
+	name = GetDistrictName_storage
+	text = {
+		trigger = {
+			has_planet_flag = amaryllian_storage_arcology_setup
+		}
+		localization_key = amaryllian_district_arcology_storage_industry_setup
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_planet_flag = amaryllian_storage_arcology_setup
+			}
+		}
+		localization_key = amaryllian_district_arcology_storage_industry
 	}
 }

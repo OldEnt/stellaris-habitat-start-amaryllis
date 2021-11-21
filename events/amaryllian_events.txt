@@ -932,6 +932,7 @@ country_event = {
 			add_research_option = amaryllian_tech_trade_industry
 			add_research_option = amaryllian_tech_mining_industry
 			add_research_option = amaryllian_tech_generator_industry
+			add_research_option = amaryllian_tech_storage_industry
 			if = {
 				limit = {
 					has_valid_civic = civic_machine_servitor
@@ -1410,6 +1411,23 @@ planet_event = {
 }
 
 planet_event = {
+	id = amaryllian.211
+	title = amaryllian.211.name
+	desc = amaryllian.211.desc
+	picture = GFX_evt_cargoship_caravan
+	show_sound = event_cityscape
+	location = root
+	is_triggered_only = yes
+	# trigger = {
+	# 	is_planet_class = pc_habitat
+	# 	has_planet_flag = amaryllian_storage_arcology
+	# }
+	option = {
+		name = amaryllian.211.a
+	}
+}
+
+planet_event = {
 	id = amaryllian.220
 	title = amaryllian.220.name
 	desc = amaryllian.220.desc
@@ -1447,6 +1465,7 @@ planet_event = {
 					has_planet_flag = amaryllian_mining_arcology
 					has_planet_flag = amaryllian_generator_arcology
 					has_planet_flag = amaryllian_sanctuary_arcology
+					has_planet_flag = amaryllian_storage_arcology_setup
 					has_planet_flag = amaryllian_hab_arcology
 					has_planet_flag = amaryllian_hab_grand_arcology
 				}
@@ -1474,6 +1493,7 @@ planet_event = {
 			remove_planet_flag = amaryllian_mining_arcology
 			remove_planet_flag = amaryllian_generator_arcology
 			remove_planet_flag = amaryllian_sanctuary_arcology
+			remove_planet_flag = amaryllian_storage_arcology
 			remove_planet_flag = amaryllian_hab_arcology
 			remove_planet_flag = amaryllian_hab_grand_arcology
 			remove_planet_flag = amaryllian_arms_arcology_setup
@@ -1487,6 +1507,7 @@ planet_event = {
 			remove_planet_flag = amaryllian_mining_arcology_setup
 			remove_planet_flag = amaryllian_generator_arcology_setup
 			remove_planet_flag = amaryllian_sanctuary_arcology_setup
+			remove_planet_flag = amaryllian_storage_arcology_setup
 			remove_planet_flag = amaryllian_hab_arcology_setup
 			remove_planet_flag = amaryllian_hab_grand_arcology_setup
 			set_variable = {
@@ -2220,6 +2241,49 @@ planet_event = {
 			}
 		}
 	}
+	#	storage
+	option = {
+		name = amaryllian.900.l
+		hidden_effect = {
+			if = {
+				limit = {
+					NOR = {
+						has_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+						check_variable = {
+							which = "amaryllian_arcology_setup_num"
+							value >= 4
+						}
+						has_planet_flag = amaryllian_storage_arcology_setup
+					}
+					OR = {
+						has_planet_flag = amaryllian_storage_arcology
+						owner = {
+							has_technology = amaryllian_tech_storage_industry
+						}
+					}
+				}
+				set_planet_flag = amaryllian_storage_arcology_setup
+				change_variable = {
+					which = amaryllian_arcology_setup_num
+					value = 1
+				}
+				planet_event = {
+					id = amaryllian.900
+					days = 0
+					random = 0
+				}
+				break = yes
+			}
+			else = {
+				planet_event = {
+					id = amaryllian.900
+					days = 0
+					random = 0
+				}
+				break = yes
+			}
+		}
+	}
 	#	Clear
 	option = {
 		name = amaryllian.900.x
@@ -2245,6 +2309,7 @@ planet_event = {
 				remove_planet_flag = amaryllian_mining_arcology_setup
 				remove_planet_flag = amaryllian_generator_arcology_setup
 				remove_planet_flag = amaryllian_sanctuary_arcology_setup
+				remove_planet_flag = amaryllian_storage_arcology_setup
 				planet_event = {
 					id = amaryllian.900
 					days = 0
