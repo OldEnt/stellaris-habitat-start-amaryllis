@@ -55,3 +55,7 @@ amaryllian_habitat_brain_quarters = {
 amaryllian_gestalt_unity_1 = {
 	country_unity_produces_mult = 0.02
 }
+
+amaryllian_country_resource_max_add = {
+	country_resource_max_add = 5000
+}

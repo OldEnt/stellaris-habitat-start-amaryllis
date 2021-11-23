@@ -9,9 +9,7 @@ amaryllian_habitat_captain = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		ruler_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_ruler_job
 	resources = {
 		category = planet_administrators
 		produces = {
@@ -128,8 +126,11 @@ amaryllian_habitat_brain = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
+	possible_precalc = can_fill_drone_job
 	possible = {
-		drone_job_check_trigger = yes
+		NOT = {
+			has_trait = trait_nerve_stapled
+		}
 	}
 	resources = {
 		category = planet_jobs

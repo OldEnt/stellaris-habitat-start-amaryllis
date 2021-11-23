@@ -240,3 +240,33 @@ amaryllian_remove_all_vanilla_habitat_districts = {
 	remove_district = district_hab_cultural
 	remove_district = district_hab_cultural
 }
+
+amaryllian_recalculate_country_storage_modifier = {
+	set_variable = {
+		which = amaryllian_var_country_storage_num
+		value = 0
+	}
+	every_owned_planet = {
+		limit = {
+			has_planet_flag = amaryllian_storage_arcology
+		}
+		export_trigger_value_to_variable = {
+			trigger = num_districts
+			variable = amaryllian_var_planet_storage_num
+			parameters = {
+				type = amaryllian_district_arcology_storage_industry
+			}
+		}
+		prev = {
+			change_variable = {
+				which = amaryllian_var_country_storage_num
+				value = prev.amaryllian_var_planet_storage_num
+			}
+		}
+	}
+	remove_modifier = amaryllian_country_resource_max_add
+	add_modifier = {
+		modifier = amaryllian_country_resource_max_add
+		multiplier = amaryllian_var_country_storage_num
+	}
+}

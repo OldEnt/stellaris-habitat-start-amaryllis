@@ -943,6 +943,46 @@ country_event = {
 	}
 }
 
+# Recalculate Habitat Storage Districts modifier. on_action district changed.
+planet_event = {
+	id = amaryllian.80
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		last_district_changed = amaryllian_district_arcology_storage_industry
+	}
+	immediate = {
+		owner = {
+			amaryllian_recalculate_country_storage_modifier = yes
+		}
+	}
+}
+
+# Recalculate Habitat Storage Districts modifier. on_action planet swapped.
+planet_event = {
+	id = amaryllian.81
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = amaryllian_storage_arcology
+	}
+	immediate = {
+		owner = {
+			amaryllian_recalculate_country_storage_modifier = yes
+		}
+	}
+}
+
+# Recalculate Habitat Storage Districts modifier. Sanitiser.
+country_event = {
+	id = amaryllian.82
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		amaryllian_recalculate_country_storage_modifier = yes
+	}
+}
+
 # Habitat arcology complete
 planet_event = {
 	id = amaryllian.199
