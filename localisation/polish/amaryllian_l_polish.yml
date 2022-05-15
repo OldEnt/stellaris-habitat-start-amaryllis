@@ -1,6 +1,8 @@
 ﻿l_polish:
 
 humans_amaryllian:0 "Technokracja Ludzi"
+NAME_lotus:0 "Lotus"
+NAME_vesta:0 "Westa"
 
 amaryllian_system_initializer_NAME:0 "Stacja mieszkalna"
 amaryllian_system_initializer_DESC:0 "Rospocznij na rozwinętej, laboratoryjnej Orbitalnej stacji mieszkalnej z odblokowanymi technologiami $tech_hydroponics$ i $tech_habitat_1$. Odczekaj jeden miesiąc na ustawienie stacji.\n\nDostępny dla wszystkich gatunków i każdego rodzaju imperium.\n\nOptymalny Ustrój to $civic_amaryllian_habitat$, który ustawia preferencję planetarną gatunku na Orbitalne stacje mieszkalne, ale daje dostęp do zaawansowanych opcji dla Mieszkańców próżni.\n\nUkład początkowy Technokracji Ludzi.\n\n$system_initializer_DESC$"

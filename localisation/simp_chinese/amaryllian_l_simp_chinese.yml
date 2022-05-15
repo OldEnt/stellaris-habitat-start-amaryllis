@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
  humans_amaryllian:0 "人类联合科技议会"
+ NAME_lotus:0 "莲"
+ NAME_vesta:0 "維斯塔"
  amaryllian_system_initializer_NAME:0 "居住站开局"
  amaryllian_system_initializer_DESC:0 "游戏开始时拥有一个发展完善的科研居住站，并拥有相关的“水培法”与“居住站”科技。（游戏中等待一个月直到设置完毕。）\n\n所有帝国类型与种族皆适用，最好搭配$civic_amaryllian_habitat$理念。\n\n人类联合科技议会的起始星系为单星星系。\n\n$system_initializer_DESC$"
  amaryllian_d_hab_minerals_1:0 "矿产站点"

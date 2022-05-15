@@ -1,6 +1,8 @@
 ﻿l_english:
 
 humans_amaryllian:0 "Technocracy of Man"
+NAME_lotus:0 "Lotus"
+NAME_vesta:0 "Vesta"
 
 amaryllian_system_initializer_NAME:0 "Habitat start"
 amaryllian_system_initializer_DESC:0 "Start on a developed research habitat with hydroponics and habitat technologies unlocked. Wait one month for the game to set the habitat up.\n\nAvailable for all species and empire types. Best played with $civic_amaryllian_habitat$ civic which sets habitat habitability but enables features for habitat-oriented play.\n\nThe Technocracy of Man's starting solar system.\n\n$system_initializer_DESC$"
