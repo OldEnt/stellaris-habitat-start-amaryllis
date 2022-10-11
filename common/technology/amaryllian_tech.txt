@@ -189,10 +189,7 @@ amaryllian_tech_habitat_arcology = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 	}
 	weight = 0
@@ -233,10 +230,7 @@ amaryllian_tech_arms_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 	}
 	weight = 0
@@ -277,10 +271,7 @@ amaryllian_tech_civilian_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 		OR = {
 			is_gestalt = no
@@ -325,10 +316,7 @@ amaryllian_tech_farming_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 		OR = {
 			country_uses_food = yes
@@ -373,10 +361,7 @@ amaryllian_tech_fortress_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 	}
 	weight = 0
@@ -417,10 +402,7 @@ amaryllian_tech_research_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 	}
 	weight = 0
@@ -537,10 +519,7 @@ amaryllian_tech_trade_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 		is_gestalt = no
 	}
@@ -582,10 +561,7 @@ amaryllian_tech_mining_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 	}
 	weight = 0
@@ -626,10 +602,7 @@ amaryllian_tech_generator_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 	}
 	weight = 0
@@ -670,10 +643,7 @@ amaryllian_tech_sanctuary_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 		has_valid_civic = civic_machine_servitor
 	}
@@ -715,10 +685,7 @@ amaryllian_tech_storage_industry = {
 		has_civic = civic_amaryllian_habitat
 		OR = {
 			has_ascension_perk = ap_voidborn
-			AND = {
-				amaryllian_is_habitat_tech_dlc_present = no				# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-				num_ascension_perks > 1
-			}
+			num_ascension_perks > 1			# Voidborne not needed if playing without Utopia. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
 		}
 	}
 	weight = 0

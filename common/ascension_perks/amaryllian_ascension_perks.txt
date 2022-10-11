@@ -6,15 +6,9 @@ ap_amaryllian_voidchildren = {
 		}
 	}
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ap_voidborn"
-			OR = {
-				has_ascension_perk = ap_voidborn
-				AND = {
-					amaryllian_is_habitat_tech_dlc_present = no					# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-					num_ascension_perks > 1
-				}
-			}
+		OR = {
+			num_ascension_perks > 1
+			has_ascension_perk = ap_voidborn
 		}
 	}
 	on_enabled = {

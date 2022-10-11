@@ -3,7 +3,7 @@ namespace = amaryllian
 event = {
 	id = amaryllian.0
 	hide_window = yes
-	fire_only_once = yes
+	is_triggered_only = yes
 	immediate = {
 		set_global_flag = amaryllian_habitat_start_installed
 	}
@@ -23,6 +23,9 @@ country_event = {
 	option = {
 		name = FEDERATIONS_TITLE
 	}
+	option = {
+		name = TOXOIDS_TITLE
+	}
 }
 
 # Find habitat start empires.
@@ -33,7 +36,7 @@ event = {
 	immediate = {
 		if = {
 			limit = {
-				amaryllian_is_habitat_tech_dlc_present = yes
+				amaryllian_is_habitat_start_dlc_present = yes
 			}
 			every_country = {
 				limit = {
@@ -60,7 +63,7 @@ event = {
 			}
 		}
 		else = {
-			set_global_flag = amaryllian_habitat_tech_dlc_check_failed
+			set_global_flag = amaryllian_habitat_start_dlc_check_failed
 			every_country = {
 				limit = {
 					has_country_flag = amaryllian_empire
@@ -134,6 +137,7 @@ planet_event = {
 		set_planet_flag = amaryllian_habitat
 		set_planet_flag = advanced_habitat
 		set_planet_flag = advanced_habitat_2
+		add_deposit = amaryllian_d_hab_building_slots_3
 		set_planet_size = 10
 		change_pc = pc_habitat
 		set_planet_entity = {
@@ -152,8 +156,6 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		clear_blockers = yes
-		clear_deposits = yes
 		# remove_all_buildings = yes	# We do not use this in case mods add starting buildings. Worst case better have it ruined than removed. This also keeps building_necrophage_elevation_chamber
 		if = {
 			limit = {
@@ -180,7 +182,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -212,7 +213,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -239,7 +239,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -267,7 +266,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -299,7 +297,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -330,7 +327,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -357,7 +353,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_minerals_1
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -385,7 +380,6 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
@@ -408,11 +402,59 @@ planet_event = {
 			add_deposit = amaryllian_d_hab_energy_1
 			add_deposit = amaryllian_d_hab_food_1
 			add_deposit = d_hab_alloy_5
-			add_deposit = amaryllian_d_hab_building_slots_3
 			check_planet_employment = yes
 			break = yes
 		}
 		owner = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				prev = {
+					if = {
+						limit = {
+							has_building = building_commercial_zone
+						}
+						remove_building = building_commercial_zone
+					}
+					if = {
+						limit = {
+							has_building = building_autochthon_monument
+						}
+						remove_building = building_autochthon_monument
+					}
+					if = {
+						limit = {
+							has_building = building_bureaucratic_1
+						}
+						remove_building = building_bureaucratic_1
+					}
+					if = {
+						limit = {
+							has_building = building_temple
+						}
+						remove_building = building_temple
+					}
+					if = {
+						limit = {
+							has_building = building_hive_node
+						}
+						remove_building = building_hive_node
+					}
+					if = {
+						limit = {
+							has_building = building_uplink_node
+						}
+						remove_building = building_uplink_node
+					}
+					if = {
+						limit = {
+							has_building = building_uplink_node
+						}
+						remove_building = building_uplink_node
+					}
+				}
+			}
 			country_event = {
 				id = amaryllian.60
 				days = 2
@@ -456,7 +498,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				amaryllian_is_habitat_tech_dlc_present = yes
+				amaryllian_is_habitat_start_dlc_present = yes
 			}
 			give_technology = {
 				message = yes
@@ -500,7 +542,7 @@ event = {
 			}
 			if = {
 				limit = {
-					amaryllian_is_habitat_tech_dlc_present = yes
+					amaryllian_is_habitat_start_dlc_present = yes
 					amaryllian_habitability_change_allowed = yes
 				}
 				country_event = {
@@ -553,7 +595,7 @@ event = {
 			}
 			if = {
 				limit = {
-					amaryllian_is_habitat_tech_dlc_present = yes
+					amaryllian_is_habitat_start_dlc_present = yes
 					amaryllian_habitability_change_allowed = yes
 				}
 				country_event = {
@@ -904,10 +946,7 @@ country_event = {
 			limit = {
 				OR = {
 					has_ascension_perk = ap_voidborn
-					AND = {
-						amaryllian_is_habitat_tech_dlc_present = no						# Voidborne not needed if playing without Utopia and Federations. This allows to build arcologies on amaryllian_is_valid_voidchildren_planet = yes, provided they are accessible.
-						num_ascension_perks > 1
-					}
+					num_ascension_perks > 1
 				}
 			}
 			set_country_flag = amaryllian_research_option_added

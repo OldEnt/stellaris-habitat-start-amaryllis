@@ -59,7 +59,7 @@ humans_amaryllian = {
 		gender = female
 		portrait = "human_female_04"
 		texture = 0
-		hair = 30
+		attachment = 30
 		clothes = 3
 		leader_class = ruler
 	}

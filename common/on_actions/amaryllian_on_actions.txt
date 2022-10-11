@@ -8,6 +8,12 @@ on_game_start = {
 	}
 }
 
+on_single_player_save_game_load = {
+	events = {
+		amaryllian.0		# Flags mod as present.
+	}
+}
+
 on_game_start_country = {
 	events = {
 		amaryllian.51		# Give civic jobs.

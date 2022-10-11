@@ -74,11 +74,10 @@ amaryllian_habitability_change_allowed = {
 	}
 }
 
-amaryllian_is_habitat_tech_dlc_present = {
+amaryllian_is_habitat_start_dlc_present = {
 	OR = {
 		host_has_dlc = "Utopia"
 		host_has_dlc = "Federations"
-		# local_has_dlc = "Utopia"
-		# local_has_dlc = "Federations"
+		host_has_dlc = "Toxoids Species Pack"
 	}
 }

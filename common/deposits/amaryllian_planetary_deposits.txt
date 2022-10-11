@@ -3,8 +3,7 @@ amaryllian_d_hab_minerals_1 = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
-		can_have_habitable_deposits = yes
-		is_planet_class = pc_habitat
+		habitable_structure = yes
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -75,8 +74,7 @@ amaryllian_d_hab_energy_1 = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
-		can_have_habitable_deposits = yes
-		is_planet_class = pc_habitat
+		habitable_structure = yes
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -134,8 +132,7 @@ amaryllian_d_hab_food_1 = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
-		can_have_habitable_deposits = yes
-		is_planet_class = pc_habitat
+		habitable_structure = yes
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -185,8 +182,10 @@ amaryllian_d_hab_building_slots_3 = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
-		can_have_habitable_deposits = yes
-		is_planet_class = pc_habitat
+		OR = {
+			habitable_structure = yes
+			has_planet_flag = advanced_habitat
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {

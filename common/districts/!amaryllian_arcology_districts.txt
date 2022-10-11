@@ -477,6 +477,12 @@ amaryllian_district_arcology_arms_industry = {
 			}
 		}
 	}
+	ai_resource_production = {
+		alloys = 40
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 amaryllian_district_arcology_civilian_industry = {
@@ -775,6 +781,12 @@ amaryllian_district_arcology_civilian_industry = {
 			}
 		}
 	}
+	ai_resource_production = {
+		consumer_goods = 60
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 amaryllian_district_arcology_farming_industry = {
@@ -1030,7 +1042,7 @@ amaryllian_district_arcology_farming_industry = {
 		}
 	}
 	ai_resource_production = {
-		food = 10
+		food = 80
 		trigger = {
 			always = yes
 		}
@@ -1294,6 +1306,24 @@ amaryllian_district_arcology_research_industry = {
 			}
 		}
 	}
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		physics_research = 60
+	}
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		society_research = 60
+	}
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		engineering_research = 60
+	}
 }
 
 amaryllian_district_arcology_bureaucratic_industry = {
@@ -1412,6 +1442,12 @@ amaryllian_district_arcology_bureaucratic_industry = {
 			owner = {
 				empire_sprawl_over_cap > 40
 			}
+		}
+	}
+	ai_resource_production = {
+		unity = 40
+		trigger = {
+			always = yes
 		}
 	}
 }
@@ -1640,6 +1676,30 @@ amaryllian_district_arcology_refinery_industry = {
 			}
 		}
 		text = job_maintenance_drone_effect_desc
+	}
+	ai_resource_production = {
+		volatile_motes = 8
+		trigger = {
+			owner = {
+				has_technology = tech_volatile_motes
+			}
+		}
+	}
+	ai_resource_production = {
+		rare_crystals = 8
+		trigger = {
+			owner = {
+				has_technology = tech_rare_crystals
+			}
+		}
+	}
+	ai_resource_production = {
+		exotic_gases = 8
+		trigger = {
+			owner = {
+				has_technology = tech_exotic_gases
+			}
+		}
 	}
 }
 
@@ -2001,10 +2061,7 @@ amaryllian_district_arcology_mining_industry = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_active_building = building_mineral_purification_hub
-				has_active_building = amaryllian_building_mineral_purification_hub
-			}
+			has_active_building = building_mineral_purification_hub
 		}
 		modifier = {
 			job_mining_drone_add = 1
@@ -2017,10 +2074,7 @@ amaryllian_district_arcology_mining_industry = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
-			OR = {
-				has_active_building = building_mineral_purification_hub
-				has_active_building = amaryllian_building_mineral_purification_hub
-			}
+			has_active_building = building_mineral_purification_hub
 		}
 		modifier = {
 			job_miner_add = 1
@@ -2032,10 +2086,7 @@ amaryllian_district_arcology_mining_industry = {
 			owner = {
 				is_fallen_empire_spiritualist = yes
 			}
-			OR = {
-				has_active_building = building_mineral_purification_hub
-				has_active_building = amaryllian_building_mineral_purification_hub
-			}
+			has_active_building = building_mineral_purification_hub
 		}
 		modifier = {
 			job_fe_acolyte_mine_add = 1
@@ -2054,7 +2105,7 @@ amaryllian_district_arcology_mining_industry = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 10
+		minerals = 45
 		trigger = {
 			always = yes
 		}
@@ -2246,10 +2297,7 @@ amaryllian_district_arcology_generator_industry = {
 			owner = {
 				is_gestalt = yes
 			}
-			OR = {
-				has_active_building = building_energy_nexus
-				has_active_building = amaryllian_building_energy_nexus
-			}
+			has_active_building = building_energy_nexus
 		}
 		modifier = {
 			job_technician_drone_add = 1
@@ -2262,10 +2310,7 @@ amaryllian_district_arcology_generator_industry = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
-			OR = {
-				has_active_building = building_energy_nexus
-				has_active_building = amaryllian_building_energy_nexus
-			}
+			has_active_building = building_energy_nexus
 		}
 		modifier = {
 			job_technician_add = 1
@@ -2277,10 +2322,7 @@ amaryllian_district_arcology_generator_industry = {
 			owner = {
 				is_fallen_empire_spiritualist = yes
 			}
-			OR = {
-				has_active_building = building_energy_nexus
-				has_active_building = amaryllian_building_energy_nexus
-			}
+			has_active_building = building_energy_nexus
 		}
 		modifier = {
 			job_fe_acolyte_generator_add = 1
@@ -2299,7 +2341,7 @@ amaryllian_district_arcology_generator_industry = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 10
+		minerals = 68
 		trigger = {
 			always = yes
 		}
@@ -2385,6 +2427,21 @@ amaryllian_district_arcology_sanctuary_industry = {
 	}
 	ai_weight = {
 		weight = 0
+	}
+	ai_resource_production = {
+		unity = 50
+		trigger = {
+			exists = growing_species
+		}
+	}
+	ai_resource_production = {
+		unity = 50
+		trigger = {
+			exists = growing_species
+			owner = {
+				has_ascension_perk = ap_amaryllian_voidchildren
+			}
+		}
 	}
 }
 
