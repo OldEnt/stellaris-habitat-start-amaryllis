@@ -1,16 +1,11 @@
-#stellaris-habitat-start-amaryllis
-
-Void Dwellers Expanded mod for Stellaris
-
-Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator, Farming or Sanctuary arcologies.
+Convert your habitats to Foundry, Industrial, Research, Fortress, Bureaucratic, Refinery, Trade, Mining, Generator, Farming, Sanctuary or Storage arcologies.
 
 Habitat Captains (and gestalt equivalent) increase unity output scaling with numbers.
 
-Addons:
-[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url][/list]
 Languages:
-[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese (虚空居者扩展 汉语)[/url], translation courtesy of vesel099
+[list][*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2131014154]Chinese (虚空居者扩展 汉语)[/url] - external mod (translation courtesy of vesel099)
 [*]Polish (Polski), integrated
+[*]Russian (Русский), integrated (translation courtesy of [url=https://steamcommunity.com/profiles/76561198011628045]Dimonius[/url])
 [/list]
 
 [IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
@@ -24,7 +19,6 @@ GitHub: https://github.com/OldEnt/stellaris-habitat-start-amaryllis
 [list]
 [*] Works with Federations DLC and without. Just pick Children of the Void civic from the mod, Void Dwellers origin (if you have Federations)  and you are good to go.
 [*] Note: this mod provides its own habitat start separate from Federations' Void Dwellers since Stellaris 2.5.1. This legacy habitat start does not require Federations DLC. Formerly known as OE's Habitat start. Use of Void Dwellers or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1743133825]Starborn[/url] origin with Children of the Void civic is preferable, though.
-[*] Backwards compatible with 2.6.* if you install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2124541406]Stellaris version checker[/url]. Should also work on 2.5.* but bureaucratic habitat arcologies introduced in 2.6 won't function.
 [/list]
 
 [u][b]High compatibility[/b][/u]
@@ -88,11 +82,6 @@ Provide your Habitat Captains with boosts to your habitats. This will be swapped
 
 [img]https://i.imgur.com/3qZJDjK.png[/img]
 
-[u][b]Addon: Void Dwellers trait fix[/b][/u]
-
-Void Dwellers will no longer receive negative trait when settling Ring World or custom habitats from supported mods. This fix requires overwrite of original game file and therefore it is available as a standalone mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url]. Habitat Arcologies from Void Dwellers Expanded are vanilla habitats and do not requre this fix but you might want it if you are settling Ring Worlds.
-
-[img]https://i.imgur.com/zC5qzNr.png[/img]
 
 [u][b]Legacy feature: Habitat start which does not requre Federations DLC (read carefully)[/b][/u]
 
