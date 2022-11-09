@@ -168,6 +168,7 @@ amaryllian_replace_vanilla_habitat_districts = {
 	# }
 	if = {
 		limit = {
+			has_planet_flag = amaryllian_generator_arcology
 			exists = owner
 			owner = {
 				has_technology = amaryllian_tech_generator_industry
@@ -186,6 +187,7 @@ amaryllian_replace_vanilla_habitat_districts = {
 	}
 	if = {
 		limit = {
+			has_planet_flag = amaryllian_research_arcology
 			exists = owner
 			owner = {
 				has_technology = amaryllian_tech_research_industry
@@ -204,6 +206,7 @@ amaryllian_replace_vanilla_habitat_districts = {
 	}
 	if = {
 		limit = {
+			has_planet_flag = amaryllian_trade_arcology
 			exists = owner
 			owner = {
 				has_technology = amaryllian_tech_trade_industry
@@ -222,6 +225,7 @@ amaryllian_replace_vanilla_habitat_districts = {
 	}
 	if = {
 		limit = {
+			has_planet_flag = amaryllian_mining_arcology
 			exists = owner
 			owner = {
 				has_technology = amaryllian_tech_mining_industry
@@ -240,6 +244,7 @@ amaryllian_replace_vanilla_habitat_districts = {
 	}
 	if = {
 		limit = {
+			has_planet_flag = amaryllian_bureaucratic_arcology
 			exists = owner
 			owner = {
 				has_technology = amaryllian_tech_bureaucratic_industry
