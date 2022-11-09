@@ -1,0 +1,1 @@
+@amaryllian_decision_grand_arcology_project_enactment_time = 1800

@@ -1782,6 +1782,14 @@ planet_event = {
 	#	arms
 	option = {
 		name = amaryllian.900.a
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -1833,6 +1841,14 @@ planet_event = {
 						is_gestalt = no
 						has_valid_civic = civic_machine_servitor
 					}
+				}
+			}
+		}
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
 				}
 			}
 		}
@@ -1890,6 +1906,14 @@ planet_event = {
 				}
 			}
 		}
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -1933,6 +1957,14 @@ planet_event = {
 	#	fortress
 	option = {
 		name = amaryllian.900.d
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -1976,6 +2008,14 @@ planet_event = {
 	#	research
 	option = {
 		name = amaryllian.900.e
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2019,6 +2059,14 @@ planet_event = {
 	#	bureaucratic
 	option = {
 		name = amaryllian.900.f
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2064,6 +2112,14 @@ planet_event = {
 	#	refinery
 	option = {
 		name = amaryllian.900.g
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2114,6 +2170,14 @@ planet_event = {
 	#	trade
 	option = {
 		name = amaryllian.900.h
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		trigger = {
 			OR = {
 				has_planet_flag = amaryllian_trade_arcology
@@ -2165,6 +2229,14 @@ planet_event = {
 	#	mining
 	option = {
 		name = amaryllian.900.i
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		trigger = {
 			OR = {
 				has_planet_flag = amaryllian_mining_arcology
@@ -2217,6 +2289,14 @@ planet_event = {
 	#	generator
 	option = {
 		name = amaryllian.900.j
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		trigger = {
 			OR = {
 				owner = {
@@ -2272,6 +2352,14 @@ planet_event = {
 	#	sanctuary
 	option = {
 		name = amaryllian.900.k
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		trigger = {
 			OR = {
 				has_planet_flag = amaryllian_sanctuary_arcology
@@ -2323,6 +2411,14 @@ planet_event = {
 	#	storage
 	option = {
 		name = amaryllian.900.l
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2366,6 +2462,14 @@ planet_event = {
 	#	Clear
 	option = {
 		name = amaryllian.900.x
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2407,6 +2511,14 @@ planet_event = {
 	#	Lock
 	option = {
 		name = amaryllian.900.y
+		allow = {
+			custom_tooltip_fail = {
+				text = amaryllian_decision_grand_arcology_project_queued
+				NOT = {
+					has_planet_flag = amaryllian_decision_grand_arcology_project_queued
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2431,7 +2543,7 @@ planet_event = {
 				}
 				set_timed_planet_flag = {
 					flag = amaryllian_decision_grand_arcology_designer_locked
-					days = 90
+					days = 30
 				}
 				planet_event = {
 					id = amaryllian.900
@@ -2440,6 +2552,7 @@ planet_event = {
 				}
 			}
 			else = {
+				remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
 				planet_event = {
 					id = amaryllian.900
 					days = 0

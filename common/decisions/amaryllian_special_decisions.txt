@@ -32,7 +32,7 @@ amaryllian_decision_grand_arcology_designer = {
 amaryllian_decision_grand_arcology_project = {
 	owned_planets_only = yes
 	icon = decision_amaryllian_decision_grand_arcology_project
-	enactment_time = 1800
+	enactment_time = @amaryllian_decision_grand_arcology_project_enactment_time
 	resources = {
 		category = decisions
 		# Grand Arcology cost 
@@ -155,6 +155,41 @@ amaryllian_decision_grand_arcology_project = {
 					}
 				}
 			}
+		}
+	}
+	on_queued = {
+		set_timed_planet_flag = {
+			flag = amaryllian_decision_grand_arcology_project_queued
+			days = @amaryllian_decision_grand_arcology_project_enactment_time
+		}
+	}
+	on_unqueued = {
+		remove_planet_flag = amaryllian_decision_grand_arcology_project_queued
+		remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+	}
+	abort_trigger = {
+		NOT = {
+			exists = owner
+		}
+	}
+	abort_effect = {
+		remove_planet_flag = amaryllian_decision_grand_arcology_project_queued
+		remove_planet_flag = amaryllian_decision_grand_arcology_designer_locked
+		remove_planet_flag = amaryllian_arms_arcology_setup
+		remove_planet_flag = amaryllian_trade_arcology_setup
+		remove_planet_flag = amaryllian_mining_arcology_setup
+		remove_planet_flag = amaryllian_farming_arcology_setup
+		remove_planet_flag = amaryllian_storage_arcology_setup
+		remove_planet_flag = amaryllian_civilian_arcology_setup
+		remove_planet_flag = amaryllian_research_arcology_setup
+		remove_planet_flag = amaryllian_fortress_arcology_setup
+		remove_planet_flag = amaryllian_refinery_arcology_setup
+		remove_planet_flag = amaryllian_generator_arcology_setup
+		remove_planet_flag = amaryllian_sanctuary_arcology_setup
+		remove_planet_flag = amaryllian_bureaucratic_arcology_setup
+		set_variable = {
+			which = amaryllian_arcology_setup_num
+			value = 0
 		}
 	}
 	effect = {

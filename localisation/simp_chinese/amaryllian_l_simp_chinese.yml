@@ -384,4 +384,5 @@
  amaryllian_district_arcology_generator_industry_setup:0 "§G$amaryllian_district_arcology_generator_industry$§!"
  amaryllian_district_arcology_sanctuary_industry_setup:0 "§G$amaryllian_district_arcology_sanctuary_industry$§!"
  amaryllian_district_arcology_storage_industry_setup:0 "§G$amaryllian_district_arcology_storage_industry$§!"
+ amaryllian_decision_grand_arcology_project_queued:0 "$EXISTS_NOT_TRIGGER$:\n    $QUEUE$ - $amaryllian_decision_arcology_project$"
  amaryllian_country_resource_max_add:0 "$amaryllian_district_arcology_storage_industry_plural$"
