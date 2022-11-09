@@ -1,0 +1,21 @@
+amaryllian_num_districts = {
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = $DISTRICTS$
+		}
+		mode = add
+	}
+}
+
+amaryllian_arcology_districts_conversion = {
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = $DISTRICTS$
+		}
+		mode = add
+	}
+	multiply = $RATIO$
+	floor = yes
+}

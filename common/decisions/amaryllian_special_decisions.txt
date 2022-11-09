@@ -177,7 +177,15 @@ amaryllian_decision_grand_arcology_project = {
 					modifier = amaryllian_decision_arcology_project_modifier
 					days = -1
 				}
-				remove_all_districts = yes
+				# if = {
+				# 	limit = {
+				# 		exists = owner
+				# 		owner = {
+				# 			is_ai = yes
+				# 		}
+				# 	}
+				# 	remove_all_districts = yes
+				# }
 				set_variable = {
 					which = amaryllian_arcology_setup_num
 					value = 0
@@ -209,7 +217,6 @@ amaryllian_decision_grand_arcology_project = {
 					modifier = amaryllian_decision_grand_arcology_project_modifier
 					days = -1
 				}
-				amaryllian_remove_all_vanilla_habitat_districts = yes
 				set_variable = {
 					which = amaryllian_arcology_setup_num
 					value = 0
@@ -241,7 +248,15 @@ amaryllian_decision_grand_arcology_project = {
 					modifier = amaryllian_decision_grand_arcology_project_modifier
 					days = -1
 				}
-				remove_all_districts = yes
+				# if = {
+				# 	limit = {
+				# 		exists = owner
+				# 		owner = {
+				# 			is_ai = yes
+				# 		}
+				# 	}
+				# 	remove_all_districts = yes
+				# }
 				set_variable = {
 					which = amaryllian_arcology_setup_num
 					value = 0

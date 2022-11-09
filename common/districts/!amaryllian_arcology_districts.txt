@@ -7,7 +7,7 @@ amaryllian_district_arcology_arms_industry = {
 	potential = {
 		has_planet_flag = amaryllian_arms_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -501,7 +501,7 @@ amaryllian_district_arcology_civilian_industry = {
 			}
 		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -798,7 +798,7 @@ amaryllian_district_arcology_farming_industry = {
 	potential = {
 		has_planet_flag = amaryllian_farming_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -1058,7 +1058,7 @@ amaryllian_district_arcology_fortress_industry = {
 	potential = {
 		has_planet_flag = amaryllian_fortress_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -1160,7 +1160,7 @@ amaryllian_district_arcology_research_industry = {
 	potential = {
 		has_planet_flag = amaryllian_research_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -1335,7 +1335,7 @@ amaryllian_district_arcology_bureaucratic_industry = {
 	potential = {
 		has_planet_flag = amaryllian_bureaucratic_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -1461,7 +1461,7 @@ amaryllian_district_arcology_refinery_industry = {
 	potential = {
 		has_planet_flag = amaryllian_refinery_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -1716,7 +1716,7 @@ amaryllian_district_arcology_trade_industry = {
 			is_gestalt = no
 		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -1873,7 +1873,7 @@ amaryllian_district_arcology_mining_industry = {
 	potential = {
 		has_planet_flag = amaryllian_mining_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -2121,7 +2121,7 @@ amaryllian_district_arcology_generator_industry = {
 	potential = {
 		has_planet_flag = amaryllian_generator_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -2361,7 +2361,7 @@ amaryllian_district_arcology_sanctuary_industry = {
 			has_valid_civic = civic_machine_servitor
 		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}
@@ -2454,7 +2454,7 @@ amaryllian_district_arcology_storage_industry = {
 	potential = {
 		has_planet_flag = amaryllian_storage_arcology
 	}
-	conversion_ratio = 1
+	conversion_ratio = 2
 	convert_to = {
 		district_hab_housing
 	}

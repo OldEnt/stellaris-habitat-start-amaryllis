@@ -1,4 +1,5 @@
 amaryllian_construct_arcology = {
+	optimize_memory
 	if = {
 		limit = {
 			OR = {
@@ -8,8 +9,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_arms_arcology_setup
 		set_planet_flag = amaryllian_arms_arcology
-		add_district = amaryllian_district_arcology_arms_industry
-		remove_district = amaryllian_district_arcology_arms_industry
+		# add_district = amaryllian_district_arcology_arms_industry
+		# remove_district = amaryllian_district_arcology_arms_industry
 	}
 	if = {
 		limit = {
@@ -20,8 +21,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_civilian_arcology_setup
 		set_planet_flag = amaryllian_civilian_arcology
-		add_district = amaryllian_district_arcology_civilian_industry
-		remove_district = amaryllian_district_arcology_civilian_industry
+		# add_district = amaryllian_district_arcology_civilian_industry
+		# remove_district = amaryllian_district_arcology_civilian_industry
 	}
 	if = {
 		limit = {
@@ -32,8 +33,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_farming_arcology_setup
 		set_planet_flag = amaryllian_farming_arcology
-		add_district = amaryllian_district_arcology_farming_industry
-		remove_district = amaryllian_district_arcology_farming_industry
+		# add_district = amaryllian_district_arcology_farming_industry
+		# remove_district = amaryllian_district_arcology_farming_industry
 	}
 	if = {
 		limit = {
@@ -44,8 +45,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_fortress_arcology_setup
 		set_planet_flag = amaryllian_fortress_arcology
-		add_district = amaryllian_district_arcology_fortress_industry
-		remove_district = amaryllian_district_arcology_fortress_industry
+		# add_district = amaryllian_district_arcology_fortress_industry
+		# remove_district = amaryllian_district_arcology_fortress_industry
 	}
 	if = {
 		limit = {
@@ -56,8 +57,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_research_arcology_setup
 		set_planet_flag = amaryllian_research_arcology
-		add_district = amaryllian_district_arcology_research_industry
-		remove_district = amaryllian_district_arcology_research_industry
+		# add_district = amaryllian_district_arcology_research_industry
+		# remove_district = amaryllian_district_arcology_research_industry
 	}
 	if = {
 		limit = {
@@ -68,8 +69,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_bureaucratic_arcology_setup
 		set_planet_flag = amaryllian_bureaucratic_arcology
-		add_district = amaryllian_district_arcology_bureaucratic_industry
-		remove_district = amaryllian_district_arcology_bureaucratic_industry
+		# add_district = amaryllian_district_arcology_bureaucratic_industry
+		# remove_district = amaryllian_district_arcology_bureaucratic_industry
 	}
 	if = {
 		limit = {
@@ -80,8 +81,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_refinery_arcology_setup
 		set_planet_flag = amaryllian_refinery_arcology
-		add_district = amaryllian_district_arcology_refinery_industry
-		remove_district = amaryllian_district_arcology_refinery_industry
+		# add_district = amaryllian_district_arcology_refinery_industry
+		# remove_district = amaryllian_district_arcology_refinery_industry
 	}
 	if = {
 		limit = {
@@ -92,8 +93,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_trade_arcology_setup
 		set_planet_flag = amaryllian_trade_arcology
-		add_district = amaryllian_district_arcology_trade_industry
-		remove_district = amaryllian_district_arcology_trade_industry
+		# add_district = amaryllian_district_arcology_trade_industry
+		# remove_district = amaryllian_district_arcology_trade_industry
 	}
 	if = {
 		limit = {
@@ -104,8 +105,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_mining_arcology_setup
 		set_planet_flag = amaryllian_mining_arcology
-		add_district = amaryllian_district_arcology_mining_industry
-		remove_district = amaryllian_district_arcology_mining_industry
+		# add_district = amaryllian_district_arcology_mining_industry
+		# remove_district = amaryllian_district_arcology_mining_industry
 	}
 	if = {
 		limit = {
@@ -116,8 +117,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_generator_arcology_setup
 		set_planet_flag = amaryllian_generator_arcology
-		add_district = amaryllian_district_arcology_generator_industry
-		remove_district = amaryllian_district_arcology_generator_industry
+		# add_district = amaryllian_district_arcology_generator_industry
+		# remove_district = amaryllian_district_arcology_generator_industry
 	}
 	if = {
 		limit = {
@@ -128,8 +129,8 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_sanctuary_arcology_setup
 		set_planet_flag = amaryllian_sanctuary_arcology
-		add_district = amaryllian_district_arcology_sanctuary_industry
-		remove_district = amaryllian_district_arcology_sanctuary_industry
+		# add_district = amaryllian_district_arcology_sanctuary_industry
+		# remove_district = amaryllian_district_arcology_sanctuary_industry
 	}
 	if = {
 		limit = {
@@ -140,108 +141,125 @@ amaryllian_construct_arcology = {
 		}
 		remove_planet_flag = amaryllian_storage_arcology_setup
 		set_planet_flag = amaryllian_storage_arcology
-		add_district = amaryllian_district_arcology_storage_industry
-		remove_district = amaryllian_district_arcology_storage_industry
+		# add_district = amaryllian_district_arcology_storage_industry
+		# remove_district = amaryllian_district_arcology_storage_industry
 	}
-	else = {
-		break = yes
-	}
+	amaryllian_replace_vanilla_habitat_districts = yes
 }
 
-amaryllian_remove_all_vanilla_habitat_districts = {
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_housing
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_energy
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_science
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_commercial
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_mining
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
-	remove_district = district_hab_cultural
+amaryllian_replace_vanilla_habitat_districts = {
+	# if = {
+	# 	limit = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_technology = amaryllian_tech_housing_industry
+	# 		}
+	# 	}
+	# 	while = {
+	# 		count = value:amaryllian_arcology_districts_conversion|DISTRICTS|district_hab_housing|RATIO|0.5|.
+	# 		remove_district = district_hab_housing
+	# 		remove_district = district_hab_housing
+	# 		add_district = amaryllian_district_arcology_housing_industry
+	# 	}
+	# 	while = {
+	# 		count = value:amaryllian_num_districts|DISTRICTS|district_hab_housing|.
+	# 		remove_district = district_hab_housing
+	# 	}
+	# }
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				has_technology = amaryllian_tech_generator_industry
+			}
+		}
+		while = {
+			count = value:amaryllian_arcology_districts_conversion|DISTRICTS|district_hab_energy|RATIO|0.5|.
+			remove_district = district_hab_energy
+			remove_district = district_hab_energy
+			add_district = amaryllian_district_arcology_generator_industry
+		}
+		while = {
+			count = value:amaryllian_num_districts|DISTRICTS|district_hab_energy|.
+			remove_district = district_hab_energy
+		}
+	}
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				has_technology = amaryllian_tech_research_industry
+			}
+		}
+		while = {
+			count = value:amaryllian_arcology_districts_conversion|DISTRICTS|district_hab_science|RATIO|0.5|.
+			remove_district = district_hab_science
+			remove_district = district_hab_science
+			add_district = amaryllian_district_arcology_research_industry
+		}
+		while = {
+			count = value:amaryllian_num_districts|DISTRICTS|district_hab_science|.
+			remove_district = district_hab_science
+		}
+	}
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				has_technology = amaryllian_tech_trade_industry
+			}
+		}
+		while = {
+			count = value:amaryllian_arcology_districts_conversion|DISTRICTS|district_hab_commercial|RATIO|0.5|.
+			remove_district = district_hab_commercial
+			remove_district = district_hab_commercial
+			add_district = amaryllian_district_arcology_trade_industry
+		}
+		while = {
+			count = value:amaryllian_num_districts|DISTRICTS|district_hab_commercial|.
+			remove_district = district_hab_commercial
+		}
+	}
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				has_technology = amaryllian_tech_mining_industry
+			}
+		}
+		while = {
+			count = value:amaryllian_arcology_districts_conversion|DISTRICTS|district_hab_mining|RATIO|0.5|.
+			remove_district = district_hab_mining
+			remove_district = district_hab_mining
+			add_district = amaryllian_district_arcology_mining_industry
+		}
+		while = {
+			count = value:amaryllian_num_districts|DISTRICTS|district_hab_mining|.
+			remove_district = district_hab_mining
+		}
+	}
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				has_technology = amaryllian_tech_bureaucratic_industry
+			}
+		}
+		while = {
+			count = value:amaryllian_arcology_districts_conversion|DISTRICTS|district_hab_cultural|RATIO|0.5|.
+			remove_district = district_hab_cultural
+			remove_district = district_hab_cultural
+			add_district = amaryllian_district_arcology_bureaucratic_industry
+		}
+		while = {
+			count = value:amaryllian_num_districts|DISTRICTS|district_hab_cultural|.
+			remove_district = district_hab_cultural
+		}
+	}
 }
 
 amaryllian_recalculate_country_storage_modifier = {
+	optimize_memory
 	set_variable = {
 		which = amaryllian_var_country_storage_num
 		value = 0
