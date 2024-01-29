@@ -9,5 +9,5 @@ tags={
 }
 name="Void Dwellers Expanded 3+"
 picture="thumbnail.png"
-supported_version="3.8.*"
+supported_version="3.10.*"
 remote_file_id="1961367151"

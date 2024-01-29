@@ -182,10 +182,10 @@ amaryllian_d_hab_building_slots_3 = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	potential = {
-		OR = {
-			habitable_structure = yes
-			has_planet_flag = advanced_habitat
-		}
+		# OR = {
+		habitable_structure = yes
+		# has_planet_flag = advanced_habitat
+		# }
 	}
 	triggered_planet_modifier = {
 		potential = {

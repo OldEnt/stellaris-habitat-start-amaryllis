@@ -92,21 +92,25 @@ defined_text = {
 	name = GetInfo_trigger_habitat_2
 	text = {
 		trigger = {
-			OR = {
-				has_planet_flag = advanced_habitat_2
-				has_planet_flag = amaryllian_hab_arcology
-				is_aot_habitat = yes				# Acquisition of Technology
-			}
+			# Removed due to 3.9 habitat rework.
+			# OR = {
+			# 	has_planet_flag = advanced_habitat_2
+			# 	has_planet_flag = amaryllian_hab_arcology
+			# 	is_aot_habitat = yes				# Acquisition of Technology
+			# }
+			always = yes
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_yes
 	}
 	text = {
 		trigger = {
-			NOR = {
-				has_planet_flag = advanced_habitat_2
-				has_planet_flag = amaryllian_hab_arcology
-				is_aot_habitat = yes				# Acquisition of Technology
-			}
+			# Removed due to 3.9 habitat rework.
+			# NOR = {
+			# 	has_planet_flag = advanced_habitat_2
+			# 	has_planet_flag = amaryllian_hab_arcology
+			# 	is_aot_habitat = yes				# Acquisition of Technology
+			# }
+			always = no
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_no
 	}
@@ -116,23 +120,27 @@ defined_text = {
 	name = GetInfo_trigger_habitat_1
 	text = {
 		trigger = {
-			OR = {
-				has_planet_flag = advanced_habitat
-				has_planet_flag = advanced_habitat_2
-				has_planet_flag = amaryllian_hab_arcology
-				is_aot_habitat = yes				# Acquisition of Technology
-			}
+			# Removed due to 3.9 habitat rework.
+			# OR = {
+			# 	has_planet_flag = advanced_habitat
+			# 	has_planet_flag = advanced_habitat_2
+			# 	has_planet_flag = amaryllian_hab_arcology
+			# 	is_aot_habitat = yes				# Acquisition of Technology
+			# }
+			always = yes
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_yes
 	}
 	text = {
 		trigger = {
-			NOR = {
-				has_planet_flag = advanced_habitat
-				has_planet_flag = advanced_habitat_2
-				has_planet_flag = amaryllian_hab_arcology
-				is_aot_habitat = yes				# Acquisition of Technology
-			}
+			# Removed due to 3.9 habitat rework.
+			# NOR = {
+			# 	has_planet_flag = advanced_habitat
+			# 	has_planet_flag = advanced_habitat_2
+			# 	has_planet_flag = amaryllian_hab_arcology
+			# 	is_aot_habitat = yes				# Acquisition of Technology
+			# }
+			always = no
 		}
 		localization_key = amaryllian_decision_arcology_project_trigger_no
 	}

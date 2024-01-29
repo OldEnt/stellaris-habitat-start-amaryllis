@@ -108,11 +108,12 @@ amaryllian_decision_grand_arcology_project = {
 						which = "amaryllian_arcology_setup_num"
 						value = 4
 					}
-					OR = {
-						is_aot_habitat = yes
-						has_planet_flag = advanced_habitat_2
-						has_planet_flag = amaryllian_arcology_allowed						#	Apply this flag to a planet to allow arcology project.
-					}
+					# Removed due to 3.9 habitat rework.
+					# OR = {
+					# 	is_aot_habitat = yes
+					# 	has_planet_flag = advanced_habitat_2
+					# 	has_planet_flag = amaryllian_arcology_allowed						#	Apply this flag to a planet to allow arcology project.
+					# }
 				}
 				# Specialised Arcology			
 				AND = {
@@ -124,12 +125,13 @@ amaryllian_decision_grand_arcology_project = {
 						which = "amaryllian_arcology_setup_num"
 						value = 1
 					}
-					OR = {
-						is_aot_habitat = yes
-						has_planet_flag = advanced_habitat
-						has_planet_flag = advanced_habitat_2
-						has_planet_flag = amaryllian_arcology_allowed						#	Apply this flag to a planet to allow arcology project.
-					}
+					# Removed due to 3.9 habitat rework.
+					# OR = {
+					# 	is_aot_habitat = yes
+					# 	has_planet_flag = advanced_habitat
+					# 	has_planet_flag = advanced_habitat_2
+					# 	has_planet_flag = amaryllian_arcology_allowed						#	Apply this flag to a planet to allow arcology project.
+					# }
 				}
 				# Upgrade from Specialised to Grand Arcology
 				AND = {
