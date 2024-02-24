@@ -2244,6 +2244,14 @@ planet_event = {
 				# Planetary Diversity - Planetary Habitats
 				has_planet_flag = pd_mining_hab
 				has_planet_flag = pd_mining2_hab
+				solar_system = {
+					any_system_planet = {
+						has_resource = {
+							type = minerals
+							amount > 0
+						}
+					}
+				}
 			}
 		}
 		hidden_effect = {
@@ -2307,6 +2315,14 @@ planet_event = {
 				# Planetary Diversity - Planetary Habitats
 				has_planet_flag = pd_energy_hab
 				has_planet_flag = pd_energy2_hab
+				solar_system = {
+					any_system_planet = {
+						has_resource = {
+							type = energy
+							amount > 0
+						}
+					}
+				}
 			}
 		}
 		hidden_effect = {
