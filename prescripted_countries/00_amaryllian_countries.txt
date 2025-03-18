@@ -1,7 +1,8 @@
 humans_amaryllian = {
 	name = "humans_amaryllian"
 	adjective = "PRESCRIPTED_adjective_humans1"
-	spawn_enabled = yes	# yes / no / always
+	spawn_enabled = no	# yes / no / always
+
 	ignore_portrait_duplication = yes
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans2"
 	species = {
@@ -61,7 +62,8 @@ humans_amaryllian = {
 		texture = 0
 		attachment = 30
 		clothes = 3
-		leader_class = ruler
+		leader_class = scientist
+		trait = leader_trait_spark_of_genius
 	}
 	spawn_as_fallen = no
 }
